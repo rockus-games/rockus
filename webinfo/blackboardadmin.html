@@ -45,7 +45,7 @@
                 document.getElementsByTagName("h1").item(0).innerHTML = b;
             }
 
-            function clickSend(event) {
+            function clickSend() {
                 $.ajax({
                     type: "POST",
                     url: "./php/blackboard.php",
@@ -55,8 +55,10 @@
                     },
                     success: function (data, a, b) {
                         // console.log(data);
+
                         start_update();
                     },
+                    error: function (a, b, c) {},
                 });
             }
 
@@ -130,7 +132,6 @@
                 .addEventListener("input", function (event) {
                     event.preventDefault();
                     clickSend();
-
                     return false;
                 });
         </script>
