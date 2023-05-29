@@ -3,7 +3,7 @@
     echo($pass);
 
     if($pass == "1") {
-        $myfile = fopen("../blackboard.txt", "w");
+        $myfile = fopen("./blackboard.txt", "w");
         fwrite($myfile, $_POST['textfield']);
         fclose($myfile);
 
