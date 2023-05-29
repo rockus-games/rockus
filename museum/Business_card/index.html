@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Визитка</title>
+        <link
+            href="https://fonts.cdnfonts.com/css/snell-roundhand"
+            rel="stylesheet"
+        />
+
+        <style>
+            @import url("https://fonts.cdnfonts.com/css/snell-roundhand");
+        </style>
+
+        <style>
+            html,
+            body,
+            div,
+            section {
+                overflow: visible !important;
+            }
+            body {
+                background-color: #202020;
+            }
+            h2 {
+                text-align: center;
+                color: antiquewhite;
+                font-size: 3vh;
+                /* margin: 0; */
+            }
+            h1 {
+                font-family: "Snell Roundhand", sans-serif;
+                font-size: 10vh;
+                color: cadetblue;
+                text-align: center;
+                margin: 0;
+            }
+            #emblema {
+                width: 40%;
+            }
+            .data {
+                text-align: center;
+                border: 2px solid white;
+            }
+            .border {
+                margin: 8px;
+                border: 1px dotted #202020;
+                background-color: antiquewhite;
+                font-size: 2.5vw;
+            }
+            a {
+                text-decoration: none;
+                color: #202020;
+            }
+            #putin {
+                width: 30%;
+            }
+            #qr {
+                width: 10%;
+                position: fixed;
+                bottom: 3px;
+                right: 3px;
+            }
+            @media screen and (orientation: portrait) {
+                .border {
+                    font-size: 2.3vh;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Школьный музей</h2>
+        <h1>"Родина"</h1>
+        <center><img id="emblema" src="./Эмблема 1.png" alt="" /></center>
+        <div class="data">
+            <div class="border">
+                <a href="https://school-1.odinedu.ru/"
+                    >Сайт: Одинцовской СОШ №1</a
+                >
+            </div>
+            <div class="border">
+                <a href="https://rockus.su/museum/">Сайт: rockus.su/museum/</a>
+            </div>
+            <div class="border">
+                <a href="tel:+79096934037">Тел. +79096934037</a>
+            </div>
+            <div class="border">
+                <a href="mailto:eduardtepanosyan@gmail.com"
+                    >Почта: eduardtepanosyan@gmail.com</a
+                >
+            </div>
+            <div class="border">
+                <a href="https://rockus.su/webinfo/"
+                    >Сайт руководителя: rockus.su</a
+                >
+            </div>
+            <div class="border">Руководитель: Тепаносян Эдуард</div>
+        </div>
+        <br />
+        <a href="./oleg-gazmanov-vpered-rossiya_724489.mp4"
+            ><img
+                id="putin"
+                src="./ab67616d0000b2731aaaf0967a4fe13ed03eec4b.jpeg"
+                alt=""
+        /></a>
+        <a href="./qrcode_rockus.su.png"
+            ><img id="qr" src="./qrcode_rockus.su.png" alt=""
+        /></a>
+    </body>
+</html>

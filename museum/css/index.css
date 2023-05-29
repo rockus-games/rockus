@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(10, 13, 20);
+    font-family: "Philosopher", cursive;
+}
+
+#emblem {
+    display: block;
+    margin: auto;
+    margin-top: -3vh;
+    width: 30%;
+    height: 30%;
+}
+
+.scroll_element > a > * {
+    vertical-align: middle;
+}
+
+.scroll_element > a {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#oleg {
+    display: inline-block;
+    width: 10vw;
+}
+h2 {
+    color: aliceblue;
+    display: inline-block;
+    margin-left: 1vw;
+}
+
+#romanovs {
+    font-size: 3vw;
+}
+
+.slider {
+    display: inline-block;
+    margin-left: 12vw;
+    height: 400px;
+    margin-top: 4vh;
+    vertical-align: middle;
+    padding-top: 0vh;
+}
+
+.slider > * {
+    width: 100px;
+}
+
+.main {
+    margin-top: 4vh;
+    scroll-snap-type: y mandatory;
+    height: 400px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.scroll_element {
+    scroll-snap-align: center;
+    height: 400px;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-left: 4vw;
+}
+
+.scroll_element:hover {
+    /* transform: scale(1.1); */
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+#sch_btn {
+    display: block;
+    margin: auto;
+    background-color: rgb(23, 32, 51);
+    border: 0;
+    color: aliceblue;
+    cursor: pointer;
+    padding: 10px;
+    font-family: "Philosopher", cursive;
+    font-size: 40px;
+}
+
+#yr_btn {
+    display: block;
+    margin: auto;
+    background-color: rgb(23, 32, 51);
+    border: 0;
+    color: aliceblue;
+    cursor: pointer;
+    padding: 5px;
+    font-family: "Philosopher", cursive;
+    font-size: 15px;
+}

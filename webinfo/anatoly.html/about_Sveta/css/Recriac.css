@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(199, 244, 247);
+}
+h1{
+    text-align: center;
+    color: rgb(5, 130, 64);
+    font-size: 7vh;
+}
+img {
+    height: 30vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    text-align: center;
+    color: black;
+    font-size: 3vh;
+}
+@media (max-width: 768px) {
+    body {
+        background-color: rgb(199, 244, 247);
+    }
+    h1 {
+        text-align: center;
+        color: rgb(5, 130, 64);
+        font-size: 6vh;
+    }
+    img {
+        height: 20vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p {
+        text-align: center;
+        color: black;
+        font-size: 2vh;
+    }
+
+}

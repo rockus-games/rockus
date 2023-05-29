@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(199, 244, 247);
+}
+h1 {
+    text-align: center;
+    color: rgb(5, 130, 64);
+    font-size: 5vh;
+}
+img {
+    height: 30vh;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {
+    text-align: center;
+    color: rgb(1, 1, 1);
+    font-size: 3vh;
+}
+h3 {
+    text-align: center;
+    color: rgb(163, 46, 191);
+    font-size: 3vh;
+}

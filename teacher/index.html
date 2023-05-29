@@ -1,0 +1,199 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="teacher.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="./teacher.js"></script>
+        <title>Класс</title>
+    </head>
+    <body>
+        <div class="control">
+            <select class="grades" onchange="gradeChange()"></select>
+            <button onclick="sendInfo()">Отправить</button>
+        </div>
+        <center>
+            <div class="main">
+                <div class="table_space table_left t1 p5">
+                    <div class="names">
+                        <p contenteditable="true" class="name l8">
+                            Имя<br />Фамилия
+                        </p>
+                        <p contenteditable="true" class="name l7">
+                            Имя<br />Фамилия
+                        </p>
+                    </div>
+                    <div class="table">
+                        <p class="laptop">8</p>
+                        <p class="laptop">7</p>
+                    </div>
+                </div>
+                <div class="table_space table_left t2 p6">
+                    <div class="names">
+                        <p contenteditable="true" class="name l10">
+                            Имя<br />Фамилия
+                        </p>
+                        <p contenteditable="true" class="name l9">
+                            Имя<br />Фамилия
+                        </p>
+                    </div>
+                    <div class="table">
+                        <p class="laptop">10</p>
+                        <p class="laptop">9</p>
+                    </div>
+                </div>
+                <div class="table_space table_left t3 p7">
+                    <div class="names">
+                        <p contenteditable="true" class="name l12">
+                            Имя<br />Фамилия
+                        </p>
+                        <p contenteditable="true" class="name l11">
+                            Имя<br />Фамилия
+                        </p>
+                    </div>
+                    <div class="table">
+                        <p class="laptop">12</p>
+                        <p class="laptop">11</p>
+                    </div>
+                </div>
+                <div class="table_space table_left t4 p8">
+                    <div class="names">
+                        <p contenteditable="true" class="name l14">
+                            Имя<br />Фамилия
+                        </p>
+                        <p contenteditable="true" class="name l13">
+                            Имя<br />Фамилия
+                        </p>
+                    </div>
+                    <div class="table">
+                        <p class="laptop">14</p>
+                        <p class="laptop">13</p>
+                    </div>
+                </div>
+                <div class="table_space table_right t1 p4">
+                    <div class="names">
+                        <p contenteditable="true" class="name l15">
+                            Имя<br />Фамилия
+                        </p>
+                        <p contenteditable="true" class="name l6">
+                            Имя<br />Фамилия
+                        </p>
+                    </div>
+                    <div class="table">
+                        <p class="laptop">15</p>
+                        <p class="laptop">6</p>
+                    </div>
+                </div>
+                <div class="table_space table_right t2 p3">
+                    <div class="names">
+                        <p contenteditable="true" class="name l4">
+                            Имя<br />Фамилия
+                        </p>
+                        <p contenteditable="true" class="name l5">
+                            Имя<br />Фамилия
+                        </p>
+                    </div>
+                    <div class="table">
+                        <p class="laptop">4</p>
+                        <p class="laptop">5</p>
+                    </div>
+                </div>
+                <div class="table_space table_right t3 p2">
+                    <div class="names">
+                        <p contenteditable="true" class="name l2">
+                            Имя<br />Фамилия
+                        </p>
+                        <p contenteditable="true" class="name l3">
+                            Имя<br />Фамилия
+                        </p>
+                    </div>
+                    <div class="table">
+                        <p class="laptop">2</p>
+                        <p class="laptop">3</p>
+                    </div>
+                </div>
+                <div class="table_space table_right t4 p1">
+                    <div class="names">
+                        <p contenteditable="true" class="name l0">
+                            Имя<br />Фамилия
+                        </p>
+                        <p contenteditable="true" class="name l1">
+                            Имя<br />Фамилия
+                        </p>
+                    </div>
+                    <div class="table">
+                        <p class="laptop">0</p>
+                        <p class="laptop">1</p>
+                    </div>
+                </div>
+                <div class="table_space table_center tc1 p9">
+                    <div class="names">
+                        <p contenteditable="true" class="name l17">
+                            Имя<br />Фамилия
+                        </p>
+                        <p contenteditable="true" class="name l16">
+                            Имя<br />Фамилия
+                        </p>
+                    </div>
+                    <div class="table">
+                        <p class="laptop">17</p>
+                        <p class="laptop">16</p>
+                    </div>
+                </div>
+                <div class="table_space table_center tc2 p10">
+                    <div class="names">
+                        <p contenteditable="true" class="name l19">
+                            Имя<br />Фамилия
+                        </p>
+                        <p contenteditable="true" class="name l18">
+                            Имя<br />Фамилия
+                        </p>
+                    </div>
+                    <div class="table">
+                        <p class="laptop">19</p>
+                        <p class="laptop">18</p>
+                    </div>
+                </div>
+
+                <div class="table teacher_table">Я</div>
+            </div>
+        </center>
+        <div class="hider">
+            <p>Введите пароль</p>
+            <input type="password" onkeypress="enterPass(this)" />
+        </div>
+        <script>
+            let selector = document.querySelector("select");
+            selector.innerHTML = "";
+            $.getJSON(`./options.json`, function (data) {
+                if (data.length == 0) {
+                    selector.innerHTML = "<option></option>";
+                }
+                for (let i = 0; i < data.length; i++) {
+                    let option = document.createElement("option");
+                    option.value = data[i];
+                    option.text = data[i];
+                    selector.appendChild(option);
+                }
+
+                let option = document.createElement("option");
+                option.value = "+";
+                option.text = "+";
+                selector.appendChild(option);
+
+                startUpLoad();
+            });
+
+            if (sessionStorage.getItem("passCheck") == "true") {
+                document.querySelector(".hider").style.display = "none";
+            }
+        </script>
+    </body>
+</html>

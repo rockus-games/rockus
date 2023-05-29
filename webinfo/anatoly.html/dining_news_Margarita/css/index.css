@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(199, 244, 247);
+}
+
+h1 {
+    text-align: center;
+    font-size: 6vh;
+    
+}
+
+#stolovaya {
+    text-align: center;
+}
+
+#bufet {
+    text-align: center;
+}
+
+
+img {
+    width: 13%;
+    height: 6%;
+    /* float: left; */
+   
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 4vh;
+    display: inline-block;
+    /* background-color: rgb(211, 115, 115); */
+}
+

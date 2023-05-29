@@ -1,0 +1,8 @@
+body{
+    text-align:center;
+    background-image: url(../img/gradient-peach-background-with-pink-shades.jpg);
+    /* background-size: 100%;
+    background-repeat: no-repeat; */
+    background-size: 1920px 1400px;
+    background-size: cover;
+}

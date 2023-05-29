@@ -1,0 +1,156 @@
+.header{
+    width: 100%;
+    height: 10vw;
+    background-color: #c29114;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+}
+
+h1{
+    color: #fff;
+    margin-top: 3.5vw;
+    margin-left: 2vw;
+    font-size: 2vw;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.system{
+    margin-top: 13vw;
+}
+
+.block{
+    width: 20vw;
+    height: auto;
+    background-color: gray;
+    transition: 0.3s;
+    margin-left: 40%;
+}
+
+.block:hover{
+    box-shadow: #2f2f2f 3px 3px 3px;
+    transition: 0.3s;
+}
+
+.block_header{
+    font-size: 2vw;
+    text-align: center;
+    max-width: 20vw;
+    margin-left: 0;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.block_name{
+    font-size: 1.6vw;
+    color: #fff;
+    text-align: center;
+    margin-top: -1vw;
+    cursor: default;
+}
+
+.block_photo{
+    width: 20vw;
+    height: 20vw;
+}
+
+.linked{
+    color: #f5f5f5;
+    margin-left: 1vw;
+    font-size: large;
+}
+.linkers{
+    color: #f5f5f5;
+    margin-left: 1vw;
+    font-size: large;
+}
+
+.par{
+    color: black;
+    font-size: x-large;
+}
+
+.npbutton{
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    border: none;
+    transition: 0.3s;
+    background-color: darkgray;
+}
+
+.npbutton:hover{
+    background-color: gray;
+    transition: 0.3s;
+}
+
+.a{
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: x-large;
+    margin-left: 40vw;
+    margin-top: -20px;
+}
+
+.blocks{
+    margin-top: 11vw;
+}
+
+li{
+    margin-top: 5px;
+}
+
+.block2{
+    width: 300px;
+    height: 50px;
+    background-color: #5f5f5f;
+    transition: 0.3s;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: white;
+    margin-right: 3px;
+    margin-bottom: 2px;
+}
+
+.block2:hover{
+    background-color: #3f3f3f;
+    transition: 0.3s;
+}
+
+ol{
+    list-style: none;
+}
+
+.arrowDown{
+    width: 3px;
+    height: 20px;
+    background-color: red;
+}
+.arrowLeft{
+    width: 20px;
+    height: 3px;
+    background-color: red;
+}
+
+.arrowRight{
+    width: 20px;
+    height: 3px;
+    background-color: red;
+}
+
+.blocks{
+    text-align: center;
+}
+
+.phantomBlock{
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+}

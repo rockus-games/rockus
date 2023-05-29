@@ -1,0 +1,51 @@
+body { margin-left: 160px;
+    background-image: url(../img/gradient-peach-background-with-pink-shades.jpg);
+    /* background-size: 100%;
+    background-repeat: no-repeat; */
+    background-size: 1920px 1400px;
+    background-size: cover;
+}
+h1{
+
+    text-align-last: center;
+    font-size: 45px;
+}
+h2{
+    text-anchor:x="-10"y="20" ;
+    background-color: blueviolet;
+    text-align: left;
+    font-size: 30px;
+    
+}
+h3{
+    background-color: blueviolet;
+    font-size: 30px;
+    text-align:start;
+}
+img{
+    opacity: 0;
+    height: 50px;
+    margin-right: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+h4{
+    background-color: blueviolet;
+    font-size: 40px;
+    text-align: left;
+}
+input {
+    height: 1cm
+}
+h5{
+    background-color: blueviolet;
+    font-size: 35px;
+    text-align: right;
+    margin-top: 150px;
+}
+.ade{
+    opacity: 1;
+    height: 300px;
+    margin-left: 300px;
+}
+

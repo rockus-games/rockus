@@ -1,0 +1,32 @@
+body{
+    background-image: url(../img/gradient-peach-background-with-pink-shades.jpg);
+    /* background-size: 100%;
+    background-repeat: no-repeat; */
+    background-size: 1920px 1400px;
+    background-size: cover;
+}
+h2{
+    font-size: 3vh;
+    margin-left: 7vh;
+    margin-top: 5vh;
+
+}
+h1{
+    text-align: center;
+}
+button{
+    width: 19vh;
+    font-size: 3vh;
+    height: 8vh;
+    border-radius: 1vh;
+    margin-left: 10vh;
+    margin-top: 3vh;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
+    transition: all .3s ease
+    
+    
+}
+button:hover {
+    transform: scale(1.05);
+}

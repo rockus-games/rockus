@@ -1,0 +1,15 @@
+
+
+h1 {
+    text-align: center;
+}
+
+
+figure {
+    display: inline-block;
+    margin-left: 100px;
+}
+figcaption {
+    text-align: center;
+    margin-top: -10px;
+}

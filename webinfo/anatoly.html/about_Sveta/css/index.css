@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(199, 244, 247);
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: rgb(5, 130, 64);
+    font-size: 7vh;
+}
+img {
+    height: 30vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {
+    text-align: center;
+    color: rgb(176, 50, 231);
+    font-size: 5vh;
+}
+h3 {
+    text-align: center;
+    color: black;
+    font-size: 4vh;
+}
+
+a {
+    color: black;
+    font-size: 4vh;
+}
+@media (max-width: 768px){
+    img {
+        height: 20vh;
+    }
+    h1 {
+        text-align: center;
+        color: rgb(5, 130, 64);
+        font-size: 5vh;
+    }
+    h2 {
+        text-align: center;
+        color: rgb(176, 50, 231);
+        font-size: 3vh;
+    }
+    h3 {
+        text-align: center;
+        color: black;
+        font-size: 2vh;
+    }
+    a {
+        color: black;
+        font-size: 2vh;
+
+    }
+}

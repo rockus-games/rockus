@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./CSS/css.css" />
+    <link rel="stylesheet" href="./CSS/textbooks.css" />
+
+    <script>
+      function createTextBooksBlocks(ip) {
+        var code = document.querySelector("body");
+
+        code.innerHTML = `<h1>Учебники</h1>
+        <a href="http://${ip}:5500/docs/7_kl_bosova.pdf">
+      <figure class="sign">
+        <img src="./img/7_info.jpg" />
+        <figcaption>Информатика 7 класс</figcaption>
+      </figure>
+    </a>
+    <a href="http://${ip}:5500/docs/8_kl_bosova.pdf">
+      <figure class="sign">
+        <img src="./img/8_info.jpg" />
+        <figcaption>Информатика 8 класс</figcaption>
+      </figure>
+    </a>
+    <a href="http://${ip}:5500/docs/9_kl_bosova.pdf">
+      <figure class="sign">
+        <img src="./img/9_info.jpg" />
+        <figcaption>Информатика 9 класс</figcaption>
+      </figure>
+    </a>
+    <a href="http://${ip}:5500/docs/11_kl_bosova.pdf">
+      <figure class="sign">
+        <img src="./img/11_kl_bosova.jpg" />
+        <figcaption>Информатика 11 класс</figcaption>
+      </figure>
+    </a>`;
+
+        document.querySelector(".schoolselector").innerHTML = "";
+      }
+    </script>
+
+    <title>Textbooks</title>
+  </head>
+  <body>
+    <h1>Учебники</h1>
+
+    <!-- <a href="http://10.190.203.212:5500/docs/7_kl_bosova.pdf">
+      <figure class="sign">
+        <img src="./img/7_info.jpg" />
+        <figcaption>Информатика 7 класс</figcaption>
+      </figure> </a
+    > -->
+    <div class="schoolselector">
+      <button onclick="createTextBooksBlocks('10.190.203.212')">
+        МБОУ Одинцовская СОШ №1
+      </button>
+      <button onclick="createTextBooksBlocks('192.168.106.191')">
+        МБОУ Голицынская СОШ №2(мобильный)
+      </button>
+      <button onclick="createTextBooksBlocks('192.168.137.1')">
+        МБОУ Голицынская СОШ №2(сетевой)
+      </button>
+      <button onclick="createTextBooksBlocks('127.0.0.1')">
+        Локальный сервер
+      </button>
+    </div>
+    <!-- ЗАМЕНИТЬ ${ip} на нужный адрес
+    169.254.129.150 - школа Голицыно
+    192.168.106.191 - телефон
+    10.190.203.212 - школа Одинцово -->
+    <!-- <a href="http://${ip}:5500/docs/7_kl_bosova.pdf">
+      <figure class="sign">
+        <img src="./img/7_info.jpg" />
+        <figcaption>Информатика 7 класс</figcaption>
+      </figure>
+    </a>
+    <a href="http://${ip}:5500/docs/8_kl_bosova.pdf">
+      <figure class="sign">
+        <img src="./img/8_info.jpg" />
+        <figcaption>Информатика 8 класс</figcaption>
+      </figure>
+    </a>
+    <a href="http://${ip}:5500/docs/9_kl_bosova.pdf">
+      <figure class="sign">
+        <img src="./img/9_info.jpg" />
+        <figcaption>Информатика 9 класс</figcaption>
+      </figure>
+    </a>
+    <a href="http://${ip}:5500/docs/11_kl_bosova.pdf">
+      <figure class="sign">
+        <img src="./img/11_kl_bosova.jpg" />
+        <figcaption>Информатика 11 класс</figcaption>
+      </figure>
+    </a> -->
+  </body>
+</html>

@@ -1,0 +1,26 @@
+body { margin-left: 10vw;
+    background-image: url(../img/gradient-peach-background-with-pink-shades.jpg);
+    /* background-size: 100%;
+    background-repeat: no-repeat; */
+    background-size: 1920px 1400px;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    font-size: 45px;
+}
+h2{
+    font-size: 40px ;
+}
+h3{
+    font-size: 40px;
+}
+img{
+    height: 70px;
+}
+h4{
+    font-size: 40px;
+} 
+h5{
+    font-size: 40px;
+}

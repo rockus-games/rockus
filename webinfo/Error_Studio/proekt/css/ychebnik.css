@@ -1,0 +1,112 @@
+body {
+    /* margin-left:70px; */
+    background-image: url(../img/gradient-peach-background-with-pink-shades.jpg);
+    /* background-size: 100%;
+    background-repeat: no-repeat; */
+    background-size: 1920px 1400px;
+    background-size: cover;
+}
+
+
+
+img{
+    /* display: block; */
+    /* margin: auto; */
+    margin-top:60px;
+    margin-left: 700px;
+    float: left;
+
+
+
+    width: 100px;
+    height: 100px;
+}
+
+
+
+h1{
+    display:inline-block;
+    text-align: center;
+    font-size: 45px;
+   margin-top: 100px;
+    /* background-color:brown; */
+    text-align: center;
+}
+
+ button{
+     height:45px;
+     font-size: 30px;  
+     margin-left:150px;
+     font-size: 20px;
+     width: 170px;
+    border-radius:  8px;
+    text-align: 10000px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
+    transition: all .3s ease
+ } 
+ button:hover {
+    transform: scale(1.05);
+}
+
+
+#ru{
+    /* height: 70px; */
+     width: 130px;
+     margin-top: 60px;
+ }
+
+
+
+ #en{
+     /* height: 70px; */
+     width: 130px;
+ }
+
+
+
+ .mu{
+     width: 130px;
+ }
+
+
+
+ .inf{
+     width: 170px;
+ }
+
+
+
+ .bio{
+     width:130px;
+
+ }
+
+
+
+ .geo{
+     width:140px;
+    margin-top: 100px;
+    margin-left: 160px;
+ }
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

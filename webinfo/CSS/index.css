@@ -1,0 +1,294 @@
+/* body {
+     position: fixed;
+} */
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 800, "GRAD" 0, "opsz" 48;
+  font-size: 6vw;
+}
+
+img {
+  transition: all 0.3s ease;
+  /* opacity: 0.25; */
+  display: inline-block;
+  /* opacity: 0.5; */
+}
+#img_z {
+  height: 12vw;
+  width: 12vw;
+}
+#mus {
+  float: left;
+  margin-right: 0.5vw;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  width: 10vh;
+  height: 10vh;
+}
+#mail,
+#discord,
+#school {
+  float: right;
+  margin-right: 0.5vw;
+  margin-top: 1vh;
+  width: 10vh;
+  height: 10vh;
+}
+
+#mail > img,
+#discord > img,
+#school > img {
+  width: 10vh;
+  height: 10vh;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.header a {
+  text-decoration: none;
+}
+.header {
+  height: 12vh;
+}
+
+aside a {
+  color: #fff;
+  /* font-size: 1.7vw; */
+  padding-left: 10px;
+  text-align: center;
+  display: block;
+  transition: all 0.1s ease;
+  margin-top: 0.5vw;
+  text-decoration: none;
+}
+
+aside h2 {
+  margin: 0;
+  /* margin-top: 0.5vh; */
+  margin-left: 1vw;
+  font-size: 2.3vw;
+  text-align: center;
+}
+
+.left {
+  margin-top: -10px;
+  margin-left: -1vw;
+  float: left;
+  background: #218580;
+  width: 22%;
+  height: 120vh;
+  color: #fff;
+  text-align: center;
+  border-right: 1vw solid #025167;
+}
+
+main {
+  float: left;
+  /* background-color: #fff; */
+  height: 100.1%;
+  width: 54%;
+  /* margin-top: 10vw; */
+  text-align: center;
+}
+@font-face {
+  font-family: "Roundhand"; /* Гарнитура шрифта */
+  src: url(../fonts/Roundhand.ttf); /* Путь к файлу со шрифтом */
+}
+#pismo {
+  font-family: "Roundhand";
+  font-size: 3vw;
+  color: bisque;
+}
+
+.right {
+  /* display: grid; */
+  margin-top: -10px;
+  margin-right: -0.3vw;
+  float: right;
+
+  background: #218580;
+  width: 22%;
+  height: 120vh;
+  color: #fff;
+  /* text-align: center; */
+  border-left: 1vw solid #025167;
+}
+.rightContent {
+  grid-template-columns: 1fr 2fr;
+  margin-top: 10px;
+  display: grid;
+  row-gap: 16px;
+  column-gap: 16px;
+}
+/* .courses{
+  background-color: #871a1a;
+} */
+.courses a {
+  font-size: 25px;
+  text-align: left;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  transform: scale(1.05);
+}
+
+#fc {
+  color: aliceblue;
+  background: linear-gradient(blue, green, purple);
+}
+
+#es {
+  background: linear-gradient(
+    rgb(245, 221, 144),
+    rgb(220, 234, 178),
+    rgb(116, 92, 151)
+  );
+}
+
+.leftArrow,
+.rightArrow {
+  display: none;
+}
+
+#mobile_school {
+  display: none;
+}
+@media (max-width: 768px) {
+  .left,
+  .right {
+    position: fixed;
+    margin-top: -10px;
+    left: -80vw; /* -73 */
+    background: #218580;
+    width: 75vw;
+    padding-right: 2.5%;
+    /* height: 100.9vh; */
+    color: #fff;
+    border-right: 1vw solid #025167;
+    transition: all 330ms ease-in-out;
+    z-index: 100;
+  }
+
+  .right {
+    right: -80vw;
+    left: auto;
+  }
+
+  aside h2 {
+    font-size: 10vw;
+  }
+
+  aside a {
+    color: #fff;
+    font-size: 7vw;
+    padding-left: 10px;
+    text-align: center;
+    display: block;
+    transition: all 0.1s ease;
+    margin-top: 1vw;
+  }
+
+  aside h2 > a {
+    margin: 0;
+    margin-top: 7vw;
+    margin-left: 1vw;
+    font-size: 10vw;
+    text-align: center;
+  }
+
+  main {
+    height: 100.1%;
+    width: 95%;
+    margin-top: -10px;
+    margin-left: 2vw;
+    margin-right: -10px;
+    text-align: center;
+  }
+  #pismo {
+    font-size: 12vw;
+  }
+
+  a,
+  button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #img_z {
+    height: 30vw;
+    width: 30vw;
+  }
+
+  .header {
+    display: flex;
+    justify-content: end;
+  }
+
+  #mail,
+  #discord {
+    width: 10vw;
+    top: 5vh;
+    margin: 0;
+    padding: 0;
+    margin-left: 3vw;
+  }
+
+  #school {
+    display: none;
+  }
+
+  #mobile_school {
+    display: block;
+  }
+
+  #mobile_school > img {
+    height: 50vw;
+    width: 50vw;
+  }
+
+  #mail > img,
+  #discord > img {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .buttons {
+    position: fixed;
+    width: calc(100% - 16px);
+    height: 0vh;
+    top: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .leftArrow,
+  .rightArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7vw;
+    height: 7vw;
+    padding: 0;
+    margin: 0;
+    border-radius: 10vw;
+    box-shadow: none;
+    background-color: lightslategray;
+    font-size: 5vw;
+    cursor: pointer;
+    z-index: 100;
+    color: #fff;
+  }
+
+  .rightContent {
+    height: inherit;
+    overflow: scroll;
+  }
+}

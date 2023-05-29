@@ -1,0 +1,7 @@
+.closer {
+    background-color: var(--darkColor);
+}
+
+.closer_opened {
+    background-color: white;
+}

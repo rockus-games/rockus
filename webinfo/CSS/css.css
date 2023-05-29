@@ -1,0 +1,71 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+body {
+  /* margin-left: 300px; */
+  background: #34bbb4;
+  /* margin-left: 10vw; */
+}
+figure {
+  width: 300px;
+  display: inline-block;
+}
+figcaption {
+  text-align: center;
+}
+a figure {
+  width: 150px;
+}
+
+button {
+  /* margin-left: 1vw; */
+  border-radius: 1.5vw;
+  margin-top: 1vw;
+  background: rgb(140, 223, 209);
+  width: 16vw;
+  height: 4vw;
+  font-size: 1vw;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0.2vw 0.2vw #161b13;
+}
+
+button:hover {
+  background-color: rgb(111, 179, 167);
+  transform: scale(1.05);
+}
+
+a {
+  transition: all 0.3s ease;
+  font-size: 2vw;
+  /* text-decoration: none; */
+}
+/* a:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+} */
+
+h1,
+h2 {
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  a {
+    transition: all 0.3s ease;
+    font-size: 14vw;
+    /* text-decoration: none; */
+  }
+  button {
+    /* margin-left: 1vw; */
+    border-radius: 1.5vw;
+    margin-top: -70vw;
+    background: rgb(140, 223, 209);
+    width: 70vw;
+    height: 13vw;
+    font-size: 5vw;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0.2vw 0.2vw #161b13;
+  }
+}

@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(199, 244, 247);
+}
+h1 {
+    text-align: center;
+    color: rgb(5, 130, 64);    
+    font-size: 6vh;
+
+
+}
+img{
+    height: 30vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {
+    text-align: center;
+    color: rgb(163, 46, 191);
+    font-size: 4vh;
+}
+h3{ text-align: center;
+    color: rgb(163, 46, 191);
+    font-size: 4vh;
+}    
+h4{text-align: center;
+    color: rgb(163, 46, 191);
+    font-size: 4vh;
+}
+h5{text-align: center;
+    color: rgb(163, 46, 191);
+    font-size: 4vh;
+}
+
+#sss{
+    text-align: center;
+    color: rgb(163, 46, 191);
+    font-size: 4vh;
+}
+#ggg{
+    text-align: center;
+    color: rgb(163, 46, 191);
+    font-size: 4vh;
+}
+@media (max-width: 768px){
+    h1 {
+        text-align: center;
+        color: rgb(5, 130, 64);    
+        font-size: 4vh;
+    }
+    img{
+        height: 23vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2 {
+        text-align: center;
+        color: rgb(163, 46, 191);
+        font-size: 3vh;
+    }
+    h3{ text-align: center;
+        color: rgb(163, 46, 191);
+        font-size: 3vh;
+    }  
+    h4{text-align: center;
+        color: rgb(163, 46, 191);
+        font-size: 3vh;
+    }
+    #sss{
+        text-align: center;
+        color: rgb(163, 46, 191);
+        font-size: 3vh;
+    }
+    h3{
+        text-align: center;
+        color: rgb(163, 46, 191);
+        font-size: 3vh;
+    }
+
+}

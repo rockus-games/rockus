@@ -1,0 +1,25 @@
+h1{
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+h2{
+    font-size: 20px;
+    width: 1900px;
+    text-align: center;
+}
+
+input {
+    height: 20px;
+    width: 250px;
+}
+
+body{
+    background-image: url(../img/gradient-peach-background-with-pink-shades.jpg);
+    /* background-size: 100%;
+    background-repeat: no-repeat; */
+    background-size: 1920px 1400px;
+    background-size: cover;
+}

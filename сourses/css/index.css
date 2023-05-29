@@ -1,0 +1,75 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: aqua;
+  margin-top: 0;
+}
+#our_courses{
+  font-size: 4vw;
+  color:rgb(82, 103, 129) ;
+  margin: 0;
+  margin-bottom: 1vw;
+
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1vw;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: 0.3fr 2fr 1fr;
+  height: 26vh;
+  background-color: rgb(82, 103, 129);
+  border-radius: 0.8vw;
+}
+
+.one {
+  color: rgb(253, 209, 156);
+  margin: 1vw;
+  font-size: 1.6vw;
+  /* font-size: 1.6vw; */
+}
+.two {
+  color: bisque;
+  margin: 1vw;
+  font-size: 2.7vh;
+}
+.three {
+  margin-top: 1vh;
+}
+
+#web {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  #our_courses{
+    font-size: 6vh;
+    margin-bottom: 1vh;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+ 
+  .one {
+    margin: 1vw;
+    font-size: 3vh;
+    /* font-size: 6vw; */
+  }
+  .two {
+    margin: 1vw;
+    font-size: 2.6vh;
+  }
+  .three {
+    margin-top: 1vh;
+  }
+  .courses {
+    border-radius: 2vw;
+  }
+}

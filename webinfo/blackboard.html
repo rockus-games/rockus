@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./CSS/css.css" />
+        <link rel="stylesheet" href="CSS/blackboard.css" />
+        <meta
+            http-equiv="Cache-Control"
+            content="no-cache, no-store, must-revalidate"
+        />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <title>Blackboard</title>
+        <style></style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            if (!document.__defineGetter__) {
+                Object.defineProperty(document, "cookie", {
+                    get: function () {
+                        return "";
+                    },
+                    set: function () {
+                        return true;
+                    },
+                });
+            } else {
+                document.__defineGetter__("cookie", function () {
+                    return "";
+                });
+                document.__defineSetter__("cookie", function () {});
+            }
+
+            function a() {
+                $.get({
+                    url: "blackboard.txt",
+                    cache: false,
+                }).then(function (data) {
+                    document.getElementsByTagName("h1").item(0).innerHTML =
+                        data;
+                    // console.log(data);
+                });
+                setTimeout(a, 1000);
+            }
+
+            a();
+
+            function b() {
+                window.location.href = "/webinfo/";
+            }
+        </script>
+    </head>
+    <body>
+        <!-- <h3>ДОСКА</h3> -->
+        <!-- <div class="header">
+            <img src="./assets/android_logo.png" alt="" srcset="" />
+            <button class="home" onclick="b()">Домой</button>
+        </div> -->
+        <div class="textbody">
+            <h1>
+                <!-- Написание различных вариантов программ, реализующих циклические
+                алгоритмы. &nbsp;
+                <a href="./docs/8_kl_bosova.pdf#page=140" target="_blank"
+                    >страница 139</a
+                > -->
+            </h1>
+        </div>
+        <pre></pre>
+    </body>
+</html>
