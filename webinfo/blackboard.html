@@ -33,13 +33,17 @@
             }
 
             function a() {
-                $.get({
-                    url: "blackboard.txt",
-                    cache: false,
-                }).then(function (data) {
-                    document.getElementsByTagName("h1").item(0).innerHTML =
-                        data;
-                    // console.log(data);
+                $.get({ cache: false, url: "blackboard.txt" }).then(function (
+                    data
+                ) {
+                    document.querySelector(".lines").innerHTML = "";
+                    document.querySelector(".text").innerHTML = data;
+                    var count = data.match(/\n/g).length;
+                    for (let i = 1; i <= count + 1; i++) {
+                        document.querySelector(
+                            ".lines"
+                        ).innerHTML += `<h1>${i}</h1>`;
+                    }
                 });
                 setTimeout(a, 1000);
             }
@@ -58,13 +62,10 @@
             <button class="home" onclick="b()">Домой</button>
         </div> -->
         <div class="textbody">
-            <h1>
-                <!-- Написание различных вариантов программ, реализующих циклические
-                алгоритмы. &nbsp;
-                <a href="./docs/8_kl_bosova.pdf#page=140" target="_blank"
-                    >страница 139</a
-                > -->
-            </h1>
+            <div class="content">
+                <div class="lines"><h1>1</h1></div>
+                <h1 class="text"></h1>
+            </div>
         </div>
         <pre></pre>
     </body>

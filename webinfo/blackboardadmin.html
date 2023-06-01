@@ -31,11 +31,14 @@
                 $.get({ cache: false, url: "blackboard.txt" }).then(function (
                     data
                 ) {
-                    // document.getElementById("task").value = data;
-                    document.getElementsByTagName("h1").item(0).innerHTML =
-                        data;
-                    // lineNumber = lineNumber + 1;
-                    // console.log(data);
+                    document.querySelector(".lines").innerHTML = "";
+                    document.querySelector(".text").innerHTML = data;
+                    var count = data.match(/\n/g).length;
+                    for (let i = 1; i <= count + 1; i++) {
+                        document.querySelector(
+                            ".lines"
+                        ).innerHTML += `<h1>${i}</h1>`;
+                    }
                 });
             }
             start_update();
@@ -123,7 +126,10 @@
       onclick="clickSend()"
     /> -->
         <!-- <h3>ДОСКА</h3> -->
-        <h1></h1>
+        <div class="content">
+            <div class="lines"><h1>1</h1></div>
+            <h1 class="text"></h1>
+        </div>
         <pre></pre>
         <script>
             blackboardAdmin();
@@ -134,6 +140,21 @@
                     clickSend();
                     return false;
                 });
+            $.get({ cache: false, url: "blackboard.txt" }).then(function (
+                data
+            ) {
+                document.querySelector(".lines").innerHTML = "";
+                document.getElementById("task").value = data;
+                document.querySelector(".text").innerHTML = data;
+                var count = data.match(/\n/g).length;
+                for (let i = 1; i <= count + 1; i++) {
+                    document.querySelector(
+                        ".lines"
+                    ).innerHTML += `<h1>${i}</h1>`;
+                }
+                // lineNumber = lineNumber + 1;
+                // console.log(data);
+            });
         </script>
     </body>
 </html>
