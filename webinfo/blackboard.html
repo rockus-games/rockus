@@ -38,7 +38,10 @@
                 ) {
                     document.querySelector(".lines").innerHTML = "";
                     document.querySelector(".text").innerHTML = data;
-                    var count = data.match(/\n/g).length;
+                    var count =
+                        data.match(/\n/g) == null
+                            ? data.match(/\n/g).length
+                            : 1;
                     for (let i = 1; i <= count + 1; i++) {
                         document.querySelector(
                             ".lines"
