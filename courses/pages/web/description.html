@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB</title>
+    <style>
+      body {
+        background-color: #27543d;
+      }
+      h1 {
+        text-align: center;
+        font-size: 60px;
+        /* color: rgb(253, 198, 131); */
+        color: rgb(253, 209, 156);
+      }
+      .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 80%;
+        text-align: center;
+        column-gap: 1vh;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .monts {
+        display: grid;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr;
+        row-gap: 1vh;
+        height: 80vh;
+      }
+      .modul {
+        background-color: rgb(253, 198, 131);
+        font-size: 4vh;
+        border-radius: 1vh;
+      }
+
+      .one,
+      .two,
+      .three {
+        font-size: 2.3vh;
+        color: rgb(255, 255, 255);
+        border-radius: 2vh;
+        background-color: #313233;
+      }
+      @media (max-width: 500px) {
+        .main {
+          row-gap: 1vh;
+          width: 90%;
+          grid-template-columns: 1fr;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .monts {
+          row-gap: 1vh;
+        }
+        .one {
+          font-size: 3vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WEB</h1>
+    <div class="main">
+      <div class="monts">
+        <div class="modul">1-ый модуль</div>
+        <div class="one">
+          Знакомство с компьютером - 2 нед. <br />Знакомство со средой разработки -
+          1 нед. <br />
+          HTML язык разметки - 2 нед. <br />
+          CSS язык стилей - 1 нед. <br />
+          Практика - 1 нед. <br />
+          Разрешение экрана - 1 нед.
+        </div>
+        <div class="two">
+          Программа Figma:<br />
+          теория - 1 нед. <br />
+          практика - 1 нед. <br />
+          Прототипирование - 2 нед. <br />
+          Практика - 1 нед. <br />
+          UI дизайн - 2 нед. <br />
+          Сервисы выбора цветов - 1 нед.
+        </div>
+        <div class="three">
+          Выбор проекта - 1 нед. <br />
+          Выбор стилей - 1 нед. <br />
+          Макетирование - 3 нед. <br />
+          Верстка проекта - 3 нед.
+        </div>
+      </div>
+      <div class="monts">
+        <div class="modul">2-ой модуль</div>
+        <div class="one">
+          Изучение статистики - 1 нед. <br />
+          Браузеры на мобильных <br />
+          устройствах - 1 нед. <br />
+          Сайты на мобильных устройствах - 1 нед. <br />
+          Изучение стилей для мобильных устройств - 2 нед. <br />
+          Адаптация под мобильное <br />
+          устройство - 3 нед.
+        </div>
+        <div class="two">
+          Понятие сетки - 1 нед. <br />
+          Знакомство с Grid CSS - 1 нед. <br />
+          Картинки и фото на страницу - 2 нед. <br />
+          Активный элемент - 2 нед. <br />
+          Файлы и файловые системы -2 нед.
+        </div>
+        <div class="three">
+          Понятие Float - 1 нед. <br />
+          Обтекание блоков - 1 нед. <br />
+          Дефолтные значения -2 нед. <br />
+          Заголовки -1 нед. <br />
+          UTF-8 - 2 нед. <br />
+          Шрифты в HTML - 1 нед.
+        </div>
+      </div>
+      <div class="monts">
+        <div class="modul">3-ий модуль</div>
+        <div class="one">
+          Быстродействие - 1 нед. <br />
+          Первое знакомство с JavaScript - 1 нед. <br />
+          Подключение скриптов - 1 нед. <br />
+          Кнопка в HTML - 1 нед. <br />
+          Стили кнопок - 1 нед. <br />
+          Текст на кнопке - 1 нед. <br />
+          Ресурс Bootstrap - 2 нед. <br />
+        </div>
+        <div class="two">
+          Расширение Live Server <br />
+          Расширение Htmltagwrap - 1 нед. <br />
+          Настройки VSCode - 1 нед. <br />
+          Структурирование файлов - 1 нед. <br />
+          Рекламные блоки на сайтах - 1 нед. <br />
+          Hover наведение курсора - 1 нед. <br />
+          Событие (click) - 2 нед. <br />
+          Практика - 1 нед.
+        </div>
+        <div class="three">
+          Реорганизация страницы - 2 нед. <br />
+          Углубление в CSS Grid - 2 нед. <br />
+          Ширина видимой части - 1 нед. <br />
+          Понятие viewport в HTML - 1 нед. <br />
+          Теги в HTML - 1 нед. <br />
+          Размеры блоков - 1 нед.
+        </div>
+      </div>
+      <div class="monts">
+        <div class="modul">4-ый модуль</div>
+        <div class="one">
+          Облачные технологии - 3 нед. <br />
+          Github - 3 нед.<br />
+          Push-Pull - 2 нед.
+        </div>
+        <div class="two">Анимации - 8 нед. <br /></div>
+        <div class="three">
+          Хостинг -2 нед. <br />
+          Домен - 2 нед. <br />
+          Продвижение сайта - 2 нед. <br />
+          Реклама - 2 нед.
+          <!-- вввв -->
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
