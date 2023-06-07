@@ -1,17 +1,14 @@
-/* body {
-     position: fixed;
-} */
-
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 800, "GRAD" 0, "opsz" 48;
   font-size: 6vw;
 }
+body{
+  overflow: hidden;
+}
 
 img {
   transition: all 0.3s ease;
-  /* opacity: 0.25; */
   display: inline-block;
-  /* opacity: 0.5; */
 }
 #img_z {
   height: 12vw;
@@ -55,7 +52,6 @@ img:hover {
 
 aside a {
   color: #fff;
-  /* font-size: 1.7vw; */
   padding-left: 10px;
   text-align: center;
   display: block;
@@ -66,7 +62,6 @@ aside a {
 
 aside h2 {
   margin: 0;
-  /* margin-top: 0.5vh; */
   margin-left: 1vw;
   font-size: 2.3vw;
   text-align: center;
@@ -88,7 +83,7 @@ main {
   float: left;
   /* background-color: #fff; */
   height: 100.1%;
-  width: 54%;
+  width: 56%;
   /* margin-top: 10vw; */
   text-align: center;
 }
@@ -103,16 +98,13 @@ main {
 }
 
 .right {
-  /* display: grid; */
   margin-top: -10px;
-  margin-right: -0.3vw;
+  margin-right: -1vw;
   float: right;
-
   background: #218580;
   width: 22%;
   height: 120vh;
   color: #fff;
-  /* text-align: center; */
   border-left: 1vw solid #025167;
 }
 .rightContent {
@@ -122,17 +114,15 @@ main {
   row-gap: 16px;
   column-gap: 16px;
 }
-/* .courses{
-  background-color: #871a1a;
-} */
+
 .courses a {
-  font-size: 25px;
   text-align: left;
   margin: 0;
 }
 
 a {
   text-decoration: none;
+  font-size: 1.5vw;
 }
 
 a:hover {
@@ -160,7 +150,7 @@ a:hover {
 #mobile_school {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .left,
   .right {
     position: fixed;

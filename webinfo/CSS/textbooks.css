@@ -13,6 +13,7 @@ a {
   margin-left: 4vw;
   /* font-size: 1vw; */
   text-decoration: none;
+  display: inline-block;
 }
 img {
   width: 12vw;
@@ -22,7 +23,7 @@ img {
 .schoolselector {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
