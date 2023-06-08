@@ -1,0 +1,40 @@
+body {
+  background-color: #3a4f41;
+}
+.header {
+  background-color: #db9a39;
+  margin-left: -2%;
+  width: 104%;
+  position: fixed;
+  top: 0;
+}
+h1 {
+  text-align: center;
+  display: inline-block;
+  margin: 0 0 0 100px;
+}
+
+.header_actions {
+  /* display: inline-block; */
+  float: right;
+  margin-right: 10%;
+}
+h3{
+    display: inline-block;
+  margin: 0 0 0 20px;
+
+}
+p {
+  margin-top: 20%;
+  margin-left: 200px;
+  width: 80%;
+  color: #db9a39;
+}
+.contacts {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+}
+a {
+  color: antiquewhite;
+}

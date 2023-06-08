@@ -1,0 +1,13 @@
+body {
+  background-color: antiquewhite;
+}
+h1 {
+  display: inline-block;
+  color: #3a4f41;
+  border-right: 1px solid #3a4f41;
+  position: fixed;
+}
+h2{
+    margin-left: 300px;
+    width: 60%;
+}
