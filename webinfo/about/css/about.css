@@ -19,7 +19,7 @@ h1 {
   float: right;
   margin-right: 10%;
 }
-h3{
+h2{
     display: inline-block;
   margin: 0 0 0 20px;
 
@@ -29,11 +29,14 @@ p {
   margin-left: 200px;
   width: 80%;
   color: #db9a39;
+  font-size: 20px;
+
 }
 .contacts {
   position: fixed;
   left: 20px;
   bottom: 20px;
+  font-size: 20px;
 }
 a {
   color: antiquewhite;
