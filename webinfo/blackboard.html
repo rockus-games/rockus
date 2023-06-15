@@ -47,6 +47,15 @@
                             ".lines"
                         ).innerHTML += `<h1>${i}</h1>`;
                     }
+                    imageObj.src =
+                        "/webinfo/blackboard.png?r=" + new Date().getTime();
+
+                    imageObj.onload = function () {
+                        canvas.height = canvas.clientHeight;
+                        canvas.width = canvas.clientWidth;
+                        console.log(imageObj.src);
+                        context.drawImage(imageObj, 0, 0);
+                    };
                 });
                 setTimeout(a, 1000);
             }
@@ -64,12 +73,19 @@
             <img src="./assets/android_logo.png" alt="" srcset="" />
             <button class="home" onclick="b()">Домой</button>
         </div> -->
+
         <div class="textbody">
+            <canvas class="back"></canvas>
             <div class="content">
                 <div class="lines"><h1>1</h1></div>
                 <h1 class="text"></h1>
             </div>
         </div>
         <pre></pre>
+        <script>
+            const canvas = document.querySelector(".back");
+            const context = canvas.getContext("2d");
+            var imageObj = new Image();
+        </script>
     </body>
 </html>

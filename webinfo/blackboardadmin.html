@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./CSS/css.css" />
         <link rel="stylesheet" href="CSS/blackboard.css" />
+        <link rel="stylesheet" href="./CSS/paint.css" />
         <title>Blackboard</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="./js/blackboard.js"></script>
@@ -42,6 +43,9 @@
                             ".lines"
                         ).innerHTML += `<h1>${i}</h1>`;
                     }
+                    base.style.height = `${lines.clientHeight}px`;
+                    canvas.height = canvas.clientHeight;
+                    ctx.strokeStyle = curStroke;
                 });
             }
             start_update();
@@ -115,12 +119,12 @@
         </div>
         <!-- <input type="text" id="task" class="textfield"> -->
         <textarea name="textfield" id="task" class="textfield"></textarea>
-        <div class="textbtns">
+        <!-- <div class="textbtns">
             <button onclick="fastbtnClick('a')">&lt;a&gt;</button>
             <button onclick="fastbtnClick('p')">&lt;p&gt;</button>
             <button onclick="fastbtnClick('br')">&lt;br&gt;</button>
             <button onclick="fastbtnClick('img')">&lt;img&gt;</button>
-        </div>
+        </div> -->
         <!-- <input
       name="enter"
       type="button"
@@ -130,11 +134,23 @@
       onclick="clickSend()"
     /> -->
         <!-- <h3>ДОСКА</h3> -->
+
+        <div id="toolbar">
+            <label for="stroke">Цвет</label>
+            <input id="stroke" name="stroke" type="color" />
+            <label for="lineWidth">Толщина</label>
+            <input id="lineWidth" name="lineWidth" type="number" value="5" />
+            <button id="clear">Clear</button>
+        </div>
+        <div class="drawing_base">
+            <canvas id="drawing-board"></canvas>
+        </div>
         <div class="content">
             <div class="lines"><h1>1</h1></div>
             <h1 class="text"></h1>
         </div>
         <pre></pre>
+
         <script>
             blackboardAdmin();
             document
@@ -157,9 +173,13 @@
                         ".lines"
                     ).innerHTML += `<h1>${i}</h1>`;
                 }
+                base.style.height = `${lines.clientHeight}px`;
+                canvas.height = canvas.clientHeight;
+                ctx.strokeStyle = curStroke;
                 // lineNumber = lineNumber + 1;
                 // console.log(data);
             });
         </script>
+        <script src="./js/paint.js"></script>
     </body>
 </html>
