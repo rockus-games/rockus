@@ -16,9 +16,21 @@
         localStorage.setItem("scrollpos", window.scrollY);
       };
     </script> -->
+    <script>
+      let textbook = document.getElementById("textbook");
+      function changeLocation() {
+        if (textbook.getAttribute("href") == "") {
+          window.location.replace("https://Rockus.su/");
+        }
+      }
+    </script>
   </head>
   <body>
     <div class="header">
+      <a id="textbook" href="http://10.190.203.212:5500/docs/7_kl_bosova.pdf"
+        ><div class="header_action">⟡</div></a
+      >
+
       <a href="https://www.sberbank.com/promo/kandinsky/"
         ><div class="header_action">⟡</div></a
       >
@@ -38,7 +50,6 @@
       <a href="https://mrdoob.com/projects/chromeexperiments/google-gravity/"
         ><div class="header_action">⟡</div></a
       >
-      <div class="header_action">⟡</div>
     </div>
     <hr size="" />
     <div class="my_body">
