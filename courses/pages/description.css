@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+    font-size: 60px;
+    /* color: rgb(253, 198, 131); */
+    color: rgb(253, 209, 156);
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    text-align: center;
+    column-gap: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .monts {
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    row-gap: 1vh;
+    height: 80vh;
+  }
+  .modul {
+    background-color: rgb(253, 198, 131);
+    font-size: 4vh;
+    border-radius: 1vh;
+  }
+
+ 
+  .one,
+  .two,
+  .three {
+    font-size: 2.3vh;
+    color: rgb(255, 255, 255);
+    border-radius: 2vh;
+    background-color: #313233;
+
+  }
+  @media (max-width: 500px) {
+    .main {
+      row-gap: 1vh;
+      width: 90%;
+      grid-template-columns: 1fr;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .monts {
+      row-gap: 1vh;
+    }
+    .one {
+      font-size: 3vh;
+    }
+  }

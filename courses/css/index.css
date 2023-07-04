@@ -94,7 +94,6 @@ a h1,
 li {
   color: inherit;
   transition: all 0.05s ease;
-  
 }
 a h1:hover,
 li:hover,
@@ -146,6 +145,15 @@ li:hover,
   height: 26vh;
   background-color: rgb(82, 103, 129);
   border-radius: 0.8vw;
+}
+.auto {
+  background-color: #db162f;
+}
+.cad {
+  background-color: #ff6b35;
+}
+.game {
+  background-color: #00b9ae;
 }
 .web {
   background-color: #27543d;
