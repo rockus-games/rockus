@@ -1,0 +1,283 @@
+:root {
+  --greenColor: aqua;
+  --blueColor: #127cb5;
+  --yellowColor: #f1b019;
+  --brownColor: #733d3c;
+  --greyColor: #3a4f58;
+  --darkColor: #051118;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  font-family: "Montserrat Alternates", sans-serif;
+  height: 100vh;
+}
+
+
+
+
+
+.header > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btns {
+  margin-top: 1vh;
+  display: flex;
+}
+.btns > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1vw;
+  font-size: 2.5vh;
+  text-decoration: none;
+  font-weight: 450;
+  font-style: italic;
+  color: var(--darkColor);
+  border-left: 2px solid var(--greenColor);
+  border-right: 2px solid var(--greenColor);
+  border-radius: 1.3vw;
+  border-bottom: 0.4vh solid var(--greenColor);
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-bottom: 0.3vh;
+  padding-top: 0.4vh;
+  border-top: none;
+  transition: all 0.1s linear;
+  background-color: white;
+  font-family: inherit;
+}
+
+.btns > .web_btn {
+  border-left: 2px solid var(--greenColor);
+  border-right: 2px solid var(--greenColor);
+  border-bottom: 0.4vh solid var(--greenColor);
+}
+
+.btns > .mobile_btn {
+  border-left: 2px solid var(--blueColor);
+  border-right: 2px solid var(--blueColor);
+  border-bottom: 0.4vh solid var(--blueColor);
+}
+
+.btns > .games_btn {
+  border-left: 2px solid var(--yellowColor);
+  border-right: 2px solid var(--yellowColor);
+  border-bottom: 0.4vh solid var(--yellowColor);
+}
+
+.btns > .learn_btn {
+  border-left: 2px solid var(--brownColor);
+  border-right: 2px solid var(--brownColor);
+  border-bottom: 0.4vh solid var(--brownColor);
+}
+
+.btns > .web_btn:hover {
+  border-top: 0.2vh solid var(--greenColor);
+  color: var(--greenColor);
+}
+.btns > .mobile_btn:hover {
+  border-top: 0.2vh solid var(--blueColor);
+  color: var(--blueColor);
+}
+.btns > .games_btn:hover {
+  border-top: 0.2vh solid var(--yellowColor);
+  color: var(--yellowColor);
+}
+.btns > .learn_btn:hover {
+  border-top: 0.2vh solid var(--brownColor);
+  color: var(--brownColor);
+}
+
+.btns > a:visited {
+  color: var(--darkColor);
+}
+
+.logo {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 5vh;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #194282;
+  /* color: #3a4f58; */
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  border: none;
+  background-color: white;
+}
+
+.logo:visited {
+  color: #3a4f58;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.bar {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.bar > a {
+  display: inline-block;
+  margin-left: 1vw;
+  font-size: 1.7vh;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--darkColor);
+  border-left: 2px solid var(--greenColor);
+  border-right: 2px solid var(--greenColor);
+  border-bottom: 2px solid var(--greenColor);
+  border-radius: 1.5vw;
+  border-top: 0.4vh solid var(--greenColor);
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 0.6vh;
+  padding-top: 0.8vh;
+  transition: all 0.1s ease-in-out;
+}
+
+.bar > a:hover {
+  transform: translateY(3px);
+  color: var(--greenColor);
+}
+
+.content {
+  min-width: none;
+  flex-grow: 10;
+  /* min-height: 62.85vh; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+/* .for_us{
+    font-size: 2vw;
+} */
+.line {
+  /* height: 5vh; */
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 5vh;
+  padding-top: 1vh;
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 auto;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  flex: 0 1 15vh;
+  background-color: var(--darkColor);
+  padding-left: 5vw;
+  padding-right: 5vw;
+  font-size: 5vh;
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+.bottom > p {
+  color: white;
+}
+
+.bottom > .email {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+  font-size: 2vh;
+  vertical-align: middle;
+}
+
+.closer {
+  flex-grow: 1;
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  left: 100%;
+  transition: none 0.5s ease-in-out;
+}
+
+.closer_closed {
+  left: 0;
+}
+
+.closer_opened {
+  background-color: white;
+  left: -100%;
+}
+
+.port {
+  display: flex;
+  flex: 1 1 auto;
+  margin-top: 1.5vh;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5vw;
+  row-gap: 5vh;
+  border-top: 1px solid #8b9ca6;
+  padding-top: 3vh;
+  margin-bottom: 5vh;
+}
+
+.portimg {
+  display: inline-flex;
+  max-height: 40vh;
+  width: 35vw;
+  border-left: 10px double;
+  border-right: 10px double;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-radius: 5vh;
+  box-shadow: -2px -2px 15px grey, 2px 2px 15px grey;
+}
+
+.webport {
+  border-color: var(--greenColor);
+  box-shadow: -2px -2px 15px var(--greenColor), 2px 2px 15px var(--greenColor);
+}
+
+.appport {
+  border-color: var(--blueColor);
+  box-shadow: -2px -2px 15px var(--blueColor), 2px 2px 15px var(--blueColor);
+}
+
+.gameport {
+  border-color: var(--yellowColor);
+  box-shadow: -2px -2px 15px var(--yellowColor), 2px 2px 15px var(--yellowColor);
+}
+
+.spacer {
+  width: 5vw;
+}
+
+/* @media (max-width: 500px) {
+  .forus {
+    font-size: 2vw;
+    color: #f1b019;
+  }
+} */

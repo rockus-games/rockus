@@ -2,9 +2,9 @@
   font-variation-settings: "FILL" 0, "wght" 800, "GRAD" 0, "opsz" 48;
   font-size: 6vw;
 }
-body{
+/* body{
   overflow: hidden;
-}
+} */
 
 img {
   transition: all 0.3s ease;
@@ -134,13 +134,13 @@ a:hover {
   background: linear-gradient(blue, green, purple);
 }
 
-#es {
+/* #es {
   background: linear-gradient(
     rgb(245, 221, 144),
     rgb(220, 234, 178),
     rgb(116, 92, 151)
   );
-}
+} */
 
 .leftArrow,
 .rightArrow {
