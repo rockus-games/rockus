@@ -152,14 +152,30 @@ li:hover,
 .cad {
   background-color: #ff6b35;
 }
+.cnc {
+  background-color: #0d0630;
+}
+.code {
+  background-color: #2f3061;
+}
+._3d {
+  background-color: #5497a7;
+}
 .game {
   background-color: #00b9ae;
+}
+
+.mobile {
+  background-color: #0e4a99;
 }
 .web {
   background-color: #27543d;
 }
-.mobile {
-  background-color: #0e4a99;
+.robo {
+  background-color: #ee4266;
+}
+.oge_ege {
+  background-color: #ac3931;
 }
 
 .one {

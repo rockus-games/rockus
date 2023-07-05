@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        /* background: linear-gradient(#817b78,  #202020); */
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+      }
+      img {
+        width: 20%;
+      }
+      .big {
+        width: 60%;
+        /* text-align: left; */
+        border: 2px solid #183470;
+        margin-left: 20%;
+      }
+      .small {
+        margin: 8px;
+        padding: 2px;
+        border: 2px dotted #183470;
+        /* border: 2px dotted #817b78; */
+        /* background-color: rgba(244, 196, 137, 0.786); */
+        background-color: rgba(34, 140, 211, 0.786);
+        font-size: 2.5vw;
+      }
+      a {
+        text-decoration: none;
+        color: #f8f1f1;
+      }
+      .qrcode_rockus {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 150px;
+      }
+      @media screen and (orientation: portrait) {
+        img {
+          width: 80%;
+        }
+        .big {
+          width: 90%;
+          /* border: 2px solid bisque; */
+          margin-left: 5%;
+        }
+        .small {
+          font-size: 5vw;
+        }
+        .qrcode_rockus{
+          width: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/assets/img/favicon_io/android-chrome-192x192.png" alt="" />
+    <div class="big">
+      <div class="small">Тепаносян Эдуард Гомеросович</div>
+
+      <div class="small">
+        <a href="/courses/"
+          >Учитель-программист</a
+        >
+      </div>
+      <div class="small">
+        <a href="./index.html">Сайт: rockus.su/courses/</a>
+      </div>
+      <div class="small">
+        <a href="tel:+79096934037">Тел. +79096934037</a>
+      </div>
+      <div class="small">
+        <a href="mailto:eduardtepanosyan@gmail.com"
+          >Почта: eduardtepanosyan@gmail.com</a
+        >
+      </div>
+      <div class="small">
+        <a href="https://yandex.com/navi/?whatshere%5Bpoint%5D=36.977208309766404%2C55.630974781177436&whatshere%5Bzoom%5D=18"
+          >Адрес: Большие Вязёмы, 152/2</a
+        >
+      </div>
+      <!-- <div class="small">
+        <a href="tel:+74955936924">Тел. организации +7 (495) 593-69-24</a>
+      </div> -->
+    </div>
+    <a class="qrcode_rockus" href="./qrcode_rockus.su.png"><img src="./qrcode_rockus.su.png" alt=""></a>
+  </body>
+</html>
