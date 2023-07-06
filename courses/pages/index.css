@@ -1,20 +1,32 @@
 h1 {
-    text-align: center;
-    font-size: 60px;
-    /* color: rgb(253, 198, 131); */
-    color: rgb(253, 209, 156);
-  }
-  a {
-    text-decoration: none;
-    color: bisque;
-  }
-  .course_description {
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-  }
-  .course_description p {
-    /* text-align: center; */
-    font-size: 30px;
-    color: #eaeef0;
-  }
+  text-align: center;
+  font-size: 60px;
+  /* color: rgb(253, 198, 131); */
+  color: rgb(253, 209, 156);
+}
+h2 {
+  text-align: center;
+  font-size: 40px;
+  /* color: rgb(253, 198, 131); */
+  color: rgb(253, 209, 156);
+}
+h3 {
+  text-align: center;
+  font-size: 20px;
+  /* color: rgb(253, 198, 131); */
+  color: rgb(253, 209, 156);
+}
+a {
+  text-decoration: none;
+  color: bisque;
+}
+.course_description {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.course_description p {
+  /* text-align: center; */
+  font-size: 30px;
+  color: #eaeef0;
+}
