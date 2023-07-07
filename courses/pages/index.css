@@ -5,15 +5,18 @@ h1 {
   color: rgb(253, 209, 156);
 }
 h2 {
+  width: 80%;
   text-align: center;
   font-size: 40px;
-  /* color: rgb(253, 198, 131); */
   color: rgb(253, 209, 156);
+  margin: auto;
+  margin-bottom: 20px;
 }
 h3 {
+  width: 80%;
   text-align: center;
   font-size: 20px;
-  /* color: rgb(253, 198, 131); */
+  margin: auto;
   color: rgb(253, 209, 156);
 }
 a {
