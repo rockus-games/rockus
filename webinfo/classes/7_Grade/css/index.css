@@ -67,12 +67,10 @@ hr {
   -ms-overflow-style: none;
   scrollbar-width: none;
   margin-left: 10px;
-
-  /* user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none; */
 }
-
+.column3_img{
+  width: 60%;
+}
 .my_body_columns_3::-webkit-scrollbar {
   display: none;
 }
