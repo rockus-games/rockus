@@ -68,7 +68,7 @@ hr {
   scrollbar-width: none;
   margin-left: 10px;
 }
-.column3_img{
+.column3_img {
   width: 60%;
 }
 .my_body_columns_3::-webkit-scrollbar {
@@ -171,6 +171,20 @@ button:hover {
   width: 300px;
   background-color: #40a6db;
   margin: auto;
+}
+.switch {
+  margin-top: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+}
+.lamp {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 15px;
 }
 @media (max-width: 500px) {
   .my_body {
