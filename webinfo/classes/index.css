@@ -172,20 +172,8 @@ button:hover {
   background-color: #40a6db;
   margin: auto;
 }
-.switch {
-  margin-top: 10px;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-color: white;
-}
-.lamp {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  border-radius: 15px;
-}
+
+
 @media (max-width: 500px) {
   .my_body {
     grid-template-columns: 0px 0px 1fr;
