@@ -271,11 +271,31 @@
       <!-- 333333333333333333333333333333333333 Column -->
 
       <div class="my_body_columns_3">
+        <style>
+          /* .logic_scheme{
+         
+          } */
+          .switch {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+          }
+          .switch > h1 {
+            color: black;
+          }
+          .switch:hover{
+            cursor: pointer;
+          }
+        </style>
         <div class="paragraf" id="paragraf_1.1.0"></div>
-        <canvas id="logic_no"  style="background-color: aliceblue"> </canvas>
-        <canvas id="logic_and"  style="background-color: aliceblue"> </canvas>
-        <canvas id="logic_or"  style="background-color: aliceblue"> </canvas>
-
+        <div class="logic_scheme">
+          <canvas id="logic_no" style="background-color: aliceblue"></canvas>
+          <div class="switch" onclick="draw_no()"><h1 id="switch_no_h1">1</h1></div>
+        </div>
+        <!-- <canvas id="logic_and" style="background-color: aliceblue"> </canvas>
+        <canvas id="logic_or" style="background-color: aliceblue"> </canvas> -->
 
         <h3>Техника безопасности</h3>
         <div class="pre">
@@ -469,7 +489,6 @@
         </div>
 
         <canvas class="logic_no" style="background-color: aliceblue"> </canvas>
-
 
         <hr size="" width="80%" />
         <div class="paragraf" id="paragraf_1.3.3">
