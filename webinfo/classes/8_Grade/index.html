@@ -276,6 +276,7 @@
          
           } */
           .switch {
+            /* margin-top: -20px; */
             margin-left: auto;
             margin-right: auto;
             width: 50px;
@@ -285,17 +286,30 @@
           .switch > h1 {
             color: black;
           }
-          .switch:hover{
+          .switch:hover {
             cursor: pointer;
           }
         </style>
         <div class="paragraf" id="paragraf_1.1.0"></div>
         <div class="logic_scheme">
           <canvas id="logic_no" style="background-color: aliceblue"></canvas>
-          <div class="switch" onclick="draw_no()"><h1 id="switch_no_h1">1</h1></div>
+          <div class="switch" onclick="draw_no()">
+            <h1 id="switch_no_h1">1</h1>
+          </div>
         </div>
-        <!-- <canvas id="logic_and" style="background-color: aliceblue"> </canvas>
-        <canvas id="logic_or" style="background-color: aliceblue"> </canvas> -->
+        <br />
+        <div class="logic_scheme">
+          <canvas id="logic_and" style="background-color: aliceblue"></canvas>
+
+          <div class="switch and 1" onclick="draw_and_1()">
+            <h1 id="switch_and_h1_1">0</h1>
+          </div>
+          <div class="switch 2" onclick="draw_and_2()">
+            <h1 id="switch_and_h1_2">0</h1>
+          </div>
+        </div>
+        <!-- <canvas id="logic_and" style="background-color: aliceblue"> </canvas> -->
+        <!-- <canvas id="logic_or" style="background-color: aliceblue"> </canvas> -->
 
         <h3>Техника безопасности</h3>
         <div class="pre">

@@ -4,12 +4,15 @@ canvas_no.width = 300;
 canvas_no.height = 300;
 var lamp_no_state = false;
 var switch_no_h1 = document.getElementById("switch_no_h1");
+
 function draw_no() {
   logic_no_pen.clearRect(0, 0, 300, 300);
   logic_no_pen.fillStyle = lamp_no_state ? "#f00" : "#fff";
 
   logic_no_pen.beginPath();
-  // logic_no_pen.fillText("ww",100,100);
+  logic_no_pen.font = "normal 36px Arial";
+  logic_no_pen.strokeText("-",165,240);
+  logic_no_pen.strokeText("+",115,240);
   logic_no_pen.moveTo(50, 50);
   logic_no_pen.lineTo(125, 50);
   logic_no_pen.moveTo(175, 50);
@@ -45,6 +48,11 @@ const logic_and_pen = canvas_and.getContext("2d");
 canvas_and.width = 300;
 canvas_and.height = 300;
 logic_and_pen.beginPath();
+logic_and_pen.font = "normal 36px Arial";
+logic_and_pen.strokeText("-",165,240);
+logic_and_pen.strokeText("+",115,240);
+logic_and_pen.strokeText("1",20,150);
+logic_and_pen.strokeText("2",20,230);
 logic_and_pen.moveTo(50, 50);
 logic_and_pen.lineTo(125, 50);
 logic_and_pen.moveTo(175, 50);
