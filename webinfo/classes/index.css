@@ -84,6 +84,10 @@ h3 {
   color: #ce9162;
   /* color: #ac4c1f; */
 }
+table {
+  background-color: #ffffff;
+  color: #181818;
+}
 h4 {
   color: #1f1f1f;
 }
@@ -172,7 +176,6 @@ button:hover {
   background-color: #40a6db;
   margin: auto;
 }
-
 
 @media (max-width: 500px) {
   .my_body {
