@@ -23,6 +23,9 @@ aside {
 h1 {
   color: bisque;
 }
+.left_grade h3{
+  margin: 0;
+}
 img{
   transition: all 0.1s ease;
 }
