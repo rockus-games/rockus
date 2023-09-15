@@ -1,131 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./CSS/css.css" />
-        <link rel="stylesheet" href="CSS/blackboard.css" />
-        <link rel="stylesheet" href="./CSS/paint.css" />
-        <title>Blackboard</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="./js/blackboard.js"></script>
-        <script>
-            let lineNumber = 1;
-            if (!document.__defineGetter__) {
-                Object.defineProperty(document, "cookie", {
-                    get: function () {
-                        return "";
-                    },
-                    set: function () {
-                        return true;
-                    },
-                });
-            } else {
-                document.__defineGetter__("cookie", function () {
-                    return "";
-                });
-                document.__defineSetter__("cookie", function () {});
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/css.css" />
+    <link rel="stylesheet" href="CSS/blackboard.css" />
+    <link rel="stylesheet" href="./CSS/paint.css" />
+    <title>Blackboard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/blackboard.js"></script>
+    <script>
+      let lineNumber = 1;
+      if (!document.__defineGetter__) {
+        Object.defineProperty(document, "cookie", {
+          get: function () {
+            return "";
+          },
+          set: function () {
+            return true;
+          },
+        });
+      } else {
+        document.__defineGetter__("cookie", function () {
+          return "";
+        });
+        document.__defineSetter__("cookie", function () {});
+      }
 
-            function start_update() {
-                $.get({ cache: false, url: "blackboard2.txt" }).then(function (
-                    data
-                ) {
-                    document.querySelector(".lines").innerHTML = "";
-                    document.querySelector(".text").innerHTML = data;
-                    var count =
-                        data.match(/\n/g) != null
-                            ? data.match(/\n/g).length
-                            : 1;
-                    for (let i = 1; i <= count + 1; i++) {
-                        document.querySelector(
-                            ".lines"
-                        ).innerHTML += `<h1>${i}</h1>`;
-                    }
-                    base.style.height = `${lines.clientHeight}px`;
-                    canvas.height = canvas.clientHeight;
-                    ctx.strokeStyle = curStroke;
-                });
-            }
+      function start_update() {
+        $.get({ cache: false, url: "blackboard2.txt" }).then(function (data) {
+          document.querySelector(".lines").innerHTML = "";
+          document.querySelector(".text").innerHTML = data;
+          var count = data.match(/\n/g) != null ? data.match(/\n/g).length : 1;
+          for (let i = 1; i <= count + 1; i++) {
+            document.querySelector(".lines").innerHTML += `<h1>${i}</h1>`;
+          }
+          base.style.height = `${lines.clientHeight}px`;
+          canvas.height = canvas.clientHeight;
+          ctx.strokeStyle = curStroke;
+        });
+      }
+      start_update();
+
+      function update() {
+        b = document.getElementById("task").value;
+
+        document.getElementsByTagName("h1").item(0).innerHTML = b;
+      }
+
+      function clickSend() {
+        $.ajax({
+          type: "POST",
+          url: "./php/blackboard2.php",
+          data: {
+            textfield: document.getElementById("task").value,
+            pass: sessionStorage.getItem("passAdmin"),
+          },
+          success: function (data, a, b) {
+            // console.log(data);
+
             start_update();
+          },
+          error: function (a, b, c) {},
+        });
+      }
 
-            function update() {
-                b = document.getElementById("task").value;
-
-                document.getElementsByTagName("h1").item(0).innerHTML = b;
-            }
-
-            function clickSend() {
-                $.ajax({
-                    type: "POST",
-                    url: "./php/blackboard2.php",
-                    data: {
-                        textfield: document.getElementById("task").value,
-                        pass: sessionStorage.getItem("passAdmin"),
-                    },
-                    success: function (data, a, b) {
-                        // console.log(data);
-
-                        start_update();
-                    },
-                    error: function (a, b, c) {},
-                });
-            }
-
-            function fastbtnClick(btn) {
-                var textAr = document.getElementById("task");
-                var add = "";
-                switch (btn) {
-                    case "a":
-                        add = '<a href="_ссылка_">_текст_</a>';
-                        break;
-                    case "br":
-                        add = "<br />\n";
-                        break;
-                    case "p":
-                        add = "<p>_текст_</p>";
-                        break;
-                    case "img":
-                        add = '<img src="_ссылка_" />';
-                        break;
-                    default:
-                        break;
-                }
-                textAr.value += add;
-                update();
-            }
-        </script>
-    </head>
-    <body>
-        <div class="modal">
-            <div class="modal-content">
-                <div>
-                    <label for="password">Пароль:</label>
-                    <input
-                        type="password"
-                        class="password"
-                        name="password"
-                        onkeydown="keypress(this)"
-                    />
-                    <input
-                        type="button"
-                        onclick="blackboardPassword()"
-                        value="Отправить"
-                    />
-                </div>
-                <span class="close" onclick="closeModal()">&times;</span>
-            </div>
+      function fastbtnClick(btn) {
+        var textAr = document.getElementById("task");
+        var add = "";
+        switch (btn) {
+          case "a":
+            add = '<a href="_ссылка_">_текст_</a>';
+            break;
+          case "br":
+            add = "<br />\n";
+            break;
+          case "p":
+            add = "<p>_текст_</p>";
+            break;
+          case "img":
+            add = '<img src="_ссылка_" />';
+            break;
+          default:
+            break;
+        }
+        textAr.value += add;
+        update();
+      }
+    </script>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content">
+        <div>
+          <label for="password">Пароль:</label>
+          <input
+            type="password"
+            class="password"
+            name="password"
+            onkeydown="keypress(this)"
+          />
+          <input
+            type="button"
+            onclick="blackboardPassword()"
+            value="Отправить"
+          />
         </div>
-        <!-- <input type="text" id="task" class="textfield"> -->
-        <textarea name="textfield" id="task" class="textfield"></textarea>
-        <!-- <div class="textbtns">
+        <span class="close" onclick="closeModal()">&times;</span>
+      </div>
+    </div>
+    <!-- <input type="text" id="task" class="textfield"> -->
+    <textarea name="textfield" id="task" class="textfield"></textarea>
+    <!-- <div class="textbtns">
             <button onclick="fastbtnClick('a')">&lt;a&gt;</button>
             <button onclick="fastbtnClick('p')">&lt;p&gt;</button>
             <button onclick="fastbtnClick('br')">&lt;br&gt;</button>
             <button onclick="fastbtnClick('img')">&lt;img&gt;</button>
         </div> -->
-        <!-- <input
+    <!-- <input
       name="enter"
       type="button"
       id="submitbtn"
@@ -133,53 +126,48 @@
       value="Отправить"
       onclick="clickSend()"
     /> -->
-        <!-- <h3>ДОСКА</h3> -->
+    <!-- <h3>ДОСКА</h3> -->
 
-        <div id="toolbar">
-            <label for="stroke">Цвет</label>
-            <input id="stroke" name="stroke" type="color" />
-            <label for="lineWidth">Толщина</label>
-            <input id="lineWidth" name="lineWidth" type="number" value="5" />
-            <button id="clear">Clear</button>
-        </div>
-        <div class="drawing_base">
-            <canvas id="drawing-board"></canvas>
-        </div>
-        <div class="content">
-            <div class="lines"><h1>1</h1></div>
-            <h1 class="text"></h1>
-        </div>
-        <pre></pre>
+    <div id="toolbar">
+      <label for="stroke">Цвет</label>
+      <input id="stroke" name="stroke" type="color" />
+      <label for="lineWidth">Толщина</label>
+      <input id="lineWidth" name="lineWidth" type="number" value="5" />
+      <button id="clear">Clear</button>
+    </div>
+    <div class="drawing_base">
+      <canvas id="drawing-board"></canvas>
+    </div>
+    <div class="content">
+      <div class="lines"><h1>1</h1></div>
+      <h1 class="text"></h1>
+    </div>
+    <pre></pre>
 
-        <script>
-            blackboardAdmin();
-            document
-                .querySelector(".textfield")
-                .addEventListener("input", function (event) {
-                    event.preventDefault();
-                    clickSend();
-                    return false;
-                });
-            $.get({ cache: false, url: "blackboard2.txt" }).then(function (
-                data
-            ) {
-                document.querySelector(".lines").innerHTML = "";
-                document.getElementById("task").value = data;
-                document.querySelector(".text").innerHTML = data;
-                var count =
-                    data.match(/\n/g) != null ? data.match(/\n/g).length : 1;
-                for (let i = 1; i <= count + 1; i++) {
-                    document.querySelector(
-                        ".lines"
-                    ).innerHTML += `<h1>${i}</h1>`;
-                }
-                base.style.height = `${lines.clientHeight}px`;
-                canvas.height = canvas.clientHeight;
-                ctx.strokeStyle = curStroke;
-                // lineNumber = lineNumber + 1;
-                // console.log(data);
-            });
-        </script>
-        <script src="./js/paint2.js"></script>
-    </body>
+    <script>
+      blackboardAdmin();
+      document
+        .querySelector(".textfield")
+        .addEventListener("input", function (event) {
+          event.preventDefault();
+          clickSend();
+          return false;
+        });
+      $.get({ cache: false, url: "blackboard2.txt" }).then(function (data) {
+        document.querySelector(".lines").innerHTML = "";
+        document.getElementById("task").value = data;
+        document.querySelector(".text").innerHTML = data;
+        var count = data.match(/\n/g) != null ? data.match(/\n/g).length : 1;
+        for (let i = 1; i <= count + 1; i++) {
+          document.querySelector(".lines").innerHTML += `<h1>${i}</h1>`;
+        }
+        base.style.height = `${lines.clientHeight}px`;
+        canvas.height = canvas.clientHeight;
+        ctx.strokeStyle = curStroke;
+        // lineNumber = lineNumber + 1;
+        // console.log(data);
+      });
+    </script>
+    <script src="./js/paint2.js"></script>
+  </body>
 </html>
