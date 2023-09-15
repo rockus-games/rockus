@@ -116,19 +116,16 @@ img:hover {
 .main_buttons a {
   display: inline-block;
 }
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .left,
   .right {
     position: fixed;
     margin-top: -10px;
-    left: -80vw; /* -73 */
-    /* background: #218580; */
+    left: -80vw; 
     width: 75vw;
     padding-right: 2.5%;
-    /* height: 100.9vh; */
     color: #fff;
     border-right: 1vw solid #025167;
-    /* transition: all 330ms ease-in-out; */
     z-index: 100;
   }
 
@@ -147,7 +144,7 @@ img:hover {
     padding-left: 10px;
     text-align: center;
     display: block;
-    /* transition: all 0.1s ease; */
+   
     margin-top: 1vw;
   }
 
@@ -160,8 +157,7 @@ img:hover {
   }
 
   main {
-    /* height: 100.1%; */
-    /* width: 95%; */
+   
     margin-top: -10px;
     margin-left: 2vw;
     margin-right: -10px;
@@ -206,4 +202,4 @@ img:hover {
     height: inherit;
     overflow: scroll;
   }
-}
+} */
