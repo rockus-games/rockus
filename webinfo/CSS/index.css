@@ -6,7 +6,7 @@
 
 body {
   /* overflow: hidden; */
-  scrollbar-width: 50px;
+  /* scrollbar-width: 50px; */
   font-family: "Ysabeau", sans-serif;
   /* position: fixed; */
   background-color: #181818;
@@ -37,6 +37,12 @@ main {
 }
 .main_header {
   text-align: right;
+  /* background-color: #02675a; */
+}
+.trumbon{
+  margin-top: 0;
+  font-size: 40px;
+  float: left;
 }
 .main_header a {
   display: inline-block;
@@ -60,6 +66,23 @@ main {
 .main_blackboards a {
   display: inline;
   margin: 8px;
+}
+.main_buttons button {
+  border-radius: 1vw;
+  /* border: none; */
+  margin: 1vw;
+  background: #181818;
+  width: 14vw;
+  height: 3vw;
+  font-size: 1.3vw;
+  color:#8cada5 ;
+  /* opacity: 90%; */
+  /* font-weight: bold; */
+  /* box-shadow: 0 #55a792; */
+  
+}
+.main_buttons a {
+  display: inline-block;
 }
 
 
@@ -99,22 +122,11 @@ img:hover {
 #mobile_school {
   display: none;
 }
-.main_buttons button {
-  border-radius: 1vw;
-  /* border: none; */
-  margin: 1vw;
-  background: #181818;
-  width: 14vw;
-  height: 3vw;
-  font-size: 1.3vw;
-  color:#8cada5 ;
-  /* opacity: 90%; */
-  /* font-weight: bold; */
-  /* box-shadow: 0 #55a792; */
-  
-}
-.main_buttons a {
-  display: inline-block;
+
+@media (max-width: 500px){
+  body{
+    
+  }
 }
 /* @media (max-width: 500px) {
   .left,
