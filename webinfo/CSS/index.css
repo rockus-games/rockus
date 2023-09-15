@@ -6,11 +6,15 @@
 
 body {
   /* overflow: hidden; */
+  scrollbar-width: 50px;
   font-family: "Ysabeau", sans-serif;
-  position: fixed;
+  /* position: fixed; */
   background-color: #181818;
   display: grid;
   grid-template-columns: 1fr 2.6fr 1fr;
+}
+body::-webkit-scrollbar{
+  display: none;
 }
 
 aside {
@@ -19,13 +23,14 @@ aside {
 h1 {
   color: bisque;
 }
-
+img{
+  transition: all 0.1s ease;
+}
 main {
   height: 200.1%;
   text-align: center;
   border-left: 4px solid #55a792;
   border-right: 4px solid #55a792;
-  
 }
 .main_header {
   text-align: right;
@@ -38,6 +43,7 @@ main {
   font-family: "Roundhand";
   font-size: 2vw;
   color: bisque;
+  display: inline-block;
 }
 #pismo:hover {
   color: #02675a;
@@ -45,6 +51,15 @@ main {
 #img_svo {
   width: 16vw;
 }
+.main_blackboards img {
+  width: 25%;
+}
+.main_blackboards a {
+  display: inline;
+  margin: 8px;
+}
+
+
 
 .rightContent {
   grid-template-columns: 1fr 2fr;
@@ -63,12 +78,13 @@ a {
   font-size: 1.5vw;
   color: #8cada5;
   display: block;
+  transition: all 0.1s ease;
 }
 
 a:hover,
 img:hover {
   transform: scale(1.05);
-  transition: all 0.1s ease;
+  
   color: #02675a;
 }
 
@@ -80,17 +96,22 @@ img:hover {
 #mobile_school {
   display: none;
 }
-button {
-  /* margin-left: 1vw; */
-  border-radius: 1.5vw;
-  margin-top: 1vw;
-  background: rgb(140, 223, 209);
-  width: 16vw;
-  height: 4vw;
-  font-size: 1vw;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  box-shadow: 0.2vw 0.2vw #161b13;
+.main_buttons button {
+  border-radius: 1vw;
+  /* border: none; */
+  margin: 1vw;
+  background: #181818;
+  width: 14vw;
+  height: 3vw;
+  font-size: 1.3vw;
+  color:#8cada5 ;
+  /* opacity: 90%; */
+  /* font-weight: bold; */
+  /* box-shadow: 0 #55a792; */
+  
+}
+.main_buttons a {
+  display: inline-block;
 }
 @media (max-width: 500px) {
   .left,
