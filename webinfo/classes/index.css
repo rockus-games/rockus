@@ -32,7 +32,7 @@ hr {
   grid-template-columns: 0.14fr 0.16fr 1fr;
   color: #cccccc;
   height: 90vh;
-  width: 99vw;
+  /* width: 99vw; */
 }
 
 .my_body_columns_1 {
@@ -177,12 +177,14 @@ button:hover {
 @media (max-width: 500px) {
   body {
     margin: 0;
+    border-left: #070606 solid;
+    border-right: #070606 solid;
   }
   .my_body {
     grid-template-columns: 1fr;
     display: grid;
     height: inherit;
-    width: 100vw;
+    /* width: 100vw; */
   }
   .header p{
     font-size: 18px;
@@ -190,6 +192,14 @@ button:hover {
   #header_top {
     position: fixed;
     top: 0;
+    /* margin-top: 10px; */
+    height: 60px;
+    background-color: #070606;
+    
+  }
+  #footer {
+    position: fixed;
+    bottom: 0;
     /* margin-top: 10px; */
     height: 60px;
     background-color: #070606;
@@ -211,7 +221,7 @@ button:hover {
 
   .my_body_columns_3 {
     overflow-y: inherit;
-
+width: inherit;
     margin: 0;
   }
   /* .column3_img {
