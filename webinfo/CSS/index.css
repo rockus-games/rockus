@@ -8,25 +8,26 @@ body {
   /* overflow: hidden; */
   /* scrollbar-width: 50px; */
   font-family: "Ysabeau", sans-serif;
-  /* position: fixed; */
   background-color: #181818;
   display: grid;
   grid-template-columns: 1fr 2.6fr 1fr;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
-
 aside {
   text-align: center;
 }
 h1 {
   color: bisque;
 }
-.left_grade h3{
+.left_grade h3 {
   margin: 0;
 }
-img{
+.pismo_div_mobile {
+  display: none;
+}
+img {
   transition: all 0.1s ease;
 }
 main {
@@ -39,7 +40,7 @@ main {
   text-align: right;
   /* background-color: #02675a; */
 }
-.trumbon{
+.trumbon {
   margin-top: 0;
   font-size: 40px;
   float: left;
@@ -48,11 +49,18 @@ main {
   display: inline-block;
   margin: 8px;
 }
+hr {
+  display: none;
+}
+
 #pismo {
   font-family: "Roundhand";
   font-size: 2vw;
   color: bisque;
-  display: inline-block;
+}
+#pismo p {
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 #pismo:hover {
   color: #02675a;
@@ -69,23 +77,16 @@ main {
 }
 .main_buttons button {
   border-radius: 1vw;
-  /* border: none; */
   margin: 1vw;
   background: #181818;
   width: 14vw;
   height: 3vw;
   font-size: 1.3vw;
-  color:#8cada5 ;
-  /* opacity: 90%; */
-  /* font-weight: bold; */
-  /* box-shadow: 0 #55a792; */
-  
+  color: #8cada5;
 }
 .main_buttons a {
   display: inline-block;
 }
-
-
 
 .rightContent {
   grid-template-columns: 1fr 2fr;
@@ -110,7 +111,7 @@ a {
 a:hover,
 img:hover {
   transform: scale(1.05);
-  
+
   color: #02675a;
 }
 
@@ -123,10 +124,104 @@ img:hover {
   display: none;
 }
 
-@media (max-width: 500px){
-  body{
-    
+@media (max-width: 500px) {
+  body {
+    grid-template-columns: 1fr;
   }
+  .left {
+    border-left: 2px solid #55a792;
+    border-right: 2px solid #55a792;
+  }
+  .left h1 {
+    font-size: 10vw;
+    margin-top: 90px;
+  }
+  .left h2 {
+    font-size: 8vw;
+  }
+  .left h3 {
+    font-size: 6vw;
+  }
+  main {
+    height: 200.1%;
+    text-align: center;
+    border-left: 2px solid #55a792;
+    border-right: 2px solid #55a792;
+  }
+  .main_header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 94%;
+    top: 0;
+  }
+  .trumbon {
+    margin-top: 0;
+    font-size: 40px;
+    float: left;
+  }
+  .main_header a {
+    display: inline-block;
+    margin: 8px;
+  }
+  hr {
+    display: inherit;
+  }
+  .pismo_div_mobile {
+    display: inherit;
+  }
+  .pismo_div_desktop {
+    display: none;
+  }
+  #pismo {
+    font-family: "Roundhand";
+    font-size: 8vw;
+    color: bisque;
+    display: inline-block;
+  }
+
+  #img_svo {
+    width: 60vw;
+  }
+
+  .main_blackboards img {
+    width: 35%;
+  }
+
+  .main_buttons {
+    display: grid;
+  }
+  .main_buttons button {
+    border-radius: 1vw;
+    width: 64vw;
+    height: 12vw;
+    font-size: 6vw;
+    margin-top: 10px;
+  }
+
+  .right {
+    border-left: 2px solid #55a792;
+    border-right: 2px solid #55a792;
+  }
+  a {
+    text-decoration: none;
+    font-size: 6vw;
+  }
+  #right_h2 {
+    font-size: 14vw;
+    color: bisque;
+  }
+
+
+
+  /* .leftArrow,
+  .rightArrow {
+    display: none;
+  } */
+
+  /* #mobile_school {
+    display: none;
+  } */
 }
 /* @media (max-width: 500px) {
   .left,
