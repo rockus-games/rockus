@@ -2,7 +2,9 @@ body {
     background-color: rgb(10, 13, 20);
     font-family: "Philosopher", cursive;
 }
-
+a{
+    text-decoration: none;
+}
 #emblem {
     display: block;
     margin: auto;

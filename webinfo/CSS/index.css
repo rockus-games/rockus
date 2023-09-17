@@ -49,8 +49,12 @@ main {
   display: inline-block;
   margin: 8px;
 }
+
 hr {
   display: none;
+}
+#desktop_hr{
+  display: inherit;
 }
 
 #pismo {

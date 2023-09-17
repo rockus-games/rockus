@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(10, 13, 20);
+    background-color: #181818;
 }
 
 div {
@@ -15,7 +15,8 @@ div {
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    width: 80%;
     box-shadow: 0 0 5px 10px #ffffff;
 }
 
