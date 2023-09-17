@@ -5,7 +5,8 @@ a {
 body {
   width: 95%;
   margin: auto;
-  background-color: rgb(40, 48, 48);
+  background-color: #181818;
+
   margin-top: 0;
   /* cursor: all-scroll; */
 }

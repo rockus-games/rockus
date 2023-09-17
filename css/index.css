@@ -1,45 +1,59 @@
 body {
   font-family: "Montserrat Alternates", sans-serif;
+  background-color: #181818;
+  margin: 0;
 }
 
-.header > * {
+.header {
   text-align: center;
 }
-.logo{
-  font-size: 20px;
+.logo {
+  font-size: 14vw;
   text-decoration: none;
-  color: #000;
+  color: bisque;
 }
-.who_are_we{
+p {
+  margin: 0;
+}
+button {
+  border-radius: 1.5vw;
+  margin: 1vw;
+  background: #181818;
+  width: 22vw;
+  height: 7vw;
+  font-size: 3vw;
+  color: #8cada5;
+  transition: all 0.3s ease-out;
+}
+button:hover {
+  transform: scale(1.1);
+  background: #0a0707;
+  border-radius: 0;
+  color: #1bac88;
+  font-size: 4vw;
+  cursor: pointer;
+}
+h1 {
+  color: rgb(97, 169, 232);
+}
+.about {
   width: 80%;
   margin: auto;
+  color: #8cada5;
 }
 
-.btns > * {
-  display: inline-block;
-  margin-left: 1vw;
-  font-size: 2.5vh;
-  text-decoration: none;
-  font-weight: 450;
-  font-style: italic;
-  color: #000;
-  border-radius: 1.3vw;
-  transition: all 0.1s linear;
-  font-family: inherit;
-  padding: 5px;
+.yandex {
+  position: absolute;
+  bottom: 20px;
 }
-.courses_btn{
-  border-left: 2px solid rgb(40, 48, 48);
-  border-right: 2px solid rgb(40, 48, 48);
-  border-bottom: 6px solid rgb(40, 48, 48);
-}
-.card_btn{
-  border-left: 2px solid rgba(34, 140, 211, 0.786);
-  border-right: 2px solid rgba(34, 140, 211, 0.786);
-  border-bottom: 6px solid rgba(34, 140, 211, 0.786);
-}
-.webinfo_btn{
-  border-left: 2px solid #34bbb4;
-  border-right: 2px solid #34bbb4;
-  border-bottom: 6px solid #34bbb4;
+
+@media (max-width: 500px) {
+  body{
+    background-color: #1bac88;
+  }
+  button {
+    width: 70vw;
+    height: 13vw;
+    background-color: bisque;
+  }
 }
