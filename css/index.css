@@ -3,6 +3,7 @@ body {
   background-color: #181818;
   margin: 0;
   text-align: center;
+  width: 100%;
 }
 
 p {
@@ -45,8 +46,24 @@ h2 {
   left: 20px;
 }
 
-@media (max-width: 500px) {
-  body{
-    background-color: #1bac88;
-  }
+@media only screen and (max-width: 500px) {
+
+button{
+  width: 80vw;
+  height: 16vw;
+  font-size: 8vw;
+  margin-top: 20px;
+}
+h1,h2{
+  width: 95%;
+  
+  margin: auto;
+}
+.yandex {
+  position: initial;
+ 
+}
+img{
+  margin-top: 30px;
+}
 }
