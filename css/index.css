@@ -45,4 +45,8 @@ h2 {
   left: 20px;
 }
 
-
+@media (max-width: 500px) {
+  body{
+    background-color: #1bac88;
+  }
+}
