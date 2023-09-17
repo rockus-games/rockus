@@ -127,6 +127,7 @@ img:hover {
 @media (max-width: 500px) {
   body {
     grid-template-columns: 1fr;
+    /* background-color: #02675a; */
   }
   .left {
     border-left: 2px solid #55a792;
