@@ -1,7 +1,3 @@
-a {
-  text-decoration: none;
-}
-
 body {
   width: 95%;
   margin: auto;
@@ -9,6 +5,9 @@ body {
 
   margin-top: 0;
   /* cursor: all-scroll; */
+}
+a {
+  text-decoration: none;
 }
 .header {
   display: flex;
@@ -18,7 +17,10 @@ body {
   width: 90%;
   margin: auto;
 }
-
+.header_left_block {
+  display: flex;
+  padding: 15px;
+}
 .header_left_block h1 {
   /* font-size: 2em; */
   color: rgb(253, 209, 156);
@@ -62,32 +64,41 @@ li {
   margin: 0 10px 0 10px;
   padding: 5px;
   border-radius: 8px;
+  font-size: 2vw;
+  
 }
 
 a,
 a h1,
 li {
   color: inherit;
-  transition: all 0.05s ease;
+  transition: all 0.5s ease;
 }
-a h1:hover,
+/* a h1:hover,
 li:hover,
 a:hover {
-  transform: scale(1.02);
-}
+  transform: scale(1.22);
+} */
 a img {
   color: inherit;
   transition: all 0.2s ease-in-out;
 }
 a img:hover {
-  transform: scale(1.02);
+  transform: scale(4);
 }
 a h1:hover,
+a:hover,
 li:hover,
 .user_nav img:hover {
-  background-color: rgb(27, 32, 32);
   animation-name: change_color;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
+  background-color: crimson;
+  transform: scale(1.1);
+  
+}
+.cours:hover{
+  border-radius: 0;
+  /* background-color:ivory; */
 }
 .user_nav img {
   border-radius: 8px;
@@ -98,11 +109,8 @@ li:hover,
   0% {
     background-color: rgb(40, 48, 48);
   }
-  50% {
-    background-color: crimson;
-  }
   100% {
-    background-color: rgb(27, 32, 32);
+    background-color: crimson;
   }
 }
 
@@ -118,7 +126,8 @@ li:hover,
   display: grid;
   grid-template-columns: 0.3fr 2fr 1fr;
   height: 14vw;
-  background-color: rgb(82, 103, 129);
+  max-height: 240px;
+  /* background-color: rgb(82, 103, 129); */
   border-radius: 0.8vw;
 }
 .auto {
@@ -189,7 +198,7 @@ li:hover,
     display: grid;
     grid-template-columns: 1fr;
   }
-  .cours{
+  .cours {
     height: 40vw;
     margin-bottom: 3vh;
   }
@@ -224,7 +233,4 @@ li:hover,
     font-size: 1.2em;
   }
 }
-.header_left_block {
-  display: flex;
-  padding: 15px;
-}
+

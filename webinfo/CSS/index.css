@@ -109,7 +109,7 @@ a {
   font-size: 1.5vw;
   color: #8cada5;
   display: block;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
 }
 
 a:hover,
