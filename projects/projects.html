@@ -13,12 +13,9 @@
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
-      /* * {
-        box-sizing: border-box;
-      } */
+
       body {
         font-family: "Ysabeau", sans-serif;
-
         background-color: #181818;
         text-align: center;
       }
@@ -26,7 +23,6 @@
         text-decoration: none;
         color: #55a792;
         transition: all 0.3s ease;
-        
       }
       a:hover {
         color: #02675a;
@@ -35,49 +31,73 @@
       .header {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        /* background-color: aliceblue; */
-        max-height: 5vw;
       }
       h1 {
         color: bisque;
-        font-size: 4vw;
+        font-size: 30px;
         display: inline;
         margin: 0;
-        /* background-color: aquamarine; */
+        position: relative;
       }
       h1:hover {
         cursor: alias;
       }
       h1:hover > ul {
-        display: initial;
+        pointer-events: all;
+        opacity: 100%;
       }
       ul {
-        display: none;
+        display: initial;
         position: absolute;
-       margin: 0;
-       padding: 0;
-        /* background-color: #04523e; */
-     top: 30px;
+        top: 40px;
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+        pointer-events: none;
       }
       li {
         list-style-type: none;
         margin: 2px;
         background-color: white;
-        /* text-align: center; */
+        transition: all 0.2s ease;
       }
-      li:hover{
-        background-color: #484848;
-        
+      li:hover {
+        border-radius: 10px;
       }
       p {
-        font-size: 2vw;
+        font-size: 20px;
+        margin-top: 10px;
+      }
+
+      .main_frame {
+        height: 80vh;
+        border: #fff solid 1px;
+        color: #fff;
+      }
+      a:hover {
+        cursor: pointer;
+      }
+      .finished {
+        display: none;
+      }
+      @media (max-width: 500px) {
+        p {
+          font-size: 15px;
+          margin-top: 6px;
+        }
+        h1 {
+          font-size: 22px;
+        }
       }
     </style>
     <title>Кампус</title>
   </head>
   <body>
     <div class="header">
-      <a href=""><p>Текущие</p></a>
+      <a id="current_projects" onclick="switch_main_frame('current')">
+        <p>Текущие</p>
+      </a>
       <h1>
         Проекты
         <ul>
@@ -89,15 +109,19 @@
           </li>
         </ul>
       </h1>
-      <a href=""><p>Заверщённые</p></a>
+      <a id="finished" onclick="switch_main_frame('finished')">
+        <p>Завершенные</p>
+      </a>
     </div>
     <hr size="" width="90%" />
 
     <br /><br />
-
+    <div class="main_frame current">Текущие</div>
+    <div class="main_frame finished">Завершенные</div>
     <!-- <a href="./idea.html">Идеи</a><br /><br /> -->
     <!-- <a href="campus_prezentation/campus_prezentation_index.html"
       >Презентация кампуса</a
     ><br /><br /> -->
+    <script src="./projects.js"></script>
   </body>
 </html>
