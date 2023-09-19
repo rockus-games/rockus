@@ -18,6 +18,7 @@
         font-family: "Ysabeau", sans-serif;
         background-color: #181818;
         text-align: center;
+      
       }
       a {
         text-decoration: none;
@@ -31,6 +32,8 @@
       .header {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 60%;
+        margin: auto;
       }
       h1 {
         color: bisque;
@@ -71,9 +74,11 @@
       }
 
       .main_frame {
+        width: 80%;
         height: 80vh;
         border: #fff solid 1px;
         color: #fff;
+        margin:  auto;
       }
       a:hover {
         cursor: pointer;
@@ -91,7 +96,7 @@
         }
       }
     </style>
-    <title>Кампус</title>
+    <title>Проекты</title>
   </head>
   <body>
     <div class="header">
@@ -116,8 +121,8 @@
     <hr size="" width="90%" />
 
     <br /><br />
-    <div class="main_frame current">Текущие</div>
-    <div class="main_frame finished">Завершенные</div>
+    <div class="main_frame current"><h2>Текущие</h2></div>
+    <div class="main_frame finished"><h2>Завершенные</h2></div>
     <!-- <a href="./idea.html">Идеи</a><br /><br /> -->
     <!-- <a href="campus_prezentation/campus_prezentation_index.html"
       >Презентация кампуса</a

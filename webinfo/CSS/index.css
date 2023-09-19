@@ -79,14 +79,30 @@ hr {
   display: inline;
   margin: 8px;
 }
+.main_buttons{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .main_buttons button {
-  border-radius: 1vw;
+  border-radius: 1.5vw;
   margin: 1vw;
   background: #181818;
-  width: 14vw;
-  height: 3vw;
-  font-size: 1.3vw;
+  width: 21vw;
+  max-width: 400px;
+  height: 6vw;
+  max-height: 85px;
+  font-size: 160%;
   color: #8cada5;
+  transition: all 0.3s ease-out;
+ 
+}
+button:hover {
+  transform: scale(1.1);
+  background: #0a0707;
+  border-radius: 0;
+  color: #1bac88;
+  font-size: 180%;
+  cursor: pointer;
 }
 .main_buttons a {
   display: inline-block;
@@ -158,6 +174,10 @@ img:hover {
     position: absolute;
     width: 94%;
     top: 0;
+  }
+  .main_buttons{
+    display: grid;
+    grid-template-columns: 1fr ;
   }
   .trumbon {
     margin-top: 0;
