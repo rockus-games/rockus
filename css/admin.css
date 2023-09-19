@@ -1,0 +1,41 @@
+body {
+  background-color: #181818;
+  text-align: center;
+}
+h1{
+ color: bisque;
+}
+.tables{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    /* background-color: #ccc; */
+}
+.schedule{
+    width: 90%;
+    height: 60vw;
+    background-color: #1bac88;
+    border: #ccc solid 1px;
+    margin: auto;
+    
+}
+button {
+  border-radius: 1.5vw;
+  margin: 1vw;
+  background: #181818;
+  width: 21vw;
+  max-width: 400px;
+  height: 6vw;
+  max-height: 85px;
+  font-size: 160%;
+  color: #8cada5;
+  transition: all 0.3s ease-out;
+}
+button:hover {
+  transform: scale(1.1);
+  background: #0a0707;
+  border-radius: 0;
+  color: #1bac88;
+  font-size: 180%;
+  cursor: pointer;
+}
