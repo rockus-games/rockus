@@ -1,67 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- <link rel="stylesheet" href="./CSS/css.css" /> -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-        <link rel="stylesheet" href="CSS/files.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <title>Файлы</title>
-        <script src="js/files.js"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./CSS/css.css" /> -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/files.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Файлы</title>
+    <script src="js/files.js"></script>
+  </head>
 
-    <body>
-       
-        <h1>Файлы</h1>
+  <body>
+    <h1>Файлы</h1>
 
-        <div class="header">
-            <div class="adminPart">
-                <button class="adminBtn" onclick="adminUser()">
-                    Админ
-                </button>
-            </div>
-            <div class="userPart">
-                <button id="chekFile"><p class="material-icons">attach_file_add</p>
-                    
-                </button>
-                <label for="getfile" class="passlabel"></label>
-                <input
-                    type="file"
-                    style="visibility: hidden"
-                    id="getfile"
-                    name="getfile"
-                    onchange="sendFile()"
-                />
-            </div>
-            
+    <div class="header">
+      <div class="adminPart">
+        <button class="adminBtn" onclick="adminUser()">Админ</button>
+      </div>
+      <div class="userPart">
+        <button id="checkFile">
+          <p class="material-icons">attach_file_add</p>
+          <label for="getfile" class="passlabel"></label>
+          <input
+            type="file"
+            style="visibility: hidden"
+            id="getfile"
+            name="getfile"
+            onchange="sendFile()"
+          />
+        </button>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-content">
+        <div>
+          <label for="password">Пароль:</label>
+          <input
+            type="password"
+            class="password"
+            name="password"
+            onkeydown="keypress(this)"
+          />
+          <input type="button" onclick="checkPassword()" value="Отправить" />
         </div>
+        <span class="close" onclick="closeModal()">&times;</span>
+      </div>
+    </div>
 
-        <div class="modal">
-            <div class="modal-content">
-                <div>
-                    <label for="password">Пароль:</label>
-                    <input
-                        type="password"
-                        class="password"
-                        name="password"
-                        onkeydown="keypress(this)"
-                    />
-                    <input
-                        type="button"
-                        onclick="checkPassword()"
-                        value="Отправить"
-                    />
-                </div>
-                <span class="close" onclick="closeModal()">&times;</span>
-            </div>
-        </div>
-
-        <script>
-            updateList();
-        </script>
-        <div id="files"></div>
-    </body>
+    <script>
+      updateList();
+    </script>
+    <div id="files"></div>
+  </body>
 </html>
