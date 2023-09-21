@@ -15,9 +15,9 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-aside {
+/* aside {
   text-align: center;
-}
+} */
 h1 {
   color: bisque;
 }
@@ -54,7 +54,7 @@ main {
 hr {
   display: none;
 }
-#desktop_hr{
+#desktop_hr {
   display: inherit;
 }
 
@@ -80,7 +80,7 @@ hr {
   display: inline;
   margin: 8px;
 }
-.main_buttons{
+.main_buttons {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -88,35 +88,19 @@ hr {
 .main_buttons a {
   display: inline-block;
 }
-
-.rightContent {
-  grid-template-columns: 1fr 2fr;
-  margin-top: 10px;
-  display: grid;
-  row-gap: 16px;
-  column-gap: 16px;
+.right h3{
+  font-size: 1.7vw;
 }
+
 @font-face {
   font-family: "Roundhand"; /* Гарнитура шрифта */
   src: url(../fonts/Roundhand.ttf); /* Путь к файлу со шрифтом */
 }
 
-
-
 a:hover,
 img:hover {
   transform: scale(1.05);
-
   color: #02675a;
-}
-
-.leftArrow,
-.rightArrow {
-  display: none;
-}
-
-#mobile_school {
-  display: none;
 }
 
 @media (max-width: 500px) {
@@ -150,9 +134,9 @@ img:hover {
     width: 94%;
     top: 0;
   }
-  .main_buttons{
+  .main_buttons {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
   }
   .trumbon {
     margin-top: 0;
@@ -198,16 +182,8 @@ img:hover {
     margin-top: 10px;
   }
 
-  .right {
-    border-left: 2px solid #55a792;
-    border-right: 2px solid #55a792;
-  }
   a {
     text-decoration: none;
     font-size: 6vw;
-  }
-  #right_h2 {
-    font-size: 14vw;
-    color: bisque;
   }
 }

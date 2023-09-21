@@ -13,12 +13,22 @@ body {
     position: relative;
     transition: all 0.3s ease;
   }
-  h3{
-    position: relative;
-  }
+ 
   h1:hover > ul {
     pointer-events: all;
     opacity: 100%;
+  }
+  h2{
+    color: antiquewhite;
+  }
+  h3{
+    position: relative;
+    font-size: 2vw;
+    transition: all 0.3s ease;
+  }
+  h3:hover{
+    transform: scale(1.1);
+
   }
   h3:hover > ul{
     pointer-events: all;
