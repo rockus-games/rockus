@@ -1,10 +1,4 @@
-/* body {
-  font-family: "Montserrat Alternates", sans-serif;
-  background-color: #181818;
-  margin: 0;
-  text-align: center;
-  width: 100%;
-} */
+
 
 p {
   font-size: 14vw;
@@ -13,28 +7,11 @@ p {
   margin: 0;
 }
 
-/* button {
-  border-radius: 1.5vw;
-  margin: 1vw;
-  background: #181818;
-  width: 20vw;
-  height: 6vw;
-  font-size: 3vw;
-  color: #8cada5;
-  transition: all 0.3s ease-out;
-}
-button:hover {
-  transform: scale(1.1);
-  background: #0a0707;
-  border-radius: 0;
-  color: #1bac88;
-  font-size: 4vw;
-  cursor: pointer;
-} */
-h1 {
+
+#wellcom {
   color: rgb(97, 169, 232);
 }
-h2 {
+#about {
   width: 80%;
   margin: auto;
   color: #8cada5;
