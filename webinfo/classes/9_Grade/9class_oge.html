@@ -4,99 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- <link rel="stylesheet" href="../CSS/classes.css" /> -->
+    <link rel="stylesheet" href="/css/base.css" />
     <style>
-      body {
-        background-color: #153f64;
+      #teacher {
+        opacity: 0;
       }
-
-      aside {
-        color: bisque;
-        margin-left: 20px;
-        float: left;
-        height: 100vh;
-        width: 20%;
-      }
-      .baraxolka {
-        writing-mode: vertical-lr;
-        text-orientation: upright;
-        display: inline-block;
-        color: #a6e1fa;
-      }
-      a {
-        text-decoration: none;
-      }
-      caption {
-        font-size: 2em;
-        color: darksalmon;
-      }
-      tr {
-        font-size: 1.8em;
-
-        color: rgb(231, 168, 147);
-      }
-
-      main {
-        margin-left: 40%;
-        height: 100vh;
-      }
-
-      .oge a {
-        color: antiquewhite;
-        font-size: 2vh;
-      }
-      li {
-        font-size: 1.5vw;
-        text-align: left;
-        margin-left: 10vw;
+      #teacher:hover {
+        opacity: 100%;
       }
     </style>
   </head>
   <body>
-    <aside>
-      <div class="links">
-        <h1>9 Класс</h1>
-        <a href="https://inf-oge.sdamgia.ru/test_editor?id=18226840"><h1>&nbsp</h1></a>
-        <h1>Информатика</h1>
-        <a href="/webinfo/baraxolka.html"
-          ><h2 class="baraxolka">Барахолка</h2></a
-        >
-      </div>
-    </aside>
-    <main>
-      <table>
-        <caption>
-          План урока
-        </caption>
-        <tr>
-          <td>Решение задач из ОГЭ</td>
-        </tr>
-      </table>
-      <br>
-      <br>
-      <div class="oge">
-        <a href="https://inf-oge.sdamgia.ru/test?id=18226840"
-          >Вариант В(1-12 задания) № 18226840. РЕШУ ОГЭ </a
-        ><br /><br />
-        <a href="./assets/872c6fc90943f0ed1289c1642262ba27.pdf"
-          >Вариант В(1-12 задания) № 18226840.pdf </a
-        ><br /><br />
-        <!-- <a href="https://inf-oge.sdamgia.ru/test_editor?id=18141537"
-          >Вариант В(1-12 задания) № 18141537 для учителя </a
-        ><br /><br /> -->
+    <div class="links">
+      <h1>9 Класс</h1>
+      <br />
+      <a title="Только для учителя" href="https://inf-oge.sdamgia.ru/test_editor?id=18226840"
+        ><button id="teacher">🚫</button>
+      </a>
+      <br />
+      <h1>Информатика ОГЭ</h1>
+    </div>
+    <a href="/webinfo/baraxolka.html"><button>Барахолка</button></a>
 
-        <!-- <a href="https://inf-oge.sdamgia.ru/test?id=16967404"
-          >Вариант С(13-15 задания) № 16967404 для учеников </a
-        ><br /><br />
-        <a href="https://inf-oge.sdamgia.ru/test_editor?id=16967404"
-          >Вариант С(13-15 задания) № 16967404 для учителя </a
-        ><br /><br /> -->
-
-       
-      </div>
-
-      
-    </main>
+    <br />
+    <br />
+    <div class="oge">
+      <a href="https://inf-oge.sdamgia.ru/test?id=18226840"
+        >Вариант В(1-12 задания) № 18226840. РЕШУ ОГЭ </a
+      ><br /><br />
+      <a href="./assets/872c6fc90943f0ed1289c1642262ba27.pdf"
+        >Вариант В(1-12 задания) № 18226840.pdf </a
+      ><br /><br />
+    </div>
   </body>
 </html>
