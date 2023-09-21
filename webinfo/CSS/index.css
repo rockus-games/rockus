@@ -21,6 +21,7 @@ aside {
 h1 {
   color: bisque;
 }
+
 .left_grade h3 {
   margin: 0;
 }
@@ -83,27 +84,7 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.main_buttons button {
-  border-radius: 1.5vw;
-  margin: 1vw;
-  background: #181818;
-  width: 21vw;
-  max-width: 400px;
-  height: 6vw;
-  max-height: 85px;
-  font-size: 160%;
-  color: #8cada5;
-  transition: all 0.3s ease-out;
- 
-}
-button:hover {
-  transform: scale(1.1);
-  background: #0a0707;
-  border-radius: 0;
-  color: #1bac88;
-  font-size: 180%;
-  cursor: pointer;
-}
+
 .main_buttons a {
   display: inline-block;
 }
@@ -120,13 +101,7 @@ button:hover {
   src: url(../fonts/Roundhand.ttf); /* Путь к файлу со шрифтом */
 }
 
-a {
-  text-decoration: none;
-  font-size: 1.5vw;
-  color: #8cada5;
-  display: block;
-  transition: all 0.3s ease;
-}
+
 
 a:hover,
 img:hover {

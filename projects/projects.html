@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
+<link rel="stylesheet" href="../css/base.css">
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 
@@ -19,29 +19,14 @@
         background-color: #181818;
         text-align: center;
       }
-      a {
-        text-decoration: none;
-        color: #55a792;
-        transition: all 0.3s ease;
-      }
-      a:hover {
-        color: #02675a;
-        transform: scale(1.2);
-      }
+   
       .header {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 60%;
         margin: auto;
       }
-      h1 {
-        color: bisque;
-        font-size: 30px;
-        display: inline;
-        margin: 0;
-        position: relative;
-        transition: all 0.3s ease;
-      }
+   
       h1:hover {
         cursor: pointer;
        color: #02675a;
@@ -50,25 +35,7 @@
         pointer-events: all;
         opacity: 100%;
       }
-      ul {
-        display: initial;
-        position: absolute;
-        top: 40px;
-        margin: 0;
-        padding: 0;
-        opacity: 0;
-        transition: opacity 0.3s ease-out;
-        pointer-events: none;
-      }
-      li {
-        list-style-type: none;
-        margin: 2px;
-        background-color: white;
-        transition: all 0.2s ease;
-      }
-      li:hover {
-        border-radius: 10px;
-      }
+      
       p {
         font-size: 20px;
         margin-top: 10px;
@@ -81,30 +48,11 @@
         color: #fff;
         margin: auto;
       }
-      a:hover {
-        cursor: pointer;
-      }
+   
       .finished {
         display: none;
       }
-      button {
-        border-radius: 1.5vw;
-        margin: 1vw;
-        background: #181818;
-        width: 20vw;
-        height: 6vw;
-        font-size: 3vw;
-        color: #8cada5;
-        transition: all 0.3s ease-out;
-      }
-      button:hover {
-        transform: scale(1.1);
-        background: #0a0707;
-        border-radius: 0;
-        color: #1bac88;
-        font-size: 4vw;
-        cursor: pointer;
-      }
+      
       @media (max-width: 500px) {
         p {
           font-size: 15px;
