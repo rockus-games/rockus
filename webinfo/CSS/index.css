@@ -1,45 +1,17 @@
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 800, "GRAD" 0, "opsz" 48;
-  font-size: 6vw;
-}
-@import url("https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
-
 body {
-  /* overflow: hidden; */
-  /* scrollbar-width: 50px; */
-  font-family: "Ysabeau", sans-serif;
-  background-color: #181818;
   display: grid;
   grid-template-columns: 1fr 2.6fr 1fr;
-}
-body::-webkit-scrollbar {
-  display: none;
-}
-/* aside {
-  text-align: center;
-} */
-h1 {
-  color: bisque;
-}
-
-.left_grade h3 {
-  margin: 0;
 }
 .pismo_div_mobile {
   display: none;
 }
-img {
-  transition: all 0.1s ease;
-}
+
 main {
-  height: 200.1%;
-  text-align: center;
   border-left: 4px solid #55a792;
   border-right: 4px solid #55a792;
 }
 .main_header {
   text-align: right;
-  /* background-color: #02675a; */
 }
 .trumbon {
   margin-top: 0;
@@ -50,7 +22,14 @@ main {
   display: inline-block;
   margin: 8px;
 }
-
+h3 {
+  font-size: 1.5vw;
+  position: relative;
+  transition: all 0.3s ease;
+}
+h3:hover {
+  transform: scale(1.1);
+}
 hr {
   display: none;
 }
@@ -63,15 +42,26 @@ hr {
   font-size: 2vw;
   color: bisque;
 }
-#pismo p {
-  margin-top: 1px;
-  margin-bottom: 1px;
-}
-#pismo:hover {
+
+#pismo:hover,
+#Rockus:hover,
+#courses:hover {
   color: #02675a;
 }
 #img_svo {
   width: 16vw;
+  transition: all 0.3s;
+}
+#museum {
+  transition: all 0.3s;
+}
+#blackboard {
+  transition: all 0.3s;
+}
+#img_svo:hover,
+#blackboard:hover,
+#museum:hover {
+  transform: scale(1.05);
 }
 .main_blackboards img {
   width: 25%;
@@ -85,22 +75,9 @@ hr {
   grid-template-columns: 1fr 1fr;
 }
 
-.main_buttons a {
-  display: inline-block;
-}
-.right h3{
-  font-size: 1.7vw;
-}
-
 @font-face {
   font-family: "Roundhand"; /* Гарнитура шрифта */
   src: url(../fonts/Roundhand.ttf); /* Путь к файлу со шрифтом */
-}
-
-a:hover,
-img:hover {
-  transform: scale(1.05);
-  color: #02675a;
 }
 
 @media (max-width: 500px) {
