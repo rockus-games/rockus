@@ -1,10 +1,21 @@
-p {
-  font-size: 10vw;
-  /* text-decoration: none; */
-  color: bisque;
-  margin: 0;
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px;
 }
-
+.user {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.user_image {
+  margin: auto;
+  display: block;
+}
+/* .user_image img {
+width: 50px;
+height: 50px;
+} */
 .wellcom h1 {
   color: rgb(97, 169, 232);
 }
@@ -14,30 +25,21 @@ p {
 }
 .about h2 {
   color: #8cada5;
-  
-}
-
-img {
-  margin-top: 30px;
 }
 
 @media (max-width: 500px) {
-
-  p {
-    font-size: 8vw;
+  .user {
+    width: 40%;
   }
+
   .wellcom h1 {
-    /* width: 45%; */
     font-size: 7vw;
-   
   }
 
   .about h2 {
-    /* width: 45%; */
     font-size: 6vw;
-    
   }
-  .buttons{
+  .buttons {
     display: grid;
   }
 }

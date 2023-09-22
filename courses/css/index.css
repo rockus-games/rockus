@@ -35,50 +35,24 @@ h1 {
   display: inline-block;
 }
 .header_right_block {
-  color: aliceblue;
-  padding: 5px 0 0 0;
-  /* flex-shrink: 4; */
-}
-
-.user_nav {
-  /* position: relative; */
+  /* width: 30%; */
   display: flex;
-  flex-direction: row-reverse;
-  width: 50%;
-  margin-left: auto;
-}
-.user_nav h1 {
-  display: inline-block;
-  margin: 0;
-  padding-top: 6px;
-}
-ul {
-  display: flex;
-  justify-content: flex-end;
   flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  list-style: none;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
 }
-li {
-  margin: 0 10px 0 10px;
-  padding: 5px;
-  border-radius: 8px;
-  font-size: 2vw;
+h3{
+  color: #55a792;
   
+  transform: scale(1.2);
+}
+h3:hover{
+  color: #02675a;
+  transition: all 0.3s ease;
 }
 
-a,
-a h1,
-li {
-  color: inherit;
-  transition: all 0.5s ease;
-}
-/* a h1:hover,
-li:hover,
-a:hover {
-  transform: scale(1.22);
-} */
+
 a img {
   color: inherit;
   transition: all 0.2s ease-in-out;
@@ -86,25 +60,9 @@ a img {
 a img:hover {
   transform: scale(4);
 }
-a h1:hover,
-a:hover,
-li:hover,
-.user_nav img:hover {
-  animation-name: change_color;
-  animation-duration: 1s;
-  background-color: crimson;
-  transform: scale(1.1);
-  
-}
-.cours:hover{
-  border-radius: 0;
-  /* background-color:ivory; */
-}
-.user_nav img {
-  border-radius: 8px;
-  padding: 5px;
-  /* cursor:grabbing; */
-}
+
+
+
 @keyframes change_color {
   0% {
     background-color: rgb(40, 48, 48);
@@ -216,21 +174,37 @@ li:hover,
   .courses {
     border-radius: 2vw;
   }
-  .header_left_block h1 {
-    font-size: 1.5em;
+  .header {
+    flex-direction: column;
   }
+  .header_left_block h1 {
+    font-size: 6vw;
+  }
+  .header_right_block {
+    /* width: 90%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: flex-end; */
+    gap: 30px;
+    /* margin: auto; */
+  }
+  h3{
+    font-size: 4vw;
+  }
+
+
 }
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .header {
     flex-direction: column;
   }
   .header_left_block h1 {
     font-size: 1.5em;
   }
-}
-@media (max-width: 1200px) {
+} */
+/* @media (max-width: 1200px) {
   .header_left_block h1 {
     font-size: 1.2em;
   }
-}
-
+} */
