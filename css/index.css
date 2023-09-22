@@ -1,46 +1,43 @@
-
-
 p {
-  font-size: 14vw;
-  text-decoration: none;
+  font-size: 10vw;
+  /* text-decoration: none; */
   color: bisque;
   margin: 0;
 }
 
-
-#wellcom {
+.wellcom h1 {
   color: rgb(97, 169, 232);
 }
-#about {
-  width: 80%;
+.about {
+  width: 90%;
   margin: auto;
+}
+.about h2 {
   color: #8cada5;
-}
-
-.yandex {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-}
-
-@media only screen and (max-width: 500px) {
-
-button{
-  width: 80vw;
-  height: 16vw;
-  font-size: 8vw;
-  margin-top: 20px;
-}
-h1,h2{
-  width: 95%;
   
-  margin: auto;
 }
-.yandex {
-  position: initial;
- 
-}
-img{
+
+img {
   margin-top: 30px;
 }
+
+@media (max-width: 500px) {
+
+  p {
+    font-size: 8vw;
+  }
+  .wellcom h1 {
+    /* width: 45%; */
+    font-size: 7vw;
+   
+  }
+
+  .about h2 {
+    /* width: 45%; */
+    font-size: 6vw;
+    
+  }
+  .buttons{
+    display: grid;
+  }
 }

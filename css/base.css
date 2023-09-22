@@ -74,3 +74,18 @@ li {
 li:hover {
   border-radius: 10px;
 }
+
+@media (max-width: 500px) {
+
+
+  button {
+    border-radius: 1vw;
+  
+
+    width: 60vw;
+    height: 16vw;
+    font-size: 8vw;
+   
+  }
+  }
+  
