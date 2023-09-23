@@ -1,9 +1,10 @@
 .header {
   display: grid;
   width: 80%;
-  /* background-color: aliceblue; */
+  max-width: 800px;
   margin: auto;
 }
+
 .rockus h1 {
   margin-bottom: 0;
   text-align: start;
@@ -22,18 +23,25 @@
   margin: auto;
 }
 .person {
-  width: 600px;
+  width: 80vw;
+  max-width: 800px;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
+
 .image {
-  max-width: 50%;
+  width: 40vw;
+  max-width: 300px;
+  background-color: aliceblue;
 }
-.image .material-icons {
-  font-size: 300px;
+.image img {
+  width: 100%;
 }
+
 .name {
+  width: 40vw;
+  max-width: 300px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

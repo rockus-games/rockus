@@ -16,18 +16,6 @@ h1:hover > ul {
 h2 {
   color: antiquewhite;
 }
-
-
-h3:hover > ul {
-  pointer-events: all;
-  opacity: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: #55a792;
-  transition: all 0.3s ease;
-}
 h3{
   transition: all 0.3s ease;
 }
@@ -36,6 +24,18 @@ h3:hover {
   color: #02675a;
   transform: scale(1.1);
 }
+
+h3:hover > ul {
+  pointer-events: all;
+  opacity: 100%;
+}
+hr{max-width: 800px;}
+a {
+  text-decoration: none;
+  color: #55a792;
+  transition: all 0.3s ease;
+}
+
 .main_header a:hover{
   transform: scale(1.2); 
 }
