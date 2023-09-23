@@ -3,7 +3,17 @@ body {
   background-color: #181818;
   margin: 0;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
+}
+.material-icons {
+  font-size: 40px;
+  color: #8cada5;
+  transition: all 0.3s;
+}
+.material-icons:hover {
+  font-size: 40px;
+  color: #1bac88;
+  transform: scale(1.3);
 }
 .header {
   display: grid;
