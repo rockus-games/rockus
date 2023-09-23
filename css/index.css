@@ -1,23 +1,11 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  margin: 8px;
-  width: 70%;
-  margin: auto;
-}
-.user {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
+
+
 
 .user_image,
 .user_mail {
   margin: auto;
   display: block;
-
 }
-
 
 .wellcom h1 {
   color: rgb(97, 169, 232);
@@ -39,14 +27,12 @@
   color: #1bac88;
   transform: scale(1.3);
 }
-.yandex{
+.yandex {
   position: absolute;
   bottom: 10px;
 }
 @media (max-width: 500px) {
-  .header {
-    font-size: 2vw;
-  }
+
 
   .wellcom h1 {
     font-size: 7vw;

@@ -5,6 +5,21 @@ body {
   text-align: center;
   width: 100%;
 }
+.header {
+  display: grid;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+.rockus h1 {
+  margin-bottom: 0;
+  text-align: start;
+}
+.nav {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
 h1 {
   color: bisque;
 }
@@ -16,7 +31,7 @@ h1:hover > ul {
 h2 {
   color: antiquewhite;
 }
-h3{
+h3 {
   transition: all 0.3s ease;
 }
 h3:hover {
@@ -29,15 +44,17 @@ h3:hover > ul {
   pointer-events: all;
   opacity: 100%;
 }
-hr{max-width: 800px;}
+hr {
+  max-width: 800px;
+}
 a {
   text-decoration: none;
   color: #55a792;
   transition: all 0.3s ease;
 }
 
-.main_header a:hover{
-  transform: scale(1.2); 
+.main_header a:hover {
+  transform: scale(1.2);
 }
 button {
   border-radius: 1vw;
@@ -79,16 +96,23 @@ li:hover {
 }
 
 @media (max-width: 500px) {
-
-
+  /* .rockus{
+    justify-content: start;
+  }
+.rockus h1{
+  text-align: start;
+  margin-bottom: 0;
+}
+.nav {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+} */
   button {
     border-radius: 1vw;
-  
 
     width: 60vw;
     height: 16vw;
     font-size: 8vw;
-   
   }
-  }
-  
+}

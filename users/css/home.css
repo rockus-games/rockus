@@ -1,19 +1,6 @@
-.header {
-  display: grid;
-  width: 80%;
-  max-width: 800px;
-  margin: auto;
-}
 
-.rockus h1 {
-  margin-bottom: 0;
-  text-align: start;
-}
-.nav {
-  display: flex;
-  justify-content: end;
-  gap: 20px;
-}
+
+
 .nav h3 {
   margin: 0;
 }
@@ -33,7 +20,6 @@
 .image {
   width: 40vw;
   max-width: 300px;
-  background-color: aliceblue;
 }
 .image img {
   width: 100%;
@@ -49,4 +35,23 @@
 }
 .name input {
   width: 100%;
+  border: none;
+  background-color: black;
+}
+
+@media (max-width: 500px) {
+
+  .person {
+    display: grid;
+    justify-content: center;
+  }
+  .image {
+    width: 100%;
+  }
+  .name {
+    width: 100%;
+    gap: 20px;
+ 
+  }
+  
 }
