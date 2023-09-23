@@ -28,10 +28,13 @@ a {
   color: #55a792;
   transition: all 0.3s ease;
 }
-a:hover {
+h3{
+  transition: all 0.3s ease;
+}
+h3:hover {
   cursor: pointer;
   color: #02675a;
-  /* transform: scale(1.2); */
+  transform: scale(1.1);
 }
 .main_header a:hover{
   transform: scale(1.2); 

@@ -1,0 +1,44 @@
+.header {
+  display: grid;
+  width: 80%;
+  /* background-color: aliceblue; */
+  margin: auto;
+}
+.rockus h1 {
+  margin-bottom: 0;
+  text-align: start;
+}
+.nav {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+.nav h3 {
+  margin: 0;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+}
+.person {
+  width: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.image {
+  max-width: 50%;
+}
+.image .material-icons {
+  font-size: 300px;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.name input {
+  width: 100%;
+}
