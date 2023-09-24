@@ -14,16 +14,31 @@
     <title>Настройки аккаунта</title>
     <link rel="stylesheet" href="./css/user_data.css" />
     <link rel="stylesheet" href="../css/base.css" />
+    <style>
+      #user_data {
+        pointer-events: none;
+      }
+    </style>
   </head>
   <body>
     <div class="header">
       <div class="rockus"><h1>Rockus</h1></div>
       <div class="nav">
+        <a href="../index.html">
+          <span title="Главная страница" class="material-icons"
+            >first_page</span
+          >
+        </a>
         <a href="../users/home.html">
           <span title="Домой" class="material-icons">home</span>
         </a>
-        <a href="#">
-          <span title="Настройки аккаунта" class="material-icons">person</span>
+        <a id="user_data" href="#">
+          <span
+            style="color: crimson"
+            title="Настройки аккаунта"
+            class="material-icons"
+            >person</span
+          >
         </a>
         <a href="../mailsender.html"
           ><span title="Отправить сообщение" class="material-icons">mail</span>
