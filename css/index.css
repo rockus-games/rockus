@@ -4,6 +4,7 @@
 .about {
   width: 90%;
   margin: auto;
+  max-width: 800px;
 }
 .about h2 {
   color: #8cada5;
@@ -13,6 +14,10 @@
 .yandex {
   position: absolute;
   bottom: 10px;
+  opacity: 0;
+}
+.yandex:hover{
+  opacity: 100%;
 }
 @media (max-width: 500px) {
   .wellcom h1 {
