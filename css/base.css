@@ -74,7 +74,9 @@ button {
   margin: 1vw;
   background: #181818;
   width: 16vw;
+  min-width: 120px;
   height: 4vw;
+  min-height: 30px;
   font-size: 2vw;
   color: #8cada5;
   transition: all 0.5s ease-out;

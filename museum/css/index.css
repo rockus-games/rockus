@@ -1,80 +1,102 @@
 @font-face {
-    font-family: "Roundhand"; /* Гарнитура шрифта */
-    src: url(/webinfo/fonts/Roundhand.ttf); /* Путь к файлу со шрифтом */
-  }
+  font-family: "Roundhand"; /* Гарнитура шрифта */
+  src: url(/webinfo/fonts/Roundhand.ttf); /* Путь к файлу со шрифтом */
+}
 #rodina {
-    font-family: "Roundhand";
-   
-  }
+  font-family: "Roundhand";
+}
 #emblem {
-    display: block;
-    margin: auto;
-    width: 30%;
-    height: 30%;
+  display: block;
+  margin: auto;
+  width: 30%;
+  height: 30%;
 }
 
 .scroll_element > a > * {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .scroll_element > a {
-    margin-top: auto;
-    margin-bottom: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 #oleg {
-    display: inline-block;
-    width: 10vw;
+  display: inline-block;
+  width: 10vw;
 }
 h2 {
-    color: aliceblue;
-    display: inline-block;
-    margin-left: 1vw;
+  color: aliceblue;
+  display: inline-block;
+  margin-left: 1vw;
 }
 
 #romanovs {
-    font-size: 3vw;
+  font-size: 3vw;
+}
+.main_frame {
+  width: 80%;
+  margin: auto;
+}
+.year_choice {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  row-gap: 10px;
 }
 
-
-
-
-.year_choice{
-    width: 80%;
-    margin: auto;
-
+#year_choice_button {
+  max-width: 100px;
+  width: 100%;
+  min-width: 30px;
+  font-size: 100%;
+  max-height: 20px;
+  border-radius: 8px;
+  justify-content: center;
+  margin: 0;
+  /* color: aliceblue; */
 }
 .main {
-    margin-top: 4vh;
-    scroll-snap-type: y mandatory;
-    height: 400px;
-    overflow: auto;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    display: inline-block;
-    vertical-align: middle;
+  margin-top: 4vh;
+  scroll-snap-type: y mandatory;
+  height: 300px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #262525;
 }
 .scroll_element {
-    scroll-snap-align: center;
-    height: 400px;
-    display: flex;
-    cursor: pointer;
-   width: 80%;
-   margin: auto;
-    /* margin-left: 4vw; */
+  scroll-snap-align: center;
+  height: 400px;
+  display: flex;
+  cursor: pointer;
+  width: 80%;
+  margin: auto;
+  font-size: 16px;
+  /* margin-left: 4vw; */
 }
-
 
 .main::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-
-
-@media (max-width:500px) {
-    #emblem {
-     
-        width: 70%;
-  
-    }
+@media (max-width: 500px) {
+  #emblem {
+    width: 80%;
+  }
+  .main_frame {
+    width: 100%;
+  }
+  .year_choice {
+    gap: 10px;
+    width: 95%;
+    padding: 8px;
+  }
+  .scroll_element {
+    font-size: 12px;
+  }
 }
