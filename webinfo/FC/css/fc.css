@@ -9,7 +9,7 @@ body {
   /* width: 100%; */
   /* min-height: 100vh; */
 }
-.header {
+.files_for_download {
   position: fixed;
   top: 10px;
   left: 10px;
@@ -35,12 +35,12 @@ body {
   font-size: 180%;
   cursor: pointer;
 }
-h1 {
+/* h1 {
   text-align: center;
   color: aliceblue;
   margin-top: 5%;
   width: auto;
-}
+} */
 
 /* * {
   margin: 0;

@@ -80,14 +80,19 @@ button {
   font-size: 2vw;
   color: #8cada5;
   transition: all 0.5s ease-out;
+  /* box-shadow: 2px 2px bisque; */
 }
 button:hover {
   transform: scale(1.1);
   background-color: #0a0707;
-  border-radius: 0;
+  /* border-radius: 0; */
   color: #1bac88;
   /* font-size: 3.5vw; */
   cursor: pointer;
+  border: none;
+  border-right: 1px solid #888888;
+  border-bottom: 1px solid #888888;
+  /* box-shadow: 1px 1px 8px #888888; */
 }
 ul {
   display: initial;
@@ -112,9 +117,12 @@ li {
 }
 li:hover {
   color: #02675a;
-  border-radius: 0;
+  /* border-radius: 0; */
   background: #0a0707;
   transform: scale(1.02);
+  border: none;
+  border-right: 1px solid #888888;
+  border-bottom: 1px solid #888888;
 }
 
 @media (max-width: 500px) {
