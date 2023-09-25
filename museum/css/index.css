@@ -1,14 +1,14 @@
-body {
-    background-color: rgb(10, 13, 20);
-    font-family: "Philosopher", cursive;
-}
-a{
-    text-decoration: none;
-}
+@font-face {
+    font-family: "Roundhand"; /* Гарнитура шрифта */
+    src: url(/webinfo/fonts/Roundhand.ttf); /* Путь к файлу со шрифтом */
+  }
+#rodina {
+    font-family: "Roundhand";
+   
+  }
 #emblem {
     display: block;
     margin: auto;
-    margin-top: -3vh;
     width: 30%;
     height: 30%;
 }
@@ -35,19 +35,14 @@ h2 {
     font-size: 3vw;
 }
 
-.slider {
-    display: inline-block;
-    margin-left: 12vw;
-    height: 400px;
-    margin-top: 4vh;
-    vertical-align: middle;
-    padding-top: 0vh;
-}
 
-.slider > * {
-    width: 100px;
-}
 
+
+.year_choice{
+    width: 80%;
+    margin: auto;
+
+}
 .main {
     margin-top: 4vh;
     scroll-snap-type: y mandatory;
@@ -59,44 +54,27 @@ h2 {
     display: inline-block;
     vertical-align: middle;
 }
-
 .scroll_element {
     scroll-snap-align: center;
     height: 400px;
     display: flex;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    margin-left: 4vw;
+   width: 80%;
+   margin: auto;
+    /* margin-left: 4vw; */
 }
 
-.scroll_element:hover {
-    /* transform: scale(1.1); */
-}
 
 .main::-webkit-scrollbar {
     display: none;
 }
 
-#sch_btn {
-    display: block;
-    margin: auto;
-    background-color: rgb(23, 32, 51);
-    border: 0;
-    color: aliceblue;
-    cursor: pointer;
-    padding: 10px;
-    font-family: "Philosopher", cursive;
-    font-size: 40px;
-}
 
-#yr_btn {
-    display: block;
-    margin: auto;
-    background-color: rgb(23, 32, 51);
-    border: 0;
-    color: aliceblue;
-    cursor: pointer;
-    padding: 5px;
-    font-family: "Philosopher", cursive;
-    font-size: 15px;
+
+@media (max-width:500px) {
+    #emblem {
+     
+        width: 70%;
+  
+    }
 }

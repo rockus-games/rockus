@@ -30,6 +30,9 @@ body {
   justify-content: end;
   gap: 20px;
 }
+.nav h3 {
+  margin: 11px;
+}
 h1 {
   color: bisque;
 }
