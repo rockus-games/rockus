@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Roundhand"; /* Гарнитура шрифта */
+  src: url(../fonts/Roundhand.ttf); /* Путь к файлу со шрифтом */
+}
 body {
   display: grid;
   grid-template-columns: 1fr 2.6fr 1fr;
@@ -75,10 +79,7 @@ hr {
   grid-template-columns: 1fr 1fr;
 }
 
-@font-face {
-  font-family: "Roundhand"; /* Гарнитура шрифта */
-  src: url(../fonts/Roundhand.ttf); /* Путь к файлу со шрифтом */
-}
+
 
 @media (max-width: 500px) {
   body {

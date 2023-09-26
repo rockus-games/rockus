@@ -3,7 +3,9 @@
 body {
   font-family: "Ysabeau", sans-serif;
   background-color: #181818;
+  border: 1px solid #ab2909;
 }
+
 a {
   color: #40a6db;
   text-decoration: none;
@@ -13,6 +15,14 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   color: #cccccc;
+  border-bottom: 1px solid #ab2909;
+}
+#today {color: aqua;
+
+}
+#footer {
+  border-top: 1px solid #ab2909;
+  border-bottom: none;
 }
 .header_title {
   font-weight: 500;
@@ -31,13 +41,14 @@ hr {
   display: grid;
   grid-template-columns: 0.14fr 0.16fr 1fr;
   color: #cccccc;
-  height: 90vh;
+  height: 85vh;
+
   /* width: 99vw; */
 }
 
 .my_body_columns_1 {
   text-align: center;
-  border-right: solid 1px #cccccc;
+  border-right: solid 1px #ab2909;
   min-width: 60px;
   overflow-y: scroll;
   -ms-overflow-style: none;
@@ -53,7 +64,7 @@ hr {
   display: none;
 }
 .my_body_columns_2 {
-  border-right: solid 1px #cccccc;
+  border-right: solid 1px #ab2909;
   text-align: center;
   min-width: 80px;
   overflow-y: scroll;
@@ -64,12 +75,14 @@ hr {
   display: none;
 }
 .my_body_columns_3 {
+  margin-top: 16px;
+  margin-bottom: 16px;
   text-align: center;
-  background-color: #1f1f1f;
+  /* padding: 0px; */
   overflow-y: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 .column3_img {
   width: 60%;
@@ -92,8 +105,13 @@ h3 {
   /* color: #ac4c1f; */
 }
 table {
-  background-color: #ffffff;
-  color: #181818;
+  border: 1px dotted #40a6db;
+  /* border-radius: 4px; */
+  /* font-weight: bold; */
+  font-size: 20px;
+  color: aliceblue;
+  margin: auto;
+  padding: 16px;
 }
 h4 {
   color: #1f1f1f;
@@ -183,14 +201,14 @@ button:hover {
 @media (max-width: 500px) {
   body {
     margin: 0;
-    border-left: #070606 solid;
-    border-right: #070606 solid;
+    border: none;
+    /* border:1px solid #ab2909; */
   }
   .my_body {
     grid-template-columns: 1fr;
     display: grid;
     height: inherit;
-    /* width: 100vw; */
+    height: 80vh;
   }
   .header p {
     font-size: 18px;
@@ -207,12 +225,15 @@ button:hover {
     bottom: 0;
     height: 60px;
     background-color: #070606;
+    border-bottom: none;
   }
 
   .my_body_columns_1 {
-    border-right: inherit;
+    border-right: none;
     overflow-y: inherit;
-    margin-top: 70px;
+    margin: auto;
+    /* margin-top: 70px; */
+    /* text-align: center; */
   }
   .my_body_columns_1 > p {
     margin: 0;

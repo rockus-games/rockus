@@ -10,80 +10,55 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
-<link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/base.css" />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
-
-      body {
-        font-family: "Ysabeau", sans-serif;
-        background-color: #181818;
-        text-align: center;
-      }
-   
-      .header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        max-width: 60%;
-        margin: auto;
-      }
-   
+     
       h1:hover {
         cursor: pointer;
-       color: #02675a;
+        color: #02675a;
       }
       h1:hover > ul {
         pointer-events: all;
         opacity: 100%;
       }
-      
-      p {
-        font-size: 20px;
-        margin-top: 10px;
-      }
 
       .main_frame {
         width: 80%;
+        max-width: 600px;
         height: 80vh;
         border: #fff solid 1px;
         color: #fff;
         margin: auto;
       }
-   
+
       .finished {
         display: none;
-      }
-      
-      @media (max-width: 500px) {
-        p {
-          font-size: 15px;
-          margin-top: 6px;
-        }
-        h1 {
-          font-size: 22px;
-        }
       }
     </style>
     <title>Проекты</title>
   </head>
   <body>
     <div class="header">
-      <a id="current_projects" onclick="switch_main_frame('current')">
-        <p>Текущие</p>
-      </a>
-      <h1>
-        Проекты
-        <ul>
-          <a href="./idea.html"> <li>Идеи</li></a>
-          <a href="../mailsender.html"> <li>Предложить идею</li></a>
-        </ul>
-      </h1>
-      <a id="finished" onclick="switch_main_frame('finished')">
-        <p>Завершенные</p>
-      </a>
-    </div>
-    <hr size="" width="90%" />
+      <div class="rockus">
+        <h1>
+          Проекты
+          <ul>
+            <a href="./idea.html"> <li>Идеи</li></a>
+            <a href="../mailsender.html"> <li>Предложить идею</li></a>
+          </ul>
+        </h1>
+      </div>
+      <div class="nav">
+        <a id="current_projects" onclick="switch_main_frame('current')">
+          <h3>Текущие</h3>
+        </a>
 
-    <br /><br />
+        <a id="finished" onclick="switch_main_frame('finished')">
+          <h3>Завершенные</h3>
+        </a>
+      </div>
+    </div>
+
     <div class="main_frame current"><h2>Текущие</h2></div>
     <div class="main_frame finished">
       <h2>Завершенные</h2>
@@ -91,7 +66,7 @@
         ><button>Кампус</button></a
       >
     </div>
-   
+
     <script src="./projects.js"></script>
   </body>
 </html>

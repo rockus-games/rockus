@@ -20,6 +20,7 @@ body {
   width: 80%;
   max-width: 800px;
   margin: auto;
+  
 }
 .rockus h1 {
   margin-bottom: 0;
@@ -29,6 +30,9 @@ body {
   display: flex;
   justify-content: end;
   gap: 20px;
+}
+.nav h3 {
+  margin: 11px;
 }
 h1 {
   color: bisque;
@@ -71,24 +75,30 @@ button {
   margin: 1vw;
   background: #181818;
   width: 16vw;
+  min-width: 120px;
   height: 4vw;
+  min-height: 30px;
   font-size: 2vw;
   color: #8cada5;
   transition: all 0.5s ease-out;
+  /* box-shadow: 2px 2px bisque; */
 }
 button:hover {
-  /* transform: scale(1.1); */
+  transform: scale(1.1);
   background: #0a0707;
-  border-radius: 0;
+  border-radius: 1vw;
   color: #1bac88;
   /* font-size: 3.5vw; */
   cursor: pointer;
+  border: none;
+  border-right: 1px solid #888888;
+  border-bottom: 1px solid #888888;
+  /* box-shadow: 1px 1px 8px #888888; */
 }
 ul {
   display: initial;
   position: absolute;
-  /* top: 40px; */
-  width: 100px;
+  /* background-color: #2a2a2a; */
   margin: 0;
   padding: 0;
   opacity: 0;
@@ -96,13 +106,24 @@ ul {
   pointer-events: none;
 }
 li {
+  min-width: 100px;
+  padding: 8px;
   list-style-type: none;
-  margin: 2px;
-  background-color: white;
-  transition: all 0.2s ease;
+  margin: 12px;
+  border-radius: 10px;
+  background-color: #181818;
+  border-left: 1px solid bisque;
+  border-top: 1px solid bisque;
+  transition: all 0.5s ease;
 }
 li:hover {
-  border-radius: 10px;
+  color: #02675a;
+  /* border-radius: 0; */
+  background: #0a0707;
+  transform: scale(1.02);
+  border: none;
+  border-right: 1px solid #888888;
+  border-bottom: 1px solid #888888;
 }
 
 @media (max-width: 500px) {

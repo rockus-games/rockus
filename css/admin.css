@@ -5,11 +5,10 @@ body {
 h1{
  color: bisque;
 }
-.tables{
+/* .tables{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
-    /* background-color: #ccc; */
 }
 .schedule{
     width: 90%;
@@ -18,7 +17,7 @@ h1{
     border: #ccc solid 1px;
     margin: auto;
     
-}
+} */
 button {
   border-radius: 1.5vw;
   margin: 1vw;

@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная страница</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
-      rel="stylesheet"
-    />
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+ 
+
+    <title>Музей "РОДИНА"</title>
+   <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="./css/index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
@@ -72,44 +79,45 @@
       //   window.location.href = "./webinfo/about/school_page.html";
       // }
     </script>
-    <style>
-      #Business_card {
-        text-decoration: none;
-        /* position: fixed;
-            top: 0;
-            left: 0; */
-        color: antiquewhite;
-        font-size: 10vh;
-      }
-      @media (max-width: 500px) {
-        #Business_card {
-          font-size: 4vh;
-        }
-      }
-    </style>
+  
   </head>
   <body>
-    <a id="Business_card" href="./Business_card/index.html">Визитка</a>
-
-    <img id="emblem" src="./img/emblems/Main_img.png" alt="" /><br />
-
-    <div>
-      <a href="/webinfo/about/school_page.html"><button id="sch_btn">История школы</button></a>
+    <div class="header">
+      <div class="rockus"><h1 id="rodina">Музей истории "Родина"</h1></div>
+      <div class="nav">
+        <a id="Business_card" href="./Business_card/index.html"><h3>Визитка</h3></a>
+        <a id="main_page" href="../index.html">
+          <span  title="Главная страница" class="material-icons"
+            >first_page</span
+          ></a
+        >
+        
+        <a href="../mailsender.html"
+          ><span title="Отправить сообщение" class="material-icons">mail</span>
+        </a>
+      </div>
     </div>
-    <div class="slider">
-      <button id="yr_btn" onclick="clickYear(800)">800</button>
-      <button id="yr_btn" onclick="clickYear(900)">900</button>
-      <button id="yr_btn" onclick="clickYear(1000)">1000</button>
-      <button id="yr_btn" onclick="clickYear(1100)">1100</button>
-      <button id="yr_btn" onclick="clickYear(1200)">1200</button>
-      <button id="yr_btn" onclick="clickYear(1300)">1300</button>
-      <button id="yr_btn" onclick="clickYear(1400)">1400</button>
-      <button id="yr_btn" onclick="clickYear(1500)">1500</button>
-      <button id="yr_btn" onclick="clickYear(1600)">1600</button>
-      <button id="yr_btn" onclick="clickYear(1700)">1700</button>
-      <button id="yr_btn" onclick="clickYear(1800)">1800</button>
-      <button id="yr_btn" onclick="clickYear(1900)">1900</button>
+    <hr size="" width="80%" />
+
+    <div class="main_frame">
+      <img id="emblem" src="./img/emblems/Main_img.png" alt="" /><br />
+  
+     
+      <div class="year_choice">
+        <button id="year_choice_button"  onclick="clickYear(800)">800</button>
+        <button id="year_choice_button"  onclick="clickYear(900)">900</button>
+        <button id="year_choice_button"  onclick="clickYear(1000)">1000</button>
+        <button id="year_choice_button"  onclick="clickYear(1100)">1100</button>
+        <button id="year_choice_button"  onclick="clickYear(1200)">1200</button>
+        <button id="year_choice_button"  onclick="clickYear(1300)">1300</button>
+        <button id="year_choice_button"  onclick="clickYear(1400)">1400</button>
+        <button id="year_choice_button"  onclick="clickYear(1500)">1500</button>
+        <button id="year_choice_button"  onclick="clickYear(1600)">1600</button>
+        <button id="year_choice_button"  onclick="clickYear(1700)">1700</button>
+        <button id="year_choice_button"  onclick="clickYear(1800)">1800</button>
+        <button id="year_choice_button"  onclick="clickYear(1900)">1900</button>
+      </div> 
+      <div class="main"></div>
     </div>
-    <div class="main"></div>
   </body>
 </html>

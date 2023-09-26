@@ -1,102 +1,102 @@
-body {
-    background-color: rgb(10, 13, 20);
-    font-family: "Philosopher", cursive;
+@font-face {
+  font-family: "Roundhand"; /* Гарнитура шрифта */
+  src: url(/webinfo/fonts/Roundhand.ttf); /* Путь к файлу со шрифтом */
 }
-a{
-    text-decoration: none;
+#rodina {
+  font-family: "Roundhand";
 }
 #emblem {
-    display: block;
-    margin: auto;
-    margin-top: -3vh;
-    width: 30%;
-    height: 30%;
+  display: block;
+  margin: auto;
+  width: 30%;
+  height: 30%;
 }
 
 .scroll_element > a > * {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .scroll_element > a {
-    margin-top: auto;
-    margin-bottom: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 #oleg {
-    display: inline-block;
-    width: 10vw;
+  display: inline-block;
+  width: 10vw;
 }
 h2 {
-    color: aliceblue;
-    display: inline-block;
-    margin-left: 1vw;
+  color: aliceblue;
+  display: inline-block;
+  margin-left: 1vw;
 }
 
 #romanovs {
-    font-size: 3vw;
+  font-size: 3vw;
+}
+.main_frame {
+  width: 80%;
+  margin: auto;
+}
+.year_choice {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  row-gap: 10px;
 }
 
-.slider {
-    display: inline-block;
-    margin-left: 12vw;
-    height: 400px;
-    margin-top: 4vh;
-    vertical-align: middle;
-    padding-top: 0vh;
+#year_choice_button {
+  max-width: 100px;
+  width: 100%;
+  min-width: 30px;
+  font-size: 100%;
+  max-height: 20px;
+  border-radius: 8px;
+  justify-content: center;
+  margin: 0;
+  /* color: aliceblue; */
 }
-
-.slider > * {
-    width: 100px;
-}
-
 .main {
-    margin-top: 4vh;
-    scroll-snap-type: y mandatory;
-    height: 400px;
-    overflow: auto;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    display: inline-block;
-    vertical-align: middle;
+  margin-top: 4vh;
+  scroll-snap-type: y mandatory;
+  height: 300px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #262525;
 }
-
 .scroll_element {
-    scroll-snap-align: center;
-    height: 400px;
-    display: flex;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    margin-left: 4vw;
-}
-
-.scroll_element:hover {
-    /* transform: scale(1.1); */
+  scroll-snap-align: center;
+  height: 400px;
+  display: flex;
+  cursor: pointer;
+  width: 80%;
+  margin: auto;
+  font-size: 16px;
+  /* margin-left: 4vw; */
 }
 
 .main::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-#sch_btn {
-    display: block;
-    margin: auto;
-    background-color: rgb(23, 32, 51);
-    border: 0;
-    color: aliceblue;
-    cursor: pointer;
-    padding: 10px;
-    font-family: "Philosopher", cursive;
-    font-size: 40px;
-}
-
-#yr_btn {
-    display: block;
-    margin: auto;
-    background-color: rgb(23, 32, 51);
-    border: 0;
-    color: aliceblue;
-    cursor: pointer;
-    padding: 5px;
-    font-family: "Philosopher", cursive;
-    font-size: 15px;
+@media (max-width: 500px) {
+  #emblem {
+    width: 80%;
+  }
+  .main_frame {
+    width: 100%;
+  }
+  .year_choice {
+    gap: 10px;
+    width: 95%;
+    padding: 8px;
+  }
+  .scroll_element {
+    font-size: 12px;
+  }
 }

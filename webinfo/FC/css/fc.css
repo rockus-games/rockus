@@ -1,0 +1,13 @@
+.modul1 {
+  overflow-y: scroll;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  height: 500px;
+  background-color: #181818;
+  transition: all 0.3s;
+}
+.modul1:hover {
+  background-color:bisque;
+  border-radius: 20px;
+}
