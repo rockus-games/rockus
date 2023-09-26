@@ -12,3 +12,10 @@ function playNote(index) {
   audio.currentTime = 0;
   audio.play();
 }
+function playAudio() {
+  var audio = new Audio(
+    `../files/audio.ogg`
+  );
+  audio.currentTime = 0;
+  audio.play();
+}
