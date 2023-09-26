@@ -84,7 +84,7 @@ button {
   /* box-shadow: 2px 2px bisque; */
 }
 button:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
   background: #0a0707;
   border-radius: 1vw;
   color: #1bac88;
