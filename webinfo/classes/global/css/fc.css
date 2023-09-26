@@ -1,0 +1,21 @@
+.modul1 {
+  overflow-y: scroll;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  height: 500px;
+  background-color:rgba(255, 228, 196,0.8);
+  transition: all 0.3s;
+}
+.modul1:hover {
+
+  border-radius: 30px;
+
+}
+.modul1 h2{
+  color: rgb(175, 8, 8);
+}
+
+.modul1 li{
+  color: rgb(255, 253, 253);
+}
