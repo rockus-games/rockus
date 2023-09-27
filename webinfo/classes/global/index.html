@@ -32,11 +32,12 @@
 
     <div class="modul1">
       <h2>Задача:</h2>
-      <li onmouseover="playNote(0)">
+      <li id="do" onmouseover="playNote(0)" onmouseleave="fixColor(0)">
         Создать на рабочем столе папку с именем Turtle
       </li>
-      <li onmouseover="playNote(1)">
-        Скачать с хранилища файл maze.txt, переименовать на maze.py и поместить в папку Turtle
+      <li id="re" onmouseover="playNote(1)" onmouseleave="fixColor(1)">
+        Скачать с хранилища файл maze.txt, переименовать на maze.py и поместить
+        в папку Turtle
       </li>
       <li onmouseover="playNote(2)">
         Запустить Visual Studio Code и открыть папку Turtle в нём
@@ -51,6 +52,10 @@
       <li onmouseover="playNote(5)">
         Сохранить файл и сообщить учителю о завершении
       </li>
+      <li onmouseover="playNote(6)">
+        Создать свой лабиринт
+      </li>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
