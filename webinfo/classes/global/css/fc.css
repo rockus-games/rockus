@@ -1,22 +1,52 @@
 .modul1 {
-  overflow-y: scroll;
-  overflow: hidden;
+  overflow: auto;
   width: 80%;
   margin: auto;
   height: 500px;
-  background-color:rgba(255, 228, 196,0.8);
+  background-color: rgba(255, 228, 196, 0.8);
   transition: all 0.3s;
+  animation-duration: 3s;
+  animation-name: borders;
 }
 .modul1:hover {
-
+  background-color: rgba(247, 197, 136, 0.8);
   border-radius: 30px;
-
 }
-.modul1 h2{
+.modul1 h2 {
   color: rgb(175, 8, 8);
 }
 
-.modul1 li{
+.modul1 li {
+  animation: opasity;
+  animation-duration: 3s;
   color: rgb(255, 253, 253);
   background-color: chocolate;
+  margin: 20px;
+  transition: all 1s;
+}
+.modul1 li:hover {
+  color: rgb(247, 197, 136);
+  margin: 30px 60px;
+}
+@keyframes borders {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    border-radius: 200px;
+    background-color: rgba(247, 197, 136, 0.8);
+  }
+
+  to {
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+@keyframes opasity {
+  from {
+ opacity: 0;
+  }
+
+  to {
+   opacity: 100%;
+  }
 }
