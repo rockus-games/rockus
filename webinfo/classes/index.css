@@ -49,6 +49,10 @@ hr {
   overflow: auto;
   scrollbar-width: 5px;
   text-align: center;
+  /* overflow-y: hidden; */
+}
+.columns::-webkit-scrollbar{
+  display: none;
 }
 .one {
   border-right: solid 1px #ab2909;
