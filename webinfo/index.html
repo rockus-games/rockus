@@ -43,7 +43,9 @@
         <h3>
           <a href="classes/7_Grade/">7 класс</a>
           <ul>
-            <a href="./classes/7_Grade/technology/index.html"><li>Технология</li></a>
+            <a href="./classes/7_Grade/technology/index.html"
+              ><li>Технология</li></a
+            >
             <!-- <a href="#"><li>ЕГЭ</li></a> -->
           </ul>
         </h3>
@@ -62,19 +64,32 @@
       <a href="../navigator_club/"><h3>Кружки</h3></a>
       <a href="../projects/projects.html"><h3>Проекты</h3></a>
       <a href="./baraxolka.html"><h3>Барахолка</h3></a>
-      <br>
-      <a href="../webinfo/classes/global/quests/quests_hub.html"><h3>?????????</h3></a>
+      <br />
+      <a href="../webinfo/classes/global/quests/quests_hub.html"
+        ><h3>?????????</h3></a
+      >
 
       <!-- <a href="./achievements.html">Достижения учеников</a> <br> -->
     </aside>
     <main>
       <div class="main_header">
-        <a class="trumbon" href="https://www.youtube.com/watch?v=w-wqHVGSc8o"
+        <a
+          class="trumbon main_header_element"
+          href="https://www.youtube.com/watch?v=w-wqHVGSc8o"
           >🎺</a
         >
         <div>
           <a href="./classes/olympiads.html"
-            ><img src="./img/graduation-cap.png" alt=""
+            ><img
+              class="main_header_element"
+              src="./img/graduation-cap.png"
+              alt=""
+          /></a>
+          <a
+            onmouseover="playAudio()"
+            onmouseleave="stopPlay()"
+            href="./curiosity/curiosity.html"
+            ><img class="owl main_header_element" src="./img/owl.png"
           /></a>
         </div>
       </div>
@@ -158,5 +173,18 @@
         </div>
       </div> -->
     </aside>
+    <script>
+      var owl = document.querySelector(".owl");
+      var audio = new Audio(`./curiosity/assets/audio/owl_great_horned.mp3`);
+      function playAudio() {
+        audio.currentTime = 0;
+        audio.play();
+        owl.style.scale = 1.5;
+      }
+      function stopPlay() {
+        owl.style.scale = 1;
+        audio.pause();
+      }
+    </script>
   </body>
 </html>
