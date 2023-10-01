@@ -78,10 +78,14 @@ hr {
   font-size: 2vw;
   color: bisque;
 }
-
+#nasha_shkola,#courses{
+  transition: all 0.3s;
+}
+#nasha_shkola:hover,
 #pismo:hover,
 #Rockus:hover,
 #courses:hover {
+  transform: scale(1.03);
   color: #02675a;
 }
 #img_svo {

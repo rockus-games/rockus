@@ -5,6 +5,7 @@ body {
   text-align: center;
   /* width: 100%; */
 }
+
 .material-icons {
   font-size: 40px;
   color: #8cada5;
@@ -17,7 +18,7 @@ body {
 }
 .header {
   display: grid;
-  width: 80%;
+  /* width: 80%; */
   max-width: 800px;
   margin: auto;
   

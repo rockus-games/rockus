@@ -24,9 +24,9 @@
   </head>
   <body>
     <aside class="left">
-      <a title="Администраторы" href="/admin.html"
+      <!-- <a title="Администраторы" href="/admin.html"
         ><h1 id="Rockus">Rockus</h1></a
-      >
+      > -->
       <hr size="" width="90%" />
       <div class="pismo_div_mobile">
         <a id="pismo" href="./letter_to_soldier/letter_to_soldier.html"
@@ -42,7 +42,10 @@
         /></a>
         <hr size="" width="90%" />
       </div>
-      <a href="./about/school_page.html"><h3>Наша школа</h3></a> <br />
+      <a href="./about/school_page.html"
+        ><h1 id="nasha_shkola">Наша школа</h1></a
+      >
+      <br />
       <a href="/museum/" title="Музей"
         ><img id="museum" src="/museum/img/emblems/Main_img.png" width="40%"
       /></a>
@@ -81,32 +84,6 @@
     </aside>
     <main>
       <div class="main_header">
-        <div class="header">
-          <div class="rockus"><h1>Rockus</h1></div>
-          <div class="nav">
-            <a id="main_page" href="../index.html">
-              <span
-                style="color: crimson"
-                title="Главная страница"
-                class="material-icons"
-                >first_page</span
-              ></a
-            >
-            <a href="./users/home.html">
-              <span title="Домой" class="material-icons">home</span>
-            </a>
-            <a href="./users/user_data.html">
-              <span title="Настройки аккаунта" class="material-icons"
-                >person</span
-              >
-            </a>
-            <a href="./mailsender.html"
-              ><span title="Отправить сообщение" class="material-icons"
-                >mail</span
-              >
-            </a>
-          </div>
-        </div>
         <a
           title="Музыкальная пауза"
           class="trumbon main_header_element"
@@ -114,6 +91,11 @@
           >🎺</a
         >
         <div>
+          <!-- <a href="https://sferum.ru/?p=dashboard&schoolId=204113612"
+          ><img  class="main_header_element"
+            id="contact"
+            src="https://theprogs.ru/wp-content/uploads/sferum-logo-200x200.png.webp"
+        /></a> -->
           <a
             title="Олимпиады, конкурсы, конференции"
             href="./classes/olympiads.html"
@@ -124,13 +106,14 @@
           /></a>
           <a
             title="Клуб инженеров"
-            onmouseover="playAudio()"
+            onmouseover="playOwl()"
             onmouseleave="stopPlay()"
             href="./curiosity/curiosity.html"
             ><img class="owl main_header_element" src="./img/owl.png"
           /></a>
         </div>
       </div>
+     
       <hr size="" width="90%" />
       <div class="pismo_div_desktop">
         <a id="pismo" href="./letter_to_soldier/letter_to_soldier.html"
@@ -197,32 +180,22 @@
       <a href="/courses/pages/oge-ege/"
         ><h3>OGE-EGE - Информатика, математика, английский</h3></a
       >
-      <!-- <div class="rightContent">
-         <div class="courses"><a href="/fish.html">ROBO  -</a>
-        </div>
-        <div class="courses"><a href="/fish.html">Робототехника (ARDUINO)</a>
-        </div>
-        <div class="courses"><a href="/courses/pages/oge-ege/">OGE-EGE</a></div>
-        <div class="courses">
-          <a href="/courses/pages/oge-ege/"
-            >Информатика, математика, английский</a
-          >
-          <hr size="" width="70%" />
-        </div>
-      </div> -->
+    
     </aside>
     <script>
       var owl = document.querySelector(".owl");
-      var audio = new Audio(`./curiosity/assets/audio/owl_great_horned.mp3`);
-      function playAudio() {
-        audio.currentTime = 0;
-        audio.play();
+      var trumbon = document.querySelector(".trumbon");
+      var owlSound = new Audio(`./curiosity/assets/audio/owl_great_horned.mp3`);
+      function playOwl() {
+        owlSound.currentTime = 0;
+        owlSound.play();
         owl.style.scale = 1.5;
       }
       function stopPlay() {
         owl.style.scale = 1;
-        audio.pause();
+        owlSound.pause();
       }
+
     </script>
   </body>
 </html>
