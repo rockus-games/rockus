@@ -64,6 +64,14 @@ hr {
   margin-top: 16px;
   margin-bottom: 16px;
 }
+#lis{
+  width: 70%;
+  margin: auto;
+}
+li{
+  text-align: left;
+  font-size: 2vw;
+}
 .column3_img {
   width: 60%;
 }
