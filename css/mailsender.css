@@ -5,52 +5,23 @@
     border: 0;
     box-sizing: border-box;
 }
-a {
-    text-decoration: none;
-}
+
 ul,
 ol,
 li {
     list-style: none;
 }
-img {
-    vertical-align: top;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: inherit;
-    font-size: inherit;
-}
-html,
-body {
-    height: 100%;
-    line-height: 1;
-    font-size: 14px;
-    background-color: #333;
-    font-family: Arial, "Helvetica Neue", Helvetica, sens-serif;
-}
+
+
+
+
 .form * {
     outline: none;
 }
 .form_body {
     position: relative;
 }
-/* .form_body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 110%;
-    height: 100%;
-    background: rgba(51, 51, 51, 0.9) url(/img/jdun.gif) center / 50px no-repeat;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s ease 0s; 
-} */
+
 .form_body._sending::after {
     opacity: 1;
     visibility: visible;
