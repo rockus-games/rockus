@@ -1,171 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/mailsender.css" />
-        <title>Отправить письмо</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script src="./js/send.js"></script>
-        <script>
-            let password = "";
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/mailsender.css" />
+    <title>Отправить письмо</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/send.js"></script>
+    <script>
+      let password = "";
 
-            function passGen() {
-                var chars =
-                    "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      function passGen() {
+        var chars =
+          "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-                var pass = "";
+        var pass = "";
 
-                for (var i = 0; i < 5; i++) {
-                    pass += chars[Math.floor(Math.random() * chars.length)];
-                }
+        for (var i = 0; i < 5; i++) {
+          pass += chars[Math.floor(Math.random() * chars.length)];
+        }
 
-                return pass;
-            }
+        return pass;
+      }
 
-            function emailCheckValid(value) {
-                return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(
-                    value
-                );
-            }
+      function emailCheckValid(value) {
+        return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(value);
+      }
 
-            function checkPassword() {
-                var modal = document.querySelector(".modal");
-                document.querySelector("._email").classList.remove("_error");
+      function checkPassword() {
+        var modal = document.querySelector(".modal");
+        document.querySelector("._email").classList.remove("_error");
 
-                if (!emailCheckValid(document.querySelector("._email").value)) {
-                    modal.style.display = "block";
-                    document.querySelector(".password").value = "";
-                    document.querySelector(
-                        ".modal-content"
-                    ).style.backgroundColor = "white";
+        if (!emailCheckValid(document.querySelector("._email").value)) {
+          modal.style.display = "block";
+          document.querySelector(".password").value = "";
+          document.querySelector(".modal-content").style.backgroundColor =
+            "white";
 
-                    password = passGen();
+          password = passGen();
 
-                    let data = {
-                        service_id: "service_fgy603i",
-                        template_id: "template_k7y5723",
-                        user_id: "Q01ft4YLXVB43-m-G",
-                        template_params: {
-                            pass: password,
-                            mail: document.querySelector("._email").value,
-                        },
-                    };
+          let data = {
+            service_id: "service_fgy603i",
+            template_id: "template_k7y5723",
+            user_id: "Q01ft4YLXVB43-m-G",
+            template_params: {
+              pass: password,
+              mail: document.querySelector("._email").value,
+            },
+          };
 
-                    $.ajax("https://api.emailjs.com/api/v1.0/email/send", {
-                        type: "POST",
-                        data: JSON.stringify(data),
-                        contentType: "application/json",
-                    });
-                } else {
-                    alert("Введите корректную почту");
-                    document.querySelector("._email").classList.add("_error");
-                }
-            }
+          $.ajax("https://api.emailjs.com/api/v1.0/email/send", {
+            type: "POST",
+            data: JSON.stringify(data),
+            contentType: "application/json",
+          });
+        } else {
+          alert("Введите корректную почту");
+          document.querySelector("._email").classList.add("_error");
+        }
+      }
 
-            function closeModal() {
-                document.querySelector(".modal").style.display = "none";
-            }
+      function closeModal() {
+        document.querySelector(".modal").style.display = "none";
+      }
 
-            function blackboardPassword() {
-                var pass = document.querySelector(".password").value;
-                if (pass != password || password == "") {
-                    document.querySelector(
-                        ".modal-content"
-                    ).style.backgroundColor = "red";
-                } else {
-                    emailConfirmed = true;
-                    closeModal();
-                }
-            }
+      function blackboardPassword() {
+        var pass = document.querySelector(".password").value;
+        if (pass != password || password == "") {
+          document.querySelector(".modal-content").style.backgroundColor =
+            "red";
+        } else {
+          emailConfirmed = true;
+          closeModal();
+        }
+      }
 
-            function keypress(ele) {
-                if (event.key === "Enter") {
-                    checkPassword();
-                }
-            }
-        </script>
-    </head>
-    <body>
-        <div class="modal">
-            <div class="modal-content">
-                <div>
-                    <label for="password"
-                        >Введите одноразовый пароль из письма:</label
-                    >
-                    <input
-                        type="text"
-                        class="password"
-                        name="password"
-                        onkeydown="keypress(this)"
-                    />
-                    <input
-                        type="button"
-                        onclick="blackboardPassword()"
-                        value="Отправить"
-                    />
-                </div>
-                <span class="close" onclick="closeModal()">&times;</span>
-            </div>
+      function keypress(ele) {
+        if (event.key === "Enter") {
+          checkPassword();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content">
+        <div>
+          <label for="password">Введите одноразовый пароль из письма:</label>
+          <input
+            type="text"
+            class="password"
+            name="password"
+            onkeydown="keypress(this)"
+          />
+          <input
+            type="button"
+            onclick="blackboardPassword()"
+            value="Отправить"
+          />
         </div>
-        <div class="form">
-            <form action="#" id="form" class="form_body">
-                <h1 class="form_title">Отправка письма</h1>
-                <div class="form_item">
-                    <label for="formName" class="form_label">Имя*</label>
-                    <input
-                        id="formName"
-                        type="text"
-                        name="name"
-                        class="form_input _req"
-                    />
-                </div>
-                <div class="form_item">
-                    <label for="formEmail" class="">E-mail*</label>
-                    <input
-                        id="formEmail"
-                        type="text"
-                        name="email"
-                        class="form_input _req _email"
-                    />
-                    <button
-                        class="confirm_email"
-                        type="button"
-                        onclick="checkPassword()"
-                    >
-                        Подтвердить почту
-                    </button>
-                </div>
-                <div class="form_item">
-                    <label for="fromMessage" class="form_label">
-                        Сообщение
-                    </label>
-                    <textarea
-                        name="message"
-                        id="formMessage"
-                        class="form_input _req"
-                    ></textarea>
-                </div>
-                <button class="form_button" type="button" onclick="sendMail()">
-                    Отправить
-                </button>
-            </form>
-            <br />
-            <div class="contacts">
-                <a href="https://wa.me/79096934037"
-                    ><img id="contact" src="./assets/img/WhatsApp.png"
-                /></a>
-                <a href="viber://chat?number=%2B79096934037"
-                    ><img id="contact" src="./assets/img/viber.png"
-                /></a>
-                <a href="https://t.me/RockusStudio"
-                    ><img id="contact" src="./assets/img/Telegram.png"
-                /></a>
-                <a href="https://vk.com/id661890495"
-                    ><img id="contact" src="./assets/img/VK.png"
-                /></a>
-            </div>
+        <span class="close" onclick="closeModal()">&times;</span>
+      </div>
+    </div>
+    <div class="form">
+      <form action="#" id="form" class="form_body">
+        <h1 class="form_title">Отправка письма</h1>
+        <div class="form_item">
+          <label for="formName" class="form_label">Имя*</label>
+          <input
+            id="formName"
+            type="text"
+            name="name"
+            class="form_input _req"
+          />
         </div>
-    </body>
+        <div class="form_item">
+          <label for="formEmail" class="">E-mail*</label>
+          <input
+            id="formEmail"
+            type="text"
+            name="email"
+            class="form_input _req _email"
+          />
+          <button class="confirm_email" type="button" onclick="checkPassword()">
+            Подтвердить почту
+          </button>
+        </div>
+        <div class="form_item">
+          <label for="fromMessage" class="form_label"> Сообщение </label>
+          <textarea
+            name="message"
+            id="formMessage"
+            class="form_input _req"
+          ></textarea>
+        </div>
+        <button class="form_button" type="button" onclick="sendMail()">
+          Отправить
+        </button>
+      </form>
+      <br />
+      <div class="contacts">
+        <a href="https://vk.com/id661890495"
+          ><img id="contact" src="./assets/img/VK.png"
+        /></a>
+        <a href="https://wa.me/79096934037"
+          ><img id="contact" src="./assets/img/WhatsApp.png"
+        /></a>
+        <a href="viber://chat?number=%2B79096934037"
+          ><img id="contact" src="./assets/img/viber.png"
+        /></a>
+        <a href="https://t.me/RockusStudio"
+          ><img id="contact" src="./assets/img/Telegram.png"
+        /></a>
+      </div>
+    </div>
+  </body>
 </html>
