@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .desktop {
   display: flex;
   margin: auto;
@@ -18,26 +22,56 @@ h2 {
 .frame:hover h2 {
   color: black;
 }
-.list {
+.list_homework,
+.list_classwork {
   width: 80%;
+  height: 80%;
   margin: auto;
+  overflow: auto;
 }
-.works {
-  /* width: 80%; */
-  margin: auto;
-  border-radius: 8px;
+.list_homework::-webkit-scrollbar {
+  display: none;
 }
-.works:hover {
-  background-color: antiquewhite;
-  /* transform: scale(1.02); */
+.list_classwork::-webkit-scrollbar {
+  display: none;
+}
+.item {
+  display: flex;
 }
 
-.attach {
-  font-size: 20px;
-}
-.material-icons:hover {
+.item_number {
   font-size: 25px;
-  transform: scale(1.02);
+  padding: 8px;
+  margin-top: 3px;
+}
+#attach_file_a {
+  padding: 8px;
+  border-radius: 8px;
+}
+#attach_file_a:hover {
+  background-color: rgb(246, 199, 139);
+}
+.attach_icon {
+  font-size: 25px;
+  padding: 4px;
+  /* margin: 0; */
+}
+.attach_icon:hover {
+  font-size: 26px;
+  transform: scale(1);
+}
+
+.attach_file{
+  font-size: 25px;
+  overflow: auto;
+  display: flex;
+  margin: 0;
+  padding: 8px;
+  border-radius: 8px;
+}
+.attach_file:hover {
+  background-color: rgb(246, 199, 139);
+  /* transform: scale(1.02); */
 }
 @media (max-width: 500px) {
   .desktop {
