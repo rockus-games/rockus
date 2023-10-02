@@ -8,18 +8,36 @@
   width: 40vw;
   height: 60vh;
   border-radius: 20px;
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(250, 242, 231);
 }
-.frame:hover {
-  background-color: antiquewhite;
-  transform: scale(1.02);
-}
+
 h2 {
-  color: aqua;
+  color: rgb(10, 102, 102);
   margin: 8px 0 0 0;
 }
 .frame:hover h2 {
   color: black;
+}
+.list {
+  width: 80%;
+  margin: auto;
+}
+.works {
+  /* width: 80%; */
+  margin: auto;
+  border-radius: 8px;
+}
+.works:hover {
+  background-color: antiquewhite;
+  /* transform: scale(1.02); */
+}
+
+.attach {
+  font-size: 20px;
+}
+.material-icons:hover {
+  font-size: 25px;
+  transform: scale(1.02);
 }
 @media (max-width: 500px) {
   .desktop {
