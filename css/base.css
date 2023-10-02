@@ -21,7 +21,7 @@ body {
 }
 .header {
   display: grid;
-  /* width: 80%; */
+  width: 80%;
   max-width: 800px;
   margin: auto;
 }
@@ -130,6 +130,13 @@ li:hover {
 }
 
 @media (max-width: 500px) {
+  .rockus h1 {
+    font-size: 28px;
+  }
+  .material-icons {
+    font-size: 30px;
+  
+  }
   button {
     border-radius: 1vw;
 
