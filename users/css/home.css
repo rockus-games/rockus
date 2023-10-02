@@ -1,0 +1,36 @@
+.desktop {
+  display: flex;
+  margin: auto;
+  /* background-color: aliceblue; */
+}
+.frame {
+  margin: auto;
+  width: 40vw;
+  height: 60vh;
+  border-radius: 20px;
+  background-color: rgb(252, 252, 252);
+}
+.frame:hover {
+  background-color: antiquewhite;
+  transform: scale(1.02);
+}
+h2 {
+  color: aqua;
+  margin: 8px 0 0 0;
+}
+.frame:hover h2 {
+  color: black;
+}
+@media (max-width: 500px) {
+  .desktop {
+    display: grid;
+    row-gap: 10px;
+  }
+  .frame {
+    width: 80vw;
+    background-color: antiquewhite;
+  }
+  .frame h2 {
+    color: black;
+  }
+}
