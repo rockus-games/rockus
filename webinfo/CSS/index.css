@@ -92,6 +92,9 @@ hr {
 #glavnaya_stranica {
   transition: all 0.3s;
 }
+#glavnaya_stranica {
+  font-size: 1vw;
+}
 #nasha_shkola:hover,
 #pismo:hover,
 #glavnaya_stranica:hover,
