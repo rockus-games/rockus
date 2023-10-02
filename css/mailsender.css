@@ -104,13 +104,12 @@ textarea.form_input {
 .checkbox_label a {
     color: #7a956b;
 }
-.form_button {
+/* .form_button {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 60px;
-    /* background-color: #34bbb4; */
     background: rgb(140, 223, 209);
 
     color: #fff;
@@ -124,10 +123,10 @@ textarea.form_input {
     transition: background-color 0.5s ease 0s;
 
     margin: auto;
-}
-.form_button:hover {
+} */
+/* .form_button:hover {
     background-color: rgb(111, 179, 167);
-}
+} */
 .form_button:active {
     top: 3px;
     box-shadow: 0 2px 0 #161b13;
@@ -138,11 +137,16 @@ textarea.form_input {
     display: inline-block;
     margin: auto;
 }
-
-.contacts {
-    margin: auto;
-    text-align: center;
+#contact:hover{
+    transform: scale(1.1);
 }
+.contacts {
+    display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
 
 .confirm_email {
     width: 30%;
@@ -151,7 +155,7 @@ textarea.form_input {
     align-items: center;
     min-height: 30px;
     /* background-color: #34bbb4; */
-    background: rgb(140, 223, 209);
+    /* background: rgb(140, 223, 209); */
 
     color: #fff;
     font-size: 10px;
@@ -159,8 +163,8 @@ textarea.form_input {
     letter-spacing: 2px;
     font-weight: 700;
     cursor: pointer;
-    border-radius: 20px;
-    border: none;
+    /* border-radius: 20px; */
+    /* border: none; */
     transition: background-color 0.5s ease 0s;
 
     margin: auto;
