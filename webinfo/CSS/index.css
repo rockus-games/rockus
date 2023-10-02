@@ -6,6 +6,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 2.6fr 1fr;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 .pismo_div_mobile {
   display: none;
 }
@@ -14,12 +17,13 @@ main {
   border-left: 4px solid #55a792;
   border-right: 4px solid #55a792;
 }
+
 .main_header {
   text-align: right;
 }
 .trumbon {
   margin-top: 0;
-  font-size: 4vw;
+  font-size: 3.5vw;
   float: left;
 }
 .main_header_element {
@@ -56,12 +60,16 @@ main {
 }
 .main_header a {
   display: inline-block;
-  margin: 8px;
+  /* margin: 8px; */
 }
 h3 {
   font-size: 1.5vw;
   position: relative;
   transition: all 0.3s ease;
+}
+ .right h3 {
+  font-size: 1.3vw;
+
 }
 /* h3:hover {
   transform: scale(1.1);
@@ -74,16 +82,19 @@ hr {
 }
 
 #pismo {
+  /* text-align: center; */
   font-family: "Roundhand";
   font-size: 2vw;
   color: bisque;
 }
-#nasha_shkola,#courses{
+#nasha_shkola,
+#courses,
+#glavnaya_stranica {
   transition: all 0.3s;
 }
 #nasha_shkola:hover,
 #pismo:hover,
-#Rockus:hover,
+#glavnaya_stranica:hover,
 #courses:hover {
   transform: scale(1.03);
   color: #02675a;
@@ -114,6 +125,9 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+#glavnaya_stranica_mobile {
+  display: none;
+}
 
 @media (max-width: 500px) {
   body {
@@ -133,6 +147,9 @@ hr {
   .left h3 {
     font-size: 8vw;
   }
+  #glavnaya_stranica {
+    display: none;
+  }
   main {
     height: 200.1%;
     text-align: center;
@@ -146,24 +163,28 @@ hr {
     width: 94%;
     top: 0;
   }
+  .main_header_element {
+    width: 40px;
+  }
   .main_buttons {
     display: grid;
     grid-template-columns: 1fr;
   }
   .trumbon {
-    margin-top: 0;
-    font-size: 40px;
+    margin: 0;
+    font-size: 35px;
     float: left;
   }
   .main_header a {
     display: inline-block;
-    margin: 8px;
+    /* margin: 8px; */
   }
   hr {
     display: inherit;
   }
   .pismo_div_mobile {
     display: inherit;
+    margin-top: 60px;
   }
   .pismo_div_desktop {
     display: none;
@@ -202,5 +223,8 @@ hr {
   }
   .right h3 {
     font-size: 8vw;
+  }
+  #glavnaya_stranica_mobile {
+    display: inherit;
   }
 }
