@@ -6,7 +6,9 @@ for (let i = 0; i < 36; i++) {
                                     <h2 class="item_number">${i}</h2>
                                     <a id="attach_file_a" href="#">
                                         <span class="material-icons attach_icon">attach_file</span>
+                                        
                                     </a>
+                                    
                                     <a  href="#">
                                         <div class="attach_file">
                                             файл ${i}
