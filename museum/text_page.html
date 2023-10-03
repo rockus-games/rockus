@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Электронный музей истории России 'Родина'"
+        />
         <title>Document</title>
-        <link rel="stylesheet" href="./css/text_page.css">
+        <link rel="stylesheet" href="./css/text_page.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script>
-            var d=window.location.href.substring(window.location.href.indexOf("=")+1);
+            var d = window.location.href.substring(
+                window.location.href.indexOf("=") + 1
+            );
             console.log(d);
-            
-            $.getJSON("./temp.json", function(json) {
-                document.getElementById("h1").innerHTML = json["base_info"][d]["text"];
-                document.getElementById("a").href = json["base_info"][d]["href"];
+
+            $.getJSON("./temp.json", function (json) {
+                document.getElementById("h1").innerHTML =
+                    json["base_info"][d]["text"];
+                document.getElementById("a").href =
+                    json["base_info"][d]["href"];
                 document.body.style.backgroundImage = `url(${json["base_info"][d]["background"]})`;
             });
-
-            
         </script>
     </head>
     <body id="body">
         <a id="a" href="">Экспонаты</a>
-        <h1 id="h1">
-            lp
-        </h1> 
+        <h1 id="h1">lp</h1>
         <!-- <img id="bg" src="./img/Backgrounds/862_Rurik.jpg.png" alt="">  -->
     </body>
 </html>
