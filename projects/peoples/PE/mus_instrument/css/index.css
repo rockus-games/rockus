@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(55, 120, 178);
+}
+h1 {
+  text-align: center;
+  background-color: rgb(227, 229, 213);
+}
+img{
+    width: 200px;
+    padding: 20px;
+    background-color: bisque;
+}

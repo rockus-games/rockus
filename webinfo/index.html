@@ -8,16 +8,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Rockus-Школа</title>
     <link rel="stylesheet" href="CSS/index.css" />
     <link rel="stylesheet" href="../css/base.css" />
-    <title>Rockus-Школа</title>
+
     <script src="js/index.js"></script>
   </head>
   <body>
     <aside class="left">
-      <a title="Администраторы" href="/admin.html"><h1 id="Rockus">Rockus</h1></a>
-      <hr size="" width="90%" />
+      <!-- <a title="Администраторы" href="/admin.html"
+        ><h1 id="Rockus">Rockus</h1></a
+      > -->
+      <!-- <hr size="" width="90%" /> -->
       <div class="pismo_div_mobile">
         <a id="pismo" href="./letter_to_soldier/letter_to_soldier.html"
           ><p>Письмо солдату</p></a
@@ -32,13 +42,24 @@
         /></a>
         <hr size="" width="90%" />
       </div>
-      <a href="./about/school_page.html"><h3>Наша школа</h3></a> <br />
+      <a href="./about/school_page.html"
+        ><h1 id="nasha_shkola">Наша школа</h1></a
+      >
+      <br />
       <a href="/museum/" title="Музей"
         ><img id="museum" src="/museum/img/emblems/Main_img.png" width="40%"
       /></a>
       <br />
       <div class="left_grade">
-        <a href="classes/7_Grade/"><h3>7 класс</h3></a>
+        <h3>
+          <a href="classes/7_Grade/">7 класс</a>
+          <ul>
+            <a href="./classes/7_Grade/technology/index.html"
+              ><li>Технология</li></a
+            >
+            <!-- <a href="#"><li>ЕГЭ</li></a> -->
+          </ul>
+        </h3>
         <a href="classes/8_Grade/"><h3>8 класс</h3></a>
         <h3>
           <a href="classes/9_Grade/">9 класс</a>
@@ -49,32 +70,59 @@
         </h3>
 
         <a href="classes/10_Grade/"><h3>10 класс</h3></a>
-        <a href="../webinfo/classes/global/index.html"><h3>Глобальный урок</h3></a>
+        <!-- <a href="../webinfo/classes/global/index.html"><h3>Глобальный урок</h3></a> -->
       </div>
       <a href="../navigator_club/"><h3>Кружки</h3></a>
       <a href="../projects/projects.html"><h3>Проекты</h3></a>
       <a href="./baraxolka.html"><h3>Барахолка</h3></a>
 
+      <a href="../webinfo/classes/global/quests/quests_hub.html"
+        ><h3>?????????</h3></a
+      >
+      <br />
+      <a href="../index.html"
+        ><h1 id="glavnaya_stranica">Главная страница</h1></a
+      >
       <!-- <a href="./achievements.html">Достижения учеников</a> <br> -->
     </aside>
     <main>
       <div class="main_header">
-        <a class="trumbon" href="https://www.youtube.com/watch?v=w-wqHVGSc8o"
+        <a
+          title="Музыкальная пауза"
+          class="trumbon main_header_element"
+          href="https://www.youtube.com/watch?v=w-wqHVGSc8o"
           >🎺</a
         >
         <div>
-          <a href="./classes/olympiads.html"
-            ><img src="./img/graduation-cap.png" alt=""
+          <!-- <a href="https://sferum.ru/?p=dashboard&schoolId=204113612"
+          ><img  class="main_header_element"
+            id="contact"
+            src="https://theprogs.ru/wp-content/uploads/sferum-logo-200x200.png.webp"
+        /></a> -->
+          <a
+            title="Олимпиады, конкурсы, конференции"
+            href="./classes/olympiads.html"
+            ><img
+              class="main_header_element"
+              src="./img/graduation-cap.png"
+              alt=""
+          /></a>
+          <a
+            title="Клуб инженеров"
+            onmouseover="playOwl()"
+            onmouseleave="stopPlay()"
+            href="./curiosity/curiosity.html"
+            ><img class="owl main_header_element" src="./img/owl.png"
           /></a>
         </div>
       </div>
+
       <hr size="" width="90%" />
       <div class="pismo_div_desktop">
         <a id="pismo" href="./letter_to_soldier/letter_to_soldier.html"
-          >Письмо солдату</a
+          ><p>Письмо солдату</p></a
         >
-        <br />
-        <br />
+
         <a href="https://z.mil.ru/">
           <img
             id="img_svo"
@@ -92,9 +140,13 @@
       </div>
       <div class="main_buttons">
         <a href="files.html"><button>Файлы</button></a>
-        <a title="
+        <a
+          title="
 
-        Программирование для школьников, студентов колледжей и техникумов" href="./FC/"><button id="fc">Код будущего</button></a>
+        Программирование для школьников, студентов колледжей и техникумов"
+          href="./FC/"
+          ><button id="fc">Код будущего</button></a
+        >
         <a href="https://edutest.obrnadzor.gov.ru/login"
           ><button>ВПР</button></a
         >
@@ -105,7 +157,7 @@
     </main>
 
     <aside class="right">
-     <a  href="/courses/"><h1 id="courses">Курсы</h1></a>
+      <a href="/courses/"><h1 id="courses">Курсы</h1></a>
       <a href="/courses/pages/auto/"><h3>AUTO - Автоэлектрик</h3></a>
       <a href="/courses/pages/cad/"><h3>CAD - Инженерное проектирование</h3></a>
       <a href="/courses/pages/cam/"><h3>CAM - ЧПУ оператор</h3></a>
@@ -130,19 +182,24 @@
       <a href="/courses/pages/oge-ege/"
         ><h3>OGE-EGE - Информатика, математика, английский</h3></a
       >
-      <!-- <div class="rightContent">
-         <div class="courses"><a href="/fish.html">ROBO  -</a>
-        </div>
-        <div class="courses"><a href="/fish.html">Робототехника (ARDUINO)</a>
-        </div>
-        <div class="courses"><a href="/courses/pages/oge-ege/">OGE-EGE</a></div>
-        <div class="courses">
-          <a href="/courses/pages/oge-ege/"
-            >Информатика, математика, английский</a
-          >
-          <hr size="" width="70%" />
-        </div>
-      </div> -->
+      <br />
+      <a href="../index.html"
+        ><h1 id="glavnaya_stranica_mobile">Главная страница</h1></a
+      >
     </aside>
+    <script>
+      var owl = document.querySelector(".owl");
+      var trumbon = document.querySelector(".trumbon");
+      var owlSound = new Audio(`./curiosity/assets/audio/owl_great_horned.mp3`);
+      function playOwl() {
+        owlSound.currentTime = 0;
+        owlSound.play();
+        owl.style.scale = 1.5;
+      }
+      function stopPlay() {
+        owl.style.scale = 1;
+        owlSound.pause();
+      }
+    </script>
   </body>
 </html>

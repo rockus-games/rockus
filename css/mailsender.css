@@ -5,52 +5,23 @@
     border: 0;
     box-sizing: border-box;
 }
-a {
-    text-decoration: none;
-}
+
 ul,
 ol,
 li {
     list-style: none;
 }
-img {
-    vertical-align: top;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: inherit;
-    font-size: inherit;
-}
-html,
-body {
-    height: 100%;
-    line-height: 1;
-    font-size: 14px;
-    background-color: #333;
-    font-family: Arial, "Helvetica Neue", Helvetica, sens-serif;
-}
+
+
+
+
 .form * {
     outline: none;
 }
 .form_body {
     position: relative;
 }
-/* .form_body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 110%;
-    height: 100%;
-    background: rgba(51, 51, 51, 0.9) url(/img/jdun.gif) center / 50px no-repeat;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s ease 0s; 
-} */
+
 .form_body._sending::after {
     opacity: 1;
     visibility: visible;
@@ -133,13 +104,12 @@ textarea.form_input {
 .checkbox_label a {
     color: #7a956b;
 }
-.form_button {
+/* .form_button {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 60px;
-    /* background-color: #34bbb4; */
     background: rgb(140, 223, 209);
 
     color: #fff;
@@ -153,10 +123,10 @@ textarea.form_input {
     transition: background-color 0.5s ease 0s;
 
     margin: auto;
-}
-.form_button:hover {
+} */
+/* .form_button:hover {
     background-color: rgb(111, 179, 167);
-}
+} */
 .form_button:active {
     top: 3px;
     box-shadow: 0 2px 0 #161b13;
@@ -167,11 +137,16 @@ textarea.form_input {
     display: inline-block;
     margin: auto;
 }
-
-.contacts {
-    margin: auto;
-    text-align: center;
+#contact:hover{
+    transform: scale(1.1);
 }
+.contacts {
+    display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
 
 .confirm_email {
     width: 30%;
@@ -180,7 +155,7 @@ textarea.form_input {
     align-items: center;
     min-height: 30px;
     /* background-color: #34bbb4; */
-    background: rgb(140, 223, 209);
+    /* background: rgb(140, 223, 209); */
 
     color: #fff;
     font-size: 10px;
@@ -188,8 +163,8 @@ textarea.form_input {
     letter-spacing: 2px;
     font-weight: 700;
     cursor: pointer;
-    border-radius: 20px;
-    border: none;
+    /* border-radius: 20px; */
+    /* border: none; */
     transition: background-color 0.5s ease 0s;
 
     margin: auto;

@@ -1,3 +1,6 @@
+* {
+  transition: all 0.3s;
+}
 body {
   font-family: "Montserrat Alternates", sans-serif;
   background-color: #181818;
@@ -5,6 +8,7 @@ body {
   text-align: center;
   /* width: 100%; */
 }
+
 .material-icons {
   font-size: 40px;
   color: #8cada5;
@@ -20,7 +24,6 @@ body {
   width: 80%;
   max-width: 800px;
   margin: auto;
-  
 }
 .rockus h1 {
   margin-bottom: 0;
@@ -45,9 +48,9 @@ h1:hover > ul {
 h2 {
   color: antiquewhite;
 }
-h3 {
+/* h3 {
   transition: all 0.3s ease;
-}
+} */
 h3:hover {
   cursor: pointer;
   color: #02675a;
@@ -64,7 +67,7 @@ hr {
 a {
   text-decoration: none;
   color: #55a792;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
 
 .main_header a:hover {
@@ -80,7 +83,7 @@ button {
   min-height: 30px;
   font-size: 2vw;
   color: #8cada5;
-  transition: all 0.5s ease-out;
+  /* transition: all 0.5s ease-out; */
   /* box-shadow: 2px 2px bisque; */
 }
 button:hover {
@@ -102,7 +105,7 @@ ul {
   margin: 0;
   padding: 0;
   opacity: 0;
-  transition: opacity 0.3s ease-out;
+  /* transition: opacity 0.3s ease-out; */
   pointer-events: none;
 }
 li {
@@ -114,7 +117,7 @@ li {
   background-color: #181818;
   border-left: 1px solid bisque;
   border-top: 1px solid bisque;
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
 }
 li:hover {
   color: #02675a;
@@ -127,7 +130,13 @@ li:hover {
 }
 
 @media (max-width: 500px) {
-
+  .rockus h1 {
+    font-size: 28px;
+  }
+  .material-icons {
+    font-size: 30px;
+  
+  }
   button {
     border-radius: 1vw;
 

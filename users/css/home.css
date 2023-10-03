@@ -1,0 +1,89 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+.desktop {
+  display: flex;
+  margin: auto;
+  /* background-color: aliceblue; */
+}
+.frame {
+  margin: auto;
+  width: 40vw;
+  height: 60vh;
+  border-radius: 20px;
+  background-color: rgb(250, 242, 231);
+}
+
+h2 {
+  color: rgb(10, 102, 102);
+  margin: 8px 0 0 0;
+}
+.frame:hover h2 {
+  color: black;
+}
+.list_homework,
+.list_classwork {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  overflow: auto;
+}
+.list_homework::-webkit-scrollbar {
+  display: none;
+}
+.list_classwork::-webkit-scrollbar {
+  display: none;
+}
+.item {
+  display: flex;
+}
+
+.item_number {
+  font-size: 25px;
+  padding: 8px;
+  margin-top: 3px;
+}
+#attach_file_a {
+  padding: 8px;
+  border-radius: 8px;
+}
+#attach_file_a:hover {
+  background-color: rgb(246, 199, 139);
+}
+.attach_icon {
+  font-size: 25px;
+  padding: 4px;
+  /* margin: 0; */
+}
+.attach_icon:hover {
+  font-size: 26px;
+  transform: scale(1);
+}
+
+.attach_file {
+  font-size: 25px;
+  overflow: auto;
+  display: flex;
+  margin: 0;
+  padding: 8px;
+  border-radius: 8px;
+}
+.attach_file:hover {
+  background-color: rgb(246, 199, 139);
+  /* transform: scale(1.02); */
+}
+@media (max-width: 500px) {
+  .desktop {
+    display: grid;
+    row-gap: 10px;
+  }
+  .frame {
+    width: 80vw;
+    background-color: antiquewhite;
+  }
+  .frame h2 {
+    color: black;
+  }
+
+}
