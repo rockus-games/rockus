@@ -2,91 +2,50 @@
   font-family: "Roundhand"; /* Гарнитура шрифта */
   src: url(../fonts/Roundhand.ttf); /* Путь к файлу со шрифтом */
 }
-body {
+.desktop {
   display: grid;
   grid-template-columns: 1fr 2.6fr 1fr;
 }
 body::-webkit-scrollbar {
   display: none;
 }
-.pismo_div_mobile {
+.mobile {
   display: none;
 }
 
 main {
   border-left: 4px solid #55a792;
   border-right: 4px solid #55a792;
+  margin-top: 10px;
 }
 
-.main_header {
-  text-align: right;
+.header {
+  width: 95%;
+  display: flex;
+  max-width: inherit;
+  justify-content: space-between;
 }
-.trumbon {
-  margin-top: 0;
-  font-size: 3.5vw;
-  float: left;
-}
-.main_header_element {
-  width: 5vw;
-}
-.owl {
-  animation: bubu;
-  animation-duration: 1.6s;
-  animation-iteration-count: 2;
-  transition: all 1s;
-  transform-origin: top right;
-}
-@keyframes bubu {
-  0% {
-    transform: scale(1);
-  }
-
-  20% {
-    transform: scale(1.1);
-  }
-  40% {
-    transform: scale(1);
-  }
-  60% {
-    transform: scale(1);
-  }
-
-  80% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.main_header a {
-  display: inline-block;
-  /* margin: 8px; */
+.rockus {
+  font-size: 1.5em;
+  margin: 0;
 }
 h3 {
   font-size: 1.5vw;
   position: relative;
   transition: all 0.3s ease;
 }
- .right h3 {
+.right h3 {
   font-size: 1.3vw;
-
-}
-/* h3:hover {
-  transform: scale(1.1);
-} */
-hr {
-  display: none;
-}
-#desktop_hr {
-  display: inherit;
 }
 
 #pismo {
-  /* text-align: center; */
   font-family: "Roundhand";
   font-size: 2vw;
   color: bisque;
+  display: inline-block;
+  margin-bottom: 8px;
 }
+
 #nasha_shkola,
 #courses,
 #glavnaya_stranica {
@@ -103,6 +62,7 @@ hr {
   color: #02675a;
 }
 #img_svo {
+  border-radius: 8px;
   width: 16vw;
   transition: all 0.3s;
 }
@@ -128,12 +88,13 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-#glavnaya_stranica_mobile {
-  display: none;
-}
 
 @media (max-width: 500px) {
-  body {
+  .desktop{
+    display: none;
+  }
+  .mobile {
+    display: inherit;
     grid-template-columns: 1fr;
   }
   .left {
@@ -184,6 +145,9 @@ hr {
   }
   hr {
     display: inherit;
+  }
+  #desktop_hr {
+    display: none;
   }
   .pismo_div_mobile {
     display: inherit;
