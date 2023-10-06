@@ -20,6 +20,7 @@ main {
 }
 
 .header {
+  padding-top: 10px;
   width: 95%;
   display: flex;
   max-width: inherit;
@@ -28,6 +29,15 @@ main {
 .rockus {
   font-size: 1.5em;
   margin: 0;
+}
+.material-icons {
+  font-size: 1.5vw;
+  padding: 8px;
+}
+.material-icons:hover {
+  font-size: 1.6vw;
+  color: #1bac88;
+  transform: scale(2);
 }
 h3 {
   font-size: 1.5vw;
@@ -90,7 +100,7 @@ h3 {
 }
 
 @media (max-width: 500px) {
-  .desktop{
+  .desktop {
     display: none;
   }
   .mobile {
@@ -114,21 +124,22 @@ h3 {
   }
 
   main {
-    height: 200.1%;
-    text-align: center;
+    margin-top: inherit;
     border-left: 2px solid #55a792;
     border-right: 2px solid #55a792;
   }
+  .header {
+    display: inherit;
+  }
 
+  .material-icons {
+    font-size: 8vw;
+  }
 
   .main_buttons {
     display: grid;
     grid-template-columns: 1fr;
   }
- 
-
-
-
 
   #pismo {
     font-family: "Roundhand";
@@ -155,17 +166,24 @@ h3 {
     font-size: 6vw;
     margin-top: 10px;
   }
+
+  #block_bracke_hr {
+    margin-bottom: 0;
+  }
   .right {
     border-left: 2px solid #55a792;
     border-right: 2px solid #55a792;
   }
   .right h1 {
     font-size: 10vw;
+    margin-top: 0;
+    padding-top: 30px;
+  }
+  h1,
+  .rockus {
+    font-size: 10vw;
   }
   .right h3 {
     font-size: 8vw;
-  }
-  #glavnaya_stranica_mobile {
-    display: inherit;
   }
 }
