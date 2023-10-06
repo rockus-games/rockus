@@ -1,0 +1,21 @@
+body {
+  /* background-color: rgb(55, 120, 178); */
+}
+h1 {
+  text-align: center;
+  /* background-color: rgb(227, 229, 213); */
+}
+.list_mi{
+  text-align: center;
+  width: 450px;
+  height: 820px;
+  border-radius: 10px;
+  background-color: #D2CCA1;
+  transition: all 0.3s;
+}
+.list_mi:hover{
+  transform: scale(1.05);
+}
+.input_search{
+  padding-top: 20px;
+}
