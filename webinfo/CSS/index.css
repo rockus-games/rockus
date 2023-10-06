@@ -97,13 +97,14 @@ h3 {
     display: inherit;
     grid-template-columns: 1fr;
   }
+
   .left {
     border-left: 2px solid #55a792;
     border-right: 2px solid #55a792;
   }
-  .left h1 {
-    font-size: 16vw;
-    margin-top: 90px;
+  #nasha_shkola {
+    margin-top: 0;
+    padding-top: 20px;
   }
   .left h2 {
     font-size: 8vw;
@@ -111,51 +112,24 @@ h3 {
   .left h3 {
     font-size: 8vw;
   }
-  #glavnaya_stranica {
-    display: none;
-  }
+
   main {
     height: 200.1%;
     text-align: center;
     border-left: 2px solid #55a792;
     border-right: 2px solid #55a792;
   }
-  .main_header {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 94%;
-    top: 0;
-  }
-  .main_header_element {
-    width: 40px;
-  }
+
+
   .main_buttons {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .trumbon {
-    margin: 0;
-    font-size: 35px;
-    float: left;
-  }
-  .main_header a {
-    display: inline-block;
-    /* margin: 8px; */
-  }
-  hr {
-    display: inherit;
-  }
-  #desktop_hr {
-    display: none;
-  }
-  .pismo_div_mobile {
-    display: inherit;
-    margin-top: 60px;
-  }
-  .pismo_div_desktop {
-    display: none;
-  }
+ 
+
+
+
+
   #pismo {
     font-family: "Roundhand";
     font-size: 8vw;
