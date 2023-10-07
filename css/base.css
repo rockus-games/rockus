@@ -91,12 +91,14 @@ button:hover {
   background: #0a0707;
   border-radius: 1vw;
   color: #1bac88;
-  /* font-size: 3.5vw; */
   cursor: pointer;
   border: none;
   border-right: 1px solid #888888;
   border-bottom: 1px solid #888888;
   /* box-shadow: 1px 1px 8px #888888; */
+}
+button:active{
+  transform: scale(0.95);
 }
 ul {
   display: initial;

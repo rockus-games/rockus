@@ -11,12 +11,23 @@
 }
 
 .image {
+  
   width: 40vw;
   max-width: 300px;
+  transition: all 0.3s;
+}
+.image:hover{
+  cursor: pointer;
+  background-color: #212121;
+  border-radius: 30px;
+}
+.image:active{
+  transform: scale(0.95);
 }
 .image img {
   width: 100%;
 }
+
 
 .name {
   width: 40vw;
