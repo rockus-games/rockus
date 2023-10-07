@@ -34,7 +34,9 @@
   color: #8cada5;
   font-size: 20px;
 }
-
+#create{
+  width: 27vw;
+}
 @media (max-width: 500px) {
   .person {
     display: grid;
