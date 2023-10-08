@@ -1,4 +1,7 @@
 .modul1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   overflow-y: scroll;
   overflow: hidden;
   width: 80%;
@@ -10,4 +13,9 @@
 .modul1:hover {
   background-color:bisque;
   border-radius: 20px;
+}
+@media (max-width:500px) {
+  .modul1{
+    grid-template-columns: 1fr;
+  }
 }

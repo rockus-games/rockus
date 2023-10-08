@@ -55,15 +55,13 @@ h3 {
   display: inline-block;
   margin-bottom: 8px;
 }
-
+.rockus,
 #nasha_shkola,
 #courses,
 #glavnaya_stranica {
   transition: all 0.3s;
 }
-#glavnaya_stranica {
-  font-size: 1vw;
-}
+.rockus:hover,
 #nasha_shkola:hover,
 #pismo:hover,
 #glavnaya_stranica:hover,
