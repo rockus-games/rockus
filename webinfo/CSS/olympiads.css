@@ -1,6 +1,6 @@
 body {
   margin: 0.4%;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .page-wrapper {
@@ -37,9 +37,7 @@ a {
   /* font-size: 3vh; */
   /* margin-top: 8vh; */
 }
-h1 {
-  font-size: 4vh;
-}
+
 .right-panel-wrapper{
   margin-top: 0;
 }
