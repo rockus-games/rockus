@@ -146,4 +146,14 @@ li:hover {
     height: 16vw;
     font-size: 8vw;
   }
+  /* h3:hover {
+    cursor: inherit;
+    color: inherit;
+    transform: inherit;
+  } */
+  .material-icons:hover {
+    font-size: inherit;
+    color: inherit;
+    transform: inherit;
+  }
 }
