@@ -2,9 +2,10 @@
   transition: all 0.3s;
 }
 body {
+  margin-top: 20px;
   font-family: "Montserrat Alternates", sans-serif;
   background-color: #181818;
-  margin: 0;
+  /* margin: 0; */
   text-align: center;
   /* width: 100%; */
 }
@@ -26,8 +27,24 @@ body {
   margin: auto;
 }
 .rockus h1 {
-  margin-bottom: 0;
-  text-align: start;
+  margin: 0;
+  /* text-align: start; */
+}
+.rockus {
+  display: flex;
+  justify-content: space-between;
+}
+.rockus img {
+  width: 36px;
+  height: 36px;
+  background-color: #55a792;
+  border-radius: 4px;
+}
+.rockus img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #55a792;
+  background-color: #02675a;
 }
 .nav {
   display: flex;
@@ -97,7 +114,7 @@ button:hover {
   border-bottom: 1px solid #888888;
   /* box-shadow: 1px 1px 8px #888888; */
 }
-button:active{
+button:active {
   transform: scale(0.95);
 }
 ul {
@@ -135,9 +152,12 @@ li:hover {
   .rockus h1 {
     font-size: 28px;
   }
+  .rockus img {
+    width: 28px;
+    height: 28px;
+  }
   .material-icons {
     font-size: 7vw;
-  
   }
   button {
     border-radius: 1vw;

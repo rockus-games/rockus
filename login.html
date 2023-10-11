@@ -18,18 +18,40 @@
     <title>IT Студия Rockus</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="./css/base.css" />
+    <style>
+      .about input {
+        margin-top: 20px;
+        width: 50%;
+        height: 30px;
+        border: none;
+        background-color: black;
+        color: #8cada5;
+        font-size: 20px;
+      }
+      .rockus img{
+        background-color: crimson;
+
+      }
+      @media (max-width:500px) {
+        .about input{
+          width: 90%;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div class="header">
       <div class="rockus">
-        <h1>Rockus</h1>
-        <a href="./login.html" title="Вход в аккаунт"><img src="./assets/img/login.png" alt="" /></a>
+        <h1>Вход в аккаунт</h1>
+        <a style="pointer-events: none;" href="" title="Вход в аккаунт"
+          ><img src="./assets/img/login.png" alt=""
+        /></a>
       </div>
       <div class="nav">
-        <a style="pointer-events: none" href="../index.html">
+        <a  href="../index.html">
           <span
-            style="color: crimson"
+            
             title="Главная страница"
             class="material-icons"
             >first_page</span
@@ -58,48 +80,24 @@
 
     <hr size="" width="80%" />
     <div class="wellcom">
-      <h1>
-        Добро пожаловать на сайт нашей <br />
-        IT студии Rockus!
-      </h1>
+      <h1>Авторизация</h1>
     </div>
-    <!-- <hr size="" width="90%"> -->
     <div class="about">
-      <h2>
-        Мы - небольшая студия, занимающаяся такими <br />
-        направлениями разработки, как веб-технологии,<br />
-        мобильные приложения и игры. <br />Помимо разработки мы также обучаем
-        всему тому, что умеем сами.
-      </h2>
+      <input type="text" placeholder="Логин" />
+      <br />
+      <input type="text" placeholder="Пароль" />
+      <br />
+      <br>
+      <button>Вход</button>
     </div>
     <hr size="" width="80%" />
     <div class="buttons">
       <a href="/courses/"><button>Курсы</button></a>
-      <!-- <a href="./courses/card.html" class="card_btn"> Визитка! </a> -->
       <a href="/webinfo/"><button>Школа</button></a>
-      <!-- <a href="/portfolio.html" class="learn_btn">Портфолио</a> -->
-      <!-- <a href="commercial.html" class="mobile_btn"> Клиентам </a> -->
-      <!-- <hr size="" width="90%"> -->
     </div>
+    <h1>Страница в разработке</h1>
 
-    <!-- Yandex.Metrika informer -->
-    <br />
-    <a
-      class="yandex"
-      href="https://metrika.yandex.ru/stat/?id=93901559&amp;from=informer"
-      target="_blank"
-      rel="nofollow"
-      ><img
-        src="https://informer.yandex.ru/informer/93901559/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-        style="width: 88px; height: 31px; border: 0"
-        alt="Яндекс.Метрика"
-        title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
-        class="ym-advanced-informer"
-        data-cid="93901559"
-        data-lang="ru"
-    /></a>
-
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       (function (m, e, t, r, i, k, a) {
         m[i] =
           m[i] ||
@@ -138,6 +136,6 @@
           style="position: absolute; left: -9999px"
           alt=""
         /></div
-    ></noscript>
+    ></noscript> -->
   </body>
 </html>
