@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -20,6 +21,7 @@
         pointer-events: none;
       }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="header">
@@ -37,10 +39,8 @@
           <span title="Школа" class="material-icons">school</span>
         </a>
         <a href="../webinfo/engineers/">
-          <span title="Клуб инженеров" class="material-icons"
-            >engineering</span
-          > </a
-        >
+          <span title="Клуб инженеров" class="material-icons">engineering</span>
+        </a>
         <a id="user_data" href="#">
           <span
             style="color: crimson"
@@ -61,19 +61,19 @@
     <div class="main">
       <div class="person">
         <div class="image">
-          <img onclick="uploadFiles()" src="../assets/img/login.png" alt="" />
+          <img onclick="choose_file()" src="../assets/img/login.png" alt="" />
         </div>
         <div class="name">
-          <input id="firstname" type="text" placeholder="Имя" />
-          <input id="lastname" type="text" placeholder="Фамилия" />
-          <input id="fathername" type="text" placeholder="Отчество" />
-          <input id="telephone" type="text" placeholder="Телефон" />
+          <input id="firstName" type="text" placeholder="Имя" />
+          <input id="lastName" type="text" placeholder="Фамилия" />
+          <input id="fatherName" type="text" placeholder="Отчество" />
+          <input id="tel" type="text" placeholder="Телефон" />
           <input id="email" type="text" placeholder="Почта" />
         </div>
       </div>
-      <button id="create">Создать аккаунт</button>
+      <button onclick="send_data()" id="create">Создать аккаунт</button>
       <h1>Страница в разработке</h1>
     </div>
-    <script></script>
+    <script src="./js/user_data.js"></script>
   </body>
 </html>
