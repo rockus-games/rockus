@@ -1,16 +1,47 @@
 <?php
-$firstName = $_POST["firstName"];
-$lastName = $_POST["lastName"];
-$fatherName = $_POST["fatherName"];
-$tel = $_POST["tel"];
-$email = $_POST["email"];
-$image = $_POST["image"];
+    header("Content-Type: text/html; charset=utf-8");
 
-$con = new mysqli("localhost:3306","Rockus","gbolus21");
-if ($con->connect_error) {
-    die("Connection failed: " . $con->connect_error);
-  }
-  echo "Connected successfully";
+    $nickname = $_POST["nickname"];
+    $grade = $_POST["grade"];
+    $email = $_POST["email"];
+    $image = file_get_contents($_FILES['image']['tmp_name']);
+
+    strtoupper($nickname);
+    echo $nickname;
+
+    $con = new mysqli("5.23.50.101:3306","cd56981_users","Alvard86");
+    if ($con->connect_error) {
+        die("Connection failed: " . $con->connect_error);
+    }
+    echo "Connection successful\n";
+
+    $query = "SELECT * FROM cd56981_users.code WHERE email = '$email';";
+
+      $result = $con->query($query);
+      if ($result->num_rows > 0) {
+          $code = $result->fetch_assoc()["code"];
+          if ($code == $_POST["code"]) {
+              $query = "INSERT INTO cd56981_users.user (nickname, grade, email) VALUES('$nickname', '$grade', '$email')";
+
+              if ($con->query($query) === TRUE) {
+                  $last_id = $con->insert_id;
+              
+                  $target = '../users/avatars/'.$last_id;
+                  echo $target."\n";
+                  move_uploaded_file( $_FILES['image']['tmp_name'], $target);
+              
+                  echo "New record created successfully. Last inserted ID is: " . $last_id;
+              } else {
+                  echo "Error: " . $sql . "<br>" . $con->error;
+              }
+          }
+          else {
+            die("Неправильный код");
+          }
+      }
+          
+    
+    $con->close();
 
 ?>
 
