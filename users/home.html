@@ -1,71 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <title>Дом</title>
-    <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" href="./css/home.css" />
-    <style>
-      #home {
-        pointer-events: none;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="header">
-      <div class="rockus"><h1>Дом</h1></div>
-      <div class="nav">
-        <a href="../index.html">
-          <span title="Главная страница" class="material-icons"
-            >first_page</span
-          ></a
-        >
-        <a id="home" href="./users/home.html">
-          <span style="color: crimson" title="Домой" class="material-icons"
-            >home</span
-          >
-        </a>
-        <a href="../webinfo/">
-          <span title="Школа" class="material-icons">school</span> </a
-        ><a href="../webinfo/engineers/">
-          <span title="Клуб инженеров" class="material-icons">engineering</span>
-        </a>
-        <a href="./user_data.html">
-          <span title="Настройки аккаунта" class="material-icons">person</span>
-        </a>
-        <a href="../admin.html">
-          <span title="Администраторы" class="material-icons">shield</span>
-        </a>
-        <a href="../mailsender.html"
-          ><span title="Отправить сообщение" class="material-icons">mail</span>
-        </a>
-      </div>
-    </div>
-    <hr size="" width="80%" />
-    <br />
-    <h1>Страница в разработке</h1>
-    <br />
-    <div class="desktop">
-      <div class="homework frame">
-        <h2>Домашние работы</h2>
-        <hr />
-        <div class="list_homework"></div>
-      </div>
-      <div class="classwork frame">
-        <h2>Классные работы</h2>
-        <hr />
-        <div class="list_classwork"></div>
-      </div>
-    </div>
-    <script src="./js/addAttachElement.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet" />
+        <title>Дом</title>
+        <link
+            rel="stylesheet"
+            href="../css/base.css" />
+        <link
+            rel="stylesheet"
+            href="./css/home.css" />
+        <script src="/js/loadheader.js"></script>
+        <style>
+            #home {
+                pointer-events: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="rockus"><h1>Дом</h1></div>
+            <div class="nav">
+                <a href="../index.html">
+                    <span
+                        title="Главная страница"
+                        class="material-icons">
+                        first_page
+                    </span>
+                </a>
+                <a
+                    id="home"
+                    href="./users/home.html">
+                    <span
+                        style="color: crimson"
+                        title="Домой"
+                        class="material-icons">
+                        home
+                    </span>
+                </a>
+                <a href="../webinfo/">
+                    <span
+                        title="Школа"
+                        class="material-icons">
+                        school
+                    </span>
+                </a>
+                <a href="../webinfo/engineers/">
+                    <span
+                        title="Клуб инженеров"
+                        class="material-icons">
+                        engineering
+                    </span>
+                </a>
+                <a href="./user_data.html">
+                    <span
+                        title="Настройки аккаунта"
+                        class="material-icons">
+                        person
+                    </span>
+                </a>
+                <a href="../admin.html">
+                    <span
+                        title="Администраторы"
+                        class="material-icons">
+                        shield
+                    </span>
+                </a>
+                <a href="../mailsender.html">
+                    <span
+                        title="Отправить сообщение"
+                        class="material-icons">
+                        mail
+                    </span>
+                </a>
+            </div>
+        </div>
+        <hr
+            size=""
+            width="80%" />
+        <br />
+        <h1>Страница в разработке</h1>
+        <br />
+        <div class="desktop">
+            <div class="homework frame">
+                <h2>Домашние работы</h2>
+                <hr />
+                <div class="list_homework"></div>
+            </div>
+            <div class="classwork frame">
+                <h2>Классные работы</h2>
+                <hr />
+                <div class="list_classwork"></div>
+            </div>
+        </div>
+        <script src="./js/addAttachElement.js"></script>
+    </body>
 </html>
