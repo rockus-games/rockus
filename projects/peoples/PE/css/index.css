@@ -1,18 +1,27 @@
+body {
+  /* background-color: rgb(55, 120, 178); */
+}
 h1 {
   text-align: center;
   /* background-color: rgb(227, 229, 213); */
 }
-.list_mi {
+.main{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.list_mi{
   text-align: center;
   overflow: auto;
   width: 30%;
   height: 820px;
   border-radius: 10px;
-  background-color: #d2cca1;
+  background-color: #D2CCA1;
   transition: all 0.3s;
 }
-.list_mi:hover {
-  transform: scale(1.05);
+.list_mi:hover{
+  background-color: #b6b083;
+  /* transform: scale(1.05); */
 }
 /* h2{
   font-size: 2vw;
@@ -21,20 +30,21 @@ h1 {
   width: 87%;
   background-color: white;
 } */
-.input_search {
+.input_search{
   /* width: 50%; */
   /* background-color: blue; */
   /* text-align: center; */
   margin-top: 20px;
 }
-#poisk {
+#poisk{
   width: 87%;
   height: 40px;
 }
-#poisk placeholder {
+#poisk::placeholder{
   text-align: center;
+  font-size: 25px;
 }
-.list {
+.list{
   overflow: auto;
   margin-right: auto;
   margin-left: auto;
@@ -42,10 +52,31 @@ h1 {
   height: 85%;
   background-color: #d9d9d9;
 }
-.item {
+.item{
   margin: auto;
   margin-top: 10px;
   width: 90%;
   height: 50px;
   background-color: white;
+  transition: all 0.2s;
+}
+.item:hover{
+  background-color: rgb(240, 238, 238);
+}
+.more{
+  border-radius: 10px;
+  width: 68%;
+  height: 820px;
+  background-color: #D2CCA1;
+}
+.pictures{
+  margin: auto;
+  margin-top: 10px;
+  width: 98%;
+  height: 400px;
+  background-color: #d9d9d9;
+}
+p{
+  margin: 16px 13px;
+  font-size: 30px;
 }
