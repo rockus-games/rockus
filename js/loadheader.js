@@ -11,11 +11,11 @@ let page_titles = {
 
 let page_keys = {
     "": "index",
-    "login.html": "login",
+    "users/login.html": "login",
     "index.html": "index",
     "users/home.html": "home",
     "webinfo/engineers/": "engine",
-    "users/user_data.html": "reg",
+    "users/register.html": "reg",
     "admin.html": "admin",
     "mailsender.html": "conn",
 };
@@ -45,4 +45,14 @@ fetch("/header.html")
         span.style = "color: crimson;";
         a.style = "pointer-events: none;";
         title.innerHTML = page_titles[cur_page];
+
+        if (
+            localStorage.getItem("user") != null &&
+            localStorage.getItem("user") != ""
+        ) {
+            var data = JSON.parse(localStorage.getItem("user"));
+            document.querySelector(
+                "#span_login"
+            ).src = `/users/avatars/${data[0].id}`;
+        }
     });

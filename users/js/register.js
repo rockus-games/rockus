@@ -18,8 +18,10 @@ function send_data() {
     var fatherName = document.querySelector("#fatherName").value;
     var grade = document.querySelector("#grade").value;
     var email = document.querySelector("#email").value;
+    var pass = document.querySelector("#pass").value;
 
     let regexLetter = /^[а-яА-Я]+$/;
+    let regexPass = /^[a-zA-Z0-9]+$/;
     let regexGrade = /^[1-9][а-яА-Я]$|^1[01][а-яА-Я]$/;
     let regexEmail = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
     if (
@@ -34,6 +36,8 @@ function send_data() {
         alert("Класс введён неверно");
     } else if (!regexEmail.test(email)) {
         alert("Электронная почта введена неверно");
+    } else if (!regexPass.test(pass)) {
+        alert("Пароль не соответствует требованиям");
     } else {
         var nickname = `${firstName[0].toUpperCase()}${lastName[0].toUpperCase()}${fatherName[0].toUpperCase()}_${grade.toUpperCase()}`;
 
@@ -41,6 +45,7 @@ function send_data() {
         formData.append("grade", grade);
         formData.append("email", email);
         formData.append("image", image);
+        formData.append("pass", pass);
 
         $.ajax({
             type: "POST",
@@ -61,13 +66,14 @@ function send_data() {
 
                     $.ajax({
                         type: "POST",
-                        url: "/php/user_data.php",
+                        url: "/php/register.php",
                         data: formData,
                         contentType: false,
                         cache: false,
                         processData: false,
                         success: (info) => {
                             console.log(info);
+                            alert("Аккаунт создан");
                         },
                         error: (info) => {
                             alert(info);
