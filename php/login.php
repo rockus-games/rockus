@@ -3,7 +3,8 @@
     $email = $_POST["email"];
     $pass = $_POST["pass"];
 
-    $con = new mysqli("5.23.50.101:3306","cd56981_users","Alvard86");
+    // $con = new mysqli("5.23.50.101:3306","cd56981_users","Alvard86");
+    $con = new mysqli("localhost:3306","cd56981_users","Alvard86");
     if ($con->connect_error) {
         die("Connection failed: " . $con->connect_error);
     }
