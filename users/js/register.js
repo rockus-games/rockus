@@ -44,7 +44,9 @@ function send_data() {
         formData.append("nickname", nickname);
         formData.append("grade", grade);
         formData.append("email", email);
-        formData.append("image", image);
+        if (image != "" && image != null) {
+            formData.append("image", image);
+        }
         formData.append("pass", pass);
 
         $.ajax({
