@@ -7,6 +7,11 @@ function choose_file() {
     input.click();
     input.onchange = () => {
         image = input.files[0];
+        var fr = new FileReader();
+        fr.onload = function () {
+            document.querySelector("#avatar").src = fr.result;
+        };
+        fr.readAsDataURL(image);
     };
 }
 

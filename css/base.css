@@ -26,6 +26,9 @@ body {
     max-width: 800px;
     margin: auto;
 }
+.header img {
+    object-fit: cover;
+}
 .rockus h1 {
     margin: 0;
     /* text-align: start; */
