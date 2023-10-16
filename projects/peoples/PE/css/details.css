@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+.main {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 100vh;
+  border-radius: 10px;
+  background-color: #d2cca1;
+}
+p {
+  margin: 8px;
+  font-size: 25px;
+}
