@@ -17,10 +17,13 @@
         <title>IT Студия Rockus</title>
         <link
             rel="stylesheet"
-            href="css/index.css" />
+            href="/css/index.css" />
         <link
             rel="stylesheet"
-            href="./css/base.css" />
+            href="/css/base.css" />
+        <link
+            rel="stylesheet"
+            href="./css/register.css" />
         <style>
             .about input {
                 margin-top: 20px;
@@ -35,79 +38,30 @@
                 background-color: crimson;
             }
             @media (max-width: 500px) {
+                .person {
+                    flex-direction: column;
+                }
+                .name {
+                    justify-content: center;
+                }
                 .about input {
                     width: 90%;
                 }
+
+                .name p {
+                    font-size: 18px;
+                }
+            }
+            .person {
+                display: none;
             }
         </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="/js/loadheader.js"></script>
     </head>
 
     <body>
-        <div class="header">
-            <div class="rockus">
-                <h1>Вход в аккаунт</h1>
-                <a
-                    style="pointer-events: none"
-                    href=""
-                    title="Вход в аккаунт">
-                    <img
-                        src="./assets/img/login.png"
-                        alt="" />
-                </a>
-            </div>
-            <div class="nav">
-                <a href="../index.html">
-                    <span
-                        title="Главная страница"
-                        class="material-icons">
-                        first_page
-                    </span>
-                </a>
-                <a href="./users/home.html">
-                    <span
-                        title="Домой"
-                        class="material-icons">
-                        home
-                    </span>
-                </a>
-                <a href="./webinfo/">
-                    <span
-                        title="Школа"
-                        class="material-icons">
-                        school
-                    </span>
-                </a>
-                <a href="./webinfo/engineers/">
-                    <span
-                        title="Клуб инженеров"
-                        class="material-icons">
-                        engineering
-                    </span>
-                </a>
-                <a href="./users/user_data.html">
-                    <span
-                        title="Настройки аккаунта"
-                        class="material-icons">
-                        person
-                    </span>
-                </a>
-                <a href="./admin.html">
-                    <span
-                        title="Администраторы"
-                        class="material-icons">
-                        shield
-                    </span>
-                </a>
-                <a href="./mailsender.html">
-                    <span
-                        title="Отправить сообщение"
-                        class="material-icons">
-                        mail
-                    </span>
-                </a>
-            </div>
-        </div>
-
+        <div class="header"></div>
         <hr
             size=""
             width="80%" />
@@ -116,15 +70,44 @@
         </div>
         <div class="about">
             <input
+                id="login"
                 type="text"
                 placeholder="Логин" />
             <br />
             <input
+                id="pass"
                 type="text"
                 placeholder="Пароль" />
             <br />
             <br />
-            <button>Вход</button>
+            <button onclick="login()">Вход</button>
+        </div>
+        <div class="person">
+            <div class="image">
+                <img
+                    id="avatar"
+                    onclick="choose_file()"
+                    src="../assets/img/login.png"
+                    alt="" />
+            </div>
+            <div class="name">
+                <p
+                    id="nickName"
+                    type="text">
+                    Ник
+                </p>
+                <p
+                    id="grade"
+                    type="text">
+                    Класс
+                </p>
+                <p
+                    id="email"
+                    type="text">
+                    Почта
+                </p>
+                <button onclick="logout()">Выйти</button>
+            </div>
         </div>
         <hr
             size=""
@@ -134,5 +117,6 @@
             <a href="/webinfo/"><button>Школа</button></a>
         </div>
         <h1>Страница в разработке</h1>
+        <script src="./js/login.js"></script>
     </body>
 </html>

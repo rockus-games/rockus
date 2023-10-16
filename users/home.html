@@ -19,86 +19,56 @@
             rel="stylesheet"
             href="./css/home.css" />
         <script src="/js/loadheader.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <style>
             #home {
                 pointer-events: none;
             }
+            @media screen and (max-width: 500px) {
+                .desktop > h1 {
+                    font-size: 25px;
+                }
+            }
         </style>
     </head>
     <body>
-        <div class="header">
-            <div class="rockus"><h1>Дом</h1></div>
-            <div class="nav">
-                <a href="../index.html">
-                    <span
-                        title="Главная страница"
-                        class="material-icons">
-                        first_page
-                    </span>
-                </a>
-                <a
-                    id="home"
-                    href="./users/home.html">
-                    <span
-                        style="color: crimson"
-                        title="Домой"
-                        class="material-icons">
-                        home
-                    </span>
-                </a>
-                <a href="../webinfo/">
-                    <span
-                        title="Школа"
-                        class="material-icons">
-                        school
-                    </span>
-                </a>
-                <a href="../webinfo/engineers/">
-                    <span
-                        title="Клуб инженеров"
-                        class="material-icons">
-                        engineering
-                    </span>
-                </a>
-                <a href="./user_data.html">
-                    <span
-                        title="Настройки аккаунта"
-                        class="material-icons">
-                        person
-                    </span>
-                </a>
-                <a href="../admin.html">
-                    <span
-                        title="Администраторы"
-                        class="material-icons">
-                        shield
-                    </span>
-                </a>
-                <a href="../mailsender.html">
-                    <span
-                        title="Отправить сообщение"
-                        class="material-icons">
-                        mail
-                    </span>
-                </a>
-            </div>
-        </div>
+        <div class="header"></div>
         <hr
             size=""
             width="80%" />
-        <br />
-        <h1>Страница в разработке</h1>
-        <br />
+        <!-- <br /> -->
+        <!-- <h1>Страница в разработке</h1> -->
+        <!-- <br /> -->
         <div class="desktop">
             <div class="homework frame">
                 <h2>Домашние работы</h2>
                 <hr />
                 <div class="list_homework"></div>
+                <span
+                    class="material-icons"
+                    style="
+                        color: #8cada5;
+                        border: 4px solid #8cada5;
+                        border-radius: 20px;
+                    "
+                    onclick="addHome()">
+                    add
+                </span>
             </div>
             <div class="classwork frame">
                 <h2>Классные работы</h2>
                 <hr />
                 <div class="list_classwork"></div>
+                <span
+                    class="material-icons"
+                    style="
+                        color: #8cada5;
+                        border: 4px solid #8cada5;
+                        border-radius: 20px;
+                    "
+                    onclick="addClass()">
+                    add
+                </span>
             </div>
         </div>
         <script src="./js/addAttachElement.js"></script>
