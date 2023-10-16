@@ -24,8 +24,8 @@ $mail->setFrom('service@rockus.su', 'Rockus.su');
 $mail->addAddress($email, $nickname);
 $mail->Subject = 'Регистрация в системе Rockus.su';
 
-$con = new mysqli("5.23.50.101:3306", "cd56981_users", "Alvard86");
-// $con = new mysqli("localhost:3306", "cd56981_users", "Alvard86");
+// $con = new mysqli("5.23.50.101:3306", "cd56981_users", "Alvard86");
+$con = new mysqli("localhost:3306", "cd56981_users", "Alvard86");
 if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }
