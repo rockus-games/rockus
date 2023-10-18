@@ -3,7 +3,9 @@ let list_classwork = document.querySelector(".list_classwork");
 let works_list = document.querySelector(".works_list");
 // sessionStorage.setItem("expandedLists", "[]");
 if (sessionStorage.getItem("expandedLists") == null) {
-    sessionStorage.setItem("expandedLists", "");
+    sessionStorage.setItem("expandedLists", "[]");
+} else {
+    console.log(sessionStorage.getItem("expandedLists"));
 }
 
 if (
