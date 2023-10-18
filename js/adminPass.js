@@ -1,4 +1,4 @@
-function blackboardAdmin() {
+function adminPass() {
     if (sessionStorage.getItem("passAdmin") != "1") {
         var modal = document.querySelector(".modal");
 
@@ -32,7 +32,7 @@ async function blackboardPassword() {
     formData.append("pass", pass);
     $.ajax({
         type: "POST",
-        url: "./php/passwordCheck.php",
+        url: "/php/passwordCheck.php",
         data: formData,
         contentType: false,
         cache: false,

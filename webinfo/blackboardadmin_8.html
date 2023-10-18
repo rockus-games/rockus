@@ -2,18 +2,27 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="Веб-платформа для обучения и проведения занятий. Курсы по программированию, моделированию, проектированию, разработке сайтов, игр и мобильных приложений; автоэлектрике и работе со станками ЧПУ. Подготовка к ОГЭ. Подготовка к ЕГЭ."
-        />
-        <link rel="stylesheet" href="./CSS/css.css" />
-        <link rel="stylesheet" href="CSS/blackboard.css" />
-        <link rel="stylesheet" href="./CSS/paint.css" />
+            content="Веб-платформа для обучения и проведения занятий. Курсы по программированию, моделированию, проектированию, разработке сайтов, игр и мобильных приложений; автоэлектрике и работе со станками ЧПУ. Подготовка к ОГЭ. Подготовка к ЕГЭ." />
+        <link
+            rel="stylesheet"
+            href="./CSS/css.css" />
+        <link
+            rel="stylesheet"
+            href="CSS/blackboard.css" />
+        <link
+            rel="stylesheet"
+            href="./CSS/paint.css" />
         <title>Blackboard</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="./js/blackboard.js"></script>
+        <script src="/js/adminPass.js"></script>
         <script>
             let lineNumber = 1;
             if (!document.__defineGetter__) {
@@ -110,19 +119,24 @@
                         type="password"
                         class="password"
                         name="password"
-                        onkeydown="keypress(this)"
-                    />
+                        onkeydown="keypress(this)" />
                     <input
                         type="button"
                         onclick="blackboardPassword()"
-                        value="Отправить"
-                    />
+                        value="Отправить" />
                 </div>
-                <span class="close" onclick="closeModal()">&times;</span>
+                <span
+                    class="close"
+                    onclick="closeModal()">
+                    &times;
+                </span>
             </div>
         </div>
         <!-- <input type="text" id="task" class="textfield"> -->
-        <textarea name="textfield" id="task" class="textfield"></textarea>
+        <textarea
+            name="textfield"
+            id="task"
+            class="textfield"></textarea>
         <!-- <div class="textbtns">
             <button onclick="fastbtnClick('a')">&lt;a&gt;</button>
             <button onclick="fastbtnClick('p')">&lt;p&gt;</button>
@@ -141,9 +155,16 @@
 
         <div id="toolbar">
             <label for="stroke">Цвет</label>
-            <input id="stroke" name="stroke" type="color" />
+            <input
+                id="stroke"
+                name="stroke"
+                type="color" />
             <label for="lineWidth">Толщина</label>
-            <input id="lineWidth" name="lineWidth" type="number" value="5" />
+            <input
+                id="lineWidth"
+                name="lineWidth"
+                type="number"
+                value="5" />
             <button id="clear">Clear</button>
         </div>
         <div class="drawing_base">
@@ -156,7 +177,7 @@
         <pre></pre>
 
         <script>
-            blackboardAdmin();
+            adminPass();
             document
                 .querySelector(".textfield")
                 .addEventListener("input", function (event) {

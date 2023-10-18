@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Задания</title>
+        <meta
+            name="description"
+            content="Веб-платформа для обучения и проведения занятий. Курсы по программированию, моделированию, проектированию, разработке сайтов, игр и мобильных приложений; автоэлектрике и работе со станками ЧПУ. Подготовка к ОГЭ. Подготовка к ЕГЭ." />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link
+            rel="stylesheet"
+            href="/css/base.css" />
+        <link
+            rel="stylesheet"
+            href="./css/home.css" />
+        <style>
+            .list_homework,
+            .list_classwork,
+            .frame {
+                height: initial;
+                min-height: 20px;
+            }
+
+            .frame {
+                margin: initial;
+            }
+
+            .expandBtn {
+                color: #43adad;
+                font-size: 60px;
+            }
+
+            .works_item {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                margin-left: 70px;
+                margin-right: 70px;
+            }
+
+            .content {
+                padding: 0 18px;
+                /* background-color: white; */
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+            }
+
+            .expandList {
+                width: 100%;
+            }
+
+            .expandList > hr {
+                max-width: initial;
+            }
+
+            .expandList > p {
+                font-size: 25px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                color: #43adad;
+            }
+
+            .desktop {
+                justify-content: space-around;
+            }
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="/js/adminPass.js"></script>
+    </head>
+    <body>
+        <div class="modal">
+            <div class="modal-content">
+                <div>
+                    <label for="password">Пароль:</label>
+                    <input
+                        type="password"
+                        class="password"
+                        name="password"
+                        onkeydown="keypress(this)" />
+                    <input
+                        type="button"
+                        onclick="blackboardPassword()"
+                        value="Отправить" />
+                </div>
+                <span
+                    class="close"
+                    onclick="closeModal()">
+                    &times;
+                </span>
+            </div>
+        </div>
+        <div class="works_list"></div>
+        <!-- <div class="header"></div> -->
+
+        <script src="./js/loadworks.js"></script>
+        <script>
+            adminPass();
+        </script>
+    </body>
+</html>
