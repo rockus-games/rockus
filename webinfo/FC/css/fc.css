@@ -1,10 +1,8 @@
 .modul1 {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr; */
   overflow-y: scroll;
   overflow: hidden;
   width: 80%;
+  max-width: 800px;
   margin: auto;
   height: 500px;
   background-color: #181818;
