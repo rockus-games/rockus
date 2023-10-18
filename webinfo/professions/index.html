@@ -1,33 +1,147 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Веб-платформа для обучения и проведения занятий. Курсы по программированию, моделированию, проектированию, разработке сайтов, игр и мобильных приложений; автоэлектрике и работе со станками ЧПУ. Подготовка к ОГЭ. Подготовка к ЕГЭ." />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet" />
-        <link
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet" />
-        <title>IT Студия Rockus</title>
-       
-        <link
-            rel="stylesheet"
-            href="../../css/base.css" />
-        <script src="/js/loadheader.js"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Веб-платформа для обучения и проведения занятий. Курсы по программированию, моделированию, проектированию, разработке сайтов, игр и мобильных приложений; автоэлектрике и работе со станками ЧПУ. Подготовка к ОГЭ. Подготовка к ЕГЭ." />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <title>IT Студия Rockus</title>
 
-    <body>
-        <div class="header"></div>
+    <link
+      rel="stylesheet"
+      href="../../css/base.css" />
+    <script src="/js/loadheader.js"></script>
+    <style>
+      .modul1 {
+        overflow-y: scroll;
+        overflow: hidden;
+        width: 80%;
+        max-width: 800px;
+        margin: auto;
+        margin-top: 30px;
+        height: 500px;
+        transition: all 0.3s;
+        background-color: rgb(255, 239, 220);
+      }
+      .modul1:hover {
+        background-color: bisque;
+        border-radius: 40px;
+      }
+      .modul1 h1 {
+        color: rgb(97, 169, 232);
+      }
+      .list {
+        overflow-y: auto;
+        margin: auto;
+        width: 90%;
+        height: 400px;
+      }
+      .list::-webkit-scrollbar {
+        display: none;
+      }
+      /* .list::-webkit-scrollbar:hover {
+        display: inherit;
+      } */
+      .item {
+        margin: auto;
+        width: 90%;
+        /* height: 40px; */
+        background-color: rgb(255, 239, 220);
+      }
+      .item:hover{
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .item h2 {
+        color: black;
+      }
+    </style>
+  </head>
 
-        <hr
-            size=""
-            width="80%" />
-       <h2>Профессии будущего</h2>
-    </body>
+  <body>
+    <div class="header"></div>
+
+    <hr
+      size=""
+      width="80%" />
+    <h2>Профессии отраслевые</h2>
+    <div class="modul1">
+      <h1>Строительные</h1>
+      <div class="list">
+        <div class="item">
+          <h2> Автомеханик</h2>
+        </div>
+        <div class="item">
+          <h2>Аппаратчик (всех наименований)</h2>
+        </div>
+        <div class="item">
+          <h2>Архитектор</h2>
+        </div>
+        <div class="item">
+          <h2>Бетонщик</h2>
+        </div>
+        <div class="item">
+          <h2>Бурильщик</h2>
+        </div>
+        <div class="item">
+          <h2> Вальцовщик стана холодного проката труб</h2>
+        </div>
+        <div class="item">
+          <h2>Вязальщик</h2>
+        </div>
+        <div class="item">
+          <h2>Горнорабочий</h2>
+        </div>
+        <div class="item">
+          <h2>Инженер</h2>
+        </div>
+        <div class="item">
+          <h2>Конструктор</h2>
+        </div>
+        <div class="item">
+          <h2>Мастер отделочных строительных работ</h2>
+        </div>
+        <div class="item">
+          <h2>Мастер по ремонту оборудования (в промышленности)</h2>
+        </div>
+      </div>
+    </div>
+    <div class="modul1"><h1>Педагогические</h1></div>
+    <div class="modul1"><h1>IT(Информационные технологии)</h1></div>
+    <div class="modul1"><h1>Юридические</h1></div>
+    <div class="modul1"><h1>Работа с людьми</h1></div>
+    <div class="modul1"><h1>Безопасность</h1></div>
+    <div class="modul1"><h1>Медицинские</h1></div>
+    <div class="modul1"><h1>Металлургия</h1></div>
+    <div class="modul1"><h1>Легкая промышленность</h1></div>
+    <div class="modul1"><h1>Индустрия детских товаров и сервисов</h1></div>
+    <div class="modul1"><h1>Экономические</h1></div>
+    <div class="modul1"><h1>Творческие</h1></div>
+    <div class="modul1"><h1>Военные</h1></div>
+    <div class="modul1"><h1>Авиационные</h1></div>
+    <div class="modul1"><h1>Космические</h1></div>
+    <div class="modul1"><h1>Энергосети и управление энергопотреблением</h1></div>
+    <div class="modul1"><h1>Энергогенерация</h1></div>
+    <div class="modul1"><h1>Связанные с путешествиями</h1></div>
+    <div class="modul1"><h1>Медиа и гостеприимство</h1></div>
+    <div class="modul1"><h1>Аграрные и животноводческие</h1></div>
+    <div class="modul1"><h1>Транспортные</h1></div>
+    <div class="modul1"><h1>Водный транспорт</h1></div>
+    <div class="modul1"><h1>Лингвистические</h1></div>
+    <div class="modul1"><h1>Добыча и переработка ископаемых</h1></div>
+    <div class="modul1"><h1>Новые материалы и нанотехнологии</h1></div>
+    <div class="modul1"><h1>Робототехника и машиностроение</h1></div>
+    <div class="modul1"><h1>Биотехнологии</h1></div>
+    <div class="modul1"><h1>Социальная сфера</h1></div>
+    <div class="modul1"><h1>Финансовый сектор</h1></div>
+  </body>
 </html>
