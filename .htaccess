@@ -1,4 +1,5 @@
 AddDefaultCharset UTF-8
+AddType application/vnd.android.package-archive .apk
 <FilesMatch "\.(css|flv|gif|htm|html|ico|jpe|jpeg|jpg|js|png|pdf|swf|txt)$">
 	<IfModule mod_expires.c>
 		ExpiresActive Off
