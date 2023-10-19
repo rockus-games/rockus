@@ -43,7 +43,7 @@ function checkPassword() {
     formData.append("pass", pass);
     $.ajax({
         type: "POST",
-        url: "./php/passwordCheck.php",
+        url: "/php/passwordCheck.php",
         data: formData,
         contentType: false,
         cache: false,
