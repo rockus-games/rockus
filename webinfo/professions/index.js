@@ -1,9 +1,8 @@
-let pedagogy = document.querySelector(".pedagogy")
+let pedagogy = document.querySelector(".pedagogy");
+$.getJSON("./index.json", (jsonData) => {
+  var json = jsonData;
 
-function builder() {
-    for (var i = 0; i < 20; i++){
-        pedagogy.innerHTML += `<div class="item">Название профессии</div>`
-        
-    }
-}
-builder();
+  for (var i = 0; i < json["pedagogy"].length; i++) {
+    pedagogy.innerHTML += `<div class="item">${json["pedagogy"][i]}</div>`;
+  }
+});
