@@ -1,6 +1,9 @@
-let teaching;
+let pedagogy = document.querySelector(".pedagogy")
 
 function builder() {
-  console.log(1111);
+    for (var i = 0; i < 20; i++){
+        pedagogy.innerHTML += `<div class="item">Название профессии</div>`
+        
+    }
 }
 builder();
