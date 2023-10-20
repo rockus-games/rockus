@@ -67,23 +67,27 @@ function login() {
             processData: false,
             success: (info) => {
                 var data = JSON.parse(info);
-                if (data.length > 0) {
-                    about.style.display = "none";
-                    person.style.display = "none";
-                    person_data.style.display = "flex";
+                if (data[0] != null) {
+                    if (data.length > 0) {
+                        about.style.display = "none";
+                        person.style.display = "none";
+                        person_data.style.display = "flex";
 
-                    console.log(data);
-                    localStorage.setItem("user", JSON.stringify(data));
-                    console.log(localStorage.getItem("user"));
+                        console.log(data);
+                        localStorage.setItem("user", JSON.stringify(data));
+                        console.log(localStorage.getItem("user"));
 
-                    nickName.innerHTML = data[0].nickname;
-                    grade.innerHTML = data[0].grade;
-                    mail.innerHTML = data[0].email;
-                    avatar.src = `/users/avatars/${data[0].id}`;
+                        nickName.innerHTML = data[0].nickname;
+                        grade.innerHTML = data[0].grade;
+                        mail.innerHTML = data[0].email;
+                        avatar.src = `/users/avatars/${data[0].id}`;
 
-                    document.querySelector(
-                        "#span_login"
-                    ).src = `/users/avatars/${data[0].id}`;
+                        document.querySelector(
+                            "#span_login"
+                        ).src = `/users/avatars/${data[0].id}`;
+                    } else {
+                        alert("Почта или пароль введены неверно");
+                    }
                 } else {
                     alert("Почта или пароль введены неверно");
                 }
