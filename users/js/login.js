@@ -1,9 +1,9 @@
 var about = document.querySelector(".container_about");
 var person_data = document.querySelector(".person_data");
 var person = document.querySelector(".container_person");
-var nickName = document.querySelector("#nickName");
-var grade = document.querySelector("#grade");
-var mail = document.querySelector("#email");
+var nickName = document.querySelector("#p_nickName");
+var grade = document.querySelector("#p_grade");
+var mail = document.querySelector("#p_email");
 var avatar = document.querySelector("#avatar");
 
 let regexPass = /^[a-zA-Z0-9]+$/;
