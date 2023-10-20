@@ -7,6 +7,30 @@ function choose_file() {
     input.click();
     input.onchange = () => {
         image = input.files[0];
+
+        var formData = new FormData();
+
+        var data = JSON.parse(localStorage.getItem("user"));
+
+        formData.append("id", data[0].id);
+        formData.append("image", image);
+
+        $.ajax({
+            type: "POST",
+            url: "/php/loadAvatar.php",
+            data: formData,
+            contentType: false,
+            cache: false,
+            processData: false,
+            success: (info) => {
+                console.log(info);
+                alert("Фото изменено");
+            },
+            error: (info) => {
+                alert(info);
+            },
+        });
+
         var fr = new FileReader();
         fr.onload = function () {
             document.querySelector("#avatar").src = fr.result;
@@ -23,7 +47,7 @@ function send_data() {
     var fatherName = document.querySelector("#fatherName").value;
     var grade = document.querySelector("#grade").value;
     var email = document.querySelector("#email").value;
-    var pass = document.querySelector("#pass").value;
+    var pass = document.querySelector("#reg_pass").value;
 
     let regexLetter = /^[а-яА-Я]+$/;
     let regexPass = /^[a-zA-Z0-9]+$/;

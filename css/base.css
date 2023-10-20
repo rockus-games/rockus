@@ -101,7 +101,7 @@ button {
     min-width: 120px;
     height: 4vw;
     min-height: 30px;
-    font-size: 2vw;
+    font-size: 30px;
     color: #8cada5;
     /* transition: all 0.5s ease-out; */
     /* box-shadow: 2px 2px bisque; */
@@ -163,11 +163,11 @@ li:hover {
         font-size: 7vw;
     }
     button {
-        border-radius: 1vw;
+        border-radius: 4vw;
 
         width: 60vw;
         height: 16vw;
-        font-size: 8vw;
+        font-size: 25px;
     }
     /* h3:hover {
     cursor: inherit;

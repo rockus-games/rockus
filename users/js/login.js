@@ -1,4 +1,5 @@
 var about = document.querySelector(".about");
+var person_data = document.querySelector(".person_data");
 var person = document.querySelector(".person");
 var nickName = document.querySelector("#nickName");
 var grade = document.querySelector("#grade");
@@ -16,20 +17,29 @@ if (
     var data = JSON.parse(localStorage.getItem("user"));
 
     about.style.display = "none";
-    person.style.display = "flex";
+    person_data.style.display = "flex";
+    person.style.display = "none";
 
     nickName.innerHTML = data[0].nickname;
     grade.innerHTML = data[0].grade;
     mail.innerHTML = data[0].email;
-    avatar.src = `/users/avatars/${data[0].id}`;
-
-    document.querySelector("#span_login").src = `/users/avatars/${data[0].id}`;
+    $.ajax({
+        url: `/users/avatars/${data[0].id}`,
+        type: "HEAD",
+        success: function () {
+            avatar.src = `/users/avatars/${data[0].id}`;
+            document.querySelector(
+                "#span_login"
+            ).src = `/users/avatars/${data[0].id}`;
+        },
+    });
 }
 
 function logout() {
     localStorage.removeItem("user");
-    about.style.display = "block";
-    person.style.display = "none";
+    about.style.display = "flex";
+    person_data.style.display = "none";
+    person.style.display = "flex";
 
     document.querySelector("#span_login").src = `/assets/img/login.png`;
 }
@@ -59,7 +69,8 @@ function login() {
                 var data = JSON.parse(info);
                 if (data.length > 0) {
                     about.style.display = "none";
-                    person.style.display = "flex";
+                    person.style.display = "none";
+                    person_data.style.display = "flex";
 
                     console.log(data);
                     localStorage.setItem("user", JSON.stringify(data));
