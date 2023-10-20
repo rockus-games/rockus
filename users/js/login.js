@@ -27,6 +27,7 @@ if (
         url: `/users/avatars/${data[0].id}`,
         type: "HEAD",
         success: function () {
+            console.log("Avatar found");
             avatar.src = `/users/avatars/${data[0].id}`;
             document.querySelector(
                 "#span_login"
