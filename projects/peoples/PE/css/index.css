@@ -14,7 +14,7 @@ h1 {
   text-align: center;
   overflow: auto;
   width: 30%;
-  height: 820px;
+  height: 860px;
   border-radius: 10px;
   background-color: #d2cca1;
   transition: all 0.3s;
@@ -66,11 +66,13 @@ h1 {
 .more {
   border-radius: 10px;
   width: 68%;
-  height: 820px;
+  height: 860px;
   background-color: #d2cca1;
 }
 .pictures {
+  overflow: auto;
   display: flex;
+  flex-direction: row;
   padding: 14px;
   margin: auto;
   margin-top: 10px;
@@ -84,16 +86,24 @@ h1 {
   height: 95%;
   background-color: #6290c3;
 }
+.p{
+  width: 98%;
+  height: 300px;
+  overflow: auto;
+}
 p {
   margin: 16px 13px;
   font-size: 30px;
 }
 .button1 {
   display: flex;
+  /* background-color: #6290c3; */
   justify-content: end;
 }
 .button1 button {
+  cursor: pointer;
+  margin-right: 30px;
  width: 12vw;
- height: 30px;
+ height: 5vh;
  font-size: 20px;
 }

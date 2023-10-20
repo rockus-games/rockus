@@ -1,15 +1,35 @@
 body {
   text-align: center;
 }
-.main {
-  display: block;
-  margin: auto;
-  width: 80%;
+.main {margin-left: 15%;
+
+  display: flex;
+  /* display: block; */
+  /* margin: auto; */
+  /* width: 80%; */
   height: 100vh;
   border-radius: 10px;
+  /* background-color: #d2cca1; */
+}
+.details{
+  border-radius: 10px;
+  width: 80%;
   background-color: #d2cca1;
 }
 p {
   margin: 8px;
   font-size: 25px;
+}
+.button_audio{
+  margin-top: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: #c9bbbb;
+}
+.button_audio img{
+  margin: auto;
+  margin-top: 8px;
+  width: 50px;
 }
