@@ -47,10 +47,6 @@
                 background-color: crimson;
             }
 
-            .person_data {
-                display: none;
-            }
-
             .base {
                 display: flex;
                 justify-content: center;
@@ -67,6 +63,9 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+            }
+            .person_data {
+                display: none;
             }
 
             .person {
@@ -104,15 +103,9 @@
         <hr
             size=""
             width="80%" />
-        <div
-            class="base"
-            style="
-                justify-content: space-around;
-                width: 80%;
-                margin: auto;
-            "></div>
+
         <div class="base">
-            <div class="container">
+            <div class="container container_about">
                 <div class="wellcom">
                     <h1>Авторизация</h1>
                 </div>
@@ -133,7 +126,7 @@
                     Вход
                 </button>
             </div>
-            <div class="person_data">
+            <div class="container person_data">
                 <div class="image">
                     <img
                         id="avatar"
@@ -160,7 +153,7 @@
                     <button onclick="logout()">Выйти</button>
                 </div>
             </div>
-            <div class="container">
+            <div class="container container_person">
                 <div class="wellcom">
                     <h1>Регистрация</h1>
                 </div>
