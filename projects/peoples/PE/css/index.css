@@ -70,26 +70,34 @@ h1 {
   background-color: #d2cca1;
 }
 .pictures {
+  border-radius: 8px;
   overflow: auto;
   display: flex;
   flex-direction: row;
   padding: 14px;
   margin: auto;
-  margin-top: 10px;
-  width: 98%;
+  margin-top: 20px;
+  width: 90%;
   height: 400px;
   background-color: #d9d9d9;
 }
 .pitem {
   margin-left: 10px;
+  flex-shrink: 0;
   width: 30%;
   height: 95%;
-  background-color: #6290c3;
+  /* background-color: #6290c3; */
+}
+.pitem img{
+  width: 100%;
 }
 .p{
+  margin-top: 20px;
+  padding: 14px;
   width: 98%;
   height: 300px;
   overflow: auto;
+  /* background-color: #6290c3; */
 }
 p {
   margin: 16px 13px;
