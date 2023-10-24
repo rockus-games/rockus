@@ -204,6 +204,7 @@ button:hover {
     height: 60px;
     background-color: #070606;
     border-bottom: none;
+    width: 100%;
   }
 
   .one,

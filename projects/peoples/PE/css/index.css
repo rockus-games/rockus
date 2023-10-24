@@ -14,7 +14,7 @@ h1 {
   text-align: center;
   overflow: auto;
   width: 30%;
-  height: 820px;
+  height: 860px;
   border-radius: 10px;
   background-color: #d2cca1;
   transition: all 0.3s;
@@ -66,23 +66,38 @@ h1 {
 .more {
   border-radius: 10px;
   width: 68%;
-  height: 820px;
+  height: 860px;
   background-color: #d2cca1;
 }
 .pictures {
+  border-radius: 8px;
+  overflow: auto;
   display: flex;
+  flex-direction: row;
   padding: 14px;
   margin: auto;
-  margin-top: 10px;
-  width: 98%;
+  margin-top: 20px;
+  width: 90%;
   height: 400px;
   background-color: #d9d9d9;
 }
 .pitem {
   margin-left: 10px;
+  flex-shrink: 0;
   width: 30%;
   height: 95%;
-  background-color: #6290c3;
+  /* background-color: #6290c3; */
+}
+.pitem img{
+  width: 100%;
+}
+.p{
+  margin-top: 20px;
+  padding: 14px;
+  width: 98%;
+  height: 300px;
+  overflow: auto;
+  /* background-color: #6290c3; */
 }
 p {
   margin: 16px 13px;
@@ -90,10 +105,13 @@ p {
 }
 .button1 {
   display: flex;
+  /* background-color: #6290c3; */
   justify-content: end;
 }
 .button1 button {
+  cursor: pointer;
+  margin-right: 30px;
  width: 12vw;
- height: 30px;
+ height: 5vh;
  font-size: 20px;
 }

@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(232, 19, 19);
+}
+h1{
+    color: blue;
+    text-align: center;
+    font-size: 50px
+    
+}
+img{
+    width: 10vw;
+    transition: all 0.5s;
+}
+img:hover{
+
+transform: scale(1.2);
+border-radius: 20px;
+}
+.m{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 50%;
+
+}
+p{
+    font-size: 40px;
+}
