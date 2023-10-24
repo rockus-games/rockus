@@ -7,6 +7,6 @@ $.getJSON("./index.json", (jsonData) => {
     pedagogy.innerHTML += `<div class="item">${json["pedagogy"][i]}</div>`;
   }
   for (var i = 0; i < json["IT"].length; i++) {
-    pedagogy.innerHTML += `<div class="item">${json["IT"][i]}</div>`;
+    IT.innerHTML += `<div class="item">${json["IT"][i]}</div>`;
   }
 });
