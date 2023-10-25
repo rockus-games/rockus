@@ -68,7 +68,7 @@ function send_data() {
     } else if (!regexPass.test(pass)) {
         alert("Пароль не соответствует требованиям");
     } else {
-        var nickname = `${firstName[0].toUpperCase()}${lastName[0].toUpperCase()}${fatherName[0].toUpperCase()}_${grade.toUpperCase()}`;
+        var nickname = `${lastName}${firstName[0].toUpperCase()}${fatherName[0].toUpperCase()}_${grade.toUpperCase()}`;
 
         formData.append("nickname", nickname);
         formData.append("grade", grade);
