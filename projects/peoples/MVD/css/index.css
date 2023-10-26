@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+
+}
+.mvd{
+    margin: auto;
+    width: 200px;
+    height: 100px;
+    background-color: bisque;
+}
