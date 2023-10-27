@@ -88,10 +88,10 @@ h1 {
   height: 95%;
   /* background-color: #6290c3; */
 }
-.pitem img{
+.pitem img {
   width: 100%;
 }
-.p{
+.p {
   margin-top: 20px;
   padding: 14px;
   width: 98%;
@@ -111,7 +111,44 @@ p {
 .button1 button {
   cursor: pointer;
   margin-right: 30px;
- width: 12vw;
- height: 5vh;
- font-size: 20px;
+  width: 12vw;
+  height: 5vh;
+  font-size: 20px;
+}
+@media (max-width: 500px) {
+  .main {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .list_mi {
+    text-align: center;
+    width: 100%;
+    height: 650px;
+    border-radius: 10px;
+  }
+  .more {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 650px;
+  }
+  .p {
+    margin-top: 20px;
+    padding: 14px;
+    width: 98%;
+    height: 100px;
+    overflow: auto;
+  }
+  .button1 {
+    display: flex;
+    /* background-color: #6290c3; */
+    justify-content: end;
+  }
+  .button1 button {
+    margin-bottom: 30px;
+    margin-right: 15px;
+    width: 30vw;
+    height: 5vh;
+    font-size: 20px;
+  }
 }

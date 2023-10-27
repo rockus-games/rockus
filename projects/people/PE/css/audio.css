@@ -17,21 +17,21 @@ body {
   width: 80%;
   background-color: #d2cca1;
 }
-.list_audio{
-    overflow: auto;
-    height: 95%;
-    margin: 20px;
-    display: grid;
-    row-gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    /* background-color: #181818; */
+.list_audio {
+  overflow: auto;
+  height: 95%;
+  margin: 20px;
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  /* background-color: #181818; */
 }
-.audio_item{
-    border-radius: 10px;
-    margin-left: 5%;
-    width: 90%;
-    height: 200px;
-    background-color: #d9d9d9;
+.audio_item {
+  border-radius: 10px;
+  margin-left: 5%;
+  width: 90%;
+  height: 200px;
+  background-color: #d9d9d9;
 }
 .button_audio {
   margin-top: 10px;
@@ -45,4 +45,18 @@ body {
   margin: auto;
   margin-top: 8px;
   width: 50px;
+}
+audio {
+  margin-top: 20px;
+}
+.action {
+  text-align: start;
+  /* background-color: blue; */
+}
+.action img {
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 30px;
+  width: 40px;
+  background-color: #f0f0f0;
 }
