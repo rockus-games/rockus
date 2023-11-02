@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    text-align: center;
+}
+img{
+    width: 900px;
+
+}
+
+h1:hover{
+
+    color: rgb(15, 51, 168);
+}
+.first{
+  text-align: center;
+}
