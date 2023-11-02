@@ -70,9 +70,9 @@ h3 {
   color: #02675a;
 }
 #img_svo {
-  height: 150px;
+  /* height: 150px; */
   border-radius: 8px;
-  /* width: 16vw; */
+  width: 16vw;
   transition: all 0.3s;
 }
 #museum {
