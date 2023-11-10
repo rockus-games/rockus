@@ -1,6 +1,6 @@
 let list = document.querySelector(".list");
 
-$.getJSON("./index.json", (jsonData) => {
+$.getJSON("./data.json", (jsonData) => {
   var json = jsonData;
 
   for (var i = 0; i < json["names"].length; i++) {
