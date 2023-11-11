@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Стрим8</title>
+    </head>
+    <body style="margin: 0; background-color: black">
+        <canvas
+            width="1280"
+            height="720"></canvas>
+        <script>
+            var img = new Image();
+            img.onload = function () {
+                document
+                    .querySelector("canvas")
+                    .getContext("2d")
+                    .drawImage(img, 0, 0, 1280, 720);
+            };
+            setInterval(() => {
+                img.src = "/php/stream8.png?rand=" + Math.random();
+            }, 30);
+        </script>
+    </body>
+</html>

@@ -1,188 +1,191 @@
 @font-face {
-  font-family: "Roundhand"; /* Гарнитура шрифта */
-  src: url(../fonts/Roundhand.ttf); /* Путь к файлу со шрифтом */
+    font-family: "Roundhand"; /* Гарнитура шрифта */
+    src: url(../fonts/Roundhand.ttf); /* Путь к файлу со шрифтом */
 }
 .desktop {
-  display: grid;
-  grid-template-columns: 1fr 2.6fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 2.6fr 1fr;
 }
 body::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 .mobile {
-  display: none;
+    display: none;
 }
 
 main {
-  border-left: 4px solid #55a792;
-  border-right: 4px solid #55a792;
-  margin-top: 10px;
+    border-left: 4px solid #55a792;
+    border-right: 4px solid #55a792;
+    margin-top: 10px;
 }
 
 .header {
-  padding-top: 10px;
-  width: 95%;
-  display: flex;
-  max-width: inherit;
-  justify-content: space-between;
+    padding-top: 10px;
+    width: 95%;
+    display: flex;
+    max-width: inherit;
+    justify-content: space-between;
 }
 .rockus {
-  font-size: 1.5em;
-  margin: 0;
+    font-size: 1.5em;
+    margin: 0;
 }
 .material-icons {
-  font-size: 1.5vw;
-  padding: 8px;
+    font-size: 1.5vw;
+    padding: 8px;
 }
 .material-icons:hover {
-  font-size: 1.6vw;
-  color: #1bac88;
-  transform: scale(2);
+    font-size: 1.6vw;
+    color: #1bac88;
+    transform: scale(2);
 }
 h3 {
-  font-size: 1.5vw;
-  position: relative;
-  transition: all 0.3s ease;
+    font-size: 1.5vw;
+    position: relative;
+    transition: all 0.3s ease;
 }
 .right h3 {
-  font-size: 1.3vw;
+    font-size: 1.3vw;
 }
 
 #pismo {
-  font-family: "Roundhand";
-  font-size: 2vw;
-  color: bisque;
-  display: inline-block;
-  margin-bottom: 8px;
+    font-family: "Roundhand";
+    font-size: 2vw;
+    color: bisque;
+    display: inline-block;
+    margin-bottom: 8px;
 }
 .rockus,
 #nasha_shkola,
 #courses,
 #glavnaya_stranica {
-  transition: all 0.3s;
+    transition: all 0.3s;
 }
 .rockus:hover,
 #nasha_shkola:hover,
 #pismo:hover,
 #glavnaya_stranica:hover,
 #courses:hover {
-  transform: scale(1.03);
-  color: #02675a;
+    transform: scale(1.03);
+    color: #02675a;
 }
 #img_svo {
-  /* height: 150px; */
-  border-radius: 8px;
-  width: 10vw;
-  transition: all 0.3s;
+    /* height: 150px; */
+    border-radius: 8px;
+    width: 10vw;
+    transition: all 0.3s;
 }
 #museum {
-  transition: all 0.3s;
+    transition: all 0.3s;
 }
 #blackboard {
-  transition: all 0.3s;
+    transition: all 0.3s;
 }
 #img_svo:hover,
 #blackboard:hover,
 #museum:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
-.main_blackboards img {
-  width: 25%;
+.main_blackboards img,
+.main_streams img {
+    width: 25%;
 }
-.main_blackboards a {
-  display: inline;
-  margin: 8px;
+.main_blackboards a,
+.main_streams a {
+    display: inline;
+    margin: 8px;
 }
 .main_buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 @media (max-width: 500px) {
-  .desktop {
-    display: none;
-  }
-  .mobile {
-    display: inherit;
-    grid-template-columns: 1fr;
-  }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: inherit;
+        grid-template-columns: 1fr;
+    }
 
-  .left {
-    border-left: 2px solid #55a792;
-    border-right: 2px solid #55a792;
-  }
-  #nasha_shkola {
-    margin-top: 0;
-    padding-top: 20px;
-  }
-  .left h2 {
-    font-size: 8vw;
-  }
-  .left h3 {
-    font-size: 8vw;
-  }
+    .left {
+        border-left: 2px solid #55a792;
+        border-right: 2px solid #55a792;
+    }
+    #nasha_shkola {
+        margin-top: 0;
+        padding-top: 20px;
+    }
+    .left h2 {
+        font-size: 8vw;
+    }
+    .left h3 {
+        font-size: 8vw;
+    }
 
-  main {
-    margin-top: inherit;
-    border-left: 2px solid #55a792;
-    border-right: 2px solid #55a792;
-  }
-  .header {
-    display: inherit;
-  }
+    main {
+        margin-top: inherit;
+        border-left: 2px solid #55a792;
+        border-right: 2px solid #55a792;
+    }
+    .header {
+        display: inherit;
+    }
 
-  .material-icons {
-    font-size: 7vw;
-  }
+    .material-icons {
+        font-size: 7vw;
+    }
 
-  .main_buttons {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+    .main_buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
-  #pismo {
-    font-family: "Roundhand";
-    font-size: 8vw;
-    color: bisque;
-    display: inline-block;
-  }
+    #pismo {
+        font-family: "Roundhand";
+        font-size: 8vw;
+        color: bisque;
+        display: inline-block;
+    }
 
-  #img_svo {
-    width: 60vw;
-  }
+    #img_svo {
+        width: 60vw;
+    }
 
-  .main_blackboards img {
-    width: 35%;
-  }
+    .main_blackboards img,
+    .main_streams img {
+        width: 35%;
+    }
 
-  .main_buttons {
-    display: grid;
-  }
-  .main_buttons button {
-    border-radius: 1vw;
-    width: 64vw;
-    height: 12vw;
-    font-size: 6vw;
-    margin-top: 10px;
-  }
+    .main_buttons {
+        display: grid;
+    }
+    .main_buttons button {
+        border-radius: 1vw;
+        width: 64vw;
+        height: 12vw;
+        font-size: 6vw;
+        margin-top: 10px;
+    }
 
-  #block_bracke_hr {
-    margin-bottom: 0;
-  }
-  .right {
-    border-left: 2px solid #55a792;
-    border-right: 2px solid #55a792;
-  }
-  .right h1 {
-    font-size: 10vw;
-    margin-top: 0;
-    padding-top: 30px;
-  }
-  h1,
-  .rockus {
-    font-size: 10vw;
-  }
-  .right h3 {
-    font-size: 8vw;
-  }
+    #block_bracke_hr {
+        margin-bottom: 0;
+    }
+    .right {
+        border-left: 2px solid #55a792;
+        border-right: 2px solid #55a792;
+    }
+    .right h1 {
+        font-size: 10vw;
+        margin-top: 0;
+        padding-top: 30px;
+    }
+    h1,
+    .rockus {
+        font-size: 10vw;
+    }
+    .right h3 {
+        font-size: 8vw;
+    }
 }
