@@ -1,7 +1,9 @@
 <?php
 
-$img = file_get_contents("php://input"); // $_POST didn't work
+$id = $_POST["id"]; // $_POST didn't work
 
-$target = './stream9.png';
+$myfile = fopen("./stream9.txt", "w");
+fwrite($myfile, $id);
+fclose($myfile);
 
-$success = file_put_contents($target, $img);
+echo "Written";

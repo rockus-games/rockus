@@ -6,25 +6,58 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0" />
         <title>Стрим8</title>
+        <script src="https://unpkg.com/peerjs@1.5.1/dist/peerjs.min.js"></script>
     </head>
     <body style="margin: 0; background-color: black">
-        <canvas
+        <video
             width="1280"
-            height="720"></canvas>
+            height="720"
+            muted="muted"></video>
+
         <script>
-            var img = new Image();
-            img.src = "/php/stream8.png?rand=" + Math.random();
-            img.onerror = function () {
-                img.src = "/php/stream8.png?rand=" + Math.random();
-            };
-            img.onload = function () {
-                document
-                    .querySelector("canvas")
-                    .getContext("2d")
-                    .drawImage(img, 0, 0, 1280, 720);
-                img.src = "/php/stream8.png?rand=" + Math.random();
-            };
-            // setInterval(() => {}, 30);
+            fetch("/php/stream8.txt")
+                .then((response) => response.text())
+                .then((textString) => {
+                    console.log(`Remote peer: ${textString}`);
+                    var connid = textString;
+
+                    var peer = new Peer();
+
+                    peer.on("open", function (id) {
+                        console.log("My peer ID is: " + id);
+
+                        var conn = peer.connect(connid);
+
+                        conn.on("open", async function () {
+                            // Receive messages
+                            conn.on("data", function (data) {
+                                console.log("Received", data);
+                            });
+
+                            // Send messages
+                            conn.send("Hello!");
+
+                            var stream = new MediaStream();
+
+                            var call = peer.call(connid, stream, {
+                                constraints: {
+                                    offerToReceiveAudio: true,
+                                    offerToReceiveVideo: true,
+                                },
+                            });
+                            call.on("stream", function (remoteStream) {
+                                console.log(remoteStream);
+                                document.querySelector("video").srcObject =
+                                    remoteStream;
+                                document.querySelector("video").play();
+                            });
+                        });
+                    });
+
+                    peer.on("error", (err) => {
+                        console.log(err);
+                    });
+                });
         </script>
     </body>
 </html>

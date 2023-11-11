@@ -20,6 +20,8 @@
             rel="stylesheet"
             href="./css/base.css" />
         <script src="/js/loadheader.js"></script>
+        <script src="https://unpkg.com/peerjs@1.5.1/dist/peerjs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="header"></div>
@@ -41,30 +43,15 @@
             <button onclick="stream9()">Экран 9</button>
         </div>
         <div class="buttons">
-            <canvas
-                id="canvas8"
-                width="640"
-                height="360"></canvas>
-            <canvas
-                id="canvas8_rec"
-                width="1920"
-                height="1080"
-                style="display: none"></canvas>
             <video
                 id="show8"
-                style="display: none"></video>
-            <canvas
-                id="canvas9"
                 width="640"
-                height="360"></canvas>
-            <canvas
-                id="canvas9_rec"
-                width="1920"
-                height="1080"
-                style="display: none"></canvas>
+                height="360"></video>
+
             <video
                 id="show9"
-                style="display: none"></video>
+                width="640"
+                height="360"></video>
         </div>
 
         <h1>Страница в разработке</h1>
