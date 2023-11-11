@@ -14,7 +14,10 @@
         <script>
             var img = new Image();
             img.src = "/php/stream9.png?rand=" + Math.random();
-            img.src = img.onload = function () {
+            img.onerror = function () {
+                img.src = "/php/stream9.png?rand=" + Math.random();
+            };
+            img.onload = function () {
                 document
                     .querySelector("canvas")
                     .getContext("2d")
