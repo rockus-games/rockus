@@ -13,13 +13,13 @@
             height="720"></canvas>
         <script>
             var img = new Image();
-            img.src = "/php/stream8.png?rand=" + Date.now();
+            img.src = "/php/stream8.png?rand=" + Math.random();
             img.onload = function () {
                 document
                     .querySelector("canvas")
                     .getContext("2d")
                     .drawImage(img, 0, 0, 1280, 720);
-                img.src = "/php/stream8.png?rand=" + Date.now();
+                img.src = "/php/stream8.png?rand=" + Math.random();
             };
             // setInterval(() => {}, 30);
         </script>
