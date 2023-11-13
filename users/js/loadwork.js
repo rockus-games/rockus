@@ -46,6 +46,9 @@ if (
                     userData[0].nickname
                 }_${homeWorks[h]}">
                                         <span class="downBtn material-icons">download</span>
+                                        <span class="delBtn material-icons" onclick="deleteFile('/users/works/${
+                                            userData[0].id
+                                        }/home/${homeWorks[h]}')">delete</span>
                                     </a>
                                   </div>
                                   <hr size=""/>`;
@@ -67,10 +70,13 @@ if (
                                         </div>
                                       <a  href="/users/works/${
                                           userData[0].id
-                                      }/home/${classWorks[c]}" download="${
+                                      }/class/${classWorks[c]}" download="${
                     userData[0].nickname
                 }_${classWorks[c]}">
                                       <span class="downBtn material-icons">download</span>
+                                      <span class="delBtn material-icons" onclick="deleteFile('/users/works/${
+                                          userData[0].id
+                                      }/class/${classWorks[c]}')">delete</span>
                                   </a>
                                   </div>
                                   <hr size=""/>`;
@@ -120,6 +126,7 @@ function addHome() {
             processData: false,
             success: (info) => {
                 console.log(info);
+                location.reload();
             },
             error: (info) => {
                 console.log(info);
@@ -148,10 +155,31 @@ function addClass() {
             processData: false,
             success: (info) => {
                 console.log(info);
+                location.reload();
             },
             error: (info) => {
                 console.log(info);
             },
         });
     };
+}
+
+function deleteFile(fileName) {
+    var formData = new FormData();
+    formData.append("filename", fileName);
+    $.ajax({
+        type: "POST",
+        url: "/php/deleteFile.php",
+        data: formData,
+        contentType: false,
+        cache: false,
+        processData: false,
+        success: (info) => {
+            console.log(info);
+            location.reload();
+        },
+        error: (info) => {
+            console.log(info);
+        },
+    });
 }

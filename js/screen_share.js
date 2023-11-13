@@ -11,6 +11,10 @@ var show8 = document.querySelector("#show8");
 var show9 = document.querySelector("#show9");
 
 async function stream8() {
+    if (sessionStorage.getItem("passAdmin") != "1") {
+        alert("Вы не можете использовать эту функцию");
+        return;
+    }
     var st8 = await startCapture({
         width: { exact: 1920 },
         height: { exact: 1080 },
@@ -69,6 +73,10 @@ async function stream8() {
 }
 
 async function stream9() {
+    if (sessionStorage.getItem("passAdmin") != "1") {
+        alert("Вы не можете использовать эту функцию");
+        return;
+    }
     var st9 = await startCapture({
         width: { exact: 1920 },
         height: { exact: 1080 },
