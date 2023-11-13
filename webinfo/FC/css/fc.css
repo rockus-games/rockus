@@ -2,6 +2,7 @@
   overflow-y: scroll;
   overflow: hidden;
   width: 80%;
+  height: 20vh;
   max-width: 800px;
   margin: auto;
   /* height: 500px; */
