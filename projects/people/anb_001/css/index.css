@@ -1,13 +1,25 @@
-body{
-    background-color: #181818;
-    text-align: center;
+body {
+  background-color: #181818;
+  
 }
-h1{
-    color: #9cdcfe;
+h1 {
+  color: #9cdcfe;
+  text-align: center;
 }
-h2{
-    color: #e44d26;
+h2 {
+  color: #e44d26;
+  text-align: center;
 }
-.screens img{
-    width: 180px;
+#flutterDiv {
+    /* text-align: center; */
+  width: 360px;
+  height: 800px;
+}
+button{
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 30px;
+}
+button:hover{
+    transform: scale(1.02);
 }
