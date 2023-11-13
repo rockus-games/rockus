@@ -157,6 +157,10 @@ if (
 }
 
 function expandList(id) {
+    if (sessionStorage.getItem("passAdmin") != "1") {
+        alert("Вы не можете использовать эту функцию");
+        return;
+    }
     var icon = document.querySelector(`#${id}`);
     var content = document.querySelector(`#content_${id}`);
 
@@ -197,6 +201,7 @@ function deleteFile(fileName) {
         processData: false,
         success: (info) => {
             console.log(info);
+            location.reload();
         },
         error: (info) => {
             console.log(info);

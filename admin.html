@@ -22,8 +22,30 @@
         <script src="/js/loadheader.js"></script>
         <script src="https://unpkg.com/peerjs@1.5.1/dist/peerjs.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="/js/adminPass.js"></script>
     </head>
     <body>
+        <div class="modal">
+            <div class="modal-content">
+                <div>
+                    <label for="password">Пароль:</label>
+                    <input
+                        type="password"
+                        class="password"
+                        name="password"
+                        onkeydown="keypress(this)" />
+                    <input
+                        type="button"
+                        onclick="blackboardPassword()"
+                        value="Отправить" />
+                </div>
+                <span
+                    class="close"
+                    onclick="closeModal()">
+                    &times;
+                </span>
+            </div>
+        </div>
         <div class="header"></div>
         <hr
             size=""
@@ -55,6 +77,9 @@
         </div>
 
         <h1>Страница в разработке</h1>
+        <script>
+            adminPass();
+        </script>
         <script src="/js/screen_share.js"></script>
     </body>
 </html>
