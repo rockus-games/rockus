@@ -23,6 +23,15 @@
         <script src="https://unpkg.com/peerjs@1.5.1/dist/peerjs.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="/js/adminPass.js"></script>
+        <style>
+            .only_buttons {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
     </head>
     <body>
         <div class="modal">
@@ -52,17 +61,23 @@
             width="80%" />
 
         <div class="buttons">
-            <a href="./webinfo/blackboardadmin_8.html">
-                <button>Доска 8</button>
-            </a>
-            <a href="/webinfo/blackboardadmin_9.html">
-                <button>Доска 9</button>
-            </a>
-            <a href="/users/adminworks.html">
-                <button>Работы</button>
-            </a>
-            <button onclick="stream8()">Экран 8</button>
-            <button onclick="stream9()">Экран 9</button>
+            <div class="only_buttons">
+                <div>
+                    <a href="./webinfo/blackboardadmin_8.html">
+                        <button>Доска 8</button>
+                    </a>
+                    <a href="/webinfo/blackboardadmin_9.html">
+                        <button>Доска 9</button>
+                    </a>
+                </div>
+                <a href="/users/adminworks.html">
+                    <button>Работы</button>
+                </a>
+               <div>
+                    <button onclick="stream8()">Экран 8</button>
+                    <button onclick="stream9()">Экран 9</button>
+               </div>
+            </div>
         </div>
         <div class="buttons">
             <video
@@ -76,7 +91,7 @@
                 height="360"></video>
         </div>
 
-        <h1>Страница в разработке</h1>
+        <!-- <h1>Страница в разработке</h1> -->
         <script>
             adminPass();
         </script>
