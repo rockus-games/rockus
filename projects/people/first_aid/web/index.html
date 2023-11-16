@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="./" />
+    <meta charset="UTF-8" />
+    <meta
+      content="IE=Edge"
+      http-equiv="X-UA-Compatible" />
+    <meta
+      name="description"
+      content="A new Flutter project." />
+
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="first_aid" />
+
+    <title>first_aid</title>
+    <link
+      rel="manifest"
+      href="./manifest.json" />
+
+    <script>
+      const serviceWorkerVersion = "3282711631";
+    </script>
+    <script
+      src="./flutter.js"
+      defer></script>
+    <link
+      rel="stylesheet"
+      href="../css/index.css" />
+  </head>
+  <body>
+    <h1>Мобильное приложение для оказания первой помощи</h1>
+    <div id="flutterDiv"></div>
+    <script>
+      window.addEventListener("load", function (ev) {
+        let target = document.querySelector("#flutterDiv");
+        _flutter.loader.loadEntrypoint({
+          serviceWorker: {
+            serviceWorkerVersion: serviceWorkerVersion,
+          },
+          onEntrypointLoaded: function (engineInitializer) {
+            engineInitializer
+              .initializeEngine({hostElement: target})
+              .then(function (appRunner) {
+                appRunner.runApp();
+              });
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
