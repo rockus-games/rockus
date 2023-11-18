@@ -32,7 +32,8 @@ button:hover{
 @media (max-width: 500px) {
   #flutterDiv {
    
-    width: 660px;
+    width: 90%;
+    /* height: 600px; */
     
    
   }
