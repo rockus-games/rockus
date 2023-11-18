@@ -14,13 +14,18 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   width: 360px;
-  height: 800px;
+  height: 760px;
+ 
 }
 button{
     cursor: pointer;
     transition: all 0.3s;
     font-size: 30px;
+    border-radius: 10px;
 }
 button:hover{
     transform: scale(1.02);
+}
+.download{
+    text-align: center;
 }
