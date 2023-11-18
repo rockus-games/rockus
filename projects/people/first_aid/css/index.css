@@ -29,3 +29,11 @@ button:hover{
 .download{
     text-align: center;
 }
+@media (max-width: 500px) {
+  #flutterDiv {
+   
+    width: 660px;
+    
+   
+  }
+}
