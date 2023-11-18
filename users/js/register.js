@@ -68,10 +68,12 @@ function send_data() {
     } else if (!regexPass.test(pass)) {
         alert("Пароль не соответствует требованиям");
     } else {
-        var nickname = `${lastName}${firstName[0].toUpperCase()}${fatherName[0].toUpperCase()}_${grade.toUpperCase()}`;
+        var nickname = `${lastName[0].toUpperCase()}${lastName.slice(
+            1
+        )}${firstName[0].toUpperCase()}${fatherName[0].toUpperCase()}_${grade.toUpperCase()}`;
 
         formData.append("nickname", nickname);
-        formData.append("grade", grade);
+        formData.append("grade", grade.toUpperCase());
         formData.append("email", email);
         if (image != "" && image != null) {
             formData.append("image", image);

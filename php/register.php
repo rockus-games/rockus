@@ -8,8 +8,6 @@ $pass = $_POST["pass"];
 if (!empty($_FILES["image"])) {
     $image = file_get_contents($_FILES['image']['tmp_name']);
 }
-strtoupper($nickname);
-echo $nickname;
 
 // $con = new mysqli("5.23.50.101:3306", "cd56981_users", "Alvard86");
 $con = new mysqli("localhost:3306", "cd56981_users", "Alvard86");

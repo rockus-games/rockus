@@ -7,34 +7,71 @@ if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }
 
-$query = "SELECT id, nickname FROM cd56981_users.user";
+$query = "SELECT DISTINCT grade FROM cd56981_users.user ORDER BY grade ASC";
 $result = $con->query($query);
 
-$resultArray = array();
+$resultArray = new stdClass();
 
 while ($row = $result->fetch_assoc()) {
-    $id = $row["id"];
+    $gradeArray = array();
 
-    $res = new stdClass();
+    $query = "SELECT id, nickname, grade FROM cd56981_users.user WHERE grade = \"$row[grade]\" ORDER BY grade ASC";
+    $result_grade = $con->query($query);
 
-    if (file_exists("../users/works/$id/home/")) {
-        $home = scan_dir("../users/works/$id/home/");
-        $res->home = $home;
-    } else {
-        $res->home = array();
+    while ($row2 = $result_grade->fetch_assoc()) {
+        $id = $row2["id"];
+
+        $res = new stdClass();
+
+        if (file_exists("../users/works/$id/home/")) {
+            $home = scan_dir("../users/works/$id/home/");
+            $res->home = $home;
+        } else {
+            $res->home = array();
+        }
+        if (file_exists("../users/works/$id/class/")) {
+            $class = scan_dir("../users/works/$id/class/");
+            $res->class = $class;
+        } else {
+            $res->class = array();
+        }
+
+        $res->nickname = $row2["nickname"];
+        $res->id = $id;
+        $res->grade = $row2["grade"];
+
+        $gradeArray[] = $res;
     }
-    if (file_exists("../users/works/$id/class/")) {
-        $class = scan_dir("../users/works/$id/class/");
-        $res->class = $class;
-    } else {
-        $res->class = array();
-    }
 
-    $res->nickname = $row["nickname"];
-    $res->id = $id;
+    // echo json_encode($gradeArray);
 
-    $resultArray[] = $res;
+    $resultArray->{$row["grade"]} = json_encode($gradeArray);
 }
+
+// while ($row = $result->fetch_assoc()) {
+//     $id = $row["id"];
+
+//     $res = new stdClass();
+
+//     if (file_exists("../users/works/$id/home/")) {
+//         $home = scan_dir("../users/works/$id/home/");
+//         $res->home = $home;
+//     } else {
+//         $res->home = array();
+//     }
+//     if (file_exists("../users/works/$id/class/")) {
+//         $class = scan_dir("../users/works/$id/class/");
+//         $res->class = $class;
+//     } else {
+//         $res->class = array();
+//     }
+
+//     $res->nickname = $row["nickname"];
+//     $res->id = $id;
+//     $res->grade = $row["grade"];
+
+//     $resultArray[] = $res;
+// }
 
 echo json_encode($resultArray);
 
