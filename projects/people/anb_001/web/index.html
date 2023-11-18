@@ -31,29 +31,46 @@
     <script
       src="./flutter.js"
       defer></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.157.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.157.0/examples/jsm/"
+        }
+      }
+    </script>
     <link
       rel="stylesheet"
       href="../css/index.css" />
   </head>
   <body>
     <h1>Мобильное приложение для управления роботом</h1>
-    <div id="flutterDiv"></div>
-    <script>
-      window.addEventListener("load", function (ev) {
-        let target = document.querySelector("#flutterDiv");
-        _flutter.loader.loadEntrypoint({
-          serviceWorker: {
-            serviceWorkerVersion: serviceWorkerVersion,
-          },
-          onEntrypointLoaded: function (engineInitializer) {
-            engineInitializer
-              .initializeEngine({hostElement: target})
-              .then(function (appRunner) {
-                appRunner.runApp();
-              });
-          },
-        });
-      });
-    </script>
+    <div class="main">
+      <div id="flutterDiv">
+        <script>
+          window.addEventListener("load", function (ev) {
+            let target = document.querySelector("#flutterDiv");
+            _flutter.loader.loadEntrypoint({
+              serviceWorker: {
+                serviceWorkerVersion: serviceWorkerVersion,
+              },
+              onEntrypointLoaded: function (engineInitializer) {
+                engineInitializer
+                  .initializeEngine({hostElement: target})
+                  .then(function (appRunner) {
+                    appRunner.runApp();
+                  });
+              },
+            });
+          });
+        </script>
+      </div>
+  
+      <div class="space">
+        <script
+          type="module"
+          src="./index.js"></script>
+      </div>
+    </div>
   </body>
 </html>
