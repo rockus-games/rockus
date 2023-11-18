@@ -209,7 +209,7 @@ function expandList(id) {
         sessionStorage.setItem("expandedLists", JSON.stringify(expArr));
         console.log(sessionStorage.getItem("expandedLists"));
 
-        parentContent.style.maxHeight = parentContent.scrollHeight + 100 + "px";
+        parentContent.style.maxHeight = parentContent.scrollHeight + 300 + "px";
     } else {
         icon.innerHTML = "expand_circle_right";
         content.style.maxHeight = null;
