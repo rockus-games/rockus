@@ -45,6 +45,61 @@ function logout() {
     document.querySelector("#span_login").src = `/assets/img/login.png`;
 }
 
+function forgot() {
+    var email = document.querySelector("#login").value;
+    var pass = document.querySelector("#pass").value;
+
+    if (!regexEmail.test(email)) {
+        alert("Почта введена неверно");
+    } else if (!regexPass.test(pass)) {
+        ("Пароль введен неверно");
+    } else {
+        var formData = new FormData();
+
+        formData.append("email", email);
+        formData.append("pass", pass);
+
+        $.ajax({
+            type: "POST",
+            url: "/php/send_code2.php",
+            data: formData,
+            contentType: false,
+            cache: false,
+            processData: false,
+            success: (info) => {
+                if (info.indexOf("error") >= 0) {
+                    alert(info.substring(info.indexOf("error") + 5));
+                } else {
+                    var code = prompt(
+                        `Введите одноразовый пароль из письма, отправленного на почту ${email}`
+                    );
+
+                    formData.append("code", code);
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/php/forgot.php",
+                        data: formData,
+                        contentType: false,
+                        cache: false,
+                        processData: false,
+                        success: (info) => {
+                            console.log(info);
+                            alert("Пароль сброшен");
+                        },
+                        error: (info) => {
+                            alert(info);
+                        },
+                    });
+                }
+            },
+            error: (info) => {
+                alert(info);
+            },
+        });
+    }
+}
+
 function login() {
     var email = document.querySelector("#login").value;
     var pass = document.querySelector("#pass").value;
