@@ -11,6 +11,13 @@
   color: #8cada5;
 }
 
+.mem{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #8cada5;
+ 
+}
 
 .yandex {
   position: absolute;
