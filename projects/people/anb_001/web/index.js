@@ -11,8 +11,9 @@ const camera = new THREE.PerspectiveCamera(
 );
 
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth*0.7, window.innerHeight*0.7);
-document. querySelector(".space").appendChild(renderer.domElement);
+renderer.setSize(500, 500);
+// renderer.setSize(window.innerWidth*0.7, window.innerHeight*0.7);
+document.querySelector(".space").appendChild(renderer.domElement);
 const controls = new OrbitControls(camera, renderer.domElement);
 const loader = new GLTFLoader();
 
@@ -22,11 +23,20 @@ const cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
 camera.position.z = 1;
+var n = 0;
 
+document.querySelector("#rotate_x").addEventListener("click", () => {
+  if (n == 0) {
+    n = 0.01;
+  } else {
+    n = 0;
+  }
+});
+// rotate_x();
 function animate() {
   requestAnimationFrame(animate);
 
-  // cube.rotation.x += 0.01;
+  cube.rotation.x += n;
   // cube.rotation.y += 0.01;
 
   renderer.render(scene, camera);

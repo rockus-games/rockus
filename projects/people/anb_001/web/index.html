@@ -46,31 +46,30 @@
   <body>
     <h1>Мобильное приложение для управления роботом</h1>
     <div class="main">
-      <div id="flutterDiv">
-        <script>
-          window.addEventListener("load", function (ev) {
-            let target = document.querySelector("#flutterDiv");
-            _flutter.loader.loadEntrypoint({
-              serviceWorker: {
-                serviceWorkerVersion: serviceWorkerVersion,
-              },
-              onEntrypointLoaded: function (engineInitializer) {
-                engineInitializer
-                  .initializeEngine({hostElement: target})
-                  .then(function (appRunner) {
-                    appRunner.runApp();
-                  });
-              },
-            });
-          });
-        </script>
-      </div>
-  
-      <div class="space">
-        <script
-          type="module"
-          src="./index.js"></script>
-      </div>
+      <div id="flutterDiv"></div>
+      <div class="space"></div>
+      <button id="rotate_x">rotate x</button>
     </div>
+    <script>
+      
+      window.addEventListener("load", function (ev) {
+        let target = document.querySelector("#flutterDiv");
+        _flutter.loader.loadEntrypoint({
+          serviceWorker: {
+            serviceWorkerVersion: serviceWorkerVersion,
+          },
+          onEntrypointLoaded: function (engineInitializer) {
+            engineInitializer
+              .initializeEngine({hostElement: target})
+              .then(function (appRunner) {
+                appRunner.runApp();
+              });
+          },
+        });
+      });
+    </script>
+    <script
+      type="module"
+      src="./index.js"></script>
   </body>
 </html>
