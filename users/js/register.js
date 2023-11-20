@@ -42,16 +42,25 @@ function choose_file() {
 function send_data() {
     var formData = new FormData();
 
-    var firstName = document.querySelector("#firstName").value;
-    var lastName = document.querySelector("#lastName").value;
-    var fatherName = document.querySelector("#fatherName").value;
-    var grade = document.querySelector("#grade").value;
-    var email = document.querySelector("#email").value;
-    var pass = document.querySelector("#reg_pass").value;
+    var firstName = document
+        .querySelector("#firstName")
+        .value.replaceAll(" ", "");
+    var lastName = document
+        .querySelector("#lastName")
+        .value.replaceAll(" ", "");
+    var fatherName = document
+        .querySelector("#fatherName")
+        .value.replaceAll(" ", "");
+    var grade = document.querySelector("#grade").value.replaceAll(" ", "");
+    var email = document.querySelector("#email").value.replaceAll(" ", "");
+    var pass = document.querySelector("#reg_pass").value.replaceAll(" ", "");
+    var pass_repeat = document
+        .querySelector("#reg_pass_repeat")
+        .value.replaceAll(" ", "");
 
-    let regexLetter = /^[а-яА-Я]+$/;
+    let regexLetter = /^[а-яёА-ЯЁ]+$/;
     let regexPass = /^[a-zA-Z0-9]+$/;
-    let regexGrade = /^[1-9][а-яА-Я]$|^1[01][а-яА-Я]$/;
+    let regexGrade = /^[1-9][а-яёА-ЯЁ]$|^1[01][а-яёА-ЯЁ]$/;
     let regexEmail = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
     if (
         !regexLetter.test(firstName) ||
@@ -67,6 +76,8 @@ function send_data() {
         alert("Электронная почта введена неверно");
     } else if (!regexPass.test(pass)) {
         alert("Пароль не соответствует требованиям");
+    } else if (pass != pass_repeat) {
+        alert("Пароли не совпадают");
     } else {
         var nickname = `${lastName[0].toUpperCase()}${lastName.slice(
             1
