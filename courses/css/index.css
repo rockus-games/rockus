@@ -85,8 +85,11 @@ a img:hover {
   grid-template-columns: 0.3fr 2fr 1fr;
   height: 14vw;
   max-height: 240px;
-  /* background-color: rgb(82, 103, 129); */
+  transition: all 0.2s ease-out;
   border-radius: 0.8vw;
+}
+.cours:hover {
+  transform: scale(1.02);
 }
 .auto {
   background-color: #db162f;
