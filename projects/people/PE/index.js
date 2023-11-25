@@ -14,3 +14,14 @@ $.getJSON("./data.json", (jsonData) => {
 function p(i) {
   p1.innerHTML = json["names"][i];
 }
+
+function search() {
+  var x = document.querySelector("#poisk").value;
+  list.innerHTML = "";
+  for (var i in json["names"]) {
+    if (i.toLowerCase().indexOf(x.toLowerCase()) > -1) {
+      list.innerHTML += `<a onclick="p('${i}')"><div class="item">${i}</div></a>`;
+      console.log(i);
+    }
+  }
+}
