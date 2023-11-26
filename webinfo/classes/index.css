@@ -56,13 +56,16 @@ hr {
 }
 .one {
   border-right: solid 1px #ab2909;
+  scroll-behavior: smooth;
 }
 .two {
   border-right: solid 1px #ab2909;
+  scroll-behavior: smooth;
 }
 .three {
   margin-top: 16px;
   margin-bottom: 16px;
+  scroll-behavior: smooth;
 }
 #lis{
   width: 70%;
