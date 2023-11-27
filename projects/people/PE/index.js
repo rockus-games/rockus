@@ -16,13 +16,11 @@ function p(i) {
 }
 
 function search() {
-  var x = document.querySelector("#poisk").value.toLowerCase();
   list.innerHTML = "";
-  for (var i in json["names"]) {
-    if (i.toLowerCase().includes(x))  {
+  var x = document.querySelector("#poisk").value.toLowerCase();
+  for (var i in json["names"]){
+    if (i.toLowerCase().includes(x)){
       list.innerHTML += `<a onclick="p('${i}')"><div class="item">${i}</div></a>`;
-      console.log(i,x);
-      
     }
   }
 }
