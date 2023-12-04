@@ -1,6 +1,32 @@
 let image = "";
 var avatar = document.querySelector("#avatar");
 
+const togglePasswordReg = document.querySelector("#togglePasswordReg");
+const togglePasswordRegConf = document.querySelector("#togglePasswordRegConf");
+
+const passReg = document.querySelector("#reg_pass");
+const passRegConf = document.querySelector("#reg_pass_repeat");
+
+togglePasswordReg.addEventListener("click", function () {
+    // toggle the type attribute
+    const type =
+        passReg.getAttribute("type") === "password" ? "text" : "password";
+    passReg.setAttribute("type", type);
+
+    // toggle the icon
+    this.classList.toggle("bi-eye");
+});
+
+togglePasswordRegConf.addEventListener("click", function () {
+    // toggle the type attribute
+    const type =
+        passRegConf.getAttribute("type") === "password" ? "text" : "password";
+    passRegConf.setAttribute("type", type);
+
+    // toggle the icon
+    this.classList.toggle("bi-eye");
+});
+
 function choose_file() {
     var input = document.createElement("input");
     input.type = "file";

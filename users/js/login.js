@@ -6,6 +6,19 @@ var grade = document.querySelector("#p_grade");
 var mail = document.querySelector("#p_email");
 var avatar = document.querySelector("#avatar");
 
+var passElement = document.querySelector("#pass");
+
+const togglePasswordLogin = document.querySelector("#togglePasswordLogin");
+
+togglePasswordLogin.addEventListener("click", function () {
+    // toggle the type attribute
+    const type = pass.getAttribute("type") === "password" ? "text" : "password";
+    pass.setAttribute("type", type);
+
+    // toggle the icon
+    this.classList.toggle("bi-eye");
+});
+
 let regexPass = /^[a-zA-Z0-9]+$/;
 let regexEmail = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
 
@@ -46,9 +59,6 @@ function logout() {
 }
 
 function forgot() {
-    var email = document.querySelector("#login").value;
-    var pass = document.querySelector("#pass").value;
-
     if (!regexEmail.test(email)) {
         alert("Почта введена неверно");
     } else if (!regexPass.test(pass)) {
