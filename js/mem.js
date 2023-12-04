@@ -5,6 +5,6 @@ function animate() {
   mem.style.top = Math.random() * 0.9 * window.innerHeight + "px";
   setTimeout(() => {
     requestAnimationFrame(animate);
-  }, 900);
+  }, 700);
 }
 animate();
