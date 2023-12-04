@@ -59,10 +59,13 @@ function logout() {
 }
 
 function forgot() {
+    var email = document.querySelector("#login").value;
+    var pass = document.querySelector("#pass").value;
+
     if (!regexEmail.test(email)) {
         alert("Почта введена неверно");
     } else if (!regexPass.test(pass)) {
-        ("Пароль введен неверно");
+        alert("Пароль введен неверно");
     } else {
         var formData = new FormData();
 
