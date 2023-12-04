@@ -45,18 +45,21 @@ h1 {
   font-size: 25px;
 }
 .list {
+  scroll-behavior: smooth;
   overflow: auto;
   margin-right: auto;
   margin-left: auto;
   width: 87%;
-  height: 85%;
+  height: 80%;
   background-color: #d9d9d9;
 }
 .item {
+  cursor: pointer;
+  font-size: 25px;
   margin: auto;
   margin-top: 10px;
   width: 90%;
-  height: 50px;
+  height: 45px;
   background-color: white;
   transition: all 0.2s;
 }
