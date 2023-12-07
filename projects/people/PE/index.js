@@ -1,5 +1,6 @@
 let list = document.querySelector(".list");
 let p1 = document.querySelector(".p1");
+let pictures = document.querySelector(".pictures");
 var json;
 $.getJSON("./data.json", (jsonData) => {
   json = jsonData;
@@ -12,6 +13,12 @@ $.getJSON("./data.json", (jsonData) => {
 });
 
 function p(i) {
+  pictures.innerHTML = '';
+  // console.log(i);
+  for (var j in json["pictures"][i]) {
+    pictures.innerHTML += `<img src="${json["pictures"][i][j]}" alt="">`;
+  }
+  // pictures.innerHTML = `<img src="${json["pictures"][i]}" alt="">`;
   p1.innerHTML = json["names"][i];
 }
 
