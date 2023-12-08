@@ -49,7 +49,7 @@
     },
 
     "pictures": {
-        "Акустическая гитара":["./assets/items/Акустическая гитара/Акустическая гитара.jpg", ".//assets/items/Акустическая гитара/гитара2.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5jj6wqjEa9mrDocFIQ0Te5nTgRQ2RHKWIww&usqp=CAU"]
+        "Акустическая гитара":["./assets/items/Акустическая гитара/Акустическая гитара.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5jj6wqjEa9mrDocFIQ0Te5nTgRQ2RHKWIww&usqp=CAU"]
         ,"Альбока":["assets/items/Альбока/Альбока.jpg"],
         "Альпийский рог":["assets/items/Альпийский рог/Альпийский рог.jpg"],
         "Альт":["assets/items/Альт/Альт.jpg"],
