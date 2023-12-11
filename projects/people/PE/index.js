@@ -14,11 +14,10 @@ $.getJSON("./data.json", (jsonData) => {
 
 function p(i) {
   pictures.innerHTML = '';
-  // console.log(i);
   for (var j in json["pictures"][i]) {
     pictures.innerHTML += `<img src="${json["pictures"][i][j]}" alt="">`;
+   
   }
-  // pictures.innerHTML = `<img src="${json["pictures"][i]}" alt="">`;
   p1.innerHTML = json["names"][i];
 }
 
