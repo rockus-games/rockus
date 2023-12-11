@@ -1,6 +1,9 @@
 from os import listdir
-from os.path import isfile, join
 import json
+
+f = open("../descriptions.json", "r", encoding="utf-8")
+data = json.load(f)
+f.close()
 
 names ={}
 pictures = {}
@@ -9,7 +12,7 @@ audios = {}
 names_array = listdir("../assets/items")
 
 for i in names_array:
-    names[i] = "Описание инструмента"
+    names[i] = data["names"][i] if i in data["names"] else "Описание инструмента"
     pictures[i] = []
     for j in listdir("../assets/items/" + i):
         if (".jpg" in j) or (".png" in j) or (".jpeg" in j):

@@ -14,15 +14,19 @@ $.getJSON("./data.json", (jsonData) => {
 
 function p(i) {
   pictures.innerHTML = '';
+  
   for (var j in json["pictures"][i]) {
     pictures.innerHTML += `<img src="${json["pictures"][i][j]}" alt="">`;
    
   }
+  
   p1.innerHTML = json["names"][i];
 }
 
 function search() {
   list.innerHTML = "";
+ 
+ 
   var x = document.querySelector("#poisk").value.toLowerCase();
   for (var i in json["names"]){
     if (i.toLowerCase().includes(x)){
