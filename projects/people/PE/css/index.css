@@ -84,15 +84,10 @@ h1 {
   height: 400px;
   background-color: #d9d9d9;
 }
-.pitem {
-  margin-left: 10px;
-  flex-shrink: 0;
-  width: 30%;
-  height: 95%;
-  /* background-color: #6290c3; */
-}
-.pitem img {
-  width: 100%;
+
+.pictures img {
+  margin-right: 10px;
+  width: 400px;
 }
 .p {
   margin-top: 20px;
