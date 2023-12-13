@@ -9,10 +9,7 @@ h1 {
 h2 {
   color: antiquewhite;
 }
-pre {
-  color: rgb(217, 128, 12);
-  font-size: 30px;
-}
+
 /* #actions{
     text-align: ;
 
@@ -74,7 +71,10 @@ div {
   width: 0px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
+  h1{
+    font-size: 40px;
+  }
   p {
     font-size: 20px;
   }
