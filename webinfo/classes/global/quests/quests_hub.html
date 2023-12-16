@@ -20,7 +20,8 @@
       rel="stylesheet"
       href="/css/base.css" />
     <style>
-      .body {
+      body {
+        text-align:start;
       }
       .mint {
         float: left;
@@ -40,15 +41,20 @@
         background-color: aliceblue;
         border-radius: 10px;
       }
-      .time {
+      .timer {
         color: black;
         font-size: 90px;
         margin: 0;
         padding: 0;
+        text-align: center;
       }
-      .material-icons {
+      .play {
         color: aliceblue;
-        
+       cursor: pointer;
+       font-size: 100px;
+      }
+      .play:hover{
+        font-size: 100px;
       }
     </style>
   </head>
@@ -112,9 +118,10 @@
     <br />
     <br />
     <div class="time_quest">
-      <div class="tablo"><h1 class="time">00</h1></div>
+      <div class="tablo"><h1 class="timer">00</h1></div>
       <br><br>
-      <span class="material-icons">play_arrow</span>
+      <span id="button" onclick="play()" class="material-icons play">play_arrow</span>
     </div>
+    <script src="./quests.js"></script>
   </body>
 </html>
