@@ -11,9 +11,10 @@
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <title>Python</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <title>Квест</title>
     <!-- <link rel="stylesheet" href="./css/fc.css" /> -->
 
     <link
@@ -21,7 +22,7 @@
       href="/css/base.css" />
     <style>
       body {
-        text-align:start;
+        text-align: start;
       }
       .mint {
         float: left;
@@ -55,10 +56,10 @@
       }
       .play {
         color: aliceblue;
-       cursor: pointer;
-       font-size: 100px;
+        cursor: pointer;
+        font-size: 100px;
       }
-      .play:hover{
+      .play:hover {
         font-size: 100px;
       }
     </style>
@@ -124,11 +125,27 @@
     <br />
     <div class="time_quest">
       <div class="tablo"><h1 class="timer">00</h1></div>
-      <span style="color: aliceblue; font-size: 50px;" class="material-icons">arrow_forward</span>
-      <h2 style="display: inline-block;">[10-60]</h2>
-      <input id="time_input" type="text">
-      <br><br>
-      <span id="button" onclick="play()" class="material-icons play">play_arrow</span>
+      <span
+        style="color: aliceblue; font-size: 50px"
+        class="material-icons">
+        arrow_forward
+      </span>
+      <h2 style="display: inline-block">[10-60]</h2>
+      <input
+      style="opacity: 0;"
+        onchange="check()"
+        id="time_input"
+        type="text" />
+      <br />
+      <br />
+      <div class="span_div">
+        <span
+          id="button"
+          onclick="play_iteration()"
+          class="material-icons play">
+          play_arrow
+        </span>
+      </div>
     </div>
     <script src="./quests.js"></script>
   </body>
