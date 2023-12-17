@@ -36,6 +36,7 @@
         margin-left: 50px;
       }
       .tablo {
+        display: inline-block;
         width: 200px;
         height: 100px;
         background-color: aliceblue;
@@ -47,6 +48,10 @@
         margin: 0;
         padding: 0;
         text-align: center;
+      }
+      #time_input {
+        font-size: 50px;
+        width: 200px;
       }
       .play {
         color: aliceblue;
@@ -119,6 +124,9 @@
     <br />
     <div class="time_quest">
       <div class="tablo"><h1 class="timer">00</h1></div>
+      <span style="color: aliceblue; font-size: 50px;" class="material-icons">arrow_forward</span>
+      <h2 style="display: inline-block;">[10-60]</h2>
+      <input id="time_input" type="text">
       <br><br>
       <span id="button" onclick="play()" class="material-icons play">play_arrow</span>
     </div>
