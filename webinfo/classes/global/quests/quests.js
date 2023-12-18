@@ -33,11 +33,11 @@ function pause_iteration() {
 
 function check() {
   console.log(timer.textContent);
-  if (time_input.value != timer.textContent) {
-    alert("Все очень плохо");
-    location.reload();
-  } else {
+  if (Math.abs(time_input.value - timer.textContent) <= 1) {
     alert("Все хорошо");
     window.location.href = "/assets/mem/m2-res_720p.mp4";
+  } else {
+    alert("Все очень плохо");
+    location.reload();
   }
 }
