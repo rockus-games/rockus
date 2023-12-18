@@ -1,6 +1,7 @@
 let list = document.querySelector(".list");
 let p1 = document.querySelector(".p1");
 let pictures = document.querySelector(".pictures");
+let button1 = document.querySelector(".button1");
 var json;
 $.getJSON("./data.json", (jsonData) => {
   json = jsonData;
@@ -13,23 +14,22 @@ $.getJSON("./data.json", (jsonData) => {
 });
 
 function p(i) {
-  pictures.innerHTML = '';
-  
+  pictures.innerHTML = "";
+
   for (var j in json["pictures"][i]) {
     pictures.innerHTML += `<img src="${json["pictures"][i][j]}" alt="">`;
-   
   }
-  
+
   p1.innerHTML = json["names"][i];
+  button1.innerHTML = `<a href="${json["audios"][i]}"  ><button>${i}</button></a>`;
 }
 
 function search() {
   list.innerHTML = "";
- 
- 
+
   var x = document.querySelector("#poisk").value.toLowerCase();
-  for (var i in json["names"]){
-    if (i.toLowerCase().includes(x)){
+  for (var i in json["names"]) {
+    if (i.toLowerCase().includes(x)) {
       list.innerHTML += `<a onclick="p('${i}')"><div class="item">${i}</div></a>`;
     }
   }
