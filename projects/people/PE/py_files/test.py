@@ -10,22 +10,22 @@ pictures = {}
 audios = {}
 
 names_array = listdir("../assets/items")
-pictures_count = 0
-audios_count = 0
+
 for i in names_array:
     names[i] = data["names"][i] if i in data["names"] else "Описание инструмента"
     pictures[i] = []
     for j in listdir("../assets/items/" + i):
         if (".jpg" in j) or (".png" in j) or (".jpeg" in j):
             pictures[i].append("./assets/items/" + i + "/" + j)
-            pictures_count += 1
+           
         
-        elif (".mp3" in j) or (".wav" in j):
+        else :
             audios[i] = "./assets/items/" + i + "/" + j
-            audios_count += 1
-        else:
-            print(j)
-print(pictures_count, audios_count)         
+           
+        
+    
+print(len(names), len(pictures), len(audios))     
+
 data = {}
 data["names"] = names
 data["pictures"] = pictures
