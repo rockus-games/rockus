@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- <link rel="stylesheet" href="../../css/base.css"> -->
     <style>
-    body {
+      body {
         background-color: #181818;
         /* text-align: center; */
-    }
-        .main {
-            width: 60%;
-            height: 200px;
-            background-color: aliceblue;
-        }
+      }
+      .main {
+        width: 60%;
+        height: 200px;
+        background-color: aliceblue;
+        margin: auto;
+        text-align: center;
+      }
+      .header {
+        /* padding: 10px; */
+      }
+      .header h1 {
+          margin: 6px;
+      }
+      .header h3 {
+        margin: 0;
+      }
+      .actions {
+        display: flex;
+        justify-content: end;
+        margin-right: 5%;
+      }
+      a{
+        margin-left: 18px;
+        text-decoration: none;
+        color: rgb(148, 126, 96);
+        transition: all 0.3s;
+      }
+      a:hover{
+        color: rgb(92, 65, 28);
+        transform: scale(1.02);
+      }
     </style>
-</head>
-<body>
-    <div class="main"><h1>fff</h1></div>
-</body>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h1>Газета</h1>
+        <div class="actions">
+            <a href="#"><h3>Популярное</h3></a>
+            <a href="#"><h3>Политика</h3></a>
+            <a href="#"><h3>Наука</h3></a>
+            <a href="./pages/culture.html"><h3>Культура</h3></a>
+            <a href="./pages/sport.html"><h3>Спорт</h3></a>
+            
+        </div>
+      </div>
+      <hr size="" width="90%">
+      <div class="content"></div>
+    </div>
+  </body>
 </html>
