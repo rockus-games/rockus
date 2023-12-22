@@ -21,7 +21,11 @@ function p(i) {
   }
 
   p1.innerHTML = json["names"][i];
-  button1.innerHTML = `<a href="${json["audios"][i]}"  ><button>${i}</button></a>`;
+  if (json["audios"][i] == "Звучание инструмента не найдено") {
+    button1.innerHTML = `<button>Нет аудио</button>`;
+  } else {
+    button1.innerHTML = `<a href="${json["audios"][i]}"  ><button>${i}</button></a>`;
+  }
 }
 
 function search() {
