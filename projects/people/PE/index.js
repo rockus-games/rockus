@@ -24,7 +24,7 @@ function p(i) {
   if (json["audios"][i] == "Звучание инструмента не найдено") {
     button1.innerHTML = `<button>Нет аудио</button>`;
   } else {
-    button1.innerHTML = `<a href="${json["audios"][i]}"  ><button>${i}</button></a>`;
+    button1.innerHTML = `<a href="${json["audios"][i]}"><button>${i}</button></a>`;
   }
 }
 

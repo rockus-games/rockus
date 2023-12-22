@@ -40,15 +40,15 @@ data["pictures"] = pictures
 data["audios"] = audios
 json = json.dumps(data, indent = 4, ensure_ascii=False)
 
-print(f"Pictures: {pictures_count} Audios: {audio_count} Audios not found: {len(audio_not_found)} Names: {name_count}")
+# print(f"Pictures: {pictures_count} Audios: {audio_count} Audios not found: {len(audio_not_found)} Names: {name_count}")
 
 f = open("../data.json", "w", encoding="utf-8")
 f.write(json)
 f.close()
 
-f = open("./audio_not_found.txt", "w", encoding="utf-8")
+f_list = open("./list.txt", "w", encoding="utf-8")
 for i in audio_not_found:
-    f.write(i + "\n")
+    f_list.write(i + "\n")
 
-f.close()
+f_list.close()
     
