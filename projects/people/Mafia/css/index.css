@@ -1,0 +1,29 @@
+#header{
+    text-align: center;
+    background-color: red;
+    margin-bottom: 25px;
+}
+
+#header h1{
+    margin: 0;
+    margin-bottom: 8px;
+font-size: 30px;
+/* background-color: beige; */
+display: inline-block;
+}
+.material-icons{
+    margin-left: 5px;
+    margin-top: 4px;
+    font-size: 30px;
+}
+#main{
+    text-align: center;
+    width:80% ;
+    height: 500px;
+    /* margin-top: 500px; */
+    margin: auto;
+    background-color: black;
+}
+#main h2{
+    color: aliceblue;
+}
