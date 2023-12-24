@@ -27,3 +27,18 @@ display: inline-block;
 #main h2{
     color: aliceblue;
 }
+#main li{
+    text-align: start;
+    margin-left: 20px;
+    color: aqua;
+}
+#footer{
+    margin-bottom: 8px;
+    width: 98%;
+    height: 49px;
+    position: absolute;
+bottom: 0;
+    text-align: center;
+    background-color: red;
+
+}
