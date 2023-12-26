@@ -45,6 +45,7 @@ function check() {
 // Слова
 let guess_input = document.querySelector(".guess_input");
 let show = document.querySelector(".show");
+let guess_button = document.querySelector(".guess_button");
 const words = [
   "стол",
   "дом",
@@ -97,17 +98,31 @@ const words = [
   "мышь",
   "пчела",
 ];
-
+let interval_2;
+let j = 0;
+let flag = true;
 function guess() {
-  let random_word = words[Math.floor(Math.random() * words.length)];
-for (let i = 0; i < random_word.length; i++) {
-
-  show.innerHTML = '';
-  show.innerHTML += `<span>${random_word[i]}</span>`;
-  
-  setTimeout(() => {
-    console.log(random_word[i]);
-  },1000);
-}
-show.innerHTML = '';
+  if (flag) {
+    var random_word = words[Math.floor(Math.random() * words.length)];
+    console.log(random_word);
+    interval_2 = setInterval(() => {
+      console.log(random_word[j]);
+      show.innerHTML = "";
+      show.innerHTML += `<h1 style="font-size: 40px;color: black">${random_word[j]}</h1>`;
+      j++;
+      if (j == random_word.length) {
+        clearInterval(interval_2);
+        show.innerHTML = "";
+        guess_button.innerHTML = "Проверить";
+        flag = false;
+      }
+    }, 1000);
+  } else {
+    let word = guess_input.value;
+    if (word == random_word) {
+      alert("Все хорошо");
+      window.location.href = "/assets/mem/m2-res_720p.mp4";
+    }
+    flag = true;
+  }
 }
