@@ -46,6 +46,7 @@ function check() {
 let guess_input = document.querySelector(".guess_input");
 let show = document.querySelector(".show");
 let guess_button = document.querySelector(".guess_button");
+
 const words = [
   "стол",
   "дом",
@@ -98,19 +99,29 @@ const words = [
   "мышь",
   "пчела",
 ];
+
 let interval_2;
 let j = 0;
 let flag = true;
+var random_word = "";
+
 function guess() {
   if (flag) {
-    var random_word = words[Math.floor(Math.random() * words.length)];
-    console.log(random_word);
+    random_word = words[Math.floor(Math.random() * words.length)];
+
+    var shuffled_word = "";
+
+    for (var i of getRandomSort(random_word.length)) {
+      shuffled_word += random_word[i];
+    }
+    console.log(shuffled_word);
+
     interval_2 = setInterval(() => {
-      console.log(random_word[j]);
+      console.log(shuffled_word[j]);
       show.innerHTML = "";
-      show.innerHTML += `<h1 style="font-size: 40px;color: black">${random_word[j]}</h1>`;
+      show.innerHTML += `<h1 style="font-size: 40px;color: black">${shuffled_word[j]}</h1>`;
       j++;
-      if (j == random_word.length) {
+      if (j == shuffled_word.length + 1) {
         clearInterval(interval_2);
         show.innerHTML = "";
         guess_button.innerHTML = "Проверить";
@@ -119,10 +130,26 @@ function guess() {
     }, 1000);
   } else {
     let word = guess_input.value;
+
     if (word == random_word) {
       alert("Все хорошо");
       window.location.href = "/assets/mem/m2-res_720p.mp4";
+    } else {
+      alert("Все очень плохо");
     }
     flag = true;
   }
+}
+
+function getRandomSort(length) {
+  var result = [];
+
+  while (result.length < length) {
+    var num = Math.floor(Math.random() * length);
+    if (!result.includes(num)) {
+      result.push(num);
+    }
+  }
+
+  return result;
 }
