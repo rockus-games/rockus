@@ -41,3 +41,73 @@ function check() {
     location.reload();
   }
 }
+
+// Слова
+let guess_input = document.querySelector(".guess_input");
+let show = document.querySelector(".show");
+const words = [
+  "стол",
+  "дом",
+  "окно",
+  "машина",
+  "книга",
+  "солнце",
+  "ручка",
+  "рыба",
+  "рука",
+  "мяч",
+  "собака",
+  "кот",
+  "цветок",
+  "карандаш",
+  "дверь",
+  "стул",
+  "море",
+  "птица",
+  "лошадь",
+  "яблоко",
+  "дерево",
+  "глаз",
+  "лампа",
+  "небо",
+  "земля",
+  "голова",
+  "бутылка",
+  "телефон",
+  "компьютер",
+  "звук",
+  "камень",
+  "огонь",
+  "песок",
+  "молоко",
+  "лед",
+  "снег",
+  "медведь",
+  "лев",
+  "заяц",
+  "слон",
+  "тигр",
+  "волк",
+  "лиса",
+  "зебра",
+  "жираф",
+  "облако",
+  "трава",
+  "цвет",
+  "мышь",
+  "пчела",
+];
+
+function guess() {
+  let random_word = words[Math.floor(Math.random() * words.length)];
+for (let i = 0; i < random_word.length; i++) {
+
+  show.innerHTML = '';
+  show.innerHTML += `<span>${random_word[i]}</span>`;
+  
+  setTimeout(() => {
+    console.log(random_word[i]);
+  },1000);
+}
+show.innerHTML = '';
+}
