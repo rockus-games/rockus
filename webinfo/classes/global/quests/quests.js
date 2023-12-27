@@ -133,7 +133,7 @@ function guess() {
 
     if (word == random_word) {
       alert("Все хорошо");
-      window.location.href = "/assets/mem/m2-res_720p.mp4";
+      window.location.href = "/assets/mem/m2-res_1280p.mp4";
     } else {
       alert("Все очень плохо");
     }
