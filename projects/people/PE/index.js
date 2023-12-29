@@ -24,7 +24,8 @@ function p(i) {
   if (json["audios"][i] == "Звучание инструмента не найдено") {
     button1.innerHTML = `<button>Нет аудио</button>`;
   } else {
-    button1.innerHTML = `<a href="${json["audios"][i]}"><button>${i}</button></a>`;
+    // button1.innerHTML = `<a href="${playSound(json["audios"][i])}"><button>${i}</button></a>`;
+    button1.innerHTML = `<button onclick="playSound('${json["audios"][i]}')">${i}</button>`;
   }
 }
 
@@ -37,4 +38,10 @@ function search() {
       list.innerHTML += `<a onclick="p('${i}')"><div class="item">${i}</div></a>`;
     }
   }
+}
+
+
+function playSound(url) {
+  var a = new Audio(url);
+  a.play();
 }
