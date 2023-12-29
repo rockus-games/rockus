@@ -8,6 +8,7 @@ $.getJSON("./data.json", (jsonData) => {
 
   list.innerHTML += `<a id="first_item"><div></div></a>`;
   for (var i in json["names"]) {
+    // console.log(i);
     list.innerHTML += `<a onclick="p('${i}')"><div class="item">${i}</div></a>`;
   }
   list.innerHTML += `<a href="#first_item" id="last_item"><div class="item">В начало</div></a>`;
@@ -24,14 +25,22 @@ function p(i) {
   if (json["audios"][i] == "Звучание инструмента не найдено") {
     button1.innerHTML = `<button>Нет аудио</button>`;
   } else {
-    // button1.innerHTML = `<a href="${playSound(json["audios"][i])}"><button>${i}</button></a>`;
-    button1.innerHTML = `<button onclick="playSound('${json["audios"][i]}')">${i}</button>`;
+    console.log(json["audios"][i]);
+    button1.innerHTML = `<button onclick="PlaySound('${json["audios"][i]}')">${i}</button>`;
+    // button1.innerHTML = `<a href="${json["audios"][i]}"><button>${i}</button></a>`;
+
   }
+}
+
+p1.innerHTML = json["names"][i];
+if (json["audios"][i] == "Звучание инструмента не найдено") {
+  button1.innerHTML = `Нет аудио`;
+} else {
+  button1.innerHTML = `${i}`;
 }
 
 function search() {
   list.innerHTML = "";
-
   var x = document.querySelector("#poisk").value.toLowerCase();
   for (var i in json["names"]) {
     if (i.toLowerCase().includes(x)) {
@@ -40,8 +49,8 @@ function search() {
   }
 }
 
-
-function playSound(url) {
-  var a = new Audio(url);
-  a.play();
+function PlaySound(url) {
+  var i = new Audio(url)
+  i.play()
+  // console.log(333);
 }
