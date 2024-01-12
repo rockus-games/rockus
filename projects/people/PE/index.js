@@ -3,8 +3,8 @@ let p1 = document.querySelector(".p1");
 let pictures = document.querySelector(".pictures");
 let button1 = document.querySelector(".button1");
 var json;
-var sound = new Audio("");
-var oldCode;
+var sound = new Audio(""); // переменная звука
+var oldCode; // код кнопки для восстановления
 
 $.getJSON("./data.json", (jsonData) => {
   json = jsonData;
@@ -20,7 +20,7 @@ $.getJSON("./data.json", (jsonData) => {
 function p(i) {
   pictures.innerHTML = "";
 
-  sound.pause();
+  sound.pause(); // останавливаем звук
   sound.currentTime = 0;
 
   for (var j in json["pictures"][i]) {
@@ -31,10 +31,11 @@ function p(i) {
   if (json["audios"][i] == "Звучание инструмента не найдено") {
     button1.innerHTML = `<button>Нет аудио</button>`;
   } else {
-    console.log(json["audios"][i]);
-    button1.innerHTML = `<button onclick="PlaySound('${json["audios"][i]}')"><span class="material-symbols-outlined">
+    // console.log(json["audios"][i]);
+    button1.innerHTML = `<button onclick="PlaySound('${json["audios"][i]}')"><span class="material-icons">
     play_arrow
-    </span></button>`;
+    </span></button>`; // иконка вместо названия
+
     // button1.innerHTML = `<a href="${json["audios"][i]}"><button>${i}</button></a>`;
   }
 }
@@ -58,16 +59,18 @@ function search() {
 
 function PlaySound(url) {
   if (url == "none") {
-    sound.pause();
+    // если кнопка была нажата ранее
+    sound.pause(); // останавливаем звук
     sound.currentTime = 0;
-    button1.innerHTML = oldCode;
+    button1.innerHTML = oldCode; // восстанавливаем код кнопки чтобы снова воспроизвести звук
   } else {
-    sound = new Audio(url);
-    sound.play();
-    oldCode = button1.innerHTML;
-    button1.innerHTML = `<button onclick="PlaySound('none')"><span class="material-symbols-outlined">
+    // если кнопка не была нажата ранее
+    sound = new Audio(url); // создаем новый звук
+    sound.play(); // воспроизводим звук
+    oldCode = button1.innerHTML; // запоминаем код кнопки для восстановления
+    button1.innerHTML = `<button onclick="PlaySound('none')"><span class="material-icons">
   stop
-    </span></button>`;
+    </span></button>`; // меняем код кнопки чтобы при втором нажатии остановить звук
   }
   // console.log(333);
 }
