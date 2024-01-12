@@ -3,6 +3,9 @@ let p1 = document.querySelector(".p1");
 let pictures = document.querySelector(".pictures");
 let button1 = document.querySelector(".button1");
 var json;
+var sound = new Audio("");
+var oldCode;
+
 $.getJSON("./data.json", (jsonData) => {
   json = jsonData;
 
@@ -17,6 +20,9 @@ $.getJSON("./data.json", (jsonData) => {
 function p(i) {
   pictures.innerHTML = "";
 
+  sound.pause();
+  sound.currentTime = 0;
+
   for (var j in json["pictures"][i]) {
     pictures.innerHTML += `<img src="${json["pictures"][i][j]}" alt="">`;
   }
@@ -26,9 +32,10 @@ function p(i) {
     button1.innerHTML = `<button>Нет аудио</button>`;
   } else {
     console.log(json["audios"][i]);
-    button1.innerHTML = `<button onclick="PlaySound('${json["audios"][i]}')">${i}</button>`;
+    button1.innerHTML = `<button onclick="PlaySound('${json["audios"][i]}')"><span class="material-symbols-outlined">
+    play_arrow
+    </span></button>`;
     // button1.innerHTML = `<a href="${json["audios"][i]}"><button>${i}</button></a>`;
-
   }
 }
 
@@ -50,7 +57,17 @@ function search() {
 }
 
 function PlaySound(url) {
-  var i = new Audio(url)
-  i.play()
+  if (url == "none") {
+    sound.pause();
+    sound.currentTime = 0;
+    button1.innerHTML = oldCode;
+  } else {
+    sound = new Audio(url);
+    sound.play();
+    oldCode = button1.innerHTML;
+    button1.innerHTML = `<button onclick="PlaySound('none')"><span class="material-symbols-outlined">
+  stop
+    </span></button>`;
+  }
   // console.log(333);
 }
