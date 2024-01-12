@@ -21,7 +21,7 @@ function p(i) {
   pictures.innerHTML = "";
 
   sound.pause(); // останавливаем звук
-  sound.currentTime = 0;
+  sound.currentTime = 0; // возвращаем нулевую позицию
 
   for (var j in json["pictures"][i]) {
     pictures.innerHTML += `<img src="${json["pictures"][i][j]}" alt="">`;
@@ -66,11 +66,15 @@ function PlaySound(url) {
   } else {
     // если кнопка не была нажата ранее
     sound = new Audio(url); // создаем новый звук
+    sound.addEventListener("ended", () => {
+      button1.innerHTML = oldCode;
+      // восстанавливаем код кнопки чтобы снова воспроизвести звук
+      sound.currentTime = 0;
+    });
     sound.play(); // воспроизводим звук
     oldCode = button1.innerHTML; // запоминаем код кнопки для восстановления
     button1.innerHTML = `<button onclick="PlaySound('none')"><span class="material-icons">
   stop
     </span></button>`; // меняем код кнопки чтобы при втором нажатии остановить звук
   }
-  // console.log(333);
 }
