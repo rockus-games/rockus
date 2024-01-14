@@ -1,3 +1,4 @@
+
 body{
     background-color: aquamarine;
     /* margin: 0;
@@ -8,25 +9,26 @@ div{
     padding: 0; */
 }
 .main{
-    position: relative;
+    display: flex;
     background-color: antiquewhite;
     width: 80%;
-    height: 700px;
-    margin-left: 10%;
+    height: 70dvh;
+    margin: auto;
 }
 .search{
+    /* vertical-align: top; */
+    flex: 1;
     background-color: azure;
-    width: 30%;
-    height: 640px;
-    margin-left: 30px;
-    margin-top: 30px;
-    /* display: inline-block; */
+  
+    margin: 30px;
+    
 }
 input{
-    margin-left: 20%; 
+    margin: auto;
+    display: block; 
     margin-top: 30px;
+    width: 60%;
 
-    /* display: inline-block; */
 }
 .list{
     background-color: rgb(217, 255, 0);
@@ -36,9 +38,8 @@ input{
 }
 
 .view{
+    flex: 2;
     background-color: azure;
-    width: 60.5%;
-    height: 640px;
-    display: inline-block;
-    margin-left: 26px;
+   margin: 30px 30px 30px 0px;
+    
 }
