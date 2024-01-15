@@ -116,10 +116,10 @@ function guess() {
     for (var i of getRandomSort(random_word.length)) {
       shuffled_word += random_word[i];
     }
-    console.log(shuffled_word);
+    // console.log(shuffled_word);
 
     interval_2 = setInterval(() => {
-      console.log(shuffled_word[j]);
+      // console.log(shuffled_word[j]);
       show.innerHTML = "";
       show.innerHTML += `<h1 style="font-size: 40px;color: black">${shuffled_word[j]}</h1>`;
       j++;
@@ -135,6 +135,7 @@ function guess() {
 
     if (word == random_word) {
       alert("Все хорошо");
+      guess_button.innerHTML = "Снова";
       window.location.href = "/assets/mem/m2-res_1280p.mp4";
     } else {
       alert("Все очень плохо");
