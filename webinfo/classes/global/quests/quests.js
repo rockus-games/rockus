@@ -138,7 +138,7 @@ function guess() {
       alert("Все хорошо");
       guess_button.innerHTML = "Снова";
       guess_input.value = "";
-      window.location.href = "/assets/mem/m2-res_1280p.mp4";
+      window.location.href = "/assets/mem/m2-res_640p.mp4";
     } else {
       alert("Все очень плохо");
       guess_button.innerHTML = "Снова";
