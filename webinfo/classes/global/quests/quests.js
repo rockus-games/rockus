@@ -107,6 +107,7 @@ var random_word = "";
 
 function guess() {
   if (flag) {
+    clearInterval(interval_2);
     j = 0;
     random_word = words[Math.floor(Math.random() * words.length)];
 
