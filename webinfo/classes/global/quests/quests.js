@@ -108,6 +108,7 @@ var random_word = "";
 function guess() {
   if (flag) {
     clearInterval(interval_2);
+    show.innerHTML = "";
     j = 0;
     random_word = words[Math.floor(Math.random() * words.length)];
 
@@ -136,10 +137,12 @@ function guess() {
     if (word == random_word) {
       alert("Все хорошо");
       guess_button.innerHTML = "Снова";
+      guess_input.value = "";
       window.location.href = "/assets/mem/m2-res_1280p.mp4";
     } else {
       alert("Все очень плохо");
       guess_button.innerHTML = "Снова";
+      guess_input.value = "";
     }
     flag = true;
   }
