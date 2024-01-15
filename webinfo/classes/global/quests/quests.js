@@ -107,6 +107,7 @@ var random_word = "";
 
 function guess() {
   if (flag) {
+    j = 0;
     random_word = words[Math.floor(Math.random() * words.length)];
 
     var shuffled_word = "";
@@ -136,6 +137,7 @@ function guess() {
       window.location.href = "/assets/mem/m2-res_1280p.mp4";
     } else {
       alert("Все очень плохо");
+      guess_button.innerHTML = "Снова";
     }
     flag = true;
   }
