@@ -130,6 +130,7 @@ button * {
     height: 100%;
     left: 0;
     top: 0;
+    pointer-events: none;
 }
 @media (max-width: 768px) {
     h3 {
