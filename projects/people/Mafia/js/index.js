@@ -1,22 +1,25 @@
 let recommendation = document.querySelector("#recommendation");
-let flag = true
-// function show(){
-//     if(flag == true){
-//         recommendation.style.display = "block";
-//         flag = false
-//     }
-//     else{
-//         recommendation.style.display = "none";
-//         flag = true
-//     }
-// }
-
-function show(){
-    recommendation.style.display = "block";
+let flag = true;
+function show() {
+  if (recommendation.style.opacity == "1") {
+    hide();
+  } else {
+    unhide();
+  }
+  // if(flag == true){
+  //     recommendation.style.display = "block";
+  //     flag = false
+  // }
+  // else{
+  //     recommendation.style.display = "none";
+  //     flag = true
+  // }
 }
 
-function hide(){
-    recommendation.style.display = "none";
+function unhide() {
+  recommendation.style.opacity = "1";
 }
 
-// if (recommendation.sty)
+function hide() {
+  recommendation.style.opacity = "0";
+}
