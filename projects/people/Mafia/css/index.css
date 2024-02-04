@@ -18,16 +18,16 @@
 }
 #menu {
   cursor: pointer;
+  /* position: fixed; */
 }
 #recommendation{
   position: absolute;
     /* display: none; */
     opacity: 0;
-    pointer-events: none;
+    transition: all 0.3s;
     width: 400px;
     height: 500px;
     background-color: aquamarine;
-    transition: all 1s;
 }
 #main {
   text-align: center;
