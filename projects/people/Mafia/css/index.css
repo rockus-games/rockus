@@ -23,7 +23,7 @@
 #recommendation{
   position: absolute;
     /* display: none; */
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 0.3s;
     width: 400px;
     height: 500px;
