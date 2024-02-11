@@ -1,5 +1,6 @@
 body{
     /* text-align: center; */
+    background-color:rgb(34, 51, 59) ;
 
 }
 .avatar{
@@ -11,3 +12,37 @@ body{
     border-radius: 100px;
 
 }
+#avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+.lk{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 500px;
+    background-color: rgb(88, 135, 255);
+    margin: auto;
+}
+.avtorization{
+    text-align: center;
+    background-color: aliceblue;
+    width: 40%;
+}
+#enter, #button_registor{
+    width: 100px;
+    background-color: rgb(212, 214, 185);
+    border-radius: 8px;
+
+}
+.registor{
+    text-align: center;
+    background-color: brown;
+    width: 40%;
+}
+/* #button_registor{
+    width: 100px;
+    background-color: rgb(212, 214, 185);
+    border-radius: 8px;
+} */
