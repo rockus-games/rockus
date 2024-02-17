@@ -2,6 +2,11 @@ body{
     /* text-align: center; */
     background-color:rgb(34, 51, 59) ;
 
+
+}
+.material-icons{
+    cursor: pointer;
+    margin-top: 5px;
 }
 .avatar{
     width: 200px;
@@ -40,6 +45,9 @@ body{
     text-align: center;
     background-color: brown;
     width: 40%;
+}
+input{
+font-size: 20px;
 }
 /* #button_registor{
     width: 100px;
