@@ -1,44 +1,61 @@
-#header{
-    text-align: center;
-    background-color: red;
-    margin-bottom: 25px;
+#header {
+  text-align: center;
+  background-color: red;
+  margin-bottom: 25px;
 }
 
-#header h1{
-    margin: 0;
-    margin-bottom: 8px;
-font-size: 30px;
-/* background-color: beige; */
-display: inline-block;
+#header h1 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 30px;
+  /* background-color: beige; */
+  display: inline-block;
 }
-.material-icons{
-    margin-left: 5px;
-    margin-top: 4px;
-    font-size: 30px;
+.material-icons {
+  margin-left: 5px;
+  margin-top: 4px;
+  font-size: 30px;
 }
-#main{
-    text-align: center;
-    width:80% ;
+#menu {
+  cursor: pointer;
+  /* position: fixed; */
+}
+#recommendation{
+  position: absolute;
+    /* display: none; */
+    /* opacity: 0; */
+    transition: all 0.3s;
+    width: 400px;
     height: 500px;
-    /* margin-top: 500px; */
-    margin: auto;
-    background-color: black;
+    background-color: aquamarine;
 }
-#main h2{
-    color: aliceblue;
+#main {
+  text-align: center;
+  width: 80%;
+  height: 500px;
+  /* margin-top: 500px; */
+  margin: auto;
+  background-color: black;
 }
-#main li{
-    text-align: start;
-    margin-left: 20px;
-    color: aqua;
+#main h2 {
+  color: aliceblue;
 }
-#footer{
-    margin-bottom: 8px;
-    width: 98%;
-    height: 49px;
-    position: absolute;
-bottom: 0;
-    text-align: center;
-    background-color: red;
-
+#main li {
+  text-align: start;
+  margin-left: 20px;
+  color: aqua;
+}
+#footer {
+  margin-bottom: 8px;
+  width: 98%;
+  height: 49px;
+  position: absolute;
+  bottom: 0;
+  /* text-align: center; */
+  display:flex ;
+  justify-content: end;
+  background-color: rgb(0, 195, 255);
+}
+#footer h3{
+margin-right: 20px;
 }

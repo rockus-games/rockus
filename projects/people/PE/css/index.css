@@ -1,6 +1,9 @@
 body {
   /* background-color: rgb(55, 120, 178); */
 }
+button {
+  /* width: 0; */
+}
 h1 {
   text-align: center;
   /* background-color: rgb(227, 229, 213); */
@@ -111,7 +114,10 @@ p {
   margin-right: 30px;
   width: 12vw;
   height: 5vh;
-  font-size: 20px;
+  /* font-size: 20px; */
+}
+#play_sound{
+  font-size: 32px;
 }
 @media (max-width: 500px) {
   .main {
@@ -147,6 +153,6 @@ p {
     margin-right: 15px;
     width: 30vw;
     height: 5vh;
-    font-size: 20px;
+    /* font-size: 20px; */
   }
 }
