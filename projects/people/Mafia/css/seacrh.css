@@ -29,12 +29,12 @@ div{
 }
 .list{
     overflow-y:auto ;
-   /* text-align: center; */
-    background-color: rgb(217, 255, 0);
+   /* padding-top: 10px; */
     width: 90%;
     height: 70%;
     margin: auto;
     margin-top: 30px;
+    border: 1px solid ;
 }
 .item{
     cursor: pointer;
@@ -53,11 +53,17 @@ div{
 }
 
 .view{
-    background-color: rgb(248, 232, 0);
+    /* background-color: rgb(248, 232, 0); */
     width: 67%;
     /* height: 640px; */
     display: inline-block;
     margin: 1% 1% 1% 0%;
     /* margin-left: 0; */
+    text-align: center;
     
+    
+}
+img{
+    width: 80%;
+    margin-top: 40px;
 }

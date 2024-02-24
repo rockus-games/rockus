@@ -18,12 +18,20 @@
 }
 #menu {
   cursor: pointer;
-  /* position: fixed; */
+  position: relative;
+
+}
+#close{
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  color: red;
+  background-color: aliceblue;
 }
 #recommendation{
   position: absolute;
     /* display: none; */
-    /* opacity: 0; */
+    opacity: 0;
     transition: all 0.3s;
     width: 400px;
     height: 500px;

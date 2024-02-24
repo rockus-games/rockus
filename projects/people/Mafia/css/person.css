@@ -39,6 +39,13 @@ body{
     width: 100px;
     background-color: rgb(212, 214, 185);
     border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+#enter:hover,#button_registor:hover{
+    transform: scale(1.1);
+    background-color: rgb(199, 204, 128);
 
 }
 .registor{
