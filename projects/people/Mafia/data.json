@@ -1,8 +1,8 @@
 {
   "skins": {
     "2C472CMQUWEG-M4 Lizard": [
-      "./assets/skins/AKR NANO_STATTRACK.jpeg"
+      "./assets/image/M4_LIZARD.jpeg"
     ],
-    "DHNWE-THWS-KLHJO-AKR Nano Stattrak":["./assets/skins/Butterfly Starfall.jpeg"]
+    "DHNWE-THWS-KLHJO-AKR Nano Stattrak":["./assets/image/Butterfly Starfall.jpeg"]
   }
 }

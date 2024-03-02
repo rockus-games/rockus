@@ -6,6 +6,7 @@ $.getJSON("./data.json",(jsonData)=>{
    list.innerHTML+=`<a id="first_item"><div></div></a>`
    // console.log(json["skins"]);
    for(var i in json["skins"]){
+      console.log(json["skins"][i][0]);
       list.innerHTML+=`<a onclick="skin_change('${json["skins"][i][0]}')"><div class="item">${i}</div></a>`
 
    }
