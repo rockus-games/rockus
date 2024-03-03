@@ -1,8 +1,14 @@
 {
   "skins": {
-    "2C472CMQUWEG-M4 Lizard": [
-      "./assets/image/M4_LIZARD.jpeg"
+    "2C472CMQUWEG-M4 Lizard": ["./assets/image/M4_LIZARD.jpeg"],
+    "DHNWE-THWS-KLHJO-AKR Nano Stattrak": [
+      "./assets/image/AKR NANO_STATTRACK.jpeg"
     ],
-    "DHNWE-THWS-KLHJO-AKR Nano Stattrak":["./assets/image/Butterfly Starfall.jpeg"]
+    "Wl9ur8ysGDR-FxKco-Scorpion_Case": ["./assets/image/Scorpion_case.jpeg"],
+    "eFzlnkLNPU3-Fable case": ["./assets/image/Fable case.jpeg"],
+    "HQAKC5LWD9CY-M4 Night Wolf": [
+      "https://i.ytimg.com/vi/zyxViACbCLY/maxresdefault.jpg"
+    ],
+    "kM2NSJKVDHCR-P350 Rally":["https://i.ytimg.com/vi/XJ_zveqD7h8/maxresdefault.jpg"]
   }
 }

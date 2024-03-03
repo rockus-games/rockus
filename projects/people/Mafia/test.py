@@ -1,3 +1,4 @@
-def search(x):
-    print(5+x)
-search(5)
+array = ['a','b','c','d','e']
+
+for i in array:
+    print(i)
