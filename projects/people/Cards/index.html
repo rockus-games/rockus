@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h1 {
+        background-color: lime;
+        font-size: 70px;
+        margin-left: 5px;
+        border: 3px solid;
+      }
+      #main {
+        width: 80%;
+        /* height: 500px; */
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        border: 3px solid;
+      }
+      h2 {
+        height: 100px;
+        font-size: 50px;
+        text-align: center;
+        background-color: lime;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      input{
+        margin-top: 16px;
+        /* vertical-align:bottom ; */
+        font-size:50px;
+      }
+      hr {
+        color: black;
+        size: 5px;
+      }
+      label {
+        font-size: 50px;
+        /* margin-top: 20px; */
+        /* margin-bottom: 20px; */
+        margin-right:10px;
+      }
+    #phone{
+    
+        /* text-align: center ; */
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Визитка</h1>
+    <div id="main">
+      <h2><input placeholder="название визитки" type="text" /></h2>
+      <div id="phone"><label for="">Телефон:</label><input placeholder="+x (xxx) xxx xx xx" type="text"></div>
+      <hr />
+      <!-- <h3>Почта:</h3> -->
+      <div id="mail"><label for="">Почта:</label><input placeholder="xxxxx@xxx.xxx" type="text"></div>
+      <hr />
+      <h3>Сайт организации:</h3>
+      <hr />
+      <h3>Ваше описание:</h3>
+    </div>
+  </body>
+</html>
