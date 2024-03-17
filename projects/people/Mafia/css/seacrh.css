@@ -1,73 +1,91 @@
-body{
-    background-color: aquamarine;
-    /* margin: 0;
+body {
+  background-color: aquamarine;
+  /* margin: 0;
     padding: 0; */
 }
-div{
-    /* margin: 0;
+div {
+  /* margin: 0;
     padding: 0; */
 }
-.main{
-    display: flex;
-    background-color: antiquewhite;
-    width: 80%;
-    height: 700px;
-    margin-left: 10%;
+.main {
+  display: flex;
+  background-color: antiquewhite;
+  width: 80%;
+  height: 700px;
+  /* margin-left: 10%; */
+  margin: auto;
 }
-.search{
-    background-color: azure;
-    width: 30%;
-    /* height: 640px; */
+.search {
+  background-color: azure;
+  width: 30%;
+  /* height: 640px; */
   margin: 1%;
 }
-#enter{
-    /* background-color: blue; */
-    text-align: center;
-    margin-top: 30px;
+#enter {
+  /* background-color: blue; */
+  text-align: center;
+  margin-top: 30px;
 
-    /* display: inline-block; */
+  /* display: inline-block; */
 }
-.list{
-    overflow-y:auto ;
-   /* padding-top: 10px; */
-    width: 90%;
-    height: 70%;
-    margin: auto;
-    margin-top: 30px;
-    border: 1px solid ;
+.list {
+  overflow-y: auto;
+  /* padding-top: 10px; */
+  width: 90%;
+  height: 70%;
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid;
 }
-.item{
-    cursor: pointer;
-    margin: auto;
-    width: 90%;
-    height: 70px;
-    background-color: rgb(43, 226, 141);
-    margin-top: 30px;
-    text-align: center;
-    vertical-align: middle;
-    
+.item {
+  cursor: pointer;
+  margin: auto;
+  width: 90%;
+  height: 70px;
+  background-color: rgb(43, 226, 141);
+  margin-top: 30px;
+  text-align: center;
+  vertical-align: middle;
 }
-.item:active{
-    background-color: rgb(15, 189, 107);
-    transform: scale(0.95);
+.item:active {
+  background-color: rgb(15, 189, 107);
+  transform: scale(0.95);
 }
-.item h3{
-    /* margin-top: 40px; */
-    color: rgb(0, 0, 0);
+.item h3 {
+  /* margin-top: 40px; */
+  color: rgb(0, 0, 0);
 }
 
-.view{
-    /* background-color: rgb(248, 232, 0); */
-    width: 67%;
-    /* height: 640px; */
-    display: inline-block;
-    margin: 1% 1% 1% 0%;
-    /* margin-left: 0; */
-    text-align: center;
-    
-    
+.view {
+  /* background-color: rgb(248, 232, 0); */
+  width: 67%;
+  /* height: 640px; */
+  display: inline-block;
+  margin: 1% 1% 1% 0%;
+  /* margin-left: 0; */
+  text-align: center;
 }
-img{
-    width: 80%;
-    margin-top: 40px;
+img {
+  width: 80%;
+  margin-top: 40px;
+}
+@media (max-width: 500px) {
+  .main {
+    width: 90%;
+    flex-direction: column;
+  }
+  .search{
+    width: 90%;
+    margin: auto;
+    margin-top: 8px;
+    height: 400px;
+  }
+  .list{
+    /* height: 50%; */
+
+  }
+  .view{
+    width: 90%;
+    margin: auto;
+  }
 }

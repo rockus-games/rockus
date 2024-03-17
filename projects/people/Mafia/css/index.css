@@ -39,7 +39,7 @@
 }
 #main {
   text-align: center;
-  width: 80%;
+  /* width: 80%; */
   height: 500px;
   /* margin-top: 500px; */
   margin: auto;
@@ -66,4 +66,17 @@
 }
 #footer h3{
 margin-right: 20px;
+}
+@media screen and (max-width: 500px) {
+  body{
+    background-color: blueviolet;
+    margin: 0;
+  }
+  #footer{
+    height: 70px;
+    margin-bottom: 0;
+    width: inherit;
+
+  }
+  
 }

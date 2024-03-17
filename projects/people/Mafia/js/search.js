@@ -27,4 +27,3 @@ function search(){
 function skin_change(image){
    view.innerHTML=`<img src="${image}" alt="">`
 }
-

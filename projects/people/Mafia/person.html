@@ -2,42 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Person</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet" />
-    <link
       rel="stylesheet"
-      href="./css/person.css" />
+    />
+    <link rel="stylesheet" href="./css/person.css" />
   </head>
   <body>
     <div class="avatar">
-      <img onclick="change_avatar()"
+      <img
+        onclick="change_avatar()"
         id="avatar"
         src="https://s0.rbk.ru/v6_top_pics/media/img/1/80/756778260839801.jpg"
-        alt="" />
+        alt=""
+      />
     </div>
     <hr />
     <div class="lk">
       <div class="avtorization">
         <h1>Авторизация</h1>
         <div>
-          <input
-            id="login"
-            type="text"
-            placeholder="Логин" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input id="login" type="text" placeholder="Логин" />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
-
-        <div>
-          <input
-            id="password"
-            type="password"
-            placeholder="Пароль" />
-          <span id="eye" onclick="show_password()" class="material-icons">visibility_off</span>
+        <!-- <br> -->
+        <!-- style="display: flex;justify-content: center;" -->
+        <div id="password_line">
+          <input id="password" type="password" placeholder="Пароль" />
+          <span id="eye" onclick="show_password()" class="material-icons"
+            >visibility_off</span
+          >
         </div>
 
         <br />
@@ -46,25 +42,17 @@
       </div>
       <div class="registor">
         <h1>Регистрация</h1>
-        <input
-          type="text"
-          placeholder="Имя" />
+        <input type="text" placeholder="Имя" />
         <br />
         <br />
 
-        <input
-          type="text"
-          placeholder="Фамилия" />
+        <input type="text" placeholder="Фамилия" />
         <br />
         <br />
-        <input
-          type="text"
-          placeholder="ID в игре" />
+        <input type="text" placeholder="ID в игре" />
         <br />
         <br />
-        <input
-          type="text"
-          placeholder="Почта" />
+        <input type="text" placeholder="Почта" />
         <br />
         <br />
         <a href="./password.html">

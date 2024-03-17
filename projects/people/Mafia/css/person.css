@@ -24,16 +24,24 @@ body{
 }
 .lk{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     width: 80%;
     height: 500px;
     background-color: rgb(88, 135, 255);
     margin: auto;
 }
+#password_line{
+    display: flex;
+    justify-content: center;
+  }
 .avtorization{
     text-align: center;
     background-color: aliceblue;
     width: 40%;
+}
+#password_line{
+    margin-top: 16px;
 }
 #enter, #button_registor{
     width: 100px;
@@ -61,3 +69,42 @@ font-size: 20px;
     background-color: rgb(212, 214, 185);
     border-radius: 8px;
 } */
+@media (max-width: 500px) {
+    body{
+        /* background-color: bisque; */
+    }
+    .lk{
+        justify-content: start;
+        /* display: flex; */
+        flex-direction: column;
+        height: 600px;
+        width: 90%;
+      }
+      .avtorization{
+        width: 90%;
+        margin: auto;
+
+      }
+      #enter{
+        margin-bottom: 20px;
+      }
+      #password_line{
+        display: flex;
+        justify-content: center;
+        margin-top: 6px;
+      }
+    #password{
+        width: 200px;
+    }
+    #eye{
+        /* padding-top:10px ; */
+        margin-left: 14px;
+    }
+    .registor{
+        width: 90%;
+        margin:auto;
+    }
+    #button_registor{
+        margin-bottom: 10px;
+    }
+}
