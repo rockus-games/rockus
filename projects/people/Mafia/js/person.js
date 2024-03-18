@@ -12,4 +12,5 @@ function show_password() {
 }
 function change_avatar(){
   // console.log('hello');
+  
 }
