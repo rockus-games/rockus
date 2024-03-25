@@ -1,3 +1,3 @@
-function save_data(){
-    console.log(22);
+function save_data() {
+  console.log(22);
 }

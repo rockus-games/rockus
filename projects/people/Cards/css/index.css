@@ -2,59 +2,63 @@ body {
   /* background-color: rgb(255, 255, 255); */
 }
 h1 {
-    background-color: lime;
-    font-size: 70px;
-    margin-left: 5px;
-    border: 3px solid;
-  }
-  #main {
-    width: 80%;
-    /* height: 500px; */
-    background-color: rgb(255, 255, 255);
-    margin: auto;
-    border: 3px solid;
-  }
-  h2 {
-    height: 100px;
-    font-size: 50px;
-    text-align: center;
-    background-color: lime;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  input {
-    margin-top: 16px;
-    /* vertical-align:bottom ; */
-    font-size: 50px;
-  }
-  hr {
-    color: black;
-    size: 5px;
-  }
-  label {
-    font-size: 50px;
-    /* margin-top: 20px; */
-    /* margin-bottom: 20px; */
-    margin-right: 10px;
-  }
-  #phone {
-    /* text-align: center ; */
-  }
-  #about {
-    margin-bottom: 10px;
-  }
-  #save {
-    text-align: center;
-    margin-top: 10px;
-    /* background-color: rgb(0, 0, 255); */
-  }
-  button {
-    /* width: 200px;
+  background-color: lime;
+  font-size: 70px;
+  margin-left: 5px;
+  border: 3px solid;
+  border-radius: 30px;
+}
+#main {
+  width: 90%;
+  /* height: 500px; */
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  border: 3px solid;
+  border-radius: 10px;
+}
+h2 {
+  height: 100px;
+  font-size: 50px;
+  text-align: center;
+  background-color: lime;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 7px;
+  /* margin: 2px; */
+}
+input {
+  margin-top: 16px;
+  /* vertical-align:bottom ; */
+  font-size: 50px;
+}
+hr {
+  color: black;
+  size: 5px;
+}
+label {
+  font-size: 50px;
+  /* margin-top: 20px; */
+  /* margin-bottom: 20px; */
+  margin-right: 10px;
+}
+#phone {
+  /* text-align: center ; */
+}
+#about {
+  margin-bottom: 10px;
+}
+#save {
+  text-align: center;
+  margin-top: 10px;
+  /* background-color: rgb(0, 0, 255); */
+}
+button {
+  /* width: 200px;
     height: 300px; */
-    font-size: 90px;
-    border-radius: 40px;
-    background-color: lime;
-  }
+  font-size: 90px;
+  border-radius: 40px;
+  background-color: lime;
+}
 button {
   /* width: 200px;
     height: 300px; */
@@ -71,4 +75,37 @@ button:hover {
 button:active {
   transform: scale(1);
 }
+@media (max-width: 850px){
+  h1,h2,button{
+    background-color: red;
+  }
+button:active{
+  background-color: darkred;
+}
+button:hover{
+  background-color: darkred;
+}
+}
 
+@media (max-width: 500px) {
+  h1,
+  h2,
+  button {
+    background-color: rgba(6, 6, 199, 0.918);
+    color: white;
+  }
+  button:hover {
+    background-color: rgb(0, 0, 180);
+  }
+  input {
+    font-size: 30px;
+    height: 50px;
+    width: 90%;
+  }
+  button {
+    font-size: 60px;
+  }
+  h2 input {
+    margin-top: 20px;
+  }
+}
