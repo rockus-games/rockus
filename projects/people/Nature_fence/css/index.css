@@ -5,6 +5,9 @@ body{
     /* background-color:#60695c ; */
 
 }
+.material-icons{
+    cursor: pointer;
+}
 .header{
     width: 50%;
     height: 100px;
@@ -19,6 +22,16 @@ body{
     font-size: 45px; 
     background-color: azure;
 }
+.action{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8px;
+    background-color: rgb(211, 41, 29);
+}
 .action .material-icons{
     font-size: 30px;
+    /* margin-top: 2px; */
+color: aliceblue;
+
 }
