@@ -28,10 +28,47 @@ body{
     justify-content: space-between;
     margin-top: 8px;
     background-color: rgb(211, 41, 29);
+    height: 34px;
 }
 .action .material-icons{
     font-size: 30px;
-    /* margin-top: 2px; */
+    margin-top: 3px;
 color: aliceblue;
 
+}
+#yard{
+    margin-left: 8px;
+}
+.root{
+    width: 70%;
+    margin: auto;
+}
+.example{
+    display: flex;
+    /* width: 70%; */
+    height: 300px;
+    background-color: rgb(1, 1, 204);
+    margin: auto;
+    margin-top: 14px;
+    overflow-x: scroll;
+    padding: 10px 10px 10px 0px;
+}
+.example img{
+    margin-left: 10px;
+}
+.recommended{
+    width: 400px;
+    height: 450px;
+    background-color: rgb(1, 1, 204);
+    /* margin-left: 200px; */
+    margin-top: 14px;
+    overflow-y: scroll;
+}
+#recommended_item{
+    width: 95%;
+    height: 100px;
+    background-color: azure;
+    margin: auto;
+    margin-top: 10px;
+    
 }
