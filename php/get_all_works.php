@@ -7,7 +7,7 @@ if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }
 
-$query = "SELECT DISTINCT grade FROM cd56981_users.user ORDER BY grade ASC";
+$query = "SELECT DISTINCT grade FROM cd56981_users.user ORDER BY grade ASC nickname ASC";
 $result = $con->query($query);
 
 $resultArray = new stdClass();
