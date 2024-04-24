@@ -7,7 +7,7 @@ if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 }
 
-$query = "SELECT DISTINCT grade FROM cd56981_users.user ORDER BY grade ASC";
+$query = "SELECT DISTINCT grade FROM cd56981_users.user ORDER BY grade ASC, nickname ASC";
 $result = $con->query($query);
 
 $resultArray = new stdClass();
@@ -15,7 +15,7 @@ $resultArray = new stdClass();
 while ($row = $result->fetch_assoc()) {
     $gradeArray = array();
 
-    $query = "SELECT id, nickname, grade FROM cd56981_users.user WHERE grade = \"$row[grade]\" ORDER BY grade ASC";
+    $query = "SELECT id, nickname, grade FROM cd56981_users.user WHERE grade = \"$row[grade]\" ORDER BY grade ASC, nickname ASC";
     $result_grade = $con->query($query);
 
     while ($row2 = $result_grade->fetch_assoc()) {
