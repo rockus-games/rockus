@@ -1,0 +1,26 @@
+#h11{
+    text-align: center;
+}
+#img1{
+    display: block;
+    margin: auto;
+}
+#h21{
+    text-align: center;
+}
+#h22{
+    text-align: center;
+}
+@media (max-width: 500px) {
+    #h11{
+        text-align: center;
+    }
+    #img1{
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+    #h21{
+        text-align: center;
+    }
+}

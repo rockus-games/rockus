@@ -1,0 +1,9 @@
+{
+
+    "Odintsovo":{
+        "wind":5,
+        "precipitation":10,
+        "temperature":22,
+        "humidiry":60
+    }
+}
