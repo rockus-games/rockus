@@ -1,0 +1,26 @@
+body{
+    background-color: rgba(168, 187, 181, 0.973)
+}
+.main{
+    width: 40%;
+    background-color: white;
+    height: 300px;
+    margin: auto;
+}
+.login,.password{
+    height: 21.2px;
+    margin: auto;
+    width: 45%;
+    /* margin-top: 10px; */
+    background-color: rgb(254, 255, 255);
+}
+.material-icons{
+    /* margin-top: 6px; */
+}
+.button_enter{
+text-align: center;
+}
+h2{
+    text-align: center;
+    color: red;
+}

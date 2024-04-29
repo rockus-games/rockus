@@ -1,0 +1,12 @@
+{
+    "Odintsovo": {
+        "Осадки":50,
+        "wind": [10,"Ю"],
+        "temperature": 300,
+        "humidity": 60,
+        "pressure": 1000
+    },
+    "Golitsino": {
+        "wind":[10,"W","Порывистый"]
+    }
+}
