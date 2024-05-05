@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Регистрация</title>
-    <link rel="stylesheet" href="./css/sing_up.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/sing_up.css" />
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  </head>
+  <div class="main">
+    <h2>Имя пользователя</h2>
+    <input id="nick" type="text" />
+    <h2>Телефон</h2>
+    <input id="tel" type="text" />
+    <h2>Почта</h2>
+    <input id="email" type="text" />
+    <h2>Пароль</h2>
+    <input id="password" type="text" />
+    <h2>Повторите пароль</h2>
+    <input id="confirm_password" type="text" />
+  </div>
+ <div id="sign_up_button_div">
+     <button onclick="sign_up()">Регистрация</button>
+ </div>
+  <body>
     <script src="./js/sing_up.js"></script>
-</body>
+  </body>
 </html>
