@@ -1,0 +1,107 @@
+body {
+  background-color: rgb(41, 47, 64);
+}
+hr {
+  /* width: 100%; */
+}
+.header {
+  display: flex;
+  flex-direction: row;
+}
+.header input {
+  margin: auto 10px;
+}
+.header button {
+  margin: auto 0;
+}
+.root {
+  width: 80%;
+  margin: 0 auto;
+}
+h1 {
+  color: white;
+}
+.main_relay {
+  display: flex;
+  width: 340px;
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 8px;
+}
+.main_relay .input {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  justify-content: space-around;
+}
+.main_relay .input .input_each {
+  text-align: center;
+}
+.main_relay .input .input_each h4 {
+  margin: 0;
+  color: white;
+}
+#main_switch {
+  
+  cursor: pointer;
+  width: 10%;
+  border-radius: 4px;
+  background-color: red;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  transition: all 0.2s;
+}
+#main_switch:hover {
+  background-color: rgb(152, 0, 0);
+}
+#main_switch p {
+  /* margin-left: 30px; */
+  color: white;
+  margin: 0;
+  margin-right: 7px;
+
+}
+.main_relay .output {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  justify-content: space-around;
+}
+.main_relay .output .output_each {
+  text-align: center;
+}
+.main_relay .output .output_each h4 {
+  margin: 0;
+  color: white;
+}
+@media (max-width: 500px) {
+  body{
+    margin: 0;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 322px;
+    /* text-align: center; */
+  }
+  .header input {
+    margin: auto ;
+    width: 250px;
+  }
+  .header button {
+    margin: 10px auto ;
+    width: 257.2px;
+  }
+  .root {
+    /* width: 100%; */
+    /* padding: 8px; */
+    margin: 8px;
+  }
+  .main_relay {
+ width: 322px;
+
+  }
+}
