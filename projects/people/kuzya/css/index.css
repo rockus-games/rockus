@@ -53,9 +53,9 @@ h1 {
   text-orientation: upright;
   transition: all 0.2s;
 }
-#main_switch:hover {
+/* #main_switch:hover {
   background-color: rgb(152, 0, 0);
-}
+} */
 #main_switch p {
   /* margin-left: 30px; */
   color: white;

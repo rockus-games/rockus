@@ -1,23 +1,29 @@
-let ip = document.querySelector("#ip");
-let connect_button = document.querySelector("#connect_button");
-ip.defaultValue = "localhost";
-// var socket = io("${ip.value}:3000", {transports: ["websocket"]});
+
 let main_switch = document.querySelector("#main_switch");
 
-function connect() {
-  socket = io(ip.value + ":3000", {transports: ["websocket"]});
-  socket.on("connect", function () {
-    connect_button.innerHTML = "Connected";
-  });
-  socket.on("connect_error", function () {
-    connect_button.innerHTML = "Connection error";
-  });
-}
+let relay_status = 0;
 
 function main_relay_switch() {
-  socket.emit("main_relay_switch");
-  socket.on("turn_off", function (data) {
-    // console.log(data);
+  
+    if (relay_status == 0) {
+      relay_status = 1;
+      socket.emit("main_relay_switch", relay_status);
+      console.log(relay_status);
+    }else{
+      relay_status = 0;
+      socket.emit("main_relay_switch", relay_status);
+      console.log(relay_status);
+    }
+ socket.on("turn_on", function (data) {
+    
     main_switch.style.backgroundColor = "green";
   });
+  socket.on("turn_off", function (data) {
+    main_switch.style.backgroundColor = "red";
+  })
+  // socket.emit("main_relay_switch",relay_status);
+  // socket.on("turn_off", function (data) {
+  //   // console.log(data);
+  //   main_switch.style.backgroundColor = "green";
+  // });
 }
