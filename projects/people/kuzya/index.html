@@ -18,43 +18,45 @@
         <input  id="ip"  type="text" />
         <button id="connect_button" onclick="connect()">Connect</button>    
       </div>
-      <div class="main_relay">
-        <div class="input">
-          <div class="input_each">
-            <h4>220 B</h4>
-            <hr />
+     <div id="block1">
+        <div class="main_relay">
+          <div class="input">
+            <div class="input_each">
+              <h4>220 B</h4>
+              <hr />
+            </div>
+            <div class="input_each">
+              <h4>220 B</h4>
+              <hr />
+            </div>
+            <div class="input_each">
+              <h4>220 B</h4>
+              <hr />
+            </div>
           </div>
-          <div class="input_each">
-            <h4>220 B</h4>
-            <hr />
+          <div
+          title="Твердотельное реле 'выключатель питания всего кабинета'"
+            id="main_switch"
+            onclick="main_relay_switch()">
+            <p>main switch</p>
           </div>
-          <div class="input_each">
-            <h4>220 B</h4>
-            <hr />
+          <div class="output">
+            <div class="output_each ">
+              <h4 id="phase1h4">0 A</h4>
+              <hr />
+            </div>
+            <div class="output_each phase2">
+              <h4 id="phase2h4">0 A</h4>
+              <hr />
+            </div>
+            <div class="output_each phase3">
+              <h4 id="phase3h4">0 A</h4>
+              <hr />
+            </div>
           </div>
         </div>
-        <div
-        title="Твердотельное реле 'выключатель питания всего кабинета'"
-          id="main_switch"
-          onclick="main_relay_switch()">
-          <p>main switch</p>
-        </div>
-        <div class="output">
-          <div class="output_each ">
-            <h4 id="phase1h4">0 A</h4>
-            <hr />
-          </div>
-          <div class="output_each phase2">
-            <h4 id="phase2h4">0 A</h4>
-            <hr />
-          </div>
-          <div class="output_each phase3">
-            <h4 id="phase3h4">0 A</h4>
-            <hr />
-          </div>
-        </div>
-      </div>
-      <canvas id="collector1"></canvas>
+        <canvas id="collector1"></canvas>
+     </div>
     </div>
     <script src="./js/index.js"></script>
     <script src="./js/main_relay.js"></script>
