@@ -28,8 +28,8 @@ let coords = {
   11: {1: 0, 2: 126, 3: 100, 4: 126},
   12: {1: 100, 2: 105, 3: 100, 4: 145},
   13: {1: 100, 2: 105, 3: 250, 4: 105},
-  14: {1: 100, 2: 126, 3: 250, 4: 126}, 
-  15: {1: 100, 2: 145, 3: 250, 4: 145}
+  14: {1: 100, 2: 126, 3: 250, 4: 126},
+  15: {1: 100, 2: 145, 3: 250, 4: 145},
 };
 
 function collector1_drawer(x0, y0, x1, y1) {
@@ -44,4 +44,5 @@ function collector1_drawer(x0, y0, x1, y1) {
 for (let i = 1; i < Object.keys(coords).length + 1; i++) {
   collector1_drawer(coords[i][1], coords[i][2], coords[i][3], coords[i][4]);
 }
-console.log(Object.keys(coords).length);
+
+

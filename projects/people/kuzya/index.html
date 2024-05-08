@@ -15,11 +15,17 @@
     <div class="root">
       <div class="header">
         <h1>Kuzya</h1>
-        <input  id="ip"  type="text" />
-        <button id="connect_button" onclick="connect()">Connect</button>    
+        <input
+          id="ip"
+          type="text" />
+        <button
+          id="connect_button"
+          onclick="connect()">
+          Connect
+        </button>
       </div>
-     <div class="block1">
-        <div class="main_relay">
+      <div class="block1">
+        <div title="Блок главного реле" class="main_relay">
           <div class="input">
             <div class="input_each">
               <h4>220 B</h4>
@@ -35,13 +41,13 @@
             </div>
           </div>
           <div
-          title="Твердотельное реле 'выключатель питания всего кабинета'"
+            title="Твердотельное реле 'выключатель питания всего кабинета'"
             id="main_switch"
             onclick="main_relay_switch()">
             <p>main switch</p>
           </div>
           <div class="output">
-            <div class="output_each ">
+            <div class="output_each">
               <h4 id="phase1h4">0 A</h4>
               <hr />
             </div>
@@ -55,9 +61,13 @@
             </div>
           </div>
         </div>
-        <canvas id="collector1"></canvas>
-     </div>
+        <div style="display: flex;">
+          <canvas title="Главный коллектор, распределение нагрузки по фазам" id="collector1"></canvas>
+          <div class="single_phase_relays"></div>
+        </div>
+      </div>
     </div>
+    <script src="./js/single_relays.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/main_relay.js"></script>
   </body>
