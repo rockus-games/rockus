@@ -24,13 +24,15 @@ h1 {
 }
 .block1 {
   display: flex;
-  flex-direction: row;
-  /* background-color: aliceblue; */
+  /* flex-direction: row; */
+  overflow: auto;
+  /* background-color: beige; */
+  /* width: 300px; */
 }
 .main_relay {
   display: flex;
   width: 340px;
-  height: 200px;
+  /* height: 220px; */
   border: 2px solid white;
   border-radius: 8px;
   padding: 8px;
@@ -88,7 +90,7 @@ h1 {
 }
 #collector1 {
   width: 100px;
-  height: 218px;
+  height: 220px;
   border: 2px solid white;
   border-radius: 8px;
   margin-left: 10px;
@@ -122,7 +124,14 @@ h1 {
   background-color: rgb(255, 0, 0);
   transform: scale(0.95);
 }
+.socket_menu{
+  width: 340px;
+  height: 220px;
+  border: 2px solid white;
+  border-radius: 8px;
+  margin-left: 10px;
 
+}
 @media (max-width: 500px) {
   body {
     margin: 0;
@@ -156,8 +165,16 @@ h1 {
   }
   #collector1 {
     margin-top: 10px;
+    margin-left: 0;
   }
   .single_phase_relays {
     margin-top: 10px;
+    width: 224px;
+  }
+  .socket_menu{
+  
+    margin-left: 0;
+    margin-top: 10px;
+  
   }
 }
