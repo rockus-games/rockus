@@ -21,6 +21,11 @@ hr {
 h1 {
   color: white;
 }
+#block1 {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+}
 .main_relay {
   display: flex;
   width: 340px;
@@ -79,9 +84,10 @@ h1 {
 }
 #collector1 {
   width: 100px;
-  height: 200px;
+  height: 218px;
   border: 2px solid white;
   border-radius: 8px;
+  margin-left: 10px;
 }
 @media (max-width: 500px) {
   body{
