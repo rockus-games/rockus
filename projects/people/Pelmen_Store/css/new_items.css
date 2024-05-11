@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    background-color: #291720;
+  }
+table{
+    margin: auto;
+    border: 2px solid;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: antiquewhite;
+}
+td{
+    border: 2px solid;
+    width: 130px;
+}
