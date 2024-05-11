@@ -4,5 +4,5 @@
     "editor.defaultFormatter": "ms-python.autopep8"
   },
   "python.formatting.provider": "none",
-  "cSpell.words": ["Kuzya", "мемчик"]
+  "cSpell.words": ["Kuzya", "metka", "мемчик"]
 }
