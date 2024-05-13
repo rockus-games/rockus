@@ -43,7 +43,7 @@
           <div
             title="Твердотельное реле 'выключатель питания всего кабинета'"
             id="main_switch"
-            onclick="main_relay_switch()">
+            onclick="main_relay_switch('main_relay')">
             <p>main switch</p>
           </div>
           <div class="output">
@@ -63,12 +63,12 @@
         </div>
         <div style="display: flex;">
           <canvas title="Главный коллектор, распределение нагрузки по фазам" id="collector1"></canvas>
-          <div class="single_phase_relays"></div>
+          <div class="socket_switches"></div>
         </div>
         <div class="socket_menu"></div>
       </div>
     </div>
-    <script src="./js/single_relays.js"></script>
+    <script src="./js/socket_switches.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/main_relay.js"></script>
   </body>
