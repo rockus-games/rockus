@@ -104,7 +104,7 @@ h1 {
   scrollbar-width: none;
   /* flex: 0 0 auto; */
 }
-.single_switch {
+.socket_item {
   margin: 5px auto;
   cursor: pointer;
   width: 80%;
@@ -117,10 +117,10 @@ h1 {
   padding-left: 10px;
   background-color: red;
 }
-.single_switch:hover {
+.socket_item:hover {
   background-color: rgb(166, 2, 2);
 }
-.single_switch:active {
+.socket_item:active {
   background-color: rgb(255, 0, 0);
   transform: scale(0.95);
 }
