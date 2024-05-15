@@ -5,6 +5,7 @@ body {
 hr {
   /* width: 100%; */
 }
+.main{opacity: 0;}
 .header {
   display: flex;
   flex-direction: row;

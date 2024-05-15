@@ -24,48 +24,50 @@
           Connect
         </button>
       </div>
-      <div class="block1">
-        <div title="Блок главного реле" class="main_relay">
-          <div class="input">
-            <div class="input_each">
-              <h4>220 B</h4>
-              <hr />
+      <div class="main">
+        <div class="block1">
+          <div title="Блок главного реле" class="main_relay">
+            <div class="input">
+              <div class="input_each">
+                <h4>220 B</h4>
+                <hr />
+              </div>
+              <div class="input_each">
+                <h4>220 B</h4>
+                <hr />
+              </div>
+              <div class="input_each">
+                <h4>220 B</h4>
+                <hr />
+              </div>
             </div>
-            <div class="input_each">
-              <h4>220 B</h4>
-              <hr />
+            <div
+              title="Твердотельное реле 'выключатель питания всего кабинета'"
+              id="main_switch"
+              onclick="main_relay_switch('main_relay')">
+              <p>main switch</p>
             </div>
-            <div class="input_each">
-              <h4>220 B</h4>
-              <hr />
+            <div class="output">
+              <div class="output_each">
+                <h4 id="phase1h4">0 A</h4>
+                <hr />
+              </div>
+              <div class="output_each phase2">
+                <h4 id="phase2h4">0 A</h4>
+                <hr />
+              </div>
+              <div class="output_each phase3">
+                <h4 id="phase3h4">0 A</h4>
+                <hr />
+              </div>
             </div>
           </div>
-          <div
-            title="Твердотельное реле 'выключатель питания всего кабинета'"
-            id="main_switch"
-            onclick="main_relay_switch('main_relay')">
-            <p>main switch</p>
+          <div style="display: flex;">
+            <canvas title="Главный коллектор, распределение нагрузки по фазам" id="collector1"></canvas>
+            <div class="socket_switches"></div>
           </div>
-          <div class="output">
-            <div class="output_each">
-              <h4 id="phase1h4">0 A</h4>
-              <hr />
-            </div>
-            <div class="output_each phase2">
-              <h4 id="phase2h4">0 A</h4>
-              <hr />
-            </div>
-            <div class="output_each phase3">
-              <h4 id="phase3h4">0 A</h4>
-              <hr />
-            </div>
-          </div>
+          <div class="socket_menu"></div>
         </div>
-        <div style="display: flex;">
-          <canvas title="Главный коллектор, распределение нагрузки по фазам" id="collector1"></canvas>
-          <div class="socket_switches"></div>
-        </div>
-        <div class="socket_menu"></div>
       </div>
     </div>
     <script src="./js/socket_switches.js"></script>
