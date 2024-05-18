@@ -12,13 +12,28 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
-h2{
-    margin: 0;
+h2 {
+  margin: 0;
 }
-#sign_up_button_div{
-    /* background-color: blueviolet; */
-    width: 30%;
-    margin: auto;
-    text-align: center;
-    margin-top: 10px;
+#sign_up_button_div {
+  /* background-color: blueviolet; */
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+#sign_up_button_div button {
+  border-radius: 8px;
+  font-size: 24px;
+}
+@media (max-width: 500px) {
+  .main {
+    width: 100%;
+  }
+  #sign_up_button_div {
+    width: 100%;
+  }
+  #sign_up_button_div button {
+    width: 150px;
+  }
 }

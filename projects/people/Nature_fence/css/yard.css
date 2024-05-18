@@ -65,6 +65,29 @@ body {
   background-color: #094074;
   border-radius: 10px;
 }
+@media (max-width:500px) {
+  .header{
+    width: 100%;
+  }
+  .search{
+    margin-left: 0;
+  }
+  .search input{
+    font-size: 27px;
+  }
+  .main{
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    grid-template-columns: 1fr;
+  }
+  .item{
+    width: 100%;
+  }
+
+
+
+}
 
 
 

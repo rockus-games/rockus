@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(127, 255, 148);
+}
+.header{
+    width: 70%;
+    height: 100px;
+    background-color: blue;
+    margin: auto;
+    border-radius: 16px;
+}
