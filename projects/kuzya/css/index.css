@@ -1,11 +1,13 @@
 body {
   /* background-color: rgb(41, 47, 64); */
-  background-color: #1E352F;
+  background-color: #1e352f;
 }
 hr {
   /* width: 100%; */
 }
-.main{opacity: 0;}
+.main {
+  opacity: 0;
+}
 .header {
   display: flex;
   flex-direction: row;
