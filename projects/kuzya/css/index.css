@@ -18,6 +18,9 @@ hr {
 .header button {
   margin: auto 0;
 }
+.connect_gif {
+  display: none;
+}
 .root {
   width: 80%;
   margin: 0 auto;

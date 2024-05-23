@@ -11,5 +11,5 @@ socket_menu.innerHTML = `<p id="socket_info" >Информация по розе
 var socket_info = document.querySelector("#socket_info");
 function socket_switch(id) {
   socket_info.innerText = `Розетка ${id} нажата`;
-  socket.emit("socket_switch");
+  socket.emit("kuzya", "socket", id);
 }

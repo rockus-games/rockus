@@ -4,15 +4,18 @@ ip.defaultValue = "localhost";
 let collector1 = document.querySelector("#collector1");
 let pen = collector1.getContext("2d");
 let main = document.querySelector(".main");
-
+let connect_gif = document.querySelector(".connect_gif");
 function connect() {
+connect_gif.style.display = "block";
   socket = io(ip.value + ":3000", {transports: ["websocket"]});
   socket.on("connect", function () {
     connect_button.innerHTML = "Connected";
     main.style.opacity = 1;
+    connect_gif.style.display = "none";
   });
   socket.on("connect_error", function () {
     connect_button.innerHTML = "Connection error";
+    connect_gif.style.display = "none";
     main.style.opacity = 0;
   });
 }
