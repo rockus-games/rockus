@@ -29,6 +29,25 @@ function create_user(metka){
         "password1": password1.value,
         "password2": password2.value
     }
-    socket.emit("Pelmen_Store", data, metka);
+    socket.emit("Pelmen_Store", metka, data);
     // socket.emit("test", data);
+}
+let login_enter = document.querySelector("#login_enter");
+let password_enter = document.querySelector("#password_enter");
+
+function save_load() {
+  let data = {
+    "login": login_enter.value,
+    "password": password_enter.value
+  }
+  // sessionStorage.setItem(login_enter.value, password_enter.value);
+  socket.emit("Pelmen_Store", "check_id",data);
+  socket.once("user_exist", (data) => {
+    if (data) {
+      alert("Пользователь существует")
+    }
+    else {
+      alert("Пользователь не существует")
+    }
+  })
 }
