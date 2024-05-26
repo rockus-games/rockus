@@ -26,6 +26,23 @@ h2 {
   border-radius: 8px;
   font-size: 24px;
 }
+.enter_block {
+  width: 30%;
+  height: 200px;
+  background-color: rgb(42, 165, 159);
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 4px;
+  display: none;
+}
+.enter_block button {
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 4px;
+}
 @media (max-width: 500px) {
   .main {
     width: 100%;
@@ -35,5 +52,12 @@ h2 {
   }
   #sign_up_button_div button {
     width: 150px;
+  }
+  .enter_block {
+    width: 100%;
+  }
+  .enter_block button {
+    /* width: 40%; */
+    font-size: 25px;
   }
 }

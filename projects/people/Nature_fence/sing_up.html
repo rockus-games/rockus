@@ -7,22 +7,33 @@
     <link rel="stylesheet" href="./css/sing_up.css" />
     <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
   </head>
-  <div class="main">
-    <h2>Имя пользователя</h2>
-    <input id="nick" type="text" />
-    <h2>Телефон</h2>
-    <input id="tel" type="text" />
-    <h2>Почта</h2>
-    <input id="email" type="text" />
-    <h2>Пароль</h2>
-    <input id="password" type="text" />
-    <h2>Повторите пароль</h2>
-    <input id="confirm_password" type="text" />
+  <div class="root">
+    <div class="main">
+      <h2>Имя пользователя</h2>
+      <input id="nick" type="text" />
+      <h2>Телефон</h2>
+      <input id="tel" type="text" />
+      <h2>Почта</h2>
+      <input id="email" type="text" />
+      <h2>Пароль</h2>
+      <input id="password" type="text" />
+      <h2>Повторите пароль</h2>
+      <input id="confirm_password" type="text" />
+    </div>
+    <div id="sign_up_button_div">
+      <button id="sign_up_button" onclick="sign_up(1)">Регистрация</button>
+    </div>
+    <h2 onclick="show_enter_block()" style="text-align: center; margin-top: 10px; cursor: pointer">
+      У меня есть аккаунт
+    </h2>
+    <div class="enter_block">
+      <input id="login_enter" placeholder="Логин" type="text" />
+      <input id="password_enter" placeholder="Пароль" type="text" />
+      <button onclick="save_load()">Войти</button>
+      <h3 style="text-align: center;cursor: pointer;">Забыли пароль?</h3>
+    </div>
   </div>
- <div id="sign_up_button_div">
-     <button onclick="sign_up(1)">Регистрация</button>
- </div>
- <button onclick="hello(2)">hello</button>
+
   <body>
     <script src="./js/sing_up.js"></script>
   </body>
