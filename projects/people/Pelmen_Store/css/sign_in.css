@@ -1,0 +1,59 @@
+.material-icons {
+  cursor: pointer;
+}
+.main {
+  margin: auto;
+  margin-top: 50px;
+  height: 600px;
+  width: 900px;
+  /* background-color: white; */
+}
+.sign_up {
+  text-align: center;
+}
+#vhod_text {
+  cursor: pointer;
+  text-align: center;
+  margin-left: -120px;
+  color: rgba(255, 255, 255, 0.763);
+  transition: all 0.3s;
+}
+#vhod_text:hover {
+  color: rgb(216, 249, 199);
+}
+.vhod {
+  /* display: none; */
+  margin: auto;
+  width: 60%;
+  height: 200px;
+  background-color: #181818;
+}
+#h10{
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.763);
+}
+.inputs {
+  margin: auto;
+  /* text-align: center; */
+  height: 400px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  background-color: #181818;
+}
+input {
+  font-size: 30px;
+  /* height: 30px; */
+  /* margin-left: 50px; */
+  width: 60%;
+  margin-top: 10px;
+}
+#button_registor {
+  /* width: 150px; */
+  margin-left: -120px;
+  font-size: 25px;
+}
+#button_registor:hover {
+  cursor: pointer;
+}

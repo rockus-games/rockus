@@ -2,133 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sign_in</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/sign_in.css" />
 
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet" />
-    <style>
-      body {
-        /* padding-top: 50px; */
-        background-color: purple;
-      }
-      .material-icons {
-        cursor: pointer;
-      }
-      .vhod {
-        margin: auto;
-        margin-top: 50px;
-        height: 600px;
-        width: 900px;
-        background-color: white;
-      }
-      .header {
-        text-align: center;
-      }
-      h1 {
-        font-size: 50px;
-      }
-      .inputs {
-        margin: auto;
-        /* text-align: center; */
-        height: 400px;
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        /* justify-content: space-between; */
-        background-color: blueviolet;
-      }
-      input {
-        font-size: 30px;
-        /* height: 30px; */
-        /* margin-left: 50px; */
-        width: 60%;
-        margin-top: 10px;
-      }
-      #button_registor {
-        /* width: 150px; */
-        margin-left: -120px;
-        font-size: 25px;
-      }
-      #button_registor:hover {
-        cursor: pointer;
-      }
-    </style>
+      rel="stylesheet"
+    />
     <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
   </head>
   <body>
-    <div class="vhod">
-      <div class="header">
-        <h1>Регистрация</h1>
+    <script src="./js/header.js"></script>
+
+    <div class="main">
+      <div class="sign_up">
+        <h1 id="h10">Регистрация</h1>
         <div class="inputs">
           <div>
-            <input
-              id="login"
-              type="text"
-              placeholder="Логин" />
+            <input id="login" type="text" placeholder="Логин" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
           <div>
             <input
               id="email"
               type="text"
-              placeholder="Почта" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              placeholder="Почта"
+            />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
           <div>
-            <input
-              id="password1"
-              type="password"
-              placeholder="Пароль" />
+            <input id="password1" type="password" placeholder="Пароль" />
             <span
               id="password1_eye"
               onclick="show_password1()"
-              class="material-icons">
-              visibility_off
-            </span>
+              class="material-icons"
+              >visibility_off</span
+            >
           </div>
           <div>
             <input
               id="password2"
               type="password"
-              placeholder="Повторите пароль" />
+              placeholder="Повторите пароль"
+            />
             <span
               id="password2_eye"
               onclick="show_password2()"
-              class="material-icons">
-              visibility_off
-            </span>
+              class="material-icons"
+              >visibility_off</span
+            >
           </div>
           <div>
-            <br />
-            <br />
-            <button
-              onclick="create_user(1)"
-              id="button_registor">
+            <br /><br />
+            <button onclick="create_user(1)" id="button_registor">
               Зарегестрироватся
             </button>
           </div>
-          <div>
-            <input
-              id="login_enter"
-              placeholder="Логин для входа"
-              type="text" />
-            <input
-              id="password_enter"
-              placeholder="Пароль для входа"
-              type="text" />
-            <button onclick="save_load()">
-              Войти
-            </button>
-          </div>
+          <h3 onclick="vhod_text_show()" id="vhod_text">
+            У меня уже есть аккаунт
+          </h3>
         </div>
       </div>
+      <div class="vhod">
+        <input id="login_enter" placeholder="Логин" type="text" />
+        <input id="password_enter" placeholder="Пароль" type="password" />
+        <div>
+          <button onclick="save_load()">Войти</button>
+        </div>
+        <div><h3>Забыли пароль?</h3></div>
+      </div>
     </div>
-<button onclick="test()">test</button>
-    <script src="./js/test.js"></script>
     <script src="./js/sign_in.js"></script>
+    <script src="./js/test.js"></script>
   </body>
 </html>

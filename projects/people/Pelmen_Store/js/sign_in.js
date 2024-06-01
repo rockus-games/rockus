@@ -32,22 +32,32 @@ function create_user(metka){
     socket.emit("Pelmen_Store", metka, data);
     // socket.emit("test", data);
 }
+
 let login_enter = document.querySelector("#login_enter");
 let password_enter = document.querySelector("#password_enter");
 
-function save_load() {
+function save_load(){
   let data = {
     "login": login_enter.value,
     "password": password_enter.value
   }
-  // sessionStorage.setItem(login_enter.value, password_enter.value);
-  socket.emit("Pelmen_Store", "check_id",data);
+  socket.emit("Pelmen_Store", "check_id", data);
   socket.once("user_exist", (data) => {
     if (data) {
-      alert("Пользователь существует")
+      alert("Пользователь уже существует")
     }
     else {
-      alert("Пользователь не существует")
+      alert("Пользователя не существует")
     }
   })
+}
+
+let inputs = document.querySelector(".inputs");
+let vhod = document.querySelector(".vhod");
+let h10 = document.querySelector("#h10");
+
+function vhod_text_show(){
+  inputs.style.display = "none";
+  vhod.style.display = "block";
+  h10.innerText = "Вход";
 }

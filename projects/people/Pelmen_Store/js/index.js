@@ -12,6 +12,3 @@ function show_ul_menu() {
     ul_menu.style.opacity = "0";
   }
 }
-
-
-
