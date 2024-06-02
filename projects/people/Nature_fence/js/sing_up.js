@@ -3,6 +3,8 @@ let tel = document.querySelector("#tel");
 let email = document.querySelector("#email");
 let password = document.querySelector("#password");
 let confirm_paswword = document.querySelector("#password");
+let name1 = document.querySelector("#name1");
+name1.innerHTML += `<span style="font-size:15px;"> профиль</span>`;
 
 var socket = io("192.168.0.103:3000", { transports: ["websocket"] });
 let data = {};

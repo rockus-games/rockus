@@ -1,6 +1,8 @@
 var table_one = document.querySelector(".table_one");
 var second_row= document.querySelector(".second_row")
 var json;
+let name1 = document.querySelector("#name1");
+name1.innerHTML += `<span style="font-size:15px;"> погода</span>`;
 // for(var i=0;i<5;i++){
 //     second_row.innerHTML+=`<td>1</td>`
 // }

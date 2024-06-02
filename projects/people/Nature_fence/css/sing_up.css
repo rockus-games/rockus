@@ -1,6 +1,8 @@
-body {
-  background-color: rgb(84, 84, 223);
+.root{
+  margin-top: 8px;
+  
 }
+
 .main {
   width: 30%;
   height: 400px;
