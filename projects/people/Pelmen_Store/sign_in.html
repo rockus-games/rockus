@@ -59,16 +59,18 @@
               Зарегестрироватся
             </button>
           </div>
-          <h3 onclick="vhod_text_show()" id="vhod_text">
-            У меня уже есть аккаунт
-          </h3>
+          <h3 onclick="vhod_text_show()">У меня уже есть аккаунт</h3>
         </div>
       </div>
       <div class="vhod">
         <input id="login_enter" placeholder="Логин" type="text" />
-        <input id="password_enter" placeholder="Пароль" type="password" />
         <div>
-          <button onclick="save_load()">Войти</button>
+          <input id="password_enter" placeholder="Пароль" type="password" />
+          <span class="material-icons">visibility_off</span>
+        </div>
+        <div>
+          <br /><br />
+          <button id="voiti" onclick="save_load()">Войти</button>
         </div>
         <div><h3>Забыли пароль?</h3></div>
       </div>

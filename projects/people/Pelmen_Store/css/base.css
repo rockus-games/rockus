@@ -44,3 +44,40 @@ a {
 h1{
     margin-top: 0;
 }
+
+
+.nav {
+  width: 60%;
+  height: 50px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: #3e5c76;
+  /* background-color: #1e3f82; */
+  display: flex;
+  justify-content: space-around;
+}
+.nav a {
+  width: 20%;
+  padding-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  /* background-color: red; */
+}
+.nav_span {
+  /* cursor: pointer; */
+  /* width: 25%; */
+  font-size: 20px;
+  /* margin-top: 14px; */
+  /* padding: 12px; */
+  color: antiquewhite;
+}
+.nav a:hover {
+  background-color: #163550;
+}
+
+input {
+  margin: 10px 12px 0 12px;
+  width: 20%;
+  height: 25px;
+}
