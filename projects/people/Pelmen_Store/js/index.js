@@ -1,14 +1,17 @@
-let ul_menu = document.querySelector(".ul_menu");
+let recommended = document.querySelector(".recommended");
 
-
-
-function search() {
-  // console.log(321);
+for (var i = 0; i<10; i++){
+recommended.innerHTML += `<div class="recommended_item"></div>`;
 }
-function show_ul_menu() {
-  if (ul_menu.style.opacity == "0") {
-    ul_menu.style.opacity = "1";
-  } else {
-    ul_menu.style.opacity = "0";
-  }
+
+let special_items = document.querySelector(".special_items");
+
+for (var i = 0; i<10; i++){
+    special_items.innerHTML += `<div class="recommended_item"></div>`
+}
+
+let categories = document.querySelector (".categories");
+
+for (var i = 0; i<10; i++){
+    categories.innerHTML += `<div class="recommended_item"></div>`
 }

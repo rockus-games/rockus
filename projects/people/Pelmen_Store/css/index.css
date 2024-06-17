@@ -1,9 +1,10 @@
-
-p {
-  /* margin: 0; */
+body{
+  scrollbar-width: none;
+  scroll-behavior: smooth;
 }
-
-
+.root::-webkit-scrollbar{
+  display: none;
+}
 .material-icons {
   transition: all 0.3s;
   cursor: pointer;
@@ -41,14 +42,24 @@ li {
   background-color: red;
 }
 .root {
-  /* vertical-align: middle;
-    margin: auto;
-    margin-top: 20px;
-    width: 96%;
-    height: 800px;
-    /* background-color: #1a1d1f; */
-  /* display: flex;
-    padding: 1%; */
+  /* overflow-y: auto; */
+  margin: 200px auto;
+  width: 90%;
+  /* height: 500px; */
+  background-color: #1c2a36;
+  /* padding-top: 2px; */
+}
+.root h1{
+  color: rgba(255, 255, 255, 0.763);
+  margin-top: 100px;
+}
+#popular{
+  /* margin-top: 500px; */
+}
+.root pre{
+  margin: 0;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.763);
 }
 .aside {
   /* margin-left: 1%; */
@@ -57,29 +68,29 @@ li {
   background-color: gray;
 }
 .main {
-  /* width: 68%;
-    height: 800px;
-    background-color: rgb(175, 174, 174); */
+  /* width: 68%; */
+    height: 500px;
+    background-color: #293d4e;
 }
-.recommended {
-  margin: auto;
-  margin-top: 80px;
-  width: 60%;
-  color: white;
-}
-.items {
+.place {
   display: flex;
-  height: 400px;
-  padding: 6px;
-  background-color: #181818;
+  overflow-x: auto;
+  /* margin: auto; */
+  margin-top: 8px;
+  /* width: 60%; */
+  height: 300px;
+  background-color: #253848;
 }
-.face{
-  width: 70%;
-  height: 100%;
-  /* background-color: green; */
+.recommended_item{
+  height: 280px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  flex: 0 0 auto;
+  margin-left: 8px;
 }
-.content{
-  width: 30%;
-  height: 100%;
-  /* background-color: blue; */
+.cpecial_items{
+  /* width: 100; */
+}
+.sizedbox{
+  height: 100px;
 }

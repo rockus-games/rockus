@@ -61,6 +61,7 @@ h3:hover {
   cursor: pointer;
 }
 #voiti{
+  cursor: pointer;
   font-size: 25px;
   margin-left: -250px;
   box-shadow: 5px 5px 5px;

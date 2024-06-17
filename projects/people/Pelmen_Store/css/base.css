@@ -7,7 +7,11 @@ a {
   text-decoration: none;
 }
 .header_parent{
-  background-color: #181818
+  background-color: #181818;
+  position: fixed;
+  /* left: 10%; */
+  top: 0;
+  width: 100%;
 }
 .header {
   width: 60%;
@@ -49,12 +53,15 @@ h1{
 .nav {
   width: 60%;
   height: 50px;
-  margin: auto;
-  margin-top: 40px;
+  /* margin: auto; */
+  /* margin-top: 40px; */
   background-color: #3e5c76;
   /* background-color: #1e3f82; */
   display: flex;
   justify-content: space-around;
+  position: fixed;
+  left: 20%;
+  top: 77px;
 }
 .nav a {
   width: 20%;
