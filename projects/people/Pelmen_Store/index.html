@@ -2,26 +2,35 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/base.css" />
+    <link
+      rel="stylesheet"
+      href="./css/base.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <link
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/index.css" />
+      href="./css/index.css" />
   </head>
   <body>
     <script src="./js/header.js"></script>
     <div class="root">
       <h1 id="popular">Популярное</h1>
       <div class="main">
-        <pre>Распродажа
+        <pre>
+Распродажа
           Будет Скоро
         </pre>
       </div>
       <h1>Рекоммендуемое</h1>
-      <div class="place recommended">
+      <div class="place_parent">
+        <button onclick="scroll_left_recommended()"></button>
+        <div class="place recommended"></div>
+        <button onclick="scroll_right_recommended()"></button>
       </div>
       <h1>Специальные предложения</h1>
       <div class="place special_items"></div>

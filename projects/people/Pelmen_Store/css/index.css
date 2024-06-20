@@ -1,8 +1,8 @@
-body{
+body {
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
-.root::-webkit-scrollbar{
+.root::-webkit-scrollbar {
   display: none;
 }
 .material-icons {
@@ -49,14 +49,14 @@ li {
   background-color: #1c2a36;
   /* padding-top: 2px; */
 }
-.root h1{
+.root h1 {
   color: rgba(255, 255, 255, 0.763);
   margin-top: 100px;
 }
-#popular{
+#popular {
   /* margin-top: 500px; */
 }
-.root pre{
+.root pre {
   margin: 0;
   font-size: 60px;
   color: rgba(255, 255, 255, 0.763);
@@ -69,28 +69,38 @@ li {
 }
 .main {
   /* width: 68%; */
-    height: 500px;
-    background-color: #293d4e;
+  height: 500px;
+  background-color: #293d4e;
+}
+.place::-webkit-scrollbar {
+  display: none;
+}
+.place_parent {
+  display: flex;
 }
 .place {
   display: flex;
   overflow-x: auto;
-  /* margin: auto; */
+
+  margin: auto;
   margin-top: 8px;
-  /* width: 60%; */
-  height: 300px;
+  width: 80%;
+
+  height: 280px;
   background-color: #253848;
+  scroll-snap-type: x mandatory;
 }
-.recommended_item{
+.recommended_item {
+  scroll-snap-align: center;
   height: 280px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   flex: 0 0 auto;
-  margin-left: 8px;
+  /* margin-left: 8px; */
 }
-.cpecial_items{
+.cpecial_items {
   /* width: 100; */
 }
-.sizedbox{
+.sizedbox {
   height: 100px;
 }
