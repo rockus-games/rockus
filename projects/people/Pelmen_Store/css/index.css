@@ -1,16 +1,20 @@
-body {
+body{
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
-.root::-webkit-scrollbar {
+.root::-webkit-scrollbar{
   display: none;
 }
 .material-icons {
   transition: all 0.3s;
   cursor: pointer;
+  color: rgba(255, 255, 255, 0.763);
+  margin-top: 125px;
+  font-size: 48px;
 }
 .material-icons:hover {
-  transform: scale(1.3);
+  transform: scale(1.05);
+  color: white;
 }
 /* h1 {
   margin-top: 0;
@@ -49,16 +53,16 @@ li {
   background-color: #1c2a36;
   /* padding-top: 2px; */
 }
-.root h1 {
+.root h1{
   color: rgba(255, 255, 255, 0.763);
   margin-top: 100px;
 }
-#popular {
+#popular{
   /* margin-top: 500px; */
 }
-.root pre {
+.root pre{
   margin: 0;
-  font-size: 60px;
+  font-size: 6px;
   color: rgba(255, 255, 255, 0.763);
 }
 .aside {
@@ -69,58 +73,56 @@ li {
 }
 .main {
   /* width: 68%; */
-  height: 500px;
-  background-color: #293d4e;
+    height: 50px;
+    background-color: #293d4e;
 }
-.place::-webkit-scrollbar {
-  display: none;
-}
-.place_parent {
+.buttonchiki{
+  width: 25%;
+  height: 10mm;
+  /* background-color: #253848; */
+  margin: 8px auto;
   display: flex;
+  justify-content: space-around;
+}
+.buttonchik{
+  width: 20px;
+  height: 10px;
+  background-color: #293d4e;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.buttonchik:hover{
+  background-color: #294c4e;
+  transition: all 0.3s;
+}
+.place_parent{
+  display: flex;
+  /* margin: auto; */
 }
 .place {
   display: flex;
   overflow-x: auto;
-
-  margin: auto;
+  /* margin: auto; */
   margin-top: 8px;
   width: 80%;
-
-  height: 280px;
+  height: 300px;
   background-color: #253848;
   scroll-snap-type: x mandatory;
 }
-.recommended_item {
-  scroll-snap-align: center;
-  height: 280px;
+.place::-webkit-scrollbar{
+  display: none;
+}
+.recommended_item{
+  height: 300px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   flex: 0 0 auto;
-  /* margin-left: 8px; */
-}
-.batonchiki {
-  display: flex;
-  justify-content: space-between;
-  /* overflow-x: auto; */
-  margin: 8px auto;
-  /* text-align: center; */
-  width: 60%;
-  height: 28px;
-  background-color: #253848;
-  /* scroll-snap-type: x mandatory; */
-}
-.batonchik {
-  /* scroll-snap-align: center; */
-  height: 10px;
-  width: 5px;
-  background-color: rgb(185, 19, 19);
-  /* flex: 0 0 auto; */
   margin-left: 8px;
-  /* margin-left: 8px; */
+  scroll-snap-align: center;
 }
-.cpecial_items {
+.cpecial_items{
   /* width: 100; */
 }
-.sizedbox {
+.sizedbox{
   height: 100px;
 }
