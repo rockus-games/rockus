@@ -98,6 +98,26 @@ li {
   flex: 0 0 auto;
   /* margin-left: 8px; */
 }
+.batonchiki {
+  display: flex;
+  justify-content: space-between;
+  /* overflow-x: auto; */
+  margin: 8px auto;
+  /* text-align: center; */
+  width: 60%;
+  height: 28px;
+  background-color: #253848;
+  /* scroll-snap-type: x mandatory; */
+}
+.batonchik {
+  /* scroll-snap-align: center; */
+  height: 10px;
+  width: 5px;
+  background-color: rgb(185, 19, 19);
+  /* flex: 0 0 auto; */
+  margin-left: 8px;
+  /* margin-left: 8px; */
+}
 .cpecial_items {
   /* width: 100; */
 }
