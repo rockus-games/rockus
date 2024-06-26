@@ -1,11 +1,12 @@
-body{
+body {
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
-.root::-webkit-scrollbar{
+.root::-webkit-scrollbar {
   display: none;
 }
 .material-icons {
+  user-select: none;
   transition: all 0.3s;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.763);
@@ -53,14 +54,14 @@ li {
   background-color: #1c2a36;
   /* padding-top: 2px; */
 }
-.root h1{
+.root h1 {
   color: rgba(255, 255, 255, 0.763);
   margin-top: 100px;
 }
-#popular{
+#popular {
   /* margin-top: 500px; */
 }
-.root pre{
+.root pre {
   margin: 0;
   font-size: 6px;
   color: rgba(255, 255, 255, 0.763);
@@ -73,10 +74,10 @@ li {
 }
 .main {
   /* width: 68%; */
-    height: 50px;
-    background-color: #293d4e;
+  height: 50px;
+  background-color: #293d4e;
 }
-.buttonchiki{
+.buttonchiki {
   width: 25%;
   height: 10mm;
   /* background-color: #253848; */
@@ -84,18 +85,18 @@ li {
   display: flex;
   justify-content: space-around;
 }
-.buttonchik{
+.buttonchik {
   width: 20px;
   height: 10px;
   background-color: #293d4e;
   cursor: pointer;
   border-radius: 2px;
 }
-.buttonchik:hover{
+.buttonchik:hover {
   background-color: #294c4e;
   transition: all 0.3s;
 }
-.place_parent{
+.place_parent {
   display: flex;
   /* margin: auto; */
 }
@@ -109,10 +110,11 @@ li {
   background-color: #253848;
   scroll-snap-type: x mandatory;
 }
-.place::-webkit-scrollbar{
+.place::-webkit-scrollbar {
   display: none;
 }
-.recommended_item{
+.recommended_item {
+  display: flex;
   height: 300px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -120,9 +122,19 @@ li {
   margin-left: 8px;
   scroll-snap-align: center;
 }
-.cpecial_items{
+.poster {
+  width: 60%;
+  height: 100%;
+  background-color: #4e294c;
+}
+.poster_images {
+  width: 40%;
+  height: 100%;
+  background-color: #0a7cdf;
+}
+.cpecial_items {
   /* width: 100; */
 }
-.sizedbox{
+.sizedbox {
   height: 100px;
 }
