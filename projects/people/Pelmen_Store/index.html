@@ -27,10 +27,21 @@
         </pre>
       </div>
       <h1>Рекоммендуемое</h1>
-      <div class="place_parent">
-        <button onclick="scroll_left_recommended()"></button>
-        <div class="place recommended"></div>
-        <button onclick="scroll_right_recommended()"></button>
+      <div>
+        <div class="place_parent">
+          <div
+            onclick="left_arrow_recommended()"
+            style="width: 10%; text-align: center">
+            <span class="material-icons">arrow_back_ios</span>
+          </div>
+          <div class="place recommended"></div>
+          <div
+            onclick="right_arrow_recommended()"
+            style="width: 10%; text-align: center">
+            <span class="material-icons">arrow_forward_ios</span>
+          </div>
+        </div>
+        <div class="buttonchiki"></div>
       </div>
       <h1>Специальные предложения</h1>
       <div class="place special_items"></div>
