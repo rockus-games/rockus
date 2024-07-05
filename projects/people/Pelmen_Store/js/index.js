@@ -1,4 +1,5 @@
 let recommended = document.querySelector(".recommended");
+var current_recommended = 0;
 
 let recommended_game_count = 2;
 
@@ -7,12 +8,23 @@ for (var i = 0; i < recommended_game_count; i++) {
   let recommended_game = document.querySelector(`#recommended_game${i+1}`);
   recommended_game.innerHTML += `<div id="poster${i+1}" class="poster"></div>`;
   let poster = document.querySelector(`#poster${i+1}`);
+  poster.innerHTML = `<img src="./assets/images/recommended/game${i+1}/image1.jpeg"></img>`;
+
   recommended_game.innerHTML += `<div id="poster_images${i+1}" class="poster_images"></div>`;
   let poster_images = document.querySelector(`#poster_images${i+1}`);
+
   for (var j = 0; j < 4; j++){
-    poster.innerHTML = `<img src="./assets/images/recommended/game${i+1}/image${j+1}.jpeg"></img>`;
-    poster_images.innerHTML += `<div id="cartochka${j+1}" class="cartochki"></div>`
+    poster_images.innerHTML += `<div  onmouseover="cartochka_hover(${j+2})" onmouseout="cartochka_out()" id="cartochka${j+1}" class="cartochki"><img width="120" height="120" src="./assets/images/recommended/game${i+1}/image${j+2}.jpeg"></img></div>`;
   }
+}
+function cartochka_hover(i) {
+  let poster = document.querySelector(`#poster${current_recommended+1}`);
+  poster.innerHTML = `<img width="672" src="./assets/images/recommended/game${current_recommended+1}/image${i}.jpeg"></img>`;
+}
+
+function cartochka_out() {
+  let poster = document.querySelector(`#poster${current_recommended+1}`);
+  poster.innerHTML = `<img src="./assets/images/recommended/game${current_recommended+1}/image1.jpeg"></img>`;
 }
 
 // let recommended_item = document.querySelector(".recommended_item");
@@ -34,7 +46,6 @@ for (var i = 0; i < 10; i++) {
   categories.innerHTML += `<div class="recommended_item"></div>`;
 }
 
-var current_recommended = 0;
 
 function left_arrow_recommended() {
   if (current_recommended == 0) return;

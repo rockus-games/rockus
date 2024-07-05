@@ -132,6 +132,16 @@ li {
 .poster_images{
   height: 100%;
   width: 30%;
+  display: grid;
+  place-items: center;
+  grid-template: 1fr 1fr/1fr 1fr;
+  
+}
+.cartochki{
+  /* padding: 5px; */
+  height: 130px;
+  width: 130px;
+  background-color: aliceblue;
 }
 .cpecial_items{
   /* width: 100; */
