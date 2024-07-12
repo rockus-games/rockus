@@ -3,7 +3,7 @@ let recommended = document.querySelector(".recommended");
 let recommended_game_count = 9;
 
 for (var i = 0; i < recommended_game_count; i++) {
-  recommended.innerHTML += `<div id="recommended_game${i+1}" class="recommended_item"></div>`;
+  recommended.innerHTML += `<a href="./recommended.html?game=${i}"><div id="recommended_game${i+1}" class="recommended_item"></div></a>`;
   let recommended_game = document.querySelector(`#recommended_game${i+1}`);
   recommended_game.innerHTML += `<div id="poster${i+1}" class="poster"></div>`;
   let poster = document.querySelector(`#poster${i+1}`);
