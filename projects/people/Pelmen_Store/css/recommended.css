@@ -7,3 +7,9 @@
 #game_name {
   color: rgba(255, 255, 255, 0.763);
 }
+.main{
+  border: 1px solid red;
+  height: 500px;
+  width: 60%;
+  margin: auto;
+}

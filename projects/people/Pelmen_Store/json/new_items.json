@@ -1,9 +1,0 @@
-{
-    "chasci": {
-        "wind" :[5,"зап"],
-        "percipition": 10,
-        "temperature": 22,
-        "humidity": 60,
-        "pressure": 1000
-    }
-}
