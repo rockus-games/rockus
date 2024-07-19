@@ -8,7 +8,7 @@ let recommended_item = document.querySelector(".recommended_item");
 recommended_item.innerHTML += `<div class="poster"></div>`;
 recommended_item.innerHTML += `<div class="poster_images"></div>`;
 let poster = document.querySelector(".poster");
-poster.innerHTML += `<img width=200 src="./assets/images/recommended/image1.jpeg" alt="" />`;
+poster.innerHTML += `<img width=672 src="./assets/images/recommended/image1.jpeg" alt="" />`;
 let special_items = document.querySelector(".special_items");
 
 for (var i = 0; i < 10; i++) {
