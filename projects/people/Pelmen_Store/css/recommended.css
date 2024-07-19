@@ -1,0 +1,9 @@
+.game_name_div {
+  width: 60%;
+
+  margin: 24px auto;
+  text-align: start;
+}
+#game_name {
+  color: rgba(255, 255, 255, 0.763);
+}
