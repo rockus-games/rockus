@@ -1,5 +1,5 @@
 function adminPass() {
-    if (sessionStorage.getItem("passAdmin") != "1") {
+    if (sessionStorage.getItem("passAdmin") == null) {
         var modal = document.querySelector(".modal");
 
         modal.style.display = "block";
@@ -10,9 +10,25 @@ function adminPass() {
 }
 
 function closeModal() {
-    if (sessionStorage.getItem("passAdmin") == "1") {
-        document.querySelector(".modal").style.display = "none";
-    }
+    var formData = new FormData();
+    formData.append("pass", sessionStorage.getItem("passAdmin"));
+    $.ajax({
+        type: "POST",
+        url: "/php/passwordCheck.php",
+        data: formData,
+        contentType: false,
+        cache: false,
+        processData: false,
+        async: false,
+        success: function (a, b, c) {
+            if (a != 1) {
+                document.querySelector(".modal-content").style.backgroundColor =
+                    "red";
+            } else {
+                document.querySelector(".modal").style.display = "none";
+            }
+        },
+    });
 }
 
 async function hash(string) {
@@ -43,7 +59,7 @@ async function blackboardPassword() {
                 document.querySelector(".modal-content").style.backgroundColor =
                     "red";
             } else {
-                sessionStorage.setItem("passAdmin", "1");
+                sessionStorage.setItem("passAdmin", pass);
                 closeModal();
             }
         },
