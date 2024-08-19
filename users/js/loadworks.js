@@ -182,47 +182,70 @@ if (
 }
 
 function expandList(id) {
-    if (sessionStorage.getItem("passAdmin") != "1") {
-        alert("Вы не можете использовать эту функцию");
-        return;
-    }
-    if (id.indexOf("expandList") == -1) {
-        expandGradeList(id);
-        return;
-    }
+    var formData = new FormData();
+    formData.append("pass", sessionStorage.getItem("passAdmin"));
+    $.ajax({
+        type: "POST",
+        url: "/php/passwordCheck.php",
+        data: formData,
+        contentType: false,
+        cache: false,
+        processData: false,
+        async: false,
+        success: function (a, b, c) {
+            if (a != 1) {
+                alert("Вы не можете использовать эту функцию");
+                return;
+            } else {
+                if (id.indexOf("expandList") == -1) {
+                    expandGradeList(id);
+                    return;
+                }
 
-    var icon = document.querySelector(`#${id}`);
-    var content = document.querySelector(`#content_${id}`);
-    var parentContent = document.querySelector(
-        `#contentGrade_${icon.classList[icon.classList.length - 1].slice(13)}`
-    );
+                var icon = document.querySelector(`#${id}`);
+                var content = document.querySelector(`#content_${id}`);
+                var parentContent = document.querySelector(
+                    `#contentGrade_${icon.classList[
+                        icon.classList.length - 1
+                    ].slice(13)}`
+                );
 
-    if (icon.innerHTML.indexOf("expand_circle_right") != -1) {
-        icon.innerHTML = "expand_circle_down";
-        content.style.maxHeight = content.scrollHeight + "px";
+                if (icon.innerHTML.indexOf("expand_circle_right") != -1) {
+                    icon.innerHTML = "expand_circle_down";
+                    content.style.maxHeight = content.scrollHeight + "px";
 
-        var expandedLists = sessionStorage.getItem("expandedLists");
-        var expArr = JSON.parse(expandedLists);
-        var expSet = new Set(expArr);
-        expSet.add(id);
-        expArr = Array.from(expSet);
-        sessionStorage.setItem("expandedLists", JSON.stringify(expArr));
-        console.log(sessionStorage.getItem("expandedLists"));
+                    var expandedLists = sessionStorage.getItem("expandedLists");
+                    var expArr = JSON.parse(expandedLists);
+                    var expSet = new Set(expArr);
+                    expSet.add(id);
+                    expArr = Array.from(expSet);
+                    sessionStorage.setItem(
+                        "expandedLists",
+                        JSON.stringify(expArr)
+                    );
+                    console.log(sessionStorage.getItem("expandedLists"));
 
-        parentContent.style.maxHeight = parentContent.scrollHeight + 300 + "px";
-    } else {
-        icon.innerHTML = "expand_circle_right";
-        content.style.maxHeight = null;
-        // parentContent.style.maxHeight = parentContent.scrollHeight + "px";
+                    parentContent.style.maxHeight =
+                        parentContent.scrollHeight + 300 + "px";
+                } else {
+                    icon.innerHTML = "expand_circle_right";
+                    content.style.maxHeight = null;
+                    // parentContent.style.maxHeight = parentContent.scrollHeight + "px";
 
-        var expandedLists = sessionStorage.getItem("expandedLists");
-        var expArr = JSON.parse(expandedLists);
-        var expSet = new Set(expArr);
-        expSet.delete(id);
-        expArr = Array.from(expSet);
-        sessionStorage.setItem("expandedLists", JSON.stringify(expArr));
-        console.log(sessionStorage.getItem("expandedLists"));
-    }
+                    var expandedLists = sessionStorage.getItem("expandedLists");
+                    var expArr = JSON.parse(expandedLists);
+                    var expSet = new Set(expArr);
+                    expSet.delete(id);
+                    expArr = Array.from(expSet);
+                    sessionStorage.setItem(
+                        "expandedLists",
+                        JSON.stringify(expArr)
+                    );
+                    console.log(sessionStorage.getItem("expandedLists"));
+                }
+            }
+        },
+    });
 }
 
 function deleteFile(fileName) {
@@ -246,43 +269,67 @@ function deleteFile(fileName) {
 }
 
 function expandGradeList(id) {
-    if (sessionStorage.getItem("passAdmin") != "1") {
-        alert("Вы не можете использовать эту функцию");
-        return;
-    }
-    var icon = document.querySelector(`#expandGradeList${id}`);
-    var content = document.querySelector(`#contentGrade_${id}`);
+    var formData = new FormData();
+    formData.append("pass", sessionStorage.getItem("passAdmin"));
+    $.ajax({
+        type: "POST",
+        url: "/php/passwordCheck.php",
+        data: formData,
+        contentType: false,
+        cache: false,
+        processData: false,
+        async: false,
+        success: function (a, b, c) {
+            if (a != 1) {
+                alert("Вы не можете использовать эту функцию");
+                return;
+            } else {
+                var icon = document.querySelector(`#expandGradeList${id}`);
+                var content = document.querySelector(`#contentGrade_${id}`);
 
-    if (icon.innerHTML.indexOf("expand_circle_right") != -1) {
-        icon.innerHTML = "expand_circle_down";
-        // content.style.maxHeight = "initial";
-        content.style.maxHeight = content.scrollHeight + "px";
+                if (icon.innerHTML.indexOf("expand_circle_right") != -1) {
+                    icon.innerHTML = "expand_circle_down";
+                    // content.style.maxHeight = "initial";
+                    content.style.maxHeight = content.scrollHeight + "px";
 
-        var expandedLists = sessionStorage.getItem("expandedLists");
-        var expArr = JSON.parse(expandedLists);
-        var expSet = new Set(expArr);
-        expSet.add(id);
-        expArr = Array.from(expSet);
-        sessionStorage.setItem("expandedLists", JSON.stringify(expArr));
-        console.log(sessionStorage.getItem("expandedLists"));
-    } else {
-        icon.innerHTML = "expand_circle_right";
-        content.style.maxHeight = null;
+                    var expandedLists = sessionStorage.getItem("expandedLists");
+                    var expArr = JSON.parse(expandedLists);
+                    var expSet = new Set(expArr);
+                    expSet.add(id);
+                    expArr = Array.from(expSet);
+                    sessionStorage.setItem(
+                        "expandedLists",
+                        JSON.stringify(expArr)
+                    );
+                    console.log(sessionStorage.getItem("expandedLists"));
+                } else {
+                    icon.innerHTML = "expand_circle_right";
+                    content.style.maxHeight = null;
 
-        var expandedLists = sessionStorage.getItem("expandedLists");
-        var expArr = JSON.parse(expandedLists);
-        var expSet = new Set(expArr);
-        expSet.delete(id);
-        expArr = Array.from(expSet);
-        sessionStorage.setItem("expandedLists", JSON.stringify(expArr));
-        console.log(sessionStorage.getItem("expandedLists"));
+                    var expandedLists = sessionStorage.getItem("expandedLists");
+                    var expArr = JSON.parse(expandedLists);
+                    var expSet = new Set(expArr);
+                    expSet.delete(id);
+                    expArr = Array.from(expSet);
+                    sessionStorage.setItem(
+                        "expandedLists",
+                        JSON.stringify(expArr)
+                    );
+                    console.log(sessionStorage.getItem("expandedLists"));
 
-        var innerBtns = document.querySelectorAll(`.expandListBtn${id}`);
+                    var innerBtns = document.querySelectorAll(
+                        `.expandListBtn${id}`
+                    );
 
-        innerBtns.forEach((btn) => {
-            if (btn.innerHTML.indexOf("expand_circle_right") == -1) {
-                expandList(btn.id);
+                    innerBtns.forEach((btn) => {
+                        if (
+                            btn.innerHTML.indexOf("expand_circle_right") == -1
+                        ) {
+                            expandList(btn.id);
+                        }
+                    });
+                }
             }
-        });
-    }
+        },
+    });
 }

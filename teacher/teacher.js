@@ -92,7 +92,6 @@ function enterPass(ele) {
             success: function (data) {
                 if (data != "false") {
                     sessionStorage.setItem("passCheck", true);
-                    sessionStorage.setItem("pass", data);
                     document.querySelector(".hider").style.display = "none";
                 } else {
                     alert("Неверный пароль");
