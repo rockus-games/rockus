@@ -111,7 +111,10 @@ function save() {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: b64Image,
+        body: JSON.stringify({
+            image: b64Image,
+            pass: sessionStorage.getItem("passAdmin"),
+        }),
     })
         .then((response) => response.text())
         .then((success) => console.log(success))
@@ -124,7 +127,15 @@ var imageObj = new Image();
 imageObj.src = "/webinfo/blackboard.png";
 
 imageObj.onload = function () {
-    canvas.width = canvas.width;
-    canvas.height = canvas.height;
-    ctx.drawImage(imageObj, 0, 0);
+    setTimeout(() => {
+        canvas.width = canvas.width;
+        canvas.height = canvas.height;
+        ctx.drawImage(imageObj, 0, 0);
+        imageContent = ctx.getImageData(
+            0,
+            0,
+            canvas.clientWidth,
+            canvas.clientHeight
+        );
+    }, 100);
 };
