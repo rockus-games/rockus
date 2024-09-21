@@ -41,7 +41,8 @@ hr {
   display: grid;
   grid-template-columns: 0.14fr 0.16fr 1fr;
   color: #cccccc;
-  height: 85vh;
+  /* height: 85vh; */
+  height: 80vh;
 }
 
 .columns {
