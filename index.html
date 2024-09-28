@@ -34,7 +34,7 @@
           height: 40px;
         }
       }
-      .mem_img {
+      video {
         width: 40px;
         /* animation: geo 0.7s infinite; */
         border-radius: 8px;
@@ -92,11 +92,9 @@
       style="background-color: inherit"
       class="mem"
       href="./assets/mem/mem.mp4">
-      <img
-        class="mem_img"
-        src="https://i.gifer.com/origin/41/41a9038691d8772ced3e1402b670fb1f.gif"
-        alt="" />
+      <video controls src="./assets/mem/mem.mp4"></video>
     </a>
+    
     <!-- Yandex.Metrika informer -->
     <br />
     <a
@@ -145,6 +143,10 @@
         trackLinks: true,
         accurateTrackBounce: true,
       });
+      let video = document.querySelector("video");
+      video.play();
+      video.muted = true;
+      video.loop = true;
     </script>
     <noscript>
       <div>
