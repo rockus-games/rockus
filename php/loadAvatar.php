@@ -1,4 +1,4 @@
-<?php/*
+<?php
 $id = $_POST["id"];
 if (!empty($_FILES["image"])) {
     $image = file_get_contents($_FILES['image']['tmp_name']);

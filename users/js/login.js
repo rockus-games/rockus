@@ -3,7 +3,6 @@ var person_data = document.querySelector(".person_data");
 var person = document.querySelector(".container_person");
 var nickName = document.querySelector("#p_nickName");
 var grade = document.querySelector("#p_grade");
-var mail = document.querySelector("#p_email");
 var avatar = document.querySelector("#avatar");
 
 var passElement = document.querySelector("#pass");
@@ -20,7 +19,6 @@ togglePasswordLogin.addEventListener("click", function () {
 });
 
 let regexPass = /^[a-zA-Z0-9]+$/;
-let regexEmail = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
 
 if (
     localStorage.getItem("user") != null &&
@@ -35,7 +33,6 @@ if (
 
     nickName.innerHTML = data[0].nickname;
     grade.innerHTML = data[0].grade;
-    mail.innerHTML = data[0].email;
     $.ajax({
         url: `/users/avatars/${data[0].id}`,
         type: "HEAD",
@@ -59,17 +56,15 @@ function logout() {
 }
 
 function forgot() {
-    var email = document.querySelector("#login").value;
+    var login = document.querySelector("#login").value;
     var pass = document.querySelector("#pass").value;
 
-    if (!regexEmail.test(email)) {
-        alert("Почта введена неверно");
-    } else if (!regexPass.test(pass)) {
+    if (!regexPass.test(pass)) {
         alert("Пароль введен неверно");
     } else {
         var formData = new FormData();
 
-        formData.append("email", email);
+        formData.append("login", login);
         formData.append("pass", pass);
 
         $.ajax({
@@ -84,7 +79,7 @@ function forgot() {
                     alert(info.substring(info.indexOf("error") + 5));
                 } else {
                     var code = prompt(
-                        `Введите одноразовый пароль из письма, отправленного на почту ${email}`
+                        `Введите одноразовый пароль из письма, отправленного на почту преподавателя`
                     );
 
                     formData.append("code", code);
@@ -114,17 +109,15 @@ function forgot() {
 }
 
 function login() {
-    var email = document.querySelector("#login").value;
+    var login = document.querySelector("#login").value;
     var pass = document.querySelector("#pass").value;
 
-    if (!regexEmail.test(email)) {
-        alert("Почта введена неверно");
-    } else if (!regexPass.test(pass)) {
+    if (!regexPass.test(pass)) {
         ("Пароль введен неверно");
     } else {
         var formData = new FormData();
 
-        formData.append("email", email);
+        formData.append("login", login);
         formData.append("pass", pass);
 
         $.ajax({
@@ -148,12 +141,13 @@ function login() {
 
                         nickName.innerHTML = data[0].nickname;
                         grade.innerHTML = data[0].grade;
-                        mail.innerHTML = data[0].email;
-                        avatar.src = `/users/avatars/${data[0].id}`;
+                        if (ImageExist(`/users/avatars/${data[0].id}`)) {
+                            avatar.src = `/users/avatars/${data[0].id}`;
 
-                        document.querySelector(
-                            "#span_login"
-                        ).src = `/users/avatars/${data[0].id}`;
+                            document.querySelector(
+                                "#span_login"
+                            ).src = `/users/avatars/${data[0].id}`;
+                        }
                     } else {
                         alert("Почта или пароль введены неверно");
                     }
@@ -166,4 +160,10 @@ function login() {
             },
         });
     }
+}
+
+function ImageExist(url) {
+    var img = new Image();
+    img.src = url;
+    return img.height != 0;
 }
