@@ -2,13 +2,6 @@
     width: 80%;
     margin: auto;
 }
-.person {
-    /* width: 80vw;
-    max-width: 800px; */
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
 
 .image {
     width: 40vw;
@@ -28,10 +21,12 @@
 }
 
 .person {
+    margin: auto;
     width: 40vw;
     max-width: 300px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: column;
     flex-wrap: wrap;
     align-content: space-around;
     gap: 10px;

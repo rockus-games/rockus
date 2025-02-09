@@ -51,8 +51,15 @@ fetch("/header.html")
             localStorage.getItem("user") != ""
         ) {
             var data = JSON.parse(localStorage.getItem("user"));
-            document.querySelector(
-                "#span_login"
-            ).src = `/users/avatars/${data[0].id}`;
+            if (ImageExist(`/users/avatars/${data[0].id}`))
+                document.querySelector(
+                    "#span_login"
+                ).src = `/users/avatars/${data[0].id}`;
         }
     });
+
+function ImageExist(url) {
+    var img = new Image();
+    img.src = url;
+    return img.height != 0;
+}
