@@ -1,0 +1,11 @@
+h2{
+    color: aliceblue;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+img{
+    width: 120px;
+    border-radius: 20px;
+}
