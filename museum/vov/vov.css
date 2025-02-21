@@ -1,11 +1,11 @@
 h2{
     color: aliceblue;
 }
-.main{
+.main1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
 }
 img{
-    width: 120px;
+    width: 100px;
     border-radius: 20px;
 }

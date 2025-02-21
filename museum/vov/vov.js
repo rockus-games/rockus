@@ -1,14 +1,14 @@
-let main = document.querySelector(".main");
+let main1 = document.querySelector(".main1");
 var json;
 
 $.getJSON("./data.json", (jsonData) => {
   json = jsonData;
 
   for (var i in json["images"]) {
-    main.innerHTML += `<a><figure><img src="./assets/images/${
+    main1.innerHTML += `<a><figure><img src="./assets/images/${
       json["images"][i]
     }" alt=""><figcaption>${json["images"][i].slice(
-      0,
+      1,
       -4
     )}</figcaption></figure></a>`;
   }
