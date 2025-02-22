@@ -31,39 +31,39 @@ figure:hover {
 }
 
 #v0:hover {
-  transform: scale(2.5);
+  transform: scale(2);
   transform-origin: top left;
 }
 #v1:hover {
-  transform: scale(2.5);
+  transform: scale(2);
   transform-origin: top;
 }
 #v2:hover {
-  transform: scale(2.5);
+  transform: scale(2);
   transform-origin: top right;
 }
 #v3:hover {
-  transform: scale(2.5);
+  transform: scale(2);
   transform-origin: left;
 }
 #v4:hover {
-  transform: scale(2.5);
+  transform: scale(2);
   transform-origin: center;
 }
 #v5:hover {
-  transform: scale(2.5);
+  transform: scale(2);
   transform-origin: right;
 }
 #v6:hover {
-  transform: scale(2.5);
+  transform: scale(2);
   transform-origin: bottom left;
 }
 #v7:hover {
-  transform: scale(2.5);
+  transform: scale(2);
   transform-origin: bottom;
 }
 #v8:hover {
-  transform: scale(2.5);
+  transform: scale(2);
   transform-origin: bottom right;
 }
 span {
