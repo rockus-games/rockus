@@ -1,11 +1,77 @@
-h2{
-    color: aliceblue;
+h2 {
+  color: aliceblue;
 }
-.main1{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+.main1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-img{
-    width: 100px;
-    border-radius: 20px;
+img {
+  width: 100px;
+  border-radius: 20px;
+}
+video {
+  /* transition: all 0.5s ease-in-out; */
+  width: 140px;
+  border-radius: 20px;
+  pointer-events: none;
+}
+figure {
+  transition: all 0.5s ease-in-out;
+  color: #55a792;
+  display: block;
+  /* width: 140px; */
+  /* border-radius: 20px; */
+}
+
+figure:hover {
+  background-color: #757360;
+  border-radius: 20px;
+  z-index: 1 !important;
+  /* opacity: ; */
+}
+
+#v0:hover {
+  transform: scale(2.5);
+  transform-origin: top left;
+}
+#v1:hover {
+  transform: scale(2.5);
+  transform-origin: top;
+}
+#v2:hover {
+  transform: scale(2.5);
+  transform-origin: top right;
+}
+#v3:hover {
+  transform: scale(2.5);
+  transform-origin: left;
+}
+#v4:hover {
+  transform: scale(2.5);
+  transform-origin: center;
+}
+#v5:hover {
+  transform: scale(2.5);
+  transform-origin: right;
+}
+#v6:hover {
+  transform: scale(2.5);
+  transform-origin: bottom left;
+}
+#v7:hover {
+  transform: scale(2.5);
+  transform-origin: bottom;
+}
+#v8:hover {
+  transform: scale(2.5);
+  transform-origin: bottom right;
+}
+span {
+  color: aliceblue;
+  /* width: 20px; */
+  font-size: 20px;
+}
+span:hover {
+  color: red;
+  cursor: pointer;
 }

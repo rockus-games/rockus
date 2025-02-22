@@ -1,8 +1,7 @@
 from os import listdir
 from os.path import isfile, join
 import json
-
-path = "./assets/images" # Путь папки для чтения
+path = "./assets/gif" # Путь папки для чтения
 
 files_dir = listdir(path) # Список считанных объектов
 
@@ -16,9 +15,16 @@ for f in files_dir: # Цикл по считанным объектам
         folders.append(f) # Добавляем в список папок
 
 data = {} # Словарь с данными для записи в JSON
+data["images"] = [] # Пустой массив
 
-data["images"] = files # Файлы в виде массива с ключом "files"
-# data["folders"] = folders # Папки в виде массива с ключом "folders"
+for i in range(len(files)): # Проходим по файлам
+    data["images"].append( # Добавляем в массив словарь 
+        {
+            "name": files[i], # Имя файла
+            "audio": f"{i + 1}.mp3" # Номер аудио
+        }
+    )
+
 
 json = json.dumps(data, indent = 4, ensure_ascii=False) # Преобразование словаря в JSON
 

@@ -1,33 +1,54 @@
 let main1 = document.querySelector(".main1");
 var json;
 
+var video;
+
 $.getJSON("./data.json", (jsonData) => {
   json = jsonData;
 
+  count = 0;
   for (var i in json["images"]) {
-    main1.innerHTML += `<a><figure><img src="./assets/images/${
-      json["images"][i]
-    }" alt=""><figcaption>${json["images"][i].slice(
+    // console.log("v",count);
+    main1.innerHTML += `<figure class="vitem" id=v${count++}><video src="./assets/gif/${
+      json["images"][i]["name"]
+    }" ></video><figcaption>${json["images"][i]["name"].slice(
       1,
       -4
-    )}</figcaption></figure></a>`;
+    )} <br><span onclick="playAudio('${
+      json["images"][i]["audio"]
+    }', 'ru')">ru</span><br><span onclick="playAudio('${
+      json["images"][i]["audio"]
+    }', 'en')">en</span></figcaption></figure>`;
   }
+
+  $(".vitem").on({
+    mouseenter: function (e) {
+      if (typeof video !== "undefined") {
+        video.pause();
+        video.loop = false;
+      }
+      if (e.target.tagName === "FIGURE") {
+        video = e.target.children[0];
+        video.play();
+        video.loop = true;
+      }
+    },
+    mouseleave: function (e) {
+      if (typeof video !== "undefined") {
+        video.pause();
+        video.loop = false;
+        video = undefined;
+      }
+    },
+  });
 });
-flag = true;
-let play_button = document.querySelector("#play_button");
-// play_button.innerHTML += " ▶";
-var audio = new Audio("./assets/audios/svyaschennaya-voyna.mp3");
 
-function PlaySound() {
-  if (flag) {
-   play_button.innerHTML = "⏸";
+var sound;
 
-    audio.play();
-    flag = false;
-  } 
-  else {
-    flag = true;
-    play_button.innerHTML = "▶";
-    audio.pause();
+function playAudio(audio, lang) {
+  if (typeof sound !== "undefined") {
+    sound.pause();
   }
+  sound = new Audio(`./assets/audios/${lang}/${audio}`);
+  sound.play();
 }
