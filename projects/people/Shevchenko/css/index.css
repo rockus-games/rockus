@@ -1,0 +1,36 @@
+body{
+    background-color: #efd46d;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+#zastavka{
+    text-align: center;
+}
+img{
+    height: 450px;
+   transition: all 2s;
+
+}
+img:hover{
+    transform: rotate(3deg) scale(1.1);
+}
+#opisanie{
+    text-align: center;
+    font-size: 18px;
+}
+#Buttom{
+    text-align: center;
+}
+button{
+    font-size: 40px;
+    background-color: #ca2f2a;
+    transition: all 0.5s;
+}
+button:hover{
+    box-shadow: 10px 10px 5px 0px #302e29;
+    background-color: rgb(255, 187, 0);
+    transform: scale(1.2);
+    
+}
