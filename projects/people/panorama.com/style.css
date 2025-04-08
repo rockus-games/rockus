@@ -363,11 +363,15 @@ a {
   .imgwindow {
     display: none;
   }
+  .window {
+    padding-right: 4%;
+  }
   .imgwindowmobile {
     padding-top: 20vw;
-    display: block;
-    width: 100vw;
+    display: inherit;
+    width: 94vw;
     height: 100vw;
+    /* margin-right: 8px; */
   }
   .textfreeservices {
     font-size: 3vw;
@@ -520,10 +524,10 @@ a {
     display: inline;
     min-width: 30px;
     align-self: center;
-    margin-left: 24vw;
-    margin-top: 5vw;
+    margin-left: 2vw;
+    margin-top: 4vw;
     appearance: none;
-    width: 22vw;
+    width: 30vw;
     font-size: 1.15rem;
     padding: 0.675em 0em 0.675em 1em;
     background-color: #336281;
