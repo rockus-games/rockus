@@ -1,7 +1,6 @@
 body {
   margin: 0%;
   overflow-x: hidden;
-  /* margin: 8px; */
 }
 .header {
   z-index: 999;
@@ -45,6 +44,10 @@ a {
 .call {
   display: flex;
 }
+.linkwhts {
+  margin: 0;
+  align-self: center;
+}
 .whts {
   margin-right: 1vw;
   width: 2.2vw;
@@ -60,6 +63,10 @@ a {
   margin-left: 1vw;
   width: 2.2vw;
   margin-right: 5vw;
+}
+.linkTg {
+  margin: 0;
+  align-self: center;
 }
 .callmobile {
   display: none;
@@ -274,11 +281,29 @@ a {
   margin-right: 15vw;
   line-height: 2.5vw;
 }
+.mailcallsurveyor {
+  text-decoration: none;
+  margin: 0%;
+}
+.emailOrTel {
+  margin: 0%;
+  align-self: center;
+  text-decoration: none;
+  text-align: center;
+}
+.custom-select {
+  display: none;
+}
 @media screen and (max-width: 500px) {
+  body {
+    align-content: center;
+    justify-content: center;
+  }
   .header {
     height: 20vw;
     justify-content: space-between;
     display: flex;
+    width: 100vw;
   }
   .panorama {
     font-size: 4.4vw;
@@ -312,6 +337,13 @@ a {
     width: 6vw;
     margin-right: 1vw;
   }
+  .linkwhtsmobile {
+    align-self: center;
+    margin: 0%;
+  }
+  .linkTgMobile {
+    align-self: center;
+  }
   .numbermobile {
     display: block;
     font-size: 3.3vw;
@@ -333,8 +365,8 @@ a {
   }
   .imgwindowmobile {
     padding-top: 20vw;
-    display: inherit;
-    /* width: 96vw; */
+    display: block;
+    width: 100vw;
     height: 100vw;
   }
   .textfreeservices {
@@ -388,6 +420,7 @@ a {
   }
   .textbrand {
     font-size: 6vw;
+    margin-top: 5vw;
   }
   .imgbrands {
     display: none;
@@ -407,37 +440,45 @@ a {
   .imgshortmobile {
     display: block;
     width: 100vw;
-  }
-  .tableshort {
-    font-size: 3.5vw;
-    margin-left: 9vw;
-  }
-  .textshort {
-    font-size: 2.3vw;
-    width: 44vw;
-    margin-left: 9vw;
     margin-top: 10vw;
   }
+  .tableshort {
+    font-size: 4.5vw;
+    margin-left: 5vw;
+    margin-top: 15vw;
+  }
+  .textshort {
+    font-size: 2.9vw;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 24vw;
+  }
   .blockcallsurveyor {
-    width: 44vw;
-    height: 15vw;
-    margin-left: 55vw;
-    margin-top: 8vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 52.5vw;
+    height: 17vw;
+    margin-left: 45vw;
+    margin-top: 20vw;
     border-radius: 2vw;
   }
   .callsurveyortext {
     font-size: 3.5vw;
-    margin-top: 0%;
+    text-decoration: none;
+    white-space: nowrap;
+    align-self: center;
   }
   .telephone {
-    display: block;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     color: #ffffff;
     font-size: 3.5vw;
     font-family: "Roboto";
     font-weight: 400;
     margin-top: 1.5vw;
-    text-decoration: underline;
     margin-right: 7vw;
   }
   .mailcallsurveyor {
@@ -445,8 +486,15 @@ a {
   }
   .imgtelephone {
     display: block;
-    width: 8vw;
-    margin-right: 1vw;
+    width: 10vw;
+    height: 10vw;
+    margin-left: 4vw;
+    margin-right: 2vw;
+  }
+  .emailOrTel {
+    margin: 0%;
+    white-space: nowrap;
+    line-height: 6vw;
   }
   .second {
     display: flex;
@@ -454,13 +502,35 @@ a {
   }
   .end {
     height: 30vw;
+    width: 100vw;
   }
   .panorama2 {
     display: none;
   }
   .number2 {
-    font-size:  2.5vw;
+    font-size: 2.5vw;
     margin-top: 10vw;
     margin-left: 58vw;
+  }
+  .third {
+    display: flex;
+    flex-direction: row;
+  }
+  .custom-select {
+    display: inline;
+    min-width: 30px;
+    align-self: center;
+    margin-left: 24vw;
+    margin-top: 5vw;
+    appearance: none;
+    width: 22vw;
+    font-size: 1.15rem;
+    padding: 0.675em 0em 0.675em 1em;
+    background-color: #336281;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Roboto';
   }
 }

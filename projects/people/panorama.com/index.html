@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-+7" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
@@ -30,25 +30,34 @@
       <div class="first">
         <h1 class="panorama">«ООО ПАНОРАМА»</h1>
         <div class="callmobile">
-          <a href="https://rockus.su/">
+          <a
+            class="linkwhtsmobile"
+            href="https://wa.me/79854181973">
             <img
               class="whtsmobile"
               src="./images/whts.svg"
               alt="" />
           </a>
-          <h1 class="numbermobile">8-985-418-179-3</h1>
-          <img
-            class="tgmobile"
-            src="./images/tg.svg"
-            alt="" />
+          <h1 class="numbermobile">+7-985-418-19-73</h1>
+          <a
+            class="linkTgMobile"
+            href="https://t.me/PanoramaVdom">
+            <img
+              class="tgmobile"
+              src="./images/tg.svg"
+              alt="" />
+          </a>
         </div>
       </div>
-      <a href="">
-        <img
-          class="menu"
-          src="./images/menu.svg"
-          alt="" />
-      </a>
+      <div>
+        <select
+          class="custom-select"
+          onchange="handleSelect(this)">
+          <option>Главная</option>
+          <option value="#">Услуги</option>
+          <option value="#">Каталог</option>
+        </select>
+      </div>
       <a href="">
         <h1 class="catalog">КАТАЛОГ</h1>
       </a>
@@ -56,17 +65,23 @@
         <h1 class="services">УСЛУГИ</h1>
       </a>
       <div class="call">
-        <a href="https://wa.me/79096934037"  style="align-self: center;">
+        <a
+          class="linkwhts"
+          href="https://wa.me/79854181973">
           <img
-          class="whts"
+            class="whts"
             src="./images/whts.svg"
             alt="" />
         </a>
-        <h1 class="number">8-985-418-179-3</h1>
-        <img
-          class="tg"
-          src="./images/tg.svg"
-          alt="" />
+        <h1 class="number">+7-985-418-19-73</h1>
+        <a
+          class="linkTg"
+          href="https://t.me/PanoramaVdom">
+          <img
+            class="tg"
+            src="./images/tg.svg"
+            alt="" />
+        </a>
       </div>
     </div>
     <div class="window">
@@ -159,34 +174,46 @@
           alt="" />
       </div>
       <div class="blockcallsurveyor">
-        <div><h1 class="callsurveyortext">ВЫЗОВ ЗАМЕРЩИКА</h1></div>
-        <div>
-          <a
-            class="mailcallsurveyor"
-            href="mailto:okno7373@mail.ru">
+        <a
+          class="mailcallsurveyor"
+          href="mailto:okno7373@mail.ru">
+          <p class="emailOrTel">
+            ВЫЗОВ ЗАМЕРЩИКА
+            <br />
             okno7373@mail.ru
-          </a>
-        </div>
+          </p>
+        </a>
         <div class="second">
           <a
             class="telephone"
             href="tel:+79854181793">
-            8-985-418-19-73
+            <div class="third">
+              <img
+                class="imgtelephone"
+                src="./images/phonecallmobile.png"
+                alt="" />
+              <p class="emailOrTel">
+                ВЫЗОВ ЗАМЕРЩИКА
+                <br />
+                +7-985-418-19-73
+              </p>
+            </div>
           </a>
-          <img
-            class="imgtelephone"
-            src="./images/phonecallmobile.png"
-            alt="" />
         </div>
       </div>
     </div>
     <div class="end">
       <h1 class="panorama2">«ООО ПАНОРАМА»</h1>
       <h2 class="number2">
-        8-985-418-179-3
+        +7-985-418-19-73
         <br />
         Варшавское шоссе, д.125 стр.1
       </h2>
     </div>
+    <script type="text/javascript">
+      function handleSelect(value) {
+        window.location = value.value;
+      }
+    </script>
   </body>
 </html>
