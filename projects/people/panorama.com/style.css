@@ -316,6 +316,9 @@ a {
     display: flex;
     flex-direction: column;
   }
+  .noFlexMobile {
+    display: none;
+  }
   .menu {
     display: block;
     width: 10vw;
@@ -535,6 +538,6 @@ a {
     border-radius: 0.25rem;
     color: #ffffff;
     cursor: pointer;
-    font-family: 'Roboto';
+    font-family: "Roboto";
   }
 }
