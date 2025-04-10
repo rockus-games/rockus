@@ -18,7 +18,7 @@ jobs:
           SSH_KEY_PATH: ${{ github.workspace }}/../private.key
       - name: SSH and pull
         run: |
-          ssh i $SSH_KEY_PATH $SSH_USER@$SSH_HOST
+          ssh -i $SSH_KEY_PATH $SSH_USER@$SSH_HOST
           cd cd rockus/public_html/
           git pull
         shell: bash
