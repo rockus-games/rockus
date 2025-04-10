@@ -25,3 +25,4 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{secrets.SSH_USER}}
           SSH_KNOWN_HOSTS: ${{secrets.SSH_HOST}}
+          SSH_KEY_PATH: ${{ github.workspace }}/../private.key
