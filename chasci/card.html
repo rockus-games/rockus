@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Визитка</title>
+    <style>
+      body {
+        background-image: url(../portfolio/assets/images/house.jpg);
+        /* text-align: center;
+           background-repeat: no-repeat;
+           background-size: 1920px ; */
+
+        margin: 0;
+        padding: 0;
+        /* background-image: url("your-image.jpg"); */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
+      }
+      a {
+        /* text-decoration: none; */
+        color: burlywood;
+      }
+      .container {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        width: 50%;
+        height: 25%;
+        /* transform: translate(-50%, -50%); */
+        text-align: center;
+        background-color: rgb(124, 49, 49);
+        /* padding: 20px; */
+        border-radius: 5px;
+      }
+      h1 {
+        font-size: 3vw;
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+        font-family: 'Underdog', cursive;
+      }
+      @media screen and (max-width: 600px) {
+        .container {
+          width: 100%;
+          height: 25%;
+          left: 0;
+        }
+        h1 {
+            
+          font-size: 7vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Можайское шоссе, дом 239</h1>
+      <h1><a href="tel:+79096934037">Телефон: +7 (909) 693-40-37</a></h1>
+    </div>
+  </body>
+</html>
