@@ -30,6 +30,7 @@ body {
   font-family: "M PLUS 1p";
   font-weight: bold;
   margin-top: 1.5vw;
+  margin-right: 5vw;
 }
 a {
   text-decoration: none;
@@ -40,6 +41,7 @@ a {
   font-family: "M PLUS 1p";
   font-weight: bold;
   margin-top: 1.5vw;
+  margin-right: 5vw;
 }
 .call {
   display: flex;

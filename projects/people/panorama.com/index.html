@@ -8,7 +8,7 @@
     <title>panorama</title>
     <link
       rel="stylesheet"
-      href="style.css" />
+      href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&family=M+PLUS+1p&display=swap"
       rel="stylesheet" />
@@ -53,18 +53,18 @@
         <select
           class="custom-select"
           onchange="handleSelect(this)">
-          <option>Главная</option>
-          <option value="#">Услуги</option>
-          <option value="#">Каталог</option>
+          <option value="index.html">Главная</option>
+          <option value="catalog.html">Каталог</option>
+          <option value="services.html">Услуги</option>
         </select>
       </div>
       <a
-        href="#"
+        href="catalog.html"
         class="noFlexMobile">
         <h1 class="catalog">КАТАЛОГ</h1>
       </a>
       <a
-        href="#"
+        href="./services.html"
         class="">
         <h1 class="services">УСЛУГИ</h1>
       </a>
@@ -118,7 +118,7 @@
       <div class="block2">
         <img
           class="imgb2"
-          src="./images/usl2.svg"
+          src="./images/usl1.png"
           alt="" />
         <h1 class="textb2">
           ГАРАНТИЯ
@@ -129,7 +129,7 @@
       <div class="block3">
         <img
           class="imgb3"
-          src="./images/usl3.svg"
+          src="./images/usl2.svg"
           alt="" />
         <h1 class="textb3">
           ГАРАНТИЙНОЕ
@@ -214,10 +214,9 @@
         Варшавское шоссе, д.125 стр.1
       </h2>
     </div>
+    <script src="./js/select.js"></script>
     <script type="text/javascript">
-      function handleSelect(value) {
-        window.location = value.value;
-      }
+      document.querySelector(".custom-select").value = "index.html";
     </script>
   </body>
 </html>

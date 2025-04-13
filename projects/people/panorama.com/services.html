@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link
+      rel="stylesheet"
+      href="./css/services.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&family=M+PLUS+1p&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mooli&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="first">
+        <h1 class="panorama">«ООО ПАНОРАМА»</h1>
+        <div class="callmobile">
+          <a
+            class="linkwhtsmobile"
+            href="https://wa.me/79854181973">
+            <img
+              class="whtsmobile"
+              src="./images/whts.svg"
+              alt="" />
+          </a>
+          <h1 class="numbermobile">+7-985-418-19-73</h1>
+          <a
+            class="linkTgMobile"
+            href="https://t.me/PanoramaVdom">
+            <img
+              class="tgmobile"
+              src="./images/tg.svg"
+              alt="" />
+          </a>
+        </div>
+      </div>
+      <div>
+        <select
+          class="custom-select"
+          onchange="handleSelect(this)">
+          <option value="index.html">Главная</option>
+          <option value="catalog.html">Каталог</option>
+          <option value="services.html">Услуги</option>
+        </select>
+      </div>
+      <a href="index.html">
+        <h1 class="catalog">ГЛАВНАЯ</h1>
+      </a>
+      <a href="catalog.html">
+        <h1 class="services">КАТАЛОГ</h1>
+      </a>
+      <div class="call">
+        <img
+          class="whts"
+          src="./images/whts.svg"
+          alt="" />
+        <h1 class="number">+7-985-418-19-73</h1>
+        <img
+          class="tg"
+          src="./images/tg.svg"
+          alt="" />
+      </div>
+    </div>
+    <div class="ourservices">
+      <h1>НАШИ УСЛУГИ</h1>
+    </div>
+    <div class="rootblocks">
+      <div class="block">
+        <h1>
+          ОТДЕЛКА
+          <br />
+          БАЛКОНОВ И ЛОДЖИЙ
+        </h1>
+        <img
+          src="./images/services1.png"
+          alt="" />
+      </div>
+      <div class="block">
+        <h1>
+          ОТДЕЛКА
+          <br />
+          СТЕН/ПОТОЛКА
+        </h1>
+        <img
+          id="img2"
+          src="./images/services2.png"
+          alt="" />
+      </div>
+      <div class="block">
+        <h1>
+          ОТДЕЛКА
+          <br />
+          ПОЛА
+        </h1>
+        <img
+          id="img3"
+          src="./images/services3.png"
+          alt="" />
+      </div>
+      <div class="block">
+        <h1>
+          УСИЛЕНИЕ
+          <br />
+          ПАРАПЕТА
+        </h1>
+        <img
+          id="img4"
+          src="./images/services4.png"
+          alt="" />
+      </div>
+      <div
+        id="block5"
+        class="block">
+        <div class="textb5">
+          <h1>МОНТАЖ ПО ГОСТу</h1>
+          <h2>
+            • Соответствие комплектующих
+            <br />
+            • Соблюдение расстояний
+            <br />
+            • Уплотнение
+            <br />
+            • Герметизация
+            <br />
+            Некачественный монтаж
+            <br />
+            ведёт к следующим последствиям :
+            <br />
+            • теплопотери
+            <br />
+            • образование сырости/плесени
+            <br />
+            • неплотное закрытие створок
+          </h2>
+        </div>
+        <img
+          id="img5"
+          src="./images/services5.png"
+          alt="" />
+      </div>
+      <div
+        id="block6"
+        class="block">
+        <div
+          id="textb6"
+          class="textb5">
+          <h1>ВЫВОЗ МУСОРА</h1>
+          <h2>
+            Что же происходит после монтажа?
+            <br />
+            Монтажная группа собирает в мешки весь
+            <br />
+            мусор/старые рамы и выносит на лестничную клетку.
+            <br />
+            Каждый покупатель сталкивается с такой
+            <br />
+            проблемой- идти к соседу, просить дворника или искать в интернете
+            кто вынесет строительный мусор? Больше не нужно переживать как
+            избавиться от строительного мусора. Мы всё сделаем за Вас.
+          </h2>
+          <h3>3000 руб.</h3>
+        </div>
+        <img
+          id="img6"
+          src="./images/services6.png"
+          alt="" />
+      </div>
+    </div>
+    <div class="end">
+      <h1 class="panorama2">«ООО ПАНОРАМА»</h1>
+      <h2 class="number2">
+        +7-985-418-19-73
+        <br />
+        Варшавское шоссе, д.125 стр.1
+      </h2>
+    </div>
+    <script src="./js/select.js"></script>
+
+    <script type="text/javascript">
+      document.querySelector(".custom-select").value = "services.html";
+    </script>
+  </body>
+</html>
