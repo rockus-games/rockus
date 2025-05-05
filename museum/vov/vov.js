@@ -53,5 +53,7 @@ function playAudio(audio, lang) {
   sound.play();
 }
 function stopall(){
-  sound.pause();
+  if (sound) {
+    sound.pause();
+  }
 }
