@@ -52,8 +52,8 @@ function playAudio(audio, lang) {
   sound = new Audio(`./assets/audios/${lang}/${audio}`);
   sound.play();
 }
-function stopall(){
-  if (sound) {
+function stopAudio() {
+  if (typeof sound !== "undefined") {
     sound.pause();
   }
 }
