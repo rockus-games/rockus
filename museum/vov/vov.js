@@ -52,3 +52,6 @@ function playAudio(audio, lang) {
   sound = new Audio(`./assets/audios/${lang}/${audio}`);
   sound.play();
 }
+function stopall(){
+  sound.pause();
+}

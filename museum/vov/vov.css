@@ -75,3 +75,20 @@ span:hover {
   color: red;
   cursor: pointer;
 }
+#stop1{
+  position: fixed;
+ right: 10px;
+ bottom: 10px;
+}
+@media (max-width: 500px) {
+  body{
+    /* width: 60%; */
+    /* margin: 0; */
+    
+  }
+  .main1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
