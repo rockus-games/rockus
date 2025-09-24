@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Советы по выбору первого питбайка</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; }
+        h1 { color: #333; }
+        .tip { background: #f4f4f4; padding: 15px; margin-bottom: 10px; border-left: 5px solid #ff6600; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+
+    <h1>Советы для новичка: как выбрать свой первый питбайк</h1>
+    <p>Питбайк — это отличный способ начать свой путь в мотоспорте. Но с чего начать?</p>
+
+    <div class="tip">
+        <h3>1. Определитесь с объемом двигателя</h3>
+        <p>Для взрослого человека (от 16 лет) оптимальный вариант — 125cc или 150cc. Этой мощности хватит для обучения и первых трюков.</p>
+        <img src="pitbike-125cc.jpg" alt="Питбайк с двигателем 125cc">
+    </div>
+
+    <div class="tip">
+        <h3>2. Новый или б/у?</h3>
+        <p><strong>Новый:</strong> гарантия, никаких скрытых проблем. <strong>Б/у:</strong> дешевле, но нужно тщательно проверять.</p>
+    </div>
+
+    <div class="tip">
+        <h3>3. Не экономьте на экипировке!</h3>
+        <p>Шлем, перчатки, защита корпуса (черепаха) и ботинки — must-have для безопасной езды.</p>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PitBike Pro - Советы по езде на питбайках и эндуро</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #e74c3c;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1577495508326-19a1b3cf65b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Bike Types Section */
+        .bike-types {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        .bike-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .bike-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .bike-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .bike-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .bike-info {
+            padding: 1.5rem;
+        }
+
+        .bike-info h3 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .bike-features {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .bike-features li {
+            padding: 0.3rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .bike-features li:before {
+            content: '✓ ';
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        /* Tips Section */
+        .tips-section {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+
+        .tip-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .tip-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .tip-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tip-icon {
+            color: #e74c3c;
+            font-size: 1.5rem;
+        }
+
+        /* Comparison Section */
+        .comparison {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            background: white;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .comparison-table th {
+            background: #34495e;
+            color: white;
+        }
+
+        .comparison-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #c2c9d1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .bike-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">PitBike Pro</div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#types">Виды байков</a></li>
+                <li><a href="#tips">Советы</a></li>
+                <li><a href="#comparison">Сравнение</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Мир питбайков и эндуро</h1>
+            <p>Профессиональные советы по выбору, обслуживанию и езде</p>
+        </div>
+    </section>
+
+    <!-- Bike Types Section -->
+    <section class="bike-types" id="types">
+        <div class="container">
+            <h2 class="section-title">Виды мотоциклов</h2>
+            <div class="bike-grid">
+                <!-- Pit Bike Card -->
+                <div class="bike-card">
+                    <img src="https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Питбайк" class="bike-image">
+                    <div class="bike-info">
+                        <h3>Питбайк (Minibike)</h3>
+                        <p>Компактные мотоциклы для мотокросса и трюков. Идеальны для начинающих и тренировок.</p>
+                        <ul class="bike-features">
+                            <li>Высота седла: 70-80 см</li>
+                            <li>Объем двигателя: 50-190cc</li>
+                            <li>Вес: 70-100 кг</li>
+                            <li>Цена: от 30 000 руб.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Enduro Card -->
+                <div class="bike-card">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Эндуро" class="bike-image">
+                    <div class="bike-info">
+                        <h3>Эндуро</h3>
+                        <p>Универсальные мотоциклы для бездорожья и дорог общего пользования.</p>
+                        <ul class="bike-features">
+                            <li>Высота седла: 85-95 см</li>
+                            <li>Объем двигателя: 250-650cc</li>
+                            <li>Вес: 110-140 кг</li>
+                            <li>Цена: от 150 000 руб.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Motocross Card -->
+                <div class="bike-card">
+                    <img src="https://images.unsplash.com/photo-1577495508044-7a0e5a0d96c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Мотокросс" class="bike-image">
+                    <div class="bike-info">
+                        <h3>Мотокросс (MX)</h3>
+                        <p>Специализированные мотоциклы для гоночных трасс и прыжков.</p>
+                        <ul class="bike-features">
+                            <li>Высота седла: 90-100 см</li>
+                            <li>Объем двигателя: 125-450cc</li>
+                            <li>Вес: 80-110 кг</li>
+                            <li>Цена: от 200 000 руб.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="tips-section" id="tips">
+        <div class="container">
+            <h2 class="section-title">Советы по выбору и езде</h2>
+            <div class="tip-cards">
+                <div class="tip-card">
+                    <h3><span class="tip-icon">⚡</span> Для новичков</h3>
+                    <p>Начинайте с питбайка 125-150cc. Он легче в управлении и менее травмоопасен.</p>
+                </div>
+                <div class="tip-card">
+                    <h3><span class="tip-icon">🛡️</span> Экипировка</h3>
+                    <p>Обязательны: шлем, ботинки, перчатки, защита корпуса и коленей.</p>
+                </div>
+                <div class="tip-card">
+                    <h3><span class="tip-icon">🔧</span> Обслуживание</h3>
+                    <p>Регулярно проверяйте цепь, давление в шинах и меняйте масло каждые 20 моточасов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison" id="comparison">
+        <div class="container">
+            <h2 class="section-title">Сравнение характеристик</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Характеристика</th>
+                        <th>Питбайк</th>
+                        <th>Эндуро</th>
+                        <th>Мотокросс</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Назначение</td>
+                        <td>Тренировки, трюки</td>
+                        <td>Бездорожье, туризм</td>
+                        <td>Гонки, прыжки</td>
+                    </tr>
+                    <tr>
+                        <td>Дорожный просвет</td>
+                        <td>25-30 см</td>
+                        <td>30-35 см</td>
+                        <td>35-40 см</td>
+                    </tr>
+                    <tr>
+                        <td>Подвеска</td>
+                        <td>Базовая</td>
+                        <td>Длинноходная</td>
+                        <td>Спортивная</td>
+                    </tr>
+                    <tr>
+                        <td>Регистрация</td>
+                        <td>Не требуется</td>
+                        <td>Обязательна</td>
+                        <td>Не требуется</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PitBike Pro</h3>
+                    <p>Ваш надежный гид в мире мотоспорта</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Email: info@pitbikepro.ru</p>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <p><a href="#types">Виды байков</a></p>
+                    <p><a href="#tips">Советы</a></p>
+                    <p><a href="#comparison">Сравнение</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PitBike Pro. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Плавная прокрутка для навигации
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Анимация появления карточек при прокрутке
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Назначаем анимацию для карточек
+        document.querySelectorAll('.bike-card, .tip-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PitBike Pro - Советы по езде на питбайках для подростков</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #e74c3c;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Teenagers Section */
+        .teenagers-section {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        .teen-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .teen-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .teen-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .teen-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .teen-info {
+            padding: 1.5rem;
+        }
+
+        .teen-info h3 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .benefit-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        /* Bike Types Section */
+        .bike-types {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+
+        .bike-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .bike-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .bike-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .bike-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .bike-info {
+            padding: 1.5rem;
+        }
+
+        .bike-info h3 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .bike-features {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .bike-features li {
+            padding: 0.3rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .bike-features li:before {
+            content: '✓ ';
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        /* Safety Section */
+        .safety-section {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .safety-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .safety-image {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .safety-list {
+            list-style: none;
+        }
+
+        .safety-list li {
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1.1rem;
+        }
+
+        .safety-list li:before {
+            content: '🛡️ ';
+            margin-right: 0.5rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 4rem 0;
+            background: #e74c3c;
+            color: white;
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #e74c3c;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 2rem;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #34495e;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .safety-content {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">PitBike Pro</div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#teenagers">Для подростков</a></li>
+                <li><a href="#benefits">Преимущества</a></li>
+                <li><a href="#safety">Безопасность</a></li>
+                <li><a href="#types">Выбор байка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Питбайк - лучший друг подростка!</h1>
+            <p>Безопасное увлечение, которое развивает ответственность и координацию</p>
+        </div>
+    </section>
+
+    <!-- Teenagers Section -->
+    <section class="teenagers-section" id="teenagers">
+        <div class="container">
+            <h2 class="section-title">Питбайки для подростков</h2>
+            <div class="teen-grid">
+                <div class="teen-card">
+                    <img src="https://images.unsplash.com/photo-1577495508044-7a0e5a0d96c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Подросток на питбайке" class="teen-image">
+                    <div class="teen-info">
+                        <h3>Начало пути</h3>
+                        <p>Идеальный первый мотоцикл для обучения основам управления</p>
+                    </div>
+                </div>
+
+                <div class="teen-card">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Группа подростков" class="teen-image">
+                    <div class="teen-info">
+                        <h3>Командный дух</h3>
+                        <p>Общение со сверстниками и совместные поездки</p>
+                    </div>
+                </div>
+
+                <div class="teen-card">
+                    <img src="https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Тренировка" class="teen-image">
+                    <div class="teen-info">
+                        <h3>Спортивное развитие</h3>
+                        <p>Физическая активность на свежем воздухе</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section" id="benefits">
+        <div class="container">
+            <h2 class="section-title">Плюсы приобретения питбайка</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <span class="benefit-icon">💪</span>
+                    <h3>Физическое развитие</h3>
+                    <p>Улучшает координацию, реакцию и общую физическую форму. Катание укрепляет мышцы ног, рук и корпуса.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">🧠</span>
+                    <h3>Развитие ответственности</h3>
+                    <p>Подросток учится ухаживать за техникой, соблюдать правила безопасности и планировать маршруты.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">🌳</span>
+                    <h3>Активный отдых</h3>
+                    <p>Вместо компьютера - свежий воздух, природа и физическая активность. Отличная альтернатива гаджетам.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">👥</span>
+                    <h3>Социальные навыки</h3>
+                    <p>Общение с единомышленниками, участие в мотособытиях, развитие коммуникативных навыков.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">💰</span>
+                    <h3>Доступная цена</h3>
+                    <p>Питбайки значительно дешевле больших мотоциклов. Бюджетное обслуживание и ремонт.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">🎯</span>
+                    <h3>Навыки вождения</h3>
+                    <p>Отличная база для будущего вождения мотоциклов и автомобилей. Развивает пространственное мышление.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Section -->
+    <section class="safety-section" id="safety">
+        <div class="container">
+            <h2 class="section-title">Безопасность - прежде всего!</h2>
+            <div class="safety-content">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1577495508044-7a0e5a0d96c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Экипировка" class="safety-image">
+                </div>
+                <div>
+                    <h3>Обязательная экипировка:</h3>
+                    <ul class="safety-list">
+                        <li>Мотошлем - обязательно сертифицированный</li>
+                        <li>Защита корпуса ("черепаха")</li>
+                        <li>Мотоботы или высокие кроссовки</li>
+                        <li>Перчатки с защитой костяшек</li>
+                        <li>Наколенники и налокотники</li>
+                        <li>Защита шеи (для кроссовых дисциплин)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bike Types Section -->
+    <section class="bike-types" id="types">
+        <div class="container">
+            <h2 class="section-title">Как выбрать первый питбайк?</h2>
+            <div class="bike-grid">
+                <div class="bike-card">
+                    <img src="https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Питбайк для начинающих" class="bike-image">
+                    <div class="bike-info">
+                        <h3>Для начинающих (12-14 лет)</h3>
+                        <p>Идеальный вариант для первого знакомства с мототехникой</p>
+                        <ul class="bike-features">
+                            <li>Объем двигателя: 50-110cc</li>
+                            <li>Высота седла: 65-75 см</li>
+                            <li>Вес: 60-80 кг</li>
+                            <li>Автоматическая КПП</li>
+                            <li>Цена: от 25 000 руб.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bike-card">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Питбайк для продвинутых" class="bike-image">
+                    <div class="bike-info">
+                        <h3>Для продвинутых (15-17 лет)</h3>
+                        <p>Для тех, кто уже имеет опыт вождения</p>
+                        <ul class="bike-features">
+                            <li>Объем двигателя: 125-190cc</li>
+                            <li>Высота седла: 75-85 см</li>
+                            <li>Вес: 80-100 кг</li>
+                            <li>Механическая КПП</li>
+                            <li>Цена: от 40 000 руб.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Готовы начать?</h2>
+            <p>Получите бесплатную консультацию по выбору первого питбайка</p>
+            <a href="#contact" class="cta-button">Получить консультацию</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PitBike Pro</h3>
+                    <p>Помогаем подросткам найти свое увлечение</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Email: info@pitbikepro.ru</p>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Важно знать</h3>
+                    <p>✓ Катайтесь только в защите</p>
+                    <p>✓ Выбирайте безопасные места</p>
+                    <p>✓ Начинайте с инструктором</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PitBike Pro. Все права защищены. | Безопасность прежде всего!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Анимация появления элементов
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.teen-card, .benefit-card, .bike-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PitBike Pro - Правовые аспекты езды на питбайке</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #e74c3c;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Legal Section */
+        .legal-section {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        .legal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .legal-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid #e74c3c;
+        }
+
+        .legal-card.warning {
+            border-left-color: #f39c12;
+            background: #fffbf0;
+        }
+
+        .legal-card.danger {
+            border-left-color: #e74c3c;
+            background: #fdf2f2;
+        }
+
+        .legal-card.success {
+            border-left-color: #27ae60;
+            background: #f0f9f4;
+        }
+
+        .legal-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .legal-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        /* Police Procedure Section */
+        .police-section {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+
+        .procedure-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .step {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            position: relative;
+            counter-increment: step-counter;
+        }
+
+        .step:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-weight: bold;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            background: #f8f9fa;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .faq-answer.active {
+            padding: 1.5rem;
+            max-height: 500px;
+        }
+
+        /* Warning Banner */
+        .warning-banner {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 5px solid #f39c12;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #34495e;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .legal-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">PitBike Pro</div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#legal">Права и законы</a></li>
+                <li><a href="#police">При встрече с полицией</a></li>
+                <li><a href="#faq">Вопросы-ответы</a></li>
+                <li><a href="#benefits">Преимущества</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Правовые аспекты езды на питбайке</h1>
+            <p>Знание законов - безопасность вашего ребенка</p>
+        </div>
+    </section>
+
+    <!-- Legal Section -->
+    <section class="legal-section" id="legal">
+        <div class="container">
+            <h2 class="section-title">Права и законодательство</h2>
+            
+            <div class="warning-banner">
+                <h3>⚠️ Важная информация!</h3>
+                <p>Питбайки не предназначены для езды по дорогам общего пользования. Катание разрешено только на специальных трассах и закрытых территориях.</p>
+            </div>
+
+            <div class="legal-grid">
+                <div class="legal-card">
+                    <span class="legal-icon">📜</span>
+                    <h3>Нужны ли права на питбайк?</h3>
+                    <p><strong>НЕТ</strong>, если питбайк не предназначен для дорог общего пользования и используется на закрытых территориях.</p>
+                    <p><strong>ДА</strong>, если мотоцикл имеет ПТС и используется на дорогах общего пользования (категория М или А1).</p>
+                </div>
+
+                <div class="legal-card warning">
+                    <span class="legal-icon">🚫</span>
+                    <h3>Где запрещено кататься?</h3>
+                    <ul>
+                        <li>Дороги общего пользования</li>
+                        <li>Тротуары и пешеходные зоны</li>
+                        <li>Парки и зоны отдыха</li>
+                        <li>Частные территории без разрешения</li>
+                    </ul>
+                </div>
+
+                <div class="legal-card success">
+                    <span class="legal-icon">✅</span>
+                    <h3>Где разрешено кататься?</h3>
+                    <ul>
+                        <li>Специализированные мотокросс трассы</li>
+                        <li>Закрытые тренировочные площадки</li>
+                        <li>Частные территории с разрешения владельца</li>
+                        <li>Леса и поля (где не запрещено местными законами)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Police Procedure Section -->
+    <section class="police-section" id="police">
+        <div class="container">
+            <h2 class="section-title">При встрече с сотрудниками полиции</h2>
+            
+            <div class="legal-card danger">
+                <span class="legal-icon">👮</span>
+                <h3>Важно знать каждому родителю!</h3>
+                <p>Если ребенка задержали за езду на питбайке в неположенном месте, сотрудники полиции должны действовать строго по закону.</p>
+            </div>
+
+            <h3 style="margin: 2rem 0 1rem 0;">Правильная последовательность действий:</h3>
+            <div class="procedure-steps">
+                <div class="step">
+                    <h4>1. Установление личности</h4>
+                    <p>Сотрудник полиции может попросить документы ребенка. Если документов нет - устанавливают личность через родителей.</p>
+                </div>
+
+                <div class="step">
+                    <h4>2. Составление протокола</h4>
+                    <p>Составляется протокол об административном правонарушении. Обязательно присутствие родителей или законных представителей.</p>
+                </div>
+
+                <div class="step">
+                    <h4>3. Передача ребенка родителям</h4>
+                    <p>Ребенка до 16 лет НЕ могут задерживать более 3 часов. Обязательно вызывают родителей для передачи ребенка.</p>
+                </div>
+
+                <div class="step">
+                    <h4>4. Изъятие техники</h4>
+                    <p>Питбайк могут изъять на штрафстоянку. Для возврата потребуется оплата штрафа и услуг эвакуатора.</p>
+                </div>
+            </div>
+
+            <div class="warning-banner" style="margin-top: 2rem;">
+                <h3>📞 Что делать родителям?</h3>
+                <p>Если ребенка задержали: сохраняйте спокойствие, требуйте присутствия при допросе, фиксируйте все действия сотрудников, при необходимости звоните по телефону доверия ГУ МВД: 8-800-222-74-47</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">Частые вопросы и ответы</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>С какого возраста можно управлять питбайком?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Официальных возрастных ограничений для катания на закрытых территориях нет. Рекомендуемый возраст - от 12 лет под присмотром взрослых.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Какие штрафы за езду по дорогам?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Штрафы для родителей: от 5 000 до 30 000 руб. по ст. 12.7 КоАП (управление без прав) + возможное изъятие техники.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Могут ли забрать питбайк без предупреждения?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Да, при езде по дорогам общего пользования техника может быть немедленно эвакуирована на штрафстоянку.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Нужна ли страховка ОСАГО?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Только если питбайк зарегистрирован в ГИБДД и используется на дорогах общего пользования.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section" id="benefits">
+        <div class="container">
+            <h2 class="section-title">Катайтесь правильно и безопасно!</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <span class="benefit-icon">🏁</span>
+                    <h3>Выбирайте правильные места</h3>
+                    <p>Специализированные трассы и разрешенные площадки - залог безопасности и законности.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">👨‍👩‍👧‍👦</span>
+                    <h3>Контроль взрослых</h3>
+                    <p>Всегда катайтесь под присмотром родителей или инструкторов.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">📚</span>
+                    <h3>Изучайте правила</h3>
+                    <p>Знание законов защитит от неприятностей с правоохранительными органами.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PitBike Pro</h3>
+                    <p>Помогаем кататься безопасно и законно</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Полезные контакты</h3>
+                    <p>ГИБДД: 102 (с мобильного)</p>
+                    <p>Телефон доверия МВД: 8-800-222-74-47</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Важно помнить</h3>
+                    <p>✓ Катайтесь только в разрешенных местах</p>
+                    <p>✓ Всегда используйте защитную экипировку</p>
+                    <p>✓ Изучайте местные законы и правила</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><strong>Внимание:</strong> Информация на сайте носит ознакомительный характер. Актуальность законов уточняйте в официальных источниках.</p>
+                <p>&copy; 2024 PitBike Pro. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // FAQ аккордеон
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = answer.classList.contains('active');
+                
+                // Закрываем все ответы
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.classList.remove('active');
+                });
+                
+                // Открываем текущий, если был закрыт
+                if (!isActive) {
+                    answer.classList.add('active');
+                }
+            });
+        });
+
+        // Анимация появления элементов
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.legal-card, .step, .benefit-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Добавляем нумерацию для шагов
+        document.querySelector('.procedure-steps').style.counterReset = 'step-counter';
+    </script>
+</body>
+</html>
